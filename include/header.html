@@ -1,0 +1,80 @@
+<header class="common-header st">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/white-logo.svg" alt="logo"></a>
+                <button class="navbar-toggler navbar-toggler-xs" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggle-mnu">
+                        <span></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto custom-navbar-nav-adj">                        
+                        <li class="nav-item pr-nav-item">
+                            <a class="nav-link" href="services.html">Features</a>
+                        </li>
+                        <li class="nav-item pr-nav-item">
+                            <a class="nav-link" href="solutions.html">How it Works</a>
+                        </li>
+                        <li class="nav-item pr-nav-item">
+                            <a class="nav-link" href="industry.html">Trainers</a>
+                        </li>
+                        <li class="nav-item pr-nav-item">
+                            <a class="nav-link" href="partner.html">Partners</a>
+                        </li>
+                        <li class="nav-item pr-nav-item">
+                            <a class="nav-link" href="about.html">Pricing Plan</a>
+                        </li>
+                        <li class="nav-item pr-nav-item pr-nav-item-adj">
+                            <button type="button" onclick="location.href='contact.html'" style="white-space: nowrap;"
+                                class="btn bttn-primary">Buy Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<script src="js/jquery.js"></script>
+<script src="widgets/validation/jquery.validate.min.js"></script>
+<script src="widgets/validation/custome-validation.js"></script>
+<script src="widgets/intl-tel-input-master/js/intlTelInput.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //active tab
+        var wid = $(window).width();
+        var pageURL = document.location.href.match(/[^\/]+$/)[0];
+        //alert(pageURL);  
+        $('.common-header .navbar .pr-nav-item').each(function () {
+            var href = $(this).find('a.nav-link').attr('href');
+            if (href === pageURL) {
+                $('.common-header .navbar .pr-nav-item .nav-link').removeClass('active-a');
+                $(this).find('a.nav-link').addClass('text-success-nav');
+            }
+        });
+        $(".toggle-mnu").removeClass("on");
+        $(".toggle-mnu").click(function () {
+            // $(this).toggleClass("on");
+            $(".main-mnu").slideToggle();
+            return false;
+        });
+        if (wid >= 992) {
+            $(window).bind('scroll', function () {
+                var navHeight = $(window).height() - 0;
+                if ($(window).scrollTop() > 200) {
+                    $('.common-header').addClass('fixed');
+                }
+                else {
+                    $('.common-header').removeClass('fixed');
+                }
+            });
+        }
+
+
+   });
+
+
+</script>

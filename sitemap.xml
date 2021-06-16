@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://spiredata.ai/</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/about.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/contact.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/industry.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/partner.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/services.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/solutions.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/industry-details.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>http://spiredata.ai/service-details.html</loc>
+  <lastmod>2021-06-09T00:24:18+00:00</lastmod>
+  <priority>1.0</priority>
+</url>
+</urlset>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Home</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="widgets/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="widgets/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="homepage">
+
+    <div class="common-header-wrap"></div>
+    <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div>
+    <div class="inner-body">
+        <section class="common-section first-sec">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="ttl-wrapper mb35">
+                            <h2 class="h2 sec-title">Leverage transformational power of data with AI </h2>
+                        </div>
+                        <p class="sec-p">As a business thriving in an information-led world, you either leverage AI and
+                            machine learning algorithms to add value to your business or get left behind. That is why
+                            you
+                            need the right data analytics and data science specialist who can see beyond what's visible,
+                            cut
+                            through the complexity and find ways to drive exceptional growth. Here, at FlexifyMe, we do
+                            this and more.</p>
+                        <button type="button" onclick="location.href='about.html'"
+                            class="btn bttn-outline-primary sec-bttn">Know
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="common-footer-wrap"></div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/owl/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log(123);
+            $("#view-more-recongnition-wrap").hide();
+            $("#view-more-recongnition-span").text("View More");
+            $("#view-more-recongnition-btn").click(function (e7) {
+                $("#view-more-recongnition-wrap").toggle();
+                $("#view-more-recongnition-span").text("View More" ? "View Less" : "View More");
+                e7.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
