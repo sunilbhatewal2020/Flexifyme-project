@@ -18,129 +18,73 @@ h6,
 @media (min-width: 1200px) {
   h1,
   .h1 {
-    font-family: $font-playfair;
+    font-family: $font-play;
     font-style: normal;
     font-weight: bold;
     font-size: 65px;
-    line-height: 120%;
+    line-height: 125%;
   }
   h2,
   .h2 {
-    font-family: $font-playfair;
+    font-family: $font-play;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
-    line-height: 120%;
+    line-height: 125%;
   }
   h3,
   .h3 {
-    font-family: $font-playfair;
+    font-family: $font-play;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 120%;
+    line-height: 130%;
   }
   .h4-restless {
-    font-family: $font-restlessRegular;
+    font-family: $font-rest;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 30px;
   }
-  p,
-  .p {
-    font-family: $font-dm-sans;
+  .h6-restless{
+      font-family: $font-rest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 30px;
+  }
+  .p-20 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .p-18 {
+    font-family: $font-dm;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
   }
+  .p-16 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) and (min-width: 992px) {
-    h1,
-    .h1 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 65px;
-      line-height: 120%;
-    }
-    h2,
-    .h2 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 44px;
-      line-height: 120%;
-    }
-    h3,
-    .h3 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 120%;
-    }
-    .h4-restless {
-      font-family: $font-restlessRegular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 72px;
-      line-height: 30px;
-    }
-    p,
-    .p {
-      font-family: $font-dm-sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 30px;
-    }
+  
 }
 
 // Large devices (desktops, less than 992)
 @media (max-width: 991.98px) and (min-width: 768px) {
-    h1,
-    .h1 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 65px;
-      line-height: 120%;
-    }
-    h2,
-    .h2 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 44px;
-      line-height: 120%;
-    }
-    h3,
-    .h3 {
-      font-family: $font-playfair;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 120%;
-    }
-    .h4-restless {
-      font-family: $font-restlessRegular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 72px;
-      line-height: 30px;
-    }
-    p,
-    .p {
-      font-family: $font-dm-sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 30px;
-    }
+  
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -148,43 +92,5 @@ h6,
   .xs-text-center {
     text-align: center !important;
   }
-  h1,
-  .h1 {
-    font-family: $font-playfair;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    line-height: 120%;
-  }
-  h2,
-  .h2 {
-    font-family: $font-playfair;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 120%;
-  }
-  h3,
-  .h3 {
-    font-family: $font-playfair;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 120%;
-  }
-  .h4-restless {
-    font-family: $font-restlessRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
-    line-height: 30px;
-  }
-  p,
-  .p {
-    font-family: $font-dm-sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-  }
+
 }
