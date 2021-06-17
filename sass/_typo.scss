@@ -40,6 +40,14 @@ h6,
     font-size: 32px;
     line-height: 130%;
   }
+  h4,
+  .h4 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
   .h4-restless {
     font-family: $font-rest;
     font-style: normal;
@@ -53,6 +61,13 @@ h6,
       font-weight: normal;
       font-size: 48px;
       line-height: 30px;
+  }
+  .p-22 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
   }
   .p-20 {
     font-family: $font-dm;

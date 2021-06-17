@@ -2,9 +2,9 @@
 
 
 $(document).ready(function () {
-        /*  AOS.init({
-                  duration: 400,
-                  // disable: 'mobile',
+        AOS.init({
+                  duration: 600,
+                  disable: 'mobile',
                   // disable: false,
                   anchorPlacement: 'top-top',
                   disable: function () {
@@ -15,30 +15,32 @@ $(document).ready(function () {
                   offset: 20,
                   easing: 'easeOutExpo', //easing: 'ease-in-out',
           });
+
+        /*  
           
           var wido = $(window).width();
           if (wido <= 1198) {
                   // $('[data-aos]').addClass('aos-init aos-animate');
           }*/
 
-        var wido = $(window).width();
-        if (wido <= 1024) {
-                AOS.init({
-                        duration: 400,
-                        // disable: 'mobile',
-                        // disable: false,
-                        anchorPlacement: 'top-top',
-                        once: true,
-                        offset: 20,
-                        easing: 'easeOutExpo', //easing: 'ease-in-out',
-                });
+        // var wido = $(window).width();
+        // if (wido <= 1024) {
+        //         AOS.init({
+        //                 duration: 400,
+        //                 // disable: 'mobile',
+        //                 // disable: false,
+        //                 anchorPlacement: 'top-top',
+        //                 once: true,
+        //                 offset: 20,
+        //                 easing: 'easeOutExpo', //easing: 'ease-in-out',
+        //         });
 
-                $('[data-aos]').each(
-                        function () {                                
-                                $(this).addClass('aos-init aos-animate');
-                        }
-                );
+        //         $('[data-aos]').each(
+        //                 function () {                                
+        //                         $(this).addClass('aos-init aos-animate');
+        //                 }
+        //         );
 
 
-        }
+        // }
 });

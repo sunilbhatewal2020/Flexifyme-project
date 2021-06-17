@@ -10,29 +10,29 @@
                         <span></span>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <nav class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto custom-navbar-nav-adj">                        
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link" href="#featres">Features</a>
+                            <a class="nav-link hvr-center" href="#featres">Features</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link" href="#how-it-work">How it Works</a>
+                            <a class="nav-link hvr-center" href="#how-it-work">How it Works</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link" href="#trainers">Trainers</a>
+                            <a class="nav-link hvr-center" href="#trainers">Trainers</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link" href="#partner">Partners</a>
+                            <a class="nav-link hvr-center" href="#partner">Partners</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link" href="#pricing-plan">Pricing Plan</a>
+                            <a class="nav-link hvr-center" href="#pricing-plan">Pricing Plan</a>
                         </li>
                         <li class="nav-item pr-nav-item pr-nav-item-adj">
                             <button type="button" onclick="location.href='contact.html'" style="white-space: nowrap;"
                                 class="btn bttn-buy-now">Buy Now</button>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </nav>
     </div>
@@ -73,52 +73,5 @@
             });
         }
    });
-
-
-   window.addEventListener('DOMContentLoaded', event => {
-
-// Navbar shrink function
-var navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) {
-        return;
-    }
-    if (window.scrollY === 0) {
-        navbarCollapsible.classList.remove('navbar-shrink')
-    } else {
-        navbarCollapsible.classList.add('navbar-shrink')
-    }
-
-};
-
-// Shrink the navbar 
-navbarShrink();
-
-// Shrink the navbar when page is scrolled
-document.addEventListener('scroll', navbarShrink);
-
-// Activate Bootstrap scrollspy on the main nav element
-const mainNav = document.body.querySelector('#mainNav');
-if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-        target: '#mainNav',
-        offset: 74,
-    });
-};
-
-// Collapse responsive navbar when toggler is visible
-const navbarToggler = document.body.querySelector('.navbar-toggler');
-const responsiveNavItems = [].slice.call(
-    document.querySelectorAll('#navbarResponsive .nav-link')
-);
-responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener('click', () => {
-        if (window.getComputedStyle(navbarToggler).display !== 'none') {
-            navbarToggler.click();
-        }
-    });
-});
-
-});
 
 </script>
