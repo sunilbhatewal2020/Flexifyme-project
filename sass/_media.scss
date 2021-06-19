@@ -2,6 +2,45 @@
   .contact-section::after {
     width: 480px;
   }
+  .row.nav-pills-row {
+    .tab-content-wrap {
+      .tab-pane {
+        .trainer-content-wrap {
+          h4 {
+            margin-bottom: 0;
+          }
+          .trainer-content1-ul {
+            li {
+              width: 160px;
+              margin: 0 5px;
+              .trainer-feature-wrap {
+                .p-16 {
+                  font-size: 16px;
+                  line-height: 26px;
+                }
+                .trainer-feature-img {
+                  position: relative;
+                  min-height: 80px;
+                }
+              }
+            }
+          }
+        }
+        .trainer-content-wrap.trainer-content2 {
+          h3 {
+            margin-bottom: 24px;
+          }
+          .trainer-content1-ul {
+            margin: 10px 0 0;
+          }
+          .p-18 {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1600px) {
   .common-header-wrap .common-header.st .container {
@@ -20,6 +59,13 @@
 }
 
 @media (max-width: 1599px) and (min-width: 1200px) {
+  .transform-scale-img {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
   .contact-section .contact-col-right {
     transform: scale(0.7);
     z-index: 9;
@@ -29,31 +75,331 @@
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
   }
+  .row.nav-pills-row {
+    .tab-content-wrap {
+      .tab-pane {
+        .trainer-content-wrap {
+          h4 {
+            margin-bottom: 0;
+          }
+          .trainer-content1-ul {
+            li {
+              width: 120px;
+              margin: 0 5px;
+              .trainer-feature-wrap {
+                .p-16 {
+                  font-size: 14px;
+                  line-height: 24px;
+                }
+                .trainer-feature-img {
+                  position: relative;
+                  min-height: 80px;
+                }
+              }
+            }
+          }
+        }
+        .trainer-content-wrap.trainer-content2 {
+          h3 {
+            margin-bottom: 24px;
+          }
+          .trainer-content1-ul {
+            margin: 10px 0 0;
+          }
+          .p-18 {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .home-sec1 {
+    .home-sec2 {
+      bottom: -60px;
+    }
+  }
+  .get-assessed-line {
+    bottom: 26px;
+    right: 130px;
+  }
+  .build-plan-line {
+    bottom: 70px;
+    left: 230px;
+  }
+  .do-work4-line {
+    bottom: 16px;
+    right: 130px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .trainer-for-desktop-view {
+    display: block !important;
+  }
+  .trainer-for-mobile-view {
+    display: none !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .trainer-for-desktop-view {
+    display: none !important;
+  }
+  .trainer-for-mobile-view {
+    display: block !important;
+    background: #47347c;
+    padding-top: 120px !important;
+    padding-bottom: 150px !important;
+    .h6-restless {
+      color: #fff;
+      text-align: center;
+      font-size: 72px;
+      line-height: normal;
+    }
+    .trainer-feature-wrap {
+      .p-16 {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    .trainer-caro-xs-wrap {
+      background: #47347c;
+      .trainer-caro-xs {
+        width: 300px;
+        margin: auto;
+      }
+      .trainer-feature-wrap {
+        text-align: center;
+        margin: 50px 0 30px;
+        .trainer-feature-img {
+          max-width: 100px;
+          margin: auto;
+          min-height: 70px;
+        }
+      }
+    }
+    .trainer-content-wrap.trainer-content2 {
+      .trainer-feature-wrap {
+        .trainer-feature-img {
+          min-height: 80px !important;
+        }
+      }
+      .trainer-img {
+        width: 305px;
+        height: 305px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 40px;
+      }
+      .trainer-content1-ul {
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+    }
+    .trainer-caro-xs-wrap2 {
+      margin-top: 50px;
+      .carousel-indicators {
+        bottom: -40px;
+        [data-bs-target] {
+          width: 13px;
+          height: 13px;
+          background: #7e6394;
+          border: 0;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          margin: 0 7px;
+          &.active {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .home-sec6 {
+    .home-sec-inner.text-center.common-home-sec-head {
+      margin-bottom: 50px;
+    }
+  }
+  .home-sec7 {
+    padding-top: 0 !important;
+  }
 }
 
 @media (max-width: 1199.98px) and (min-width: 992px) {
+  .transform-scale-img {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
   .contact-section .contact-col-right {
-    transform: scale(0.6);
+    transform: scale(0.7);
     z-index: 9;
-    transform-origin: 80px center;
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
+    transform-origin: 0 center;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .row.nav-pills-row {
+    .tab-content-wrap {
+      .tab-pane {
+        .trainer-content-wrap {
+          h4 {
+            margin-bottom: 0;
+          }
+          .trainer-content1-ul {
+            li {
+              width: 120px;
+              margin: 0 5px;
+              .trainer-feature-wrap {
+                .p-16 {
+                  font-size: 14px;
+                  line-height: 24px;
+                }
+                .trainer-feature-img {
+                  position: relative;
+                  min-height: 80px;
+                }
+              }
+            }
+          }
+        }
+        .trainer-content-wrap.trainer-content2 {
+          h3 {
+            margin-bottom: 24px;
+          }
+          .trainer-content1-ul {
+            margin: 10px 0 0;
+          }
+          .p-18 {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .home-sec1 {
+    .home-sec2 {
+      bottom: -60px;
+    }
+  }
+
+  .home-sec2 {
+    .home-sec-inner {
+      .book-assessment-list {
+        max-width: 900px;
+        min-width: 900px;
+      }
+    }
+  }
+  .home-sec4 {
+    .pills-tab-wrap {
+      .nav-pills {
+        .nav-link {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .get-assessed-line {
+    bottom: 58px;
+    right: 70px;
+  }
+  .build-plan-line {
+    bottom: 110px;
+    left: 150px;
+  }
+  .do-work4-line {
+    bottom: 76px;
+    right: 150px;
+  }
+
+  .home-sec4 {
+    .home-sec-left.home-sec-left2 {
+      margin-top: 180px;
+      margin-left: 0;
+    }
+  }
+  .home-caro-wrap {
+    transform: scale(0.8);
+  }
+  .home-sec5 {
+    .path-row4 {
+      min-height: inherit !important;
+      margin-bottom: 0;
+    }
+    .path-row2,
+    .path-row3,
+    .path-row4 {
+      .transform-scale-img {
+        transform-origin: 0 0;
+      }
+    }
+  }
+  .testimonial-caro {
+    margin-bottom: 80px;
+  }
+  .home-sec9 {
+    .container {
+      .home-sec-inner {
+        margin: 20px 0;
+      }
+    }
+  }
+  .home-sec10 {
+    .container {
+      margin-top: 30px;
+    }
+    .transform-scale-img {
+      transform-origin: right center;
+    }
+  }
+  .common-footer-wrap {
+    .common-footer {
+      .footer-nav-wrap {
+        .footer-nav-ul {
+          li {
+            a {
+              padding: 7px 15px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 992px) {
+  .hide-desktop {
+    display: none !important;
+  }
   .h-100vh {
     height: 100vh !important;
   }
 }
 
 @media (max-width: 991.98px) and (min-width: 768px) {
+  .grey-triangle-before,
+  .grey-triangle-after,
+  .white-triangle-after {
+    &:after,
+    &::before {
+      display: none !important;
+    }
+  }
+  .order-md-sm-xs-1 {
+    order: 1 !important;
+  }
   .hide-tab {
     display: none !important;
+  }
+  .show-tab {
+    display: block !important;
   }
   .contact-section {
     .logo-wrap {
@@ -65,13 +411,395 @@
       -o-transform: translateX(-50%);
     }
     .row.contact-caro-row {
-        margin-top: 30px;
+      margin-top: 30px;
     }
-}
+  }
+  .transform-scale-img {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .contact-section .contact-col-right {
+    transform: scale(0.7);
+    z-index: 9;
+    transform-origin: 0 center;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .row.nav-pills-row {
+    .tab-content-wrap {
+      .tab-pane {
+        .trainer-content-wrap {
+          h4 {
+            margin-bottom: 0;
+          }
+          .trainer-content1-ul {
+            li {
+              width: 120px;
+              margin: 0 5px;
+              .trainer-feature-wrap {
+                .p-16 {
+                  font-size: 14px;
+                  line-height: 24px;
+                }
+                .trainer-feature-img {
+                  position: relative;
+                  min-height: 80px;
+                }
+              }
+            }
+          }
+        }
+        .trainer-content-wrap.trainer-content2 {
+          h3 {
+            margin-bottom: 24px;
+          }
+          .trainer-content1-ul {
+            margin: 10px 0 0;
+          }
+          .p-18 {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .home-sec1 {
+    .home-sec-inner-top {
+      margin-top: 200px;
+    }
+    .home-sec2 {
+      bottom: -60px;
+    }
+    .bg-video-wrap {
+      height: 800px;
+    }
+  }
+
+  .home-sec2 {
+    .home-sec-inner {
+      .book-assessment-b-ul-wrap {
+        overflow-x: auto;
+        &::after{
+          content: '';
+          position: absolute;
+          top: auto;
+          bottom: 20px;
+          right: 0;
+          z-index: 999;
+          background: rgba(255,255,255,0.7);
+          width: 200px;
+          height: 200px;
+        }
+        .book-assessment-b-ul {
+          justify-content: start;
+          a.book-assessment-btn {
+            margin: 0 20px 30px;
+          }
+        }
+      }
+      .book-assessment-list {
+        max-width: 640px;
+        min-width: 640px;
+      }
+    }
+  }
+  .home-caro-wrap h2 {
+    color: #311a75;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 9;
+    text-align: center;
+    margin-bottom: 70px !important;
+  }
+  .home-sec3 {
+    padding-bottom: 0;
+    .home-sec-inner.home-caro-wrap {
+      .carousel {
+        left: -130px;
+      }
+    }
+  }
+  .transform-scale-img {
+    min-height: 450px;
+    width: 100%;
+  }
+  .home-sec4 {
+    padding-top: 0;
+    padding-bottom: 0;
+    .home-sec-left {
+      margin: 50px auto 0;
+    }
+    .home-sec-right1 {
+      max-width: inherit;
+    }
+    .home-sec-right2 {
+      max-width: inherit;
+      margin-left: 0;
+    }
+    .pills-tab-wrap {
+      .nav-pills {
+        .nav-link {
+          font-size: 18px;
+        }
+      }
+    }
+    .home-sec-left.home-sec-left2 {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+  .get-assessed-line {
+    bottom: 58px;
+    right: 70px;
+  }
+  .build-plan-line {
+    bottom: 110px;
+    left: 150px;
+  }
+  .do-work4-line {
+    bottom: 76px;
+    right: 150px;
+  }
+
+  .home-caro-wrap {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform-origin: center 0;
+  }
+  .home-sec5 {
+    padding-bottom: 0;
+    .home-sec-right.home-sec-right5 {
+      margin-top: 90px;
+    }
+    .path-row3 {
+      margin-top: 0;
+    }
+    .transform-scale-img {
+      transform-origin: center 0;
+    }
+    .home-sec-left {
+      margin-top: 50px;
+      max-width: inherit;
+      margin-bottom: 20px;
+      h3 {
+        .no-span {
+          font-size: 150px;
+          top: -43px;
+          left: -27px;
+          z-index: 0;
+        }
+      }
+    }
+    .path-row {
+      min-height: inherit;
+      margin-bottom: 130px;
+    }
+    .path-row4 {
+      min-height: inherit !important;
+      margin-bottom: 0;
+    }
+    .path-row2,
+    .path-row3,
+    .path-row4 {
+      .transform-scale-img {
+        transform-origin: center 0;
+      }
+    }
+    .path-row4 {
+      .home-sec-right.home-sec-right6 {
+        margin-top: 60px;
+        .transform-scale-img {
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+  .home-sec6 {
+    .home-sec-inner.text-center.common-home-sec-head {
+      margin-bottom: 100px;
+      margin-top: 0;
+    }
+  }
+  .home-sec7 {
+    .testimonial-caro-row {
+      .testimonial-caro-right {
+        position: relative;
+        padding-top: 20px;
+        max-width: 500px;
+        margin: 0 auto 60px;
+      }
+    }
+    .testimonial-caro-left p.p-18 {
+      margin-bottom: 50px;
+  }
+  }
+  .home-sec8 {
+    background-attachment: inherit;
+    .home-sec-inner.text-center.common-home-sec-head {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  }
+  .testimonial-caro {
+    margin-bottom: 0;
+    .carousel-indicators{
+      text-align: center;
+    }
+  }
+  .home-sec9 {
+    .container {
+      .home-sec-inner {
+        margin: 0 0;
+      }
+      .home-sec-inner {
+        .h1 {
+          color: #fff;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  .home-sec10 {
+    padding-bottom: 60px;
+    .container {
+      margin-top: 0;
+    }
+    .transform-scale-img {
+      transform-origin: right center;
+    }
+  }
+  .common-footer-wrap {
+    .common-footer {
+      .footer-nav-wrap {
+        .footer-nav-ul {
+          li {
+            a {
+              padding: 7px 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-sec10 {
+    .subscribe-right-col {
+      text-align: right;
+      position: relative;
+      width: 504px;
+      margin: 30px auto 0;
+      display: block;
+      float: none;
+    }
+
+    .home-sec-inner.subscribe-left-col {
+      margin-top: 0;
+      p.p-18 {
+        max-width: inherit;
+      }
+      .form-subscribe-wrap {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .get-assessed-line-xs-img {
+    bottom: -63px;
+    top: auto !important;
+    left: 220px !important;
+  }
+  .build-plan-line-xs-img {
+    bottom: 22px;
+    top: auto !important;
+    left: 250px !important;
+  }
+  .do-work4-line-xs-img {
+    bottom: -100px;
+    top: auto !important;
+    left: 250px !important;
+  }
+  .pricing-plan-row {
+    .pricing-plan-col {
+      .pricing-plan-card {
+        .pricing-plan-card-head {
+          position: relative;
+          padding: 15px 15px 15px;
+          .offer-label {
+            top: 0;
+            right: 0;
+            transform: scale(0.7);
+            transform-origin: right 40px;
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+          }
+          h4 {
+            font-size: 30px;
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+          }
+        }
+        .pricing-plan-card-body {
+          ul li {
+            margin-bottom: 28px;
+            padding: 0 0 0 30px;
+            margin-left: 7px;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .pricing-plan-col.pricing-plan-col-center {
+      .pricing-plan-card {
+        .pricing-plan-card-body {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-    .loading{margin-left: -40px;}
+  .common-section {
+    padding: 70px 0;
+    position: relative;
+  }
+  .show-mobile {
+    display: block !important;
+  }
+  .order-md-sm-xs-1 {
+    order: 1 !important;
+  }
+  .loading {
+    margin-left: -40px;
+  }
   .hide-mobile {
     display: none !important;
   }
@@ -85,15 +813,539 @@
       -o-transform: translateX(-50%);
     }
     .row.contact-caro-row {
-        margin-top: 30px;
+      margin-top: 30px;
     }
+  }
+  
+  .grey-triangle-before,
+  .grey-triangle-after,
+  .white-triangle-after {
+    &:after,
+    &::before {
+      display: none !important;
+    }
+  }
+  .order-md-sm-xs-1 {
+    order: 1 !important;
+  }
+  .hide-tab {
+    display: none !important;
+  }
+  .show-tab {
+    display: block !important;
+  }
+  .contact-section {
+    .logo-wrap {
+      left: 50% !important;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+    .row.contact-caro-row {
+      margin-top: 30px;
+    }
+  }
+  .transform-scale-img {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .contact-section .contact-col-right {
+    transform: scale(0.7);
+    z-index: 9;
+    transform-origin: 0 center;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  .row.nav-pills-row {
+    .tab-content-wrap {
+      .tab-pane {
+        .trainer-content-wrap {
+          h4 {
+            margin-bottom: 0;
+          }
+          .trainer-content1-ul {
+            li {
+              width: 120px;
+              margin: 0 5px;
+              .trainer-feature-wrap {
+                .p-16 {
+                  font-size: 14px;
+                  line-height: 24px;
+                }
+                .trainer-feature-img {
+                  position: relative;
+                  min-height: 80px;
+                }
+              }
+            }
+          }
+        }
+        .trainer-content-wrap.trainer-content2 {
+          h3 {
+            margin-bottom: 24px;
+          }
+          .trainer-content1-ul {
+            margin: 10px 0 0;
+          }
+          .p-18 {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .home-sec1 {
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 1;
+  }
+    .p-20{
+      font-size: 14px;
+line-height: 22px;
+    }
+    .h6-restless{
+      font-size: 36px;
+line-height: 30px;
+    }
+    .home-sec-inner-top {
+      margin-top: 200px;
+    }
+    .home-sec2 {
+      bottom: -60px;
+    }
+    .bg-video-wrap {
+      height: 800px;
+    }
+    .overlay{
+      height: 100%;
+    }
+  }
+  a.book-assessment-btn {
+    padding: 25px 15px;
+    width: 160px;
+    margin: 0 10px 0;
+    height: 130px;
+    p.p-16 {
+      font-size: 14px;
+    }
+    .right-arrow {
+      display: none;
+    }
+    .book-assessment-img-wrap {
+      min-height: 80px;
+    }
+  }
+
+
+  .home-sec2 {
+    .home-sec-inner {
+      .book-assessment-b-ul-wrap {
+        overflow-x: auto;
+        &::after{
+          content: '';
+          position: absolute;
+          top: auto;
+          bottom: 20px;
+          right: 0;
+          z-index: 999;
+          background: rgba(255,255,255,0.7);
+          width: 200px;
+          height: 200px;
+        }
+        .book-assessment-b-ul {
+          justify-content: start;
+        }
+      }
+      .book-assessment-list {
+        max-width: 100%;
+        min-width: 100%;
+        .book-assessment-head{
+          margin-bottom: 5px;
+        }
+        h4{
+          font-size: 18px;
+          .restlessRegular-wrap{
+            width: 63px;
+            span.restlessRegular{
+              font-size: 48px;
+            }
+          }          
+        }
+      }
+    }
+  }
+ 
+  .home-sec3 {
+    padding-bottom: 0;
+    height: 580px;
+    .home-sec-inner.home-caro-wrap {
+      .carousel {
+        left: -130px;
+      }
+    }
+  }
+  .transform-scale-img {
+    min-height: 450px;
+    width: 100%;
+  }
+  .home-sec4 {
+    padding-top: 0;
+    padding-bottom: 0;
+    .home-sec-left {
+      margin: 50px auto 0;
+    }
+    .home-sec-right1 {
+      max-width: inherit;
+    }
+    .home-sec-right2 {
+      max-width: inherit;
+      margin-left: 0;
+    }
+    .pills-tab-wrap {
+      .nav-pills {
+        .nav-link {
+          font-size: 16px;
+          padding: 10px 15px;
+margin-right: 4px;
+height: 38px;
+        }
+      }
+    }
+    .home-sec-left.home-sec-left2 {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+  .get-assessed-line {
+    bottom: 58px;
+    right: 70px;
+  }
+  .build-plan-line {
+    bottom: 110px;
+    left: 150px;
+  }
+  .do-work4-line {
+    bottom: 76px;
+    right: 150px;
+  }
+
+
+  
+  .home-caro-wrap {
+    transform: scale(0.55);
+    -webkit-transform: scale(0.55);
+    -moz-transform: scale(0.55);
+    -ms-transform: scale(0.55);
+    -o-transform: scale(0.55);
+    transform-origin: center 0;
+    min-height: inherit;
+    h2 {
+      color: #311a75;
+      position: static;
+      top: 0;
+      left: 0;
+      transform: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      margin-left: 0;
+      margin-top: 0;
+      z-index: 9;
+      text-align: center;
+      margin-bottom: 70px !important;
+      font-size: 48px;
+      white-space: nowrap;
+    }
+    .carousel-indicators.carousel-indicators-adj{
+      transform: translateY(-50%) translateX(250px);
+      -webkit-transform: translateY(-50%) translateX(250px);
+      -moz-transform: translateY(-50%) translateX(250px);
+      -ms-transform: translateY(-50%) translateX(250px);
+      -o-transform: translateY(-50%) translateX(250px);
+    }
+  }
+  .home-sec5 {
+    padding-bottom: 0;
+    .home-sec-right.home-sec-right5 {
+      margin-top: 90px;
+    }
+    .path-row3 {
+      margin-top: 0;
+    }
+    .transform-scale-img {
+      transform-origin: center 0;
+    }
+    .home-sec-left {
+      margin-top: 50px;
+      max-width: inherit;
+      margin-bottom: 20px;
+      h3 {
+        .no-span {
+          font-size: 96px;
+top: -33px;
+left: -10px;
+z-index: 0;
+        }
+      }
+    }
+    .path-row {
+      min-height: inherit;
+      margin-bottom: 130px;
+    }
+    .path-row4 {
+      min-height: inherit !important;
+      margin-bottom: 0;
+    }
+    .path-row2,
+    .path-row3,
+    .path-row4 {
+      .transform-scale-img {
+        transform-origin: center 0;
+      }
+    }
+    .path-row4 {
+      .home-sec-right.home-sec-right6 {
+        margin-top: 60px;
+        .transform-scale-img {
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+  .home-sec6 {
+    .home-sec-inner.text-center.common-home-sec-head {
+      margin-bottom: 100px;
+      margin-top: 0;
+    }
+  }
+  .home-sec7 {
+    .testimonial-caro-row {
+      .testimonial-caro-right {
+        position: relative;
+        padding-top: 20px;
+        max-width: 500px;
+        margin: 0 auto 60px;
+      }
+    }
+    .testimonial-caro-left p.p-18 {
+      margin-bottom: 50px;
+  }
+  }
+  .home-sec8 {
+    background-attachment: inherit;
+    .home-sec-inner.text-center.common-home-sec-head {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  }
+  .testimonial-caro {
+    margin-bottom: 0;
+    .carousel-indicators{
+      text-align: center;
+    }
+  }
+  .home-sec9 {
+    .container {
+      .home-sec-inner {
+        margin: 0 0;
+      }
+      .home-sec-inner {
+        .h1 {
+          color: #fff;
+          margin-bottom: 20px;
+        }
+          p {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .home-sec10 {
+    padding-bottom: 60px;
+    .container {
+      margin-top: 0;
+    }
+    .transform-scale-img {
+      transform-origin: right center;
+    }
+  }
+  .common-footer-wrap {
+    .common-footer {
+      .footer-nav-wrap {
+        .footer-nav-ul {
+          li {
+            a {
+              padding: 7px 10px;
+font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-sec10 {
+    .subscribe-right-col {
+      text-align: right;
+      position: relative;
+      width: 504px;
+      margin: 30px auto 0;
+      display: block;
+      float: none;
+    }
+
+    .home-sec-inner.subscribe-left-col {
+      margin-top: 0;
+      p.p-18 {
+        max-width: inherit;
+      }
+      .form-subscribe-wrap {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .get-assessed-line-xs-img {
+    bottom: -63px;
+    top: auto !important;
+    left: 220px !important;
+  }
+  .build-plan-line-xs-img {
+    bottom: 12px;
+    top: auto !important;
+    left: 250px !important;
+  }
+  .do-work4-line-xs-img {
+    bottom: -100px;
+    top: auto !important;
+    left: 230px !important;
+  }
+  
+  .pricing-plan-row {
+    background: transparent;
+border: 0;
+box-shadow: none;
+max-width: 100%;
+margin: 30px auto 0;
+.bg-strip1 {
+	left: 0px !important;
+}
+.bg-strip2 {
+	display: none !important;
+}
+.bg-strip3 {
+	left: auto !important;
+	right: 0px !important;
+}
+    .pricing-plan-col {
+      background: #ffffff;
+      padding-right: 0;
+      position: relative;
+border: 1px solid rgba(145, 143, 148, 0.3);
+box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
+margin-bottom: 26px;
+padding-bottom: 30px;
+      .pricing-plan-card {
+        .pricing-plan-card-head {
+          position: relative;
+          padding: 15px 15px 15px;
+          .offer-label {
+            top: 0;
+            right: 0;
+            transform: scale(0.7);
+            transform-origin: right 40px;
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+          }
+          h4 {
+            font-size: 40px;
+            margin-bottom: 5px;
+          }
+          h3 {
+            font-size: 26px;
+            margin-bottom: 5px;
+          }
+        }
+        .pricing-plan-card-body {
+          ul li {
+            margin-bottom: 28px;
+            padding: 0 0 0 30px;
+            margin-left: 7px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .pricing-plan-col.pricing-plan-col-center {
+      .pricing-plan-card {
+        margin-top: 0;
+        .pricing-plan-card-body {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .trainer-for-mobile-view {
+    .h6-restless {
+      font-size: 48px;
+    }
+ .trainer-content-wrap.trainer-content2 {
+   h3{
+     font-size: 32px;
+   }
+  .trainer-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ }
+  .trainer-feature-wrap .p-16 {
+	font-size: 16px;
+	line-height: 26px;
+}
+}
+.testimonial-caro {
+  .testimonial-caro-row {
+    .testimonial-caro-left{
+      padding-left: 0;
+      padding-right: 0;
+      .double-quate {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 70px;
+      }
+    }
+  }
 }
 }
 
+
 @media (max-width: 575px) {
-  .contact-section { 
+  .contact-section {
     .contact-col-left {
-        padding: 0 5px;
+      padding: 0 5px;
       .contact-caro-bottom {
         ul {
           display: block;
@@ -126,46 +1378,41 @@
       }
     }
   }
-  a.book-assessment-btn {
-    padding: 25px 15px;
-    p.p-16 {
-      font-size: 14px;
-    }
-    .right-arrow {
-      width: 30px !important;
-      height: 30px !important;
-      padding-top: 0 !important;
-      i {
-        font-size: 14px;
-      }
-    }
-  }
+ 
   .assessment-wrap {
-    ul{
+    ul {
       li {
         display: inline-block;
         margin-right: 7px;
-          button{
-              margin-bottom: 10px;
+        button {
+          margin-bottom: 10px;
+        }
+        .btn-time {
+          width: 90px;
+          height: 43px;
+        }
+        .btn-day {
+          height: 90px;
+          width: 43px;
+          em {
+            font-size: 16px;
           }
-          .btn-time{
-              width: 90px;
-              height: 43px;
-          }
-          .btn-day{
-              height: 90px;
-              width: 43px;
-              em{
-                  font-size: 16px;
-              }
-          }
+        }
       }
     }
   }
-.thanks-wrap{
-    .p-18{
-    font-size: 16px;
-    line-height: 26px;
+  .thanks-wrap {
+    .p-18 {
+      font-size: 16px;
+      line-height: 26px;
     }
-}
+  }
+  .trainer-content-wrap {
+    .trainer-content1-ul{
+      li {
+        width: 110px;
+        margin: 0 5px;
+      }
+    }
+  }
 }

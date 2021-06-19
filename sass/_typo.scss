@@ -15,7 +15,7 @@ h6,
   line-height: normal;
 }
 // X-Large devices (large desktops, min than 1400px)
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   h1,
   .h1 {
     font-family: $font-play;
@@ -81,7 +81,84 @@ h6,
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    line-height: 28px;
+  }
+  .p-16 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+// X-Large devices (large desktops, min than 1400px)
+@media (min-width: 1200px) and (max-width: 1599px){
+  h1,
+  .h1 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 125%;
+  }
+  h2,
+  .h2 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 125%;
+  }
+  h3,
+  .h3 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  h4,
+  .h4 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .h4-restless {
+    font-family: $font-rest;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
     line-height: 30px;
+  }
+  .h6-restless{
+      font-family: $font-rest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 30px;
+  }
+  .p-22 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .p-20 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .p-18 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
   }
   .p-16 {
     font-family: $font-dm;
@@ -94,12 +171,158 @@ h6,
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) and (min-width: 992px) {
-  
+  h1,
+  .h1 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 125%;
+  }
+  h2,
+  .h2 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 125%;
+  }
+  h3,
+  .h3 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  h4,
+  .h4 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .h4-restless {
+    font-family: $font-rest;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 30px;
+  }
+  .h6-restless{
+      font-family: $font-rest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 30px;
+  }
+  .p-22 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .p-20 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .p-18 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .p-16 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 // Large devices (desktops, less than 992)
 @media (max-width: 991.98px) and (min-width: 768px) {
-  
+  h1,
+  .h1 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+  }
+  h2,
+  .h2 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 125%;
+  }
+  h3,
+  .h3 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  h4,
+  .h4 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .h4-restless {
+    font-family: $font-rest;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 30px;
+  }
+  .h6-restless{
+      font-family: $font-rest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 30px;
+  }
+  .p-22 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .p-20 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .p-18 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .p-16 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -107,5 +330,78 @@ h6,
   .xs-text-center {
     text-align: center !important;
   }
-
+  h1,
+  .h1 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  h2,
+  .h2 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  h3,
+  .h3 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  h4,
+  .h4 {
+    font-family: $font-play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .h4-restless {
+    font-family: $font-rest;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 30px;
+  }
+  .h6-restless{
+      font-family: $font-rest;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 30px;
+  }
+  .p-22 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .p-20 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-18 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-16 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

@@ -121,7 +121,7 @@ body {
   color: $black;
   font-style: normal;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 28px;
   position: relative;
 }
 
@@ -199,7 +199,7 @@ a:focus {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .loading {
@@ -254,7 +254,7 @@ a:focus {
 }
 .common-section {
   width: 100%;
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
   background-color: #fff;
   z-index: 3;
@@ -857,7 +857,7 @@ a:focus {
     border: 0;
     z-index: 15;
   }
-  .home-sec-inner {
+  .home-sec-inner-top {
     text-align: center;
     position: relative;
     z-index: 3;
@@ -918,7 +918,7 @@ a:focus {
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9;
+  z-index: 29;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -958,7 +958,7 @@ a:focus {
       box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       padding: 20px 25px 15px;
-      margin-top: -10px;
+      margin-top: 0;
       margin-right: 20px;
       margin-left: 20px;
       .book-assessment-head {
@@ -973,7 +973,14 @@ a:focus {
     }
   }
 }
-
+.home-sec3 {
+  position: static;
+  .home-sec3-inner {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+  }
+}
 .home-sec4 {
   .home-sec-right,
   .home-sec-left {
@@ -1170,6 +1177,7 @@ a:focus {
     position: relative;
     height: 100%;
     width: 100%;
+    z-index: 5;
     div.get-assessed2 {
       top: 334px;
       left: 390px;
@@ -1318,7 +1326,7 @@ a:focus {
 .build-plan-line {
   bottom: -30px;
   left: 180px;
-  z-index: 4;
+  z-index: 1;
   position: absolute;
 }
 .home-sec5 .home-sec-right .do-work5 {
@@ -1342,9 +1350,13 @@ a:focus {
     .footer-logo-wrap {
       text-align: center;
       margin-bottom: 28px;
+      a{
+        display: inline-block;
+      }
     }
     .footer-nav-wrap {
       .footer-nav-ul {
+        padding: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1375,13 +1387,23 @@ a:focus {
       align-content: stretch;
       li {
         a {
-          font-family: $font-dm;
+          font-family: "DM Sans", sans-serif;
           font-style: normal;
           font-weight: bold;
-          font-size: 26px;
+          font-size: 18px;
           letter-spacing: 0.5px;
-          color: #ffffff;
-          margin: 0 5px;
+          color: #2e2e2e;
+          margin: 0 10px;
+          width: 30px;
+          height: 30px;
+          padding: 2px 0 0;
+          text-align: center;
+          background: #fff;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
           @extend .st;
           &:hover {
             color: #ff668e;
@@ -1424,7 +1446,7 @@ a:focus {
     z-index: 9;
   }
 
-  .carousel-indicators {
+  .carousel-indicators.carousel-indicators-adj {
     position: absolute;
     top: 50%;
     right: 0;
@@ -1521,93 +1543,47 @@ a:focus {
   .tab-content-wrap {
     height: 100%;
     background: #47347c;
+    position: relative;
     .tab-pane {
       height: 100%;
       background: #47347c;
-      .trainer-content-wrap {
-        height: 100%;
-        background: #47347c;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
-        padding: 15px;
-        h4 {
-          color: #ffffff;
-          font-size: 64px;
-          line-height: normal;
-          margin-bottom: 60px;
-        }
-        .trainer-content1-ul {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          align-items: center;
-          align-content: stretch;
-          li {
-            width: 180px;
-            margin: 0 5px;
-            .trainer-feature-wrap {
-              text-align: center;
-              .trainer-feature-img {
-                position: relative;
-                min-height: 90px;
-                .trainer-feature {
-                  margin: auto;
-                  display: block;
-                }
-                .trainer-circle {
-                  position: absolute;
-                  top: -26px;
-                  left: 35px;
-                  z-index: 0;
-                }
-              }
-              .p-16 {
-                text-align: center;
-                text-transform: capitalize;
-                color: #ffffff;
-              }
-            }
-          }
-        }
+      z-index: 3;
+      position: relative;
+      &.fade {
+        transition: opacity 0s linear;
       }
-      .trainer-content2 {
-        h3 {
-          color: #fff;
-          margin-bottom: 30px;
-        }
-        .p-18 {
-          max-width: 490px;
-          color: #ffffff;
-          margin: 0 auto 50px;
-          text-align: center;
-        }
-        .trainer-feature-wrap {
-          .trainer-feature-img {
-            position: relative;
-            min-height: 60px !important;
-            width: 140px;
-            margin: auto;
-            display: block;
-            .trainer-circle {
-              position: absolute;
-              top: -7px !important;
-              left: 35px !important;
-              z-index: 0;
-            }
-          }
-        }
+      &.default-tab {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        border: 0;
+        z-index: 0;
       }
     }
   }
 }
-
+.carousel-indicators.carousel-indicators-testimonial {
+  margin: 0px auto 0 !important;
+  bottom: -40px;
+  button {
+    width: 13px;
+    height: 13px;
+    background: #dedede;
+    margin: 0 5px;
+    border: 0 !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    &.active {
+      background: #7352d1;
+    }
+  }
+}
 .testimonial-caro {
   margin-bottom: 165px;
   .carousel-inner {
@@ -1625,6 +1601,8 @@ a:focus {
       h3 {
         color: #311a75;
         margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
       }
       p.p-18 {
         color: #2e2e2e;
@@ -1649,25 +1627,6 @@ a:focus {
         top: 67px;
         left: -50px;
         z-index: 1;
-      }
-      .carousel-indicators {
-        margin: 0px auto 0 !important;
-        bottom: -40px;
-        button {
-          width: 13px;
-          height: 13px;
-          background: #dedede;
-          margin: 0 5px;
-          border: 0 !important;
-          border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          &.active {
-            background: #7352d1;
-          }
-        }
       }
     }
   }
@@ -1705,7 +1664,7 @@ a:focus {
     z-index: 5;
     .home-sec-inner {
       position: relative;
-      margin: 100px 0;
+      margin: 80px 0;
       text-align: center;
       .h1 {
         color: $white;
@@ -1751,6 +1710,9 @@ a:focus {
 }
 
 .home-sec10 {
+  .container {
+    margin-top: 100px;
+  }
   .subscribe-right-col {
     float: right;
     text-align: right;
@@ -2116,7 +2078,7 @@ a:focus {
             line-height: 24px;
           }
         }
-      }      
+      }
     }
   }
 }
@@ -2230,7 +2192,7 @@ a:focus {
   }
   .container {
     position: relative;
-    z-index: 5;   
+    z-index: 5;
   }
   // &::after {
   //   content: "";
@@ -2389,10 +2351,10 @@ a:focus {
               border-bottom: 1px solid rgba(0, 0, 0, 0.3);
               text-align: center;
               font-family: $font-dm;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-color: #FF668E;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              color: #ff668e;
             }
           }
         }
@@ -2448,10 +2410,12 @@ color: #FF668E;
 ul.book-assessment-b-ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
+  padding: 0;
+  margin: 0;
 }
 
 a.book-assessment-btn {
@@ -2685,7 +2649,7 @@ a.book-assessment-btn {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  color: #A4A4A4;
+  color: #a4a4a4;
   text-decoration: none;
   margin-left: 20px;
   margin-top: -15px;
@@ -2704,5 +2668,87 @@ a.book-assessment-btn {
     margin-left: 5px;
     color: #ff668e;
     @extend .st;
+  }
+}
+
+.trainer-content-wrap {
+  height: 100%;
+  background: #47347c;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  padding: 15px;
+  h4 {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: normal;
+    margin-bottom: 60px;
+  }
+  .trainer-content1-ul {
+    margin: 40px 0 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    li {
+      width: 180px;
+      margin: 0 5px;
+    }
+  }
+}
+.trainer-feature-wrap {
+  text-align: center;
+  .trainer-feature-img {
+    position: relative;
+    min-height: 90px;
+    .trainer-feature {
+      margin: auto;
+      display: block;
+    }
+    .trainer-circle {
+      position: absolute;
+      top: -26px;
+      left: 35px;
+      z-index: 0;
+    }
+  }
+  .p-16 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+
+.trainer-content2 {
+  h3 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .p-18 {
+    max-width: 490px;
+    color: #ffffff;
+    margin: 0 auto 0px;
+    text-align: center;
+  }
+  .trainer-feature-wrap {
+    .trainer-feature-img {
+      position: relative;
+      min-height: 60px !important;
+      width: 140px;
+      margin: auto;
+      display: block;
+      .trainer-circle {
+        position: absolute;
+        top: -7px !important;
+        left: 35px !important;
+        z-index: 0;
+      }
+    }
   }
 }

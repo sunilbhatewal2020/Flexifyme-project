@@ -34,14 +34,16 @@ $(document).ready(function () {
   // $("#trainer5").removeClass("active show");
   $(".nav-pills-row .nav-pills .nav-link").hover(function () {
     $(".nav-pills-row .nav-pills .nav-link").removeClass("active-a");
-    $(this).addClass("active-a");
+    // $(this).addClass("active-a");
     // $(this).tab('show');
     $(".row.nav-pills-row .tab-content-wrap .tab-pane")
       .removeClass("active")
       .removeClass("show");
     $(this).trigger("click");
+    return false;
   });
 
+  /*
   $(".nav-pills-row .nav-pills .tab-content-wrap").hover(function () {
     $(".nav-pills-row .nav-pills .nav-link").removeClass("active-a");
     $(this).addClass("active-a");
@@ -51,6 +53,7 @@ $(document).ready(function () {
       .addClass("show");
     // $(this).trigger("click");
   });
+*/
 
   $(".home-sec4 .pills-tab-wrap .nav-pills .nav-link#pills-yoga-asana-tab").click(function(){
     $(".home-sec4-5-1, .home-sec4-6-1, .home-sec4-7-1").removeClass("active");
@@ -72,5 +75,11 @@ $(document).ready(function () {
     $(".btn-day").removeClass("active");
     $(this).addClass("active");
   });
-  
+  // overflow x hidden  
+  var widthWindow = $(window).width();
+  $('.overflow-hidden-js').css({'width': widthWindow, 'overflow': 'hidden'});
+  $(window).on('resize', function () {
+    var widthWindow = $(window).width();
+    $('.overflow-hidden-js').css({'width': widthWindow, 'overflow': 'hidden'});
+  });
 });

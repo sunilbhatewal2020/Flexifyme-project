@@ -8,7 +8,7 @@
     <title>FlexifyMe | Home</title>
     <link rel="icon" type="image/png" href="favicon/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="widgets/aos/aos.css" />
+    <!-- <link rel="stylesheet" href="widgets/aos/aos.css" /> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -47,7 +47,7 @@
                                 <li class="nav-item pr-nav-item pr-nav-item-adj">
                                     <button type="button" onclick="location.href='contact.html'"
                                         style="white-space: nowrap;" class="btn bttn-buy-now">Buy Now</button>
-                                        <button type="button" onclick="location.href='contact.html'"
+                                    <button type="button" onclick="location.href='contact.html'"
                                         style="white-space: nowrap;" class="btn bttn-primary">Buy Now</button>
                                 </li>
                             </ul>
@@ -60,42 +60,46 @@
     </div>
     <div class="loader">
         <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
-    </div>    
-    <section class="common-section home-sec1 no-padding" id="sec1">
-        <div class="bg-video-wrap">
-            <video
-                src="images/meditation.mp4"
-                loop muted autoplay poster="images/hero-bg.jpg">
-            </video>
-            <div class="overlay">
+    </div>
+    <div class="overflow-hidden-js">
+        <section class="common-section home-sec1 no-padding" id="sec1">
+            <div class="bg-video-wrap">
+                <video src="images/meditation.mp4" loop muted autoplay poster="images/hero-bg.jpg">
+                </video>
+                <div class="overlay">
+                </div>
             </div>
-        </div>
-        <div class="container no-padding home-sec1-container" id="how-it-work">
-            <div class="row h-100vh justify-content-center text-center align-items-center">
-                <div class="col-lg-10">
-                    <div class="home-sec-inner">
-                        <h1 data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec1">Balance your Mind, Body & Soul Online & from Anywhere</h1>
-                        <p class="p-20" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1">Achieve mental, physical, and spiritual harmony through live 1-on-1 sessions
-                            with our world-class yoga, meditation, and nutrition coaches.</p>
-                        <p class="h6-restless" data-aos="fade-in" data-aos-delay="1200" data-aos-anchor="#sec1">"Become your best self"</p>
+            <div class="container no-padding home-sec1-container" id="how-it-work">
+                <div class="row h-100vh justify-content-center text-center align-items-center">
+                    <div class="col-lg-12 col-xl-10">
+                        <div class="home-sec-inner home-sec-inner-top">
+                            <h1 data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec1">Balance your Mind, Body
+                                & Soul Online & from Anywhere</h1>
+                            <p class="p-20" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1">Achieve
+                                mental, physical, and spiritual harmony through live 1-on-1 sessions
+                                with our world-class yoga, meditation, and nutrition coaches.</p>
+                            <p class="h6-restless" data-aos="fade-in" data-aos-delay="1200" data-aos-anchor="#sec1">
+                                "Become your best self"</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="home-sec2">
                 <div class="home-sec-inner" data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec1">
                     <!-- <div class="book-assessment-btn">
-                            <a href="#">
-                                <div>Book Your Free Assessment for</div>
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                        </div> -->
+                        <a href="#">
+                            <div>Book Your Free Assessment for</div>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div> -->
                     <div class="book-assessment-list">
-                        <div class="book-assessment-head">
-                            <h4>Book Your <span class="restlessRegular-wrap"><span
+                        <div class="book-assessment-head text-center">
+                            <h4 class="text-center">Book Your <span class="restlessRegular-wrap"><span
                                         class="restlessRegular">Free</span></span> Assessment For</h4>
                         </div>
-                        <ul class="book-assessment-b-ul"> 
-                            <li>
+                        <div class="book-assessment-b-ul-wrap">
+                        <ul class="book-assessment-b-ul">
+                            <li data-aos="fade-up" data-aos-delay="1700" data-aos-anchor="#sec1">
                                 <a href="#" class="book-assessment-btn">
                                     <div class="book-assessment-img-wrap">
                                         <img src="images/book-assessment1.svg" alt="Stress Reduction"
@@ -107,7 +111,7 @@
                                     <span class="right-arrow"><i class="fas fa-chevron-right"></i></span>
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="1900" data-aos-anchor="#sec1">
                                 <a href="#" class="book-assessment-btn">
                                     <div class="book-assessment-img-wrap">
                                         <img src="images/book-assessment2.svg" alt="Flexibility & Fitness"
@@ -119,7 +123,7 @@
                                     <span class="right-arrow"><i class="fas fa-chevron-right"></i></span>
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="2100" data-aos-anchor="#sec1">
                                 <a href="#" class="book-assessment-btn">
                                     <div class="book-assessment-img-wrap">
                                         <img src="images/book-assessment3.svg" alt="Chronic Pain Relief"
@@ -131,7 +135,7 @@
                                     <span class="right-arrow"><i class="fas fa-chevron-right"></i></span>
                                 </a>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="2300" data-aos-anchor="#sec1">
                                 <a href="#" class="book-assessment-btn">
                                     <div class="book-assessment-img-wrap">
                                         <img src="images/book-assessment4.svg" alt="Weight Loss"
@@ -145,87 +149,88 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec3" id="sec2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="home-sec-inner home-caro-wrap">
-                        <h2>
-                            <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
-                            Does this <br class="hide-mobile" />
-                            sound like <br class="hide-mobile" />
-                            you?
-                                </span>
-                        </h2>
-                        <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-indicators carousel-indicators-adj">
-                                <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0" class="active"
-                                    aria-current="true" aria-label="Slide 1">
-                                    <p class="p-22">
-                                        <span data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec2">
-                                        Training alone but can't stay motivated?
-                                        </span>
-                                    </p>
-                                </button>
-                                <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
-                                    aria-label="Slide 2">
-                                    <p class="p-22">
-                                        <span data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec2">
-                                        Not getting the attention you need from group lessons?
-                                        </span>
-                                    </p>
-                                </button>
-                                <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
-                                    aria-label="Slide 3">
-                                    <p class="p-22">
-                                        <span data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec2">
-                                        Having Difficulty sticking to a diet program?
-                                        </span>
-                                    </p>
-                                </button>
-                                 <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
-                                    aria-label="Slide 4">
-                                    <p class="p-22">
-                                        <span data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec3">
-                                        Struggling to make progress towards your goals?
-                                        </span>
-                                    </p>
-                                </button>
-                            </div>
-                            <!-- <div class="carousel-indicators-adj">
-                                    <p data-bs-target="#home-caro" class="active p-22" data-bs-slide-to="0" aria-label="Slide 0">
-                                        Training alone but can't stay motivated?
-                                    </p>
-                                    <p data-bs-target="#home-caro" class="p-22" data-bs-slide-to="1" aria-label="Slide 1">
-                                        Not getting the attention you need from group lessons?
-                                    </p>
-                                    <p data-bs-target="#home-caro" class="p-22" data-bs-slide-to="2" aria-label="Slide 2">
-                                        Having Difficulty sticking to a diet program?
-                                    </p>
-                                </div> -->
-                            <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="1500" data-aos-anchor="#sec2">
-                                <div class="carousel-item active">
-                                    <img src="images/slider1.png" class="d-block w-100"
-                                        alt="Training alone but can't stay motivated?">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/slider2.png" class="d-block w-100"
-                                        alt="Not getting the attention you need from group lessons?">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/slider3.png" class="d-block w-100"
-                                        alt="Having Difficulty sticking to a diet program?">
-                                </div>
-                                 <div class="carousel-item">
-                                    <img src="images/slider4.png" class="d-block w-100"
-                                        alt="Struggling to make progress towards your goals?">
-                                </div>
-                            </div>
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
+        </section>
+        <section class="common-section home-sec3" id="sec2">
+            <div class="home-sec3-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-10">
+                            <div class="home-sec-inner home-caro-wrap">
+                                <h2>
+                                    <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
+                                        Does this <br class="hide-mobile hide-tab" />
+                                        sound like <br class="hide-mobile hide-tab" />
+                                        you?
+                                    </span>
+                                </h2>
+                                <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-indicators carousel-indicators-adj">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1">
+                                            <p class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Training alone but can't stay motivated?
+                                                </span>
+                                            </p>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                            <p class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Not getting the attention you need from group lessons?
+                                                </span>
+                                            </p>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                            <p class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Having Difficulty sticking to a diet program?
+                                                </span>
+                                            </p>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4">
+                                            <p class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec3">
+                                                    Struggling to make progress towards your goals?
+                                                </span>
+                                            </p>
+                                        </button>
+                                    </div>
+                                    <!-- <div class="carousel-indicators carousel-indicators-testimonial hide-desktop show-mobile show-tab text-center">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div> -->                                   
+                                    <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="900"
+                                        data-aos-anchor="#sec2">
+                                        <div class="carousel-item active">
+                                            <img src="images/slider1.png" class="d-block w-100"
+                                                alt="Training alone but can't stay motivated?">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/slider2.png" class="d-block w-100"
+                                                alt="Not getting the attention you need from group lessons?">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/slider3.png" class="d-block w-100"
+                                                alt="Having Difficulty sticking to a diet program?">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/slider4.png" class="d-block w-100"
+                                                alt="Struggling to make progress towards your goals?">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
                                     data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
@@ -234,746 +239,1215 @@
                                     data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
-                                </button> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="common-section home-sec4" id="sec3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left1">
-                        <img src="images/home-sec4-1.svg" alt="You're in Luck!" class="home-sec4-1 floating" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec3" />
-                        <img src="images/home-sec4-2.png" alt="You're in Luck!" class="home-sec4-2" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec3"/>
-                        <img src="images/home-sec4-3.png" alt="You're in Luck!" class="home-sec4-3" data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec3"/>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right1">
-                        <h2 class="h4-restless">You're in Luck!</h2>
-                        <h3 class="h3">We've Developed A Personal Health Team That You Can Take With You Anywhere.
-                        </h3>
-                        <p class="p-18">We make it effortless to master your health and life by creating a tailored
-                            transformation program just for you... and keeping you on track with daily 1-on-1 online
-                            coaching and support. And we do it all from an app in the palm of your hand!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="common-section home-sec4" id="sec4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right2">
-                        <div class="home-sec-right-inner">
-                            <h2 class="h2">What Makes Our 360Flex Method Unique?</h2>
-                            <p class="p-18">We don't just focus on muscle or fat. Our approach blends the ancient
-                                wisdom of yoga, meditation, & ayurvedic nutrition with modern science to create an
-                                all-inclusive health program tailored to your physical, mental & spiritual needs… &
-                                delivered in focused private training sessions with expert coaches.</p>
-                        </div>
-
-                        <div class="pills-tab-wrap">
-                            <ul class="nav nav-pills mb-3" id="trainer-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-yoga-asana-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-yoga-asana" type="button" role="tab"
-                                        aria-controls="pills-yoga-asana" aria-selected="true">Yoga Asana</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-
-                                    <button class="nav-link" id="pills-meditation-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-meditation" type="button" role="tab"
-                                        aria-controls="pills-meditation" aria-selected="false">Meditation</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-nutrition-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-nutrition" type="button" role="tab"
-                                        aria-controls="pills-nutrition" aria-selected="false">Nutrition</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="trainer-tabContent">
-                                <div class="tab-pane fade show active" id="pills-yoga-asana" role="tabpanel"
-                                    aria-labelledby="pills-yoga-asana-tab">
-                                    <p class="p-18">
-Ease your achy body, lose weight, and boost flexibility with 1-on-1 sessions guided by an expert online yoga instructor. And keep yourself challenged… whether you’re a complete beginner or an experienced yogi.</p>
-                                </div>
-                                <div class="tab-pane fade" id="pills-meditation" role="tabpanel"
-                                    aria-labelledby="pills-meditation-tab">
-                                    <p class="p-18">
-Reduce stress and increase mental performance through transformative meditation and mindfulness sessions designed to help you overcome your challenges.</p>
-                                </div>
-                                <div class="tab-pane fade" id="pills-nutrition" role="tabpanel"
-                                    aria-labelledby="pills-nutrition-tab">
-                                    <p class="p-18">
-Nourish your body, enhance your energy and manage chronic illness with our personalized nutritional coaching and accountability programs inspired by ayurvedic medicine and modern health science.
-                                    </p>
+                                </button>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn bttn-primary" onclick="location.href='contact.html'">Book a free demo</button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left2">
-                        <div class="text-wrap" data-aos="fade-in" data-aos-delay="100" style="cursor: pointer !important;">
-                            <span>360</span>
-                            <em>Flex</em>
+            </div>
+        </section>
+        <section class="common-section home-sec4" id="sec3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 order-md-sm-xs-1">
+                        <div class="home-sec-left home-sec-left1">
+                            <div class="transform-scale-img">
+                                <img src="images/home-sec4-1.svg" alt="You're in Luck!" class="home-sec4-1 floating"
+                                    data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec3" />
+                                <img src="images/home-sec4-2.png" alt="You're in Luck!" class="home-sec4-2"
+                                    data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec3" />
+                                <img src="images/home-sec4-3.png" alt="You're in Luck!" class="home-sec4-3"
+                                    data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec3" />
+                            </div>
                         </div>
-                        <img src="images/home-sec4-5-circle.svg" alt="What Makes Our 360Flex Method Unique?"
-                            class="home-sec4-5-circle" data-aos="fade-in" data-aos-delay="600">
-                        <div class="home-sec4-5-1 home-sec-img-outer active floating" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec4">
-                            <img src="images/yoga1.svg" alt="Asana" class="home-sec4-6" />
-                        </div>
-                        <div class="home-sec4-6-1 home-sec-img-outer floating" style="animation-delay: 3s;" data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec4">
-                            <img src="images/yogo2.svg" alt="Meditation" class="home-sec4-7" />
-                        </div>
-                        <div class="home-sec4-7-1 home-sec-img-outer floating"  style="animation-delay: 1s;" data-aos="fade-in" data-aos-delay="2100" data-aos-anchor="#sec4">
-                            <img src="images/yoga3.svg" alt="Nutrition" class="home-sec4-8" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right1">
+                            <h2 class="h4-restless">You're in Luck!</h2>
+                            <h3 class="h3">We've Developed A Personal Health Team That You Can Take With You Anywhere.
+                            </h3>
+                            <p class="p-18">We make it effortless to master your health and life by creating a tailored
+                                transformation program just for you... and keeping you on track with daily 1-on-1 online
+                                coaching and support. And we do it all from an app in the palm of your hand!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec5" id="sec5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="home-sec-inner text-center common-home-sec-head">
-                        <h2>Your Path To Health & Happiness Starts Here</h2>
-                        <p class="p-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam enim adesse
-                            poterit. Minime vero istorum quidem, inquit. Simus igitur </p>
+        </section>
+        <section class="common-section home-sec4" id="sec4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right2">
+                            <div class="home-sec-right-inner">
+                                <h2 class="h2">What Makes Our 360Flex Method Unique?</h2>
+                                <p class="p-18">We don't just focus on muscle or fat. Our approach blends the ancient
+                                    wisdom of yoga, meditation, & ayurvedic nutrition with modern science to create an
+                                    all-inclusive health program tailored to your physical, mental & spiritual needs… &
+                                    delivered in focused private training sessions with expert coaches.</p>
+                            </div>
+
+                            <div class="pills-tab-wrap">
+                                <ul class="nav nav-pills mb-3" id="trainer-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-yoga-asana-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-yoga-asana" type="button" role="tab"
+                                            aria-controls="pills-yoga-asana" aria-selected="true">Yoga Asana</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+
+                                        <button class="nav-link" id="pills-meditation-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-meditation" type="button" role="tab"
+                                            aria-controls="pills-meditation" aria-selected="false">Meditation</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-nutrition-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-nutrition" type="button" role="tab"
+                                            aria-controls="pills-nutrition" aria-selected="false">Nutrition</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="trainer-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-yoga-asana" role="tabpanel"
+                                        aria-labelledby="pills-yoga-asana-tab">
+                                        <p class="p-18">
+                                            Ease your achy body, lose weight, and boost flexibility with 1-on-1 sessions
+                                            guided by an expert online yoga instructor. And keep yourself challenged…
+                                            whether you’re a complete beginner or an experienced yogi.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-meditation" role="tabpanel"
+                                        aria-labelledby="pills-meditation-tab">
+                                        <p class="p-18">
+                                            Reduce stress and increase mental performance through transformative
+                                            meditation and mindfulness sessions designed to help you overcome your
+                                            challenges.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-nutrition" role="tabpanel"
+                                        aria-labelledby="pills-nutrition-tab">
+                                        <p class="p-18">
+                                            Nourish your body, enhance your energy and manage chronic illness with our
+                                            personalized nutritional coaching and accountability programs inspired by
+                                            ayurvedic medicine and modern health science.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn bttn-primary" onclick="location.href='contact.html'">Book a
+                                free demo</button>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center path-row1 path-row" id="sec5-row">
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left3">
-                        <h3>
-                            <span class="no-span">1</span>
-                            <span>Get Assessed</span>
-                        </h3>
-                        <p class="p-18">Meet with your dedicated trainer for a FREE demo session where they'll
-                            assess your physical, mental, & spiritual health & explain how 360Flex can help you.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right3">
-                        <img src="images/get-assessed1.png" alt="Get Assessed" class="get-assessed1" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec5-row"/>
-                        <img src="images/get-assessed2.svg" alt="Get Assessed" class="get-assessed2" data-aos="zoom-in" data-aos-delay="1200" data-aos-anchor="#sec5-row"/>
-                        <img src="images/get-assessed3.png" alt="Get Assessed" class="get-assessed3" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec5-row"/>
-                        <img src="images/get-assessed4.svg" alt="Get Assessed" class="get-assessed4 floatingY" />
-                        <div class="get-assessed-line" data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec5-row">
-                            <svg width="765" height="282" viewBox="0 0 765 282" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M763 1C769.805 71.2344 683 267 487 267C289.429 267 117 149 1 281"
-                                    stroke="#9C9C9C" stroke-width="2" stroke-dasharray="10 10" />
-                            </svg>
+                    <div class="col-lg-6">
+                        <div class="home-sec-left home-sec-left2">
+                            <div class="transform-scale-img">
+                                <div class="text-wrap" data-aos="fade-in" data-aos-delay="100"
+                                    style="cursor: pointer !important;">
+                                    <span>360</span>
+                                    <em>Flex</em>
+                                </div>
+                                <img src="images/home-sec4-5-circle.svg" alt="What Makes Our 360Flex Method Unique?"
+                                    class="home-sec4-5-circle" data-aos="fade-in" data-aos-delay="600">
+                                <div class="home-sec4-5-1 home-sec-img-outer active floating" data-aos="fade-in"
+                                    data-aos-delay="900" data-aos-anchor="#sec4">
+                                    <img src="images/yoga1.svg" alt="Asana" class="home-sec4-6" />
+                                </div>
+                                <div class="home-sec4-6-1 home-sec-img-outer floating" style="animation-delay: 3s;"
+                                    data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec4">
+                                    <img src="images/yogo2.svg" alt="Meditation" class="home-sec4-7" />
+                                </div>
+                                <div class="home-sec4-7-1 home-sec-img-outer floating" style="animation-delay: 1s;"
+                                    data-aos="fade-in" data-aos-delay="2100" data-aos-anchor="#sec4">
+                                    <img src="images/yoga3.svg" alt="Nutrition" class="home-sec4-8" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center flex-row-reverse path-row2 path-row" id="sec6-row">
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left4">
-                        <h3>
-                            <span class="no-span">2</span>
-                            <span>Build Your Plan</span>
-                        </h3>
-                        <p class="p-18">Once we have your details, our team of multi-disciplinary wellness experts
-                            will design a tailored 360Flex program to suit your situation & goals.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right5">
-                        <img src="images/build-plan1.png" alt="Build Your Plan" class="build-plan1"  data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec6-row"/>
-                        <img src="images/build-plan2.svg" alt="Build Your Plan" class="build-plan2" data-aos="zoom-in" data-aos-delay="1200" data-aos-anchor="#sec6-row"/>                
-                        <img src="images/build-plan3.png" alt="Build Your Plan" class="build-plan3" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec6-row"/>
-                        <img src="images/build-plan4.svg" alt="Build Your Plan" class="build-plan4 floatingY" />
-                        <div class="build-plan-line"  data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec6-row">
-                            <svg width="782" height="192" viewBox="0 0 782 192" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1C19 105 178.6 157 393 125C661 85 765 143 781 191" stroke="#9C9C9C"
-                                    stroke-width="2" stroke-dasharray="10 10" />
-                            </svg>
-
+        </section>
+        <section class="common-section home-sec5" id="sec5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-xl-10">
+                        <div class="home-sec-inner text-center common-home-sec-head">
+                            <h2>Your Path To Health & Happiness Starts Here</h2>
+                            <p class="p-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam enim adesse
+                                poterit. Minime vero istorum quidem, inquit. Simus igitur </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center path-row3 path-row" id="sec7-row">
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left5">
-                        <h3>
-                            <span class="no-span">3</span>
-                            <span>Do The Work</span>
-                        </h3>
-                        <p class="p-18">Complete your private meditation and yoga video training sessions live
-                            inside the app and stay on track with hands-on coaching and diet support just for you.
-                        </p>
+            <div class="container">
+                <div class="row justify-content-center path-row1 path-row" id="sec5-row">
+                    <div class="col-lg-6">
+                        <div class="home-sec-left home-sec-left3">
+                            <h3>
+                                <span class="no-span">1</span>
+                                <span>Get Assessed</span>
+                            </h3>
+                            <p class="p-18">Meet with your dedicated trainer for a FREE demo session where they'll
+                                assess your physical, mental, & spiritual health & explain how 360Flex can help you.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right5">
-                        <img src="images/do-work1.png" alt="Do The Work" class="do-work1" data-aos="fade-in" data-aos-delay="1200" data-aos-anchor="#sec7-row"/>
-                        <img src="images/do-work2.png" alt="Do The Work" class="do-work2" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec7-row"/>
-                        <img src="images/do-work3.png" alt="Do The Work" class="do-work3" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec7-row" />
-                        <img src="images/do-work4.svg" alt="Do The Work" class="do-work4 floating" />
-                        <img src="images/do-work5.svg" alt="Do The Work" class="do-work5"  data-aos="zoom-in" data-aos-delay="1500" data-aos-anchor="#sec7-row"/>
-                       
-                        <div class="do-work4-line" data-aos="fade-in" data-aos-delay="2100" data-aos-anchor="#sec7-row">
-                            <svg width="720" height="130" viewBox="0 0 720 130" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M719 38.1976C701 116.001 597 180 447 70.0008C228.489 -90.2395 17 76 1 124"
-                                    stroke="#9C9C9C" stroke-width="2" stroke-dasharray="10 10" />
-                            </svg>
-
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right3">
+                            <div class="transform-scale-img">
+                                <img src="images/get-assessed1.png" alt="Get Assessed" class="get-assessed1"
+                                    data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec5-row" />
+                                <img src="images/get-assessed2.svg" alt="Get Assessed" class="get-assessed2"
+                                    data-aos="zoom-in" data-aos-delay="1200" data-aos-anchor="#sec5-row" />
+                                <img src="images/get-assessed3.png" alt="Get Assessed" class="get-assessed3"
+                                    data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec5-row" />
+                                <img src="images/get-assessed4.svg" alt="Get Assessed"
+                                    class="get-assessed4 floatingY" />
+                            </div>
+                            <div class="get-assessed-line hide-mobile hide-tab" data-aos="fade-in" data-aos-delay="1500"
+                                data-aos-anchor="#sec5-row">
+                                <svg width="765" height="282" viewBox="0 0 765 282" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M763 1C769.805 71.2344 683 267 487 267C289.429 267 117 149 1 281"
+                                        stroke="#9C9C9C" stroke-width="2" stroke-dasharray="10 10" />
+                                </svg>
+                            </div>
+                            <div class="get-assessed-line-xs show-mobile show-tab hide-desktop" data-aos="fade-in" data-aos-delay="1500"
+                                data-aos-anchor="#sec5-row">
+                               <img src="images/get-assessed-line-xs.svg" alt="get-assessed-line-xs" class="get-assessed-line-xs-img" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center flex-row-reverse path-row4 path-row" id="sec8-row">
-                <div class="col-lg-6">
-                    <div class="home-sec-left home-sec-left6">
-                        <h3>
-                            <span class="no-span">4</span>
-                            <span>Change Your Life</span>
-                        </h3>
-                        <p class="p-18">Monitor your progress and achieve your health and wellness goals faster with
-                            detailed progress reports and 24/7 chat support and accountability</p>
+            <div class="container">
+                <div class="row justify-content-center flex-row-reverse path-row2 path-row" id="sec6-row">
+                    <div class="col-lg-6">
+                        <div class="home-sec-left home-sec-left4">
+                            <h3>
+                                <span class="no-span">2</span>
+                                <span>Build Your Plan</span>
+                            </h3>
+                            <p class="p-18">Once we have your details, our team of multi-disciplinary wellness experts
+                                will design a tailored 360Flex program to suit your situation & goals.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="home-sec-right home-sec-right6">
-                        <img src="images/change-life1.png" alt="Change Your Life" class="change-life1" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec8-row"/>
-                        <img src="images/change-life2.svg" alt="Change Your Life" class="change-life2" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec8-row"/>
-                        <div class="change-life-line">
-
-
-
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right5">
+                            <div class="transform-scale-img">
+                                <img src="images/build-plan1.png" alt="Build Your Plan" class="build-plan1"
+                                    data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec6-row" />
+                                <img src="images/build-plan2.svg" alt="Build Your Plan" class="build-plan2"
+                                    data-aos="zoom-in" data-aos-delay="1200" data-aos-anchor="#sec6-row" />
+                                <img src="images/build-plan3.png" alt="Build Your Plan" class="build-plan3"
+                                    data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec6-row" />
+                                <img src="images/build-plan4.svg" alt="Build Your Plan" class="build-plan4 floatingY" />
+                            </div>
+                            <div class="build-plan-line hide-mobile hide-tab" data-aos="fade-in" data-aos-delay="1500"
+                                data-aos-anchor="#sec6-row">
+                                <svg width="782" height="192" viewBox="0 0 782 192" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1C19 105 178.6 157 393 125C661 85 765 143 781 191" stroke="#9C9C9C"
+                                        stroke-width="2" stroke-dasharray="10 10" />
+                                </svg>
+                            </div>
+                            <div class="build-plan-line-xs show-mobile show-tab hide-desktop" data-aos="fade-in" data-aos-delay="1500"
+                            data-aos-anchor="#sec5-row">
+                           <img src="images/build-plan-line-xs.svg" alt="build-plan-line-xs" class="build-plan-line-xs-img" />
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="common-section home-sec6 grey-triangle-after" id="sec6">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="home-sec-inner text-center common-home-sec-head">
-                        <h2>Only The Best For Your Mind, Body & Soul</h2>
-                        <p class="p-18">We're a specialist team passionate about adding healthy years to the lives of
-                            others. As a premium wellness service, we only select top trainers who we trust to provide
-                            you with an unbeatable experience & results.
-                        </p>
+            <div class="container">
+                <div class="row justify-content-center path-row3 path-row" id="sec7-row">
+                    <div class="col-lg-6">
+                        <div class="home-sec-left home-sec-left5">
+                            <h3>
+                                <span class="no-span">3</span>
+                                <span>Do The Work</span>
+                            </h3>
+                            <p class="p-18">Complete your private meditation and yoga video training sessions live
+                                inside the app and stay on track with hands-on coaching and diet support just for you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right5">
+                            <div class="transform-scale-img">
+                                <img src="images/do-work1.png" alt="Do The Work" class="do-work1" data-aos="fade-in"
+                                    data-aos-delay="1200" data-aos-anchor="#sec7-row" />
+                                <img src="images/do-work2.png" alt="Do The Work" class="do-work2" data-aos="fade-in"
+                                    data-aos-delay="900" data-aos-anchor="#sec7-row" />
+                                <img src="images/do-work3.png" alt="Do The Work" class="do-work3" data-aos="fade-in"
+                                    data-aos-delay="600" data-aos-anchor="#sec7-row" />
+                                <img src="images/do-work4.svg" alt="Do The Work" class="do-work4 floating" />
+                                <img src="images/do-work5.svg" alt="Do The Work" class="do-work5" data-aos="zoom-in"
+                                    data-aos-delay="1500" data-aos-anchor="#sec7-row" />
+                            </div>
+                            <div class="do-work4-line hide-mobile hide-tab" data-aos="fade-in" data-aos-delay="2100"
+                                data-aos-anchor="#sec7-row">
+                                <svg width="720" height="130" viewBox="0 0 720 130" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M719 38.1976C701 116.001 597 180 447 70.0008C228.489 -90.2395 17 76 1 124"
+                                        stroke="#9C9C9C" stroke-width="2" stroke-dasharray="10 10" />
+                                </svg>
+                            </div>
+                            <div class="do-work4-line-xs show-mobile show-tab hide-desktop" data-aos="fade-in" data-aos-delay="1500"
+                            data-aos-anchor="#sec5-row">
+                           <img src="images/do-work4-line-xs.svg" alt="do-work4-line-xs" class="do-work4-line-xs-img" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row nav-pills-row" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec6">
-                <div class="nav nav-pills row" id="v-trainer-tab" role="tablist">
-                    <div class="col-lg-4">
-                        <div class="row nav nav-pills">
-                            <button class="col-lg-6 nav-link active" id="trainer1-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer1" type="button" role="tab" aria-controls="trainer1"
-                                aria-selected="true">
-                                <img src="images/trainer/trainer1.png" alt="trainer1" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer2-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer2" type="button" role="tab" aria-controls="trainer2"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer2.png" alt="trainer2" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer3-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer3" type="button" role="tab" aria-controls="trainer3"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer3.png" alt="trainer3" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer4-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer4" type="button" role="tab" aria-controls="trainer4"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer4.png" alt="trainer4" class="trainer-img" />
-                            </button>
+
+            <div class="container">
+                <div class="row justify-content-center flex-row-reverse path-row4 path-row" id="sec8-row">
+                    <div class="col-lg-6">
+                        <div class="home-sec-left home-sec-left6">
+                            <h3>
+                                <span class="no-span">4</span>
+                                <span>Change Your Life</span>
+                            </h3>
+                            <p class="p-18">Monitor your progress and achieve your health and wellness goals faster with
+                                detailed progress reports and 24/7 chat support and accountability</p>
                         </div>
                     </div>
-                    <div class="tab-content tab-content-wrap col-lg-4" id="v-trainer-tabContent">
-                        <div class="tab-pane fade show active active-a" id="trainer1" role="tabpanel"
-                            aria-labelledby="trainer1-tab">
-                            <div class="trainer-content-wrap trainer-content1">
+                    <div class="col-lg-6">
+                        <div class="home-sec-right home-sec-right6">
+                            <div class="transform-scale-img">
+                                <img src="images/change-life1.png" alt="Change Your Life" class="change-life1"
+                                    data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec8-row" />
+                                <img src="images/change-life2.svg" alt="Change Your Life" class="change-life2"
+                                    data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec8-row" />
+                            </div>
+                            <div class="change-life-line hide-mobile hide-tab"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="common-section home-sec6 grey-triangle-after" id="sec6">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-xl-10">
+                        <div class="home-sec-inner text-center common-home-sec-head">
+                            <h2>Only The Best For Your Mind, Body & Soul</h2>
+                            <p class="p-18">We're a specialist team passionate about adding healthy years to the lives
+                                of
+                                others. As a premium wellness service, we only select top trainers who we trust to
+                                provide
+                                you with an unbeatable experience & results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid trainer-for-desktop-view">
+                <div class="row nav-pills-row" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec6">
+                    <div class="nav nav-pills row" id="v-trainer-tab" role="tablist">
+                        <div class="col-lg-4">
+                            <div class="row nav nav-pills">
+                                <button class="col-lg-6 nav-link active" id="trainer1-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer1" type="button" role="tab" aria-controls="trainer1"
+                                    aria-selected="true">
+                                    <img src="images/trainer/trainer1.png" alt="trainer1" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer2" type="button" role="tab" aria-controls="trainer2"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer2.png" alt="trainer2" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer3-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer3" type="button" role="tab" aria-controls="trainer3"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer3.png" alt="trainer3" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer4-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer4" type="button" role="tab" aria-controls="trainer4"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer4.png" alt="trainer4" class="trainer-img" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-content-wrap col-lg-4" id="v-trainer-tabContent">
+                            <div class="tab-pane fade show active active-a default-tab" id="trainer1" role="tabpanel"
+                                aria-labelledby="trainer1-tab">
+                                <div class="trainer-content-wrap trainer-content1">
+                                    <h4 class="h6-restless">Our Expert Trainer</h4>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/trainer-feature1.svg"
+                                                        alt="Industry-Leading Certified Trainers"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg"
+                                                        alt="Industry-Leading Certified Trainers"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Industry-Leading Certified Trainers</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/trainer-feature2.svg"
+                                                        alt="Fluent In Sanskrit & English" class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg"
+                                                        alt="Fluent In Sanskrit & English"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Fluent In Sanskrit & English</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/trainer-feature3.svg"
+                                                        alt="Masters of Yoga & Modern Health Science"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg"
+                                                        alt="Masters of Yoga & Modern Health Science"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Masters of Yoga & Modern Health Science</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer2" role="tabpanel" aria-labelledby="trainer2-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>1. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer3" role="tabpanel" aria-labelledby="trainer3-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>2. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer4" role="tabpanel" aria-labelledby="trainer4-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>3. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer5" role="tabpanel" aria-labelledby="trainer5-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>4. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer6" role="tabpanel" aria-labelledby="trainer6-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>5. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer7" role="tabpanel" aria-labelledby="trainer7-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>6. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="trainer8" role="tabpanel" aria-labelledby="trainer8-tab">
+                                <div class="trainer-content-wrap trainer-content2">
+                                    <h3>7. Ankit Garg</h3>
+                                    <ul class="trainer-content1-ul">
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer
+                                        &
+                                        speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga
+                                        teacher
+                                        ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been
+                                        striving
+                                        to amalgamate Yoga, Positive psychology & Spirituality together and working in
+                                        the
+                                        field as a therapist providing physiological and physical therapy and yoga
+                                        sessions
+                                        in corporate and private environments.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row nav nav-pills">
+                                <button class="col-lg-6 nav-link" id="trainer5-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer5" type="button" role="tab" aria-controls="trainer5"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer5.png" alt="trainer5" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer6-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer6" type="button" role="tab" aria-controls="trainer6"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer6.png" alt="trainer6" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer7-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer7" type="button" role="tab" aria-controls="trainer7"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer7.png" alt="trainer7" class="trainer-img" />
+                                </button>
+                                <button class="col-lg-6 nav-link" id="trainer8-tab" data-bs-toggle="pill"
+                                    data-bs-target="#trainer8" type="button" role="tab" aria-controls="trainer8"
+                                    aria-selected="false">
+                                    <img src="images/trainer/trainer8.png" alt="trainer8" class="trainer-img" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid trainer-for-mobile-view">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="trainer-caro-xs-wrap">
                                 <h4 class="h6-restless">Our Expert Trainer</h4>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/trainer-feature1.svg"
-                                                    alt="Industry-Leading Certified Trainers" class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg"
-                                                    alt="Industry-Leading Certified Trainers" class="trainer-circle floatingX-l" />
+                                <div id="trainer-caro-xs" class="carousel slide carousel-fade trainer-caro-xs"
+                                    data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Ashtanga Yoga</p>
                                             </div>
-                                            <p class="p-16">Industry-Leading Certified Trainers</p>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/trainer-feature2.svg"
-                                                    alt="Fluent In Sanskrit & English" class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg"
-                                                    alt="Fluent In Sanskrit & English" class="trainer-circle floatingX-r" />
+                                        <div class="carousel-item">
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
+                                                        class="trainer-circle floatingX-r" />
+                                                </div>
+                                                <p class="p-16">Bikram Yoga</p>
                                             </div>
-                                            <p class="p-16">Fluent In Sanskrit & English</p>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/trainer-feature3.svg"
-                                                    alt="Masters of Yoga & Modern Health Science"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg"
-                                                    alt="Masters of Yoga & Modern Health Science"
-                                                    class="trainer-circle floatingX-l" />
+                                        <div class="carousel-item">
+                                            <div class="trainer-feature-wrap">
+                                                <div class="trainer-feature-img">
+                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                        class="trainer-feature" />
+                                                    <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
+                                                        class="trainer-circle floatingX-l" />
+                                                </div>
+                                                <p class="p-16">Hatha Yoga</p>
                                             </div>
-                                            <p class="p-16">Masters of Yoga & Modern Health Science</p>
                                         </div>
-                                    </li>
-                                </ul>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#trainer-caro-xs" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#trainer-caro-xs" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="trainer2" role="tabpanel" aria-labelledby="trainer2-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>1. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-r" />
+                        <div class="col-lg-12">
+                            <div class="trainer-caro-xs-wrap2">
+                                <div id="trainer-caro-xs2" class="carousel slide carousel-fade trainer-caro-xs2"
+                                    data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="trainer-content-wrap trainer-content2">
+                                                <img src="images/trainer/trainer2.png" alt="trainer"
+                                                    class="trainer-img" />
+                                                <h3>1. Ankit Garg</h3>
+                                                <ul class="trainer-content1-ul">
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Ashtanga Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Ashtanga Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Bikram Yoga"
+                                                                    class="trainer-circle floatingX-r" />
+                                                            </div>
+                                                            <p class="p-16">Bikram Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Hatha Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Hatha Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner,
+                                                    mind trainer
+                                                    &
+                                                    speaker with a P.G Diploma in Yogic Science.He is a registered
+                                                    500-hour yoga
+                                                    teacher
+                                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade,
+                                                    he's been
+                                                    striving
+                                                    to amalgamate Yoga, Positive psychology & Spirituality together and
+                                                    working in
+                                                    the
+                                                    field as a therapist providing physiological and physical therapy
+                                                    and yoga
+                                                    sessions
+                                                    in corporate and private environments.</p>
+
                                             </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-l" />
+                                        <div class="carousel-item">
+                                            <div class="trainer-content-wrap trainer-content2">
+                                                <img src="images/trainer/trainer3.png" alt="trainer"
+                                                    class="trainer-img" />
+                                                <h3>2. Ankit Garg</h3>
+                                                <ul class="trainer-content1-ul">
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Ashtanga Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Ashtanga Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Bikram Yoga"
+                                                                    class="trainer-circle floatingX-r" />
+                                                            </div>
+                                                            <p class="p-16">Bikram Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Hatha Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Hatha Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner,
+                                                    mind trainer
+                                                    &
+                                                    speaker with a P.G Diploma in Yogic Science.He is a registered
+                                                    500-hour yoga
+                                                    teacher
+                                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade,
+                                                    he's been
+                                                    striving
+                                                    to amalgamate Yoga, Positive psychology & Spirituality together and
+                                                    working in
+                                                    the
+                                                    field as a therapist providing physiological and physical therapy
+                                                    and yoga
+                                                    sessions
+                                                    in corporate and private environments.</p>
+
                                             </div>
-                                            <p class="p-16">Bikram Yoga</p>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-r" />
+                                        <div class="carousel-item">
+                                            <div class="trainer-content-wrap trainer-content2">
+                                                <img src="images/trainer/trainer3.png" alt="trainer"
+                                                    class="trainer-img" />
+                                                <h3>3. Ankit Garg</h3>
+                                                <ul class="trainer-content1-ul">
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Ashtanga Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Ashtanga Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Bikram Yoga"
+                                                                    class="trainer-circle floatingX-r" />
+                                                            </div>
+                                                            <p class="p-16">Bikram Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="trainer-feature-wrap">
+                                                            <div class="trainer-feature-img">
+                                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
+                                                                    class="trainer-feature" />
+                                                                <img src="images/trainer-feature-circle.svg"
+                                                                    alt="Hatha Yoga"
+                                                                    class="trainer-circle floatingX-l" />
+                                                            </div>
+                                                            <p class="p-16">Hatha Yoga</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner,
+                                                    mind trainer
+                                                    &
+                                                    speaker with a P.G Diploma in Yogic Science.He is a registered
+                                                    500-hour yoga
+                                                    teacher
+                                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade,
+                                                    he's been
+                                                    striving
+                                                    to amalgamate Yoga, Positive psychology & Spirituality together and
+                                                    working in
+                                                    the
+                                                    field as a therapist providing physiological and physical therapy
+                                                    and yoga
+                                                    sessions
+                                                    in corporate and private environments.</p>
+
                                             </div>
-                                            <p class="p-16">Hatha Yoga</p>
                                         </div>
-                                    </li>
-                                </ul>
+
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#trainer-caro-xs2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#trainer-caro-xs2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button> -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer3" role="tabpanel" aria-labelledby="trainer3-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>2. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer4" role="tabpanel" aria-labelledby="trainer4-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>3. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer5" role="tabpanel" aria-labelledby="trainer5-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>4. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer6" role="tabpanel" aria-labelledby="trainer6-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>5. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer7" role="tabpanel" aria-labelledby="trainer7-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>6. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="trainer8" role="tabpanel" aria-labelledby="trainer8-tab">
-                            <div class="trainer-content-wrap trainer-content2">
-                                <h3>7. Ankit Garg</h3>
-                                <p class="p-18">is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer &
-                                    speaker with a P.G Diploma in Yogic Science.He is a registered 500-hour yoga teacher
-                                    ( E-RYT 500) with the U.S Yoga Alliance. For more than a decade, he's been striving
-                                    to amalgamate Yoga, Positive psychology & Spirituality together and working in the
-                                    field as a therapist providing physiological and physical therapy and yoga sessions
-                                    in corporate and private environments.</p>
-                                <ul class="trainer-content1-ul">
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Ashtanga Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Ashtanga Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Bikram Yoga"
-                                                    class="trainer-circle floatingX-r" />
-                                            </div>
-                                            <p class="p-16">Bikram Yoga</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="trainer-feature-wrap">
-                                            <div class="trainer-feature-img">
-                                                <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                    class="trainer-feature" />
-                                                <img src="images/trainer-feature-circle.svg" alt="Hatha Yoga"
-                                                    class="trainer-circle floatingX-l" />
-                                            </div>
-                                            <p class="p-16">Hatha Yoga</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="row nav nav-pills">
-                            <button class="col-lg-6 nav-link" id="trainer5-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer5" type="button" role="tab" aria-controls="trainer5"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer5.png" alt="trainer5" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer6-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer6" type="button" role="tab" aria-controls="trainer6"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer6.png" alt="trainer6" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer7-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer7" type="button" role="tab" aria-controls="trainer7"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer7.png" alt="trainer7" class="trainer-img" />
-                            </button>
-                            <button class="col-lg-6 nav-link" id="trainer8-tab" data-bs-toggle="pill"
-                                data-bs-target="#trainer8" type="button" role="tab" aria-controls="trainer8"
-                                aria-selected="false">
-                                <img src="images/trainer/trainer8.png" alt="trainer8" class="trainer-img" />
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec7 grey-triangle-before" id="sec7">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div id="testimonial-caro" class="carousel slide carousel-fade testimonial-caro"
-                        data-bs-ride="carousel" data-bs-interval="false">
+        </section>
+        <section class="common-section home-sec7 grey-triangle-before" id="sec7">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div id="testimonial-caro" class="carousel slide carousel-fade testimonial-caro"
+                            data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-indicators show-mobile show-tab hide-desktop carousel-indicators-testimonial">
+                                <button type="button" data-bs-target="#testimonial-caro"
+                                    data-bs-slide-to="0" aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#testimonial-caro"
+                                    data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#testimonial-caro"
+                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row testimonial-caro-row">
+                                        <div class="col-lg-6 order-md-sm-xs-1">
+                                            <div class="testimonial-caro-left">
+                                                <img src="images/double-quate.svg" alt="double-quate"
+                                                    class="double-quate" />
+                                                <h3>Anna Dominic</h3>
+                                                <p class="p-18">Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                                    dummy
+                                                    text ever since the 1500s, when an unknown printer took a galley of
+                                                    type
+                                                    and scrambled it to make a type specimen book. It has survived not
+                                                    only
+                                                    five centuries, but also the leap into electronic typesetting,
+                                                    remaining
+                                                    essentially unchanged.</p>
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row testimonial-caro-row">
-                                    <div class="col-lg-6">
-                                        <div class="testimonial-caro-left">
-                                            <img src="images/double-quate.svg" alt="double-quate"
-                                                class="double-quate" />
-                                            <h3>Anna Dominic</h3>
-                                            <p class="p-18">Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book. It has survived not only
-                                                five centuries, but also the leap into electronic typesetting, remaining
-                                                essentially unchanged.</p>
+                                                <div class="d-flex-adj">
+                                                    <h4 class="text-red mr15" style="font-size: 24px; white-space: nowrap;">... inspired ?
+                                                    </h4>
+                                                    <button type="button" class="btn bttn-primary">Book a free
+                                                        demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="testimonial-caro-right">
+                                                <img src="images/testimonial/testi-1.png" alt="Anna Dominic"
+                                                    class="testimonial-caro-profile img-fluid" />
+                                                <img src="images/testimonial/testi-circle1.svg" alt="Circle"
+                                                    class="testimonial-circle1 floatingY"
+                                                    style="animation-delay: 1s;" />
+                                                <img src="images/testimonial/testi-circle2.svg" alt="Circle"
+                                                    class="testimonial-circle2 floatingX-r" />
 
-                                            <div class="d-flex-adj">
-                                            <h4 class="text-red mr15" style="font-size: 24px;">... inspired ?</h4>
-                                            <button type="button" class="btn bttn-primary">Book a free demo</button>
+                                                <div class="carousel-indicators hide-tab hide-mobile">
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="testimonial-caro-right">
-                                            <img src="images/testimonial/testi-1.png" alt="Anna Dominic"
-                                                class="testimonial-caro-profile img-fluid" />
-                                            <img src="images/testimonial/testi-circle1.svg" alt="Circle"
-                                                class="testimonial-circle1 floatingY" style="animation-delay: 1s;" />
-                                            <img src="images/testimonial/testi-circle2.svg" alt="Circle"
-                                                class="testimonial-circle2 floatingX-r" />
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row testimonial-caro-row">
+                                        <div class="col-lg-6 order-md-sm-xs-1">
+                                            <div class="testimonial-caro-left">
+                                                <img src="images/double-quate.svg" alt="double-quate"
+                                                    class="double-quate" />
+                                                <h3>2 Anna Dominic</h3>
+                                                <p class="p-18">Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                                    dummy
+                                                    text ever since the 1500s, when an unknown printer took a galley of
+                                                    type
+                                                    and scrambled it to make a type specimen book. It has survived not
+                                                    only
+                                                    five centuries, but also the leap into electronic typesetting,
+                                                    remaining
+                                                    essentially unchanged.</p>
 
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#testimonial-caro"
-                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                    aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#testimonial-caro"
-                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#testimonial-caro"
-                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <div class="d-flex-adj">
+                                                    <h4 class="text-red mr15" style="font-size: 24px;">... inspired ?
+                                                    </h4>
+                                                    <button type="button" class="btn bttn-primary">Book a free
+                                                        demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="testimonial-caro-right">
+                                                <img src="images/testimonial/testi-1.png" alt="Anna Dominic"
+                                                    class="testimonial-caro-profile img-fluid" />
+                                                <img src="images/testimonial/testi-circle1.svg" alt="Circle"
+                                                    class="testimonial-circle1 floatingY"
+                                                    style="animation-delay: 1s;" />
+                                                <img src="images/testimonial/testi-circle2.svg" alt="Circle"
+                                                    class="testimonial-circle2 floatingX-r" />
+
+                                                <div class="carousel-indicators hide-mobile hide-tab">
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="0" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row testimonial-caro-row">
+                                        <div class="col-lg-6 order-md-sm-xs-1">
+                                            <div class="testimonial-caro-left">
+                                                <img src="images/double-quate.svg" alt="double-quate"
+                                                    class="double-quate" />
+                                                <h3>3 Anna Dominic</h3>
+                                                <p class="p-18">Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry. Lorem Ipsum has been the industry's standard
+                                                    dummy
+                                                    text ever since the 1500s, when an unknown printer took a galley of
+                                                    type
+                                                    and scrambled it to make a type specimen book. It has survived not
+                                                    only
+                                                    five centuries, but also the leap into electronic typesetting,
+                                                    remaining
+                                                    essentially unchanged.</p>
+
+                                                <div class="d-flex-adj">
+                                                    <h4 class="text-red mr15" style="font-size: 24px;">... inspired ?
+                                                    </h4>
+                                                    <button type="button" class="btn bttn-primary">Book a free
+                                                        demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="testimonial-caro-right">
+                                                <img src="images/testimonial/testi-1.png" alt="Anna Dominic"
+                                                    class="testimonial-caro-profile img-fluid" />
+                                                <img src="images/testimonial/testi-circle1.svg" alt="Circle"
+                                                    class="testimonial-circle1 floatingY"
+                                                    style="animation-delay: 1s;" />
+                                                <img src="images/testimonial/testi-circle2.svg" alt="Circle"
+                                                    class="testimonial-circle2 floatingX-r" />
+
+                                                <div class="carousel-indicators hide-tab hide-mobile">
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="0" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#testimonial-caro"
+                                                        data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-caro"
+                           
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-caro"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -982,145 +1456,156 @@ Nourish your body, enhance your energy and manage chronic illness with our perso
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec8" id="sec8">     
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="home-sec-inner text-center common-home-sec-head">
-                        <h2>What's It Cost To Change Your Life?</h2>
-                        <p class="p-18">
-                            Transforming your mental, physical and spiritual health takes time which is why we only
-                            offer quarterly, half-yearly, and yearly options.
-                        </p>
+        </section>
+        <section class="common-section home-sec8" id="sec8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-xl-8">
+                        <div class="home-sec-inner text-center common-home-sec-head">
+                            <h2>What's It Cost To Change Your Life?</h2>
+                            <p class="p-18">
+                                Transforming your mental, physical and spiritual health takes time which is why we only
+                                offer quarterly, half-yearly, and yearly options.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center pricing-plan-row" data-aos="fade-in" data-aos-delay="600"
+                    data-aos-anchor="#sec8">
+                    <div class="col-md-4 col-lg-4 pricing-plan-col">
+                        <div class="pricing-plan-card">
+                            <div class="pricing-plan-card-head">
+                                <h3>Quarterly</h3>
+                                <h4>$50</h4>
+                                <span class="offer-label">15% Off</span>
+                            </div>
+                            <div class="pricing-plan-card-body">
+                                <ul>
+                                    <li>36 private 60-min live video sessions.</li>
+                                    <li>Train anytime, anywhere.</li>
+                                    <li>Yoga, meditation, & nutrition coaching.</li>
+                                    <li>24/7 text support & accountability.</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-plan-card-foot">
+                                <button class="btn btn-link" onclick="location.href='contact.html'">
+                                    <span>Select Plan</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="bg-strip bg-strip1" style="background: #47347C;"></span>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pricing-plan-col pricing-plan-col-center">
+                        <div class="pricing-plan-card">
+                            <div class="pricing-plan-card-head">
+                                <h3>Half Yearly</h3>
+                                <h4>$500</h4>
+                                <span class="offer-label">15% Off</span>
+                            </div>
+                            <div class="pricing-plan-card-body">
+                                <ul>
+                                    <li>72 private 60-min live video sessions.</li>
+                                    <li>Train anytime, anywhere.</li>
+                                    <li>Yoga, meditation, & nutrition coaching.</li>
+                                    <li>24/7 text support & accountability.</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-plan-card-foot">
+                                <button class="btn bttn-primary" onclick="location.href='contact.html'">
+                                    <span>Select Plan</span>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="bg-strip bg-strip2" style="background: #7352D1;"></span>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pricing-plan-col">
+                        <div class="pricing-plan-card">
+                            <div class="pricing-plan-card-head">
+                                <h3>Yearly</h3>
+                                <h4>$1000</h4>
+                                <span class="offer-label">15% Off</span>
+                            </div>
+                            <div class="pricing-plan-card-body">
+                                <ul>
+                                    <li>72 private 60-min live video sessions</li>
+                                    <li>Train anytime, anywhere.</li>
+                                    <li>Yoga, meditation, & nutrition coaching.</li>
+                                    <li>24/7 text support & accountability.</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-plan-card-foot">
+                                <button class="btn btn-link" onclick="location.href='contact.html'">
+                                    <span>Select Plan</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="bg-strip bg-strip3" style="background: #FF668E;"></span>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center pricing-plan-row" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec8">
-                <div class="col-lg-4 pricing-plan-col">
-                    <div class="pricing-plan-card">
-                        <div class="pricing-plan-card-head">
-                            <h3>Quarterly</h3>
-                            <h4>$50</h4>
-                            <span class="offer-label">15% Off</span>
-                        </div>    
-                        <div class="pricing-plan-card-body">
-                            <ul>
-                                <li>36 private 60-min live video sessions.</li>
-                                <li>Train anytime, anywhere.</li>
-                                <li>Yoga, meditation, & nutrition coaching.</li>
-                                <li>24/7 text support & accountability.</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-plan-card-foot">
-                            <button class="btn btn-link" onclick="location.href='contact.html'">
-                                <span>Select Plan</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <span class="bg-strip bg-strip1" style="background: #47347C;"></span>
-                </div>
-                <div class="col-lg-4 pricing-plan-col pricing-plan-col-center">
-                    <div class="pricing-plan-card">
-                        <div class="pricing-plan-card-head">
-                            <h3>Half Yearly</h3>
-                            <h4>$500</h4>
-                            <span class="offer-label">15% Off</span>
-                        </div>    
-                        <div class="pricing-plan-card-body">
-                            <ul>
-                                <li>72 private 60-min live video sessions.</li>
-                                <li>Train anytime, anywhere.</li>
-                                <li>Yoga, meditation, & nutrition coaching.</li>
-                                <li>24/7 text support & accountability.</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-plan-card-foot">
-                            <button class="btn bttn-primary" onclick="location.href='contact.html'">
-                                <span>Select Plan</span>                                
-                            </button>
-                        </div>
-                    </div>
-                    <span class="bg-strip bg-strip2" style="background: #7352D1;"></span>
-                </div>
-                <div class="col-lg-4 pricing-plan-col">
-                    <div class="pricing-plan-card">
-                        <div class="pricing-plan-card-head">
-                            <h3>Yearly</h3>
-                            <h4>$1000</h4>
-                            <span class="offer-label">15% Off</span>
-                        </div>    
-                        <div class="pricing-plan-card-body">
-                            <ul>
-                                <li>72 private 60-min live video sessions</li>
-                                <li>Train anytime, anywhere.</li>
-                                <li>Yoga, meditation, & nutrition coaching.</li>
-                                <li>24/7 text support & accountability.</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-plan-card-foot">
-                            <button class="btn btn-link" onclick="location.href='contact.html'">
-                                <span>Select Plan</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <span class="bg-strip bg-strip3" style="background: #FF668E;"></span>
-                </div>
+        </section>
+        <section class="common-section home-sec9" id="sec9">
+            <div class="overlay">
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec9" id="sec9">
-        <div class="overlay">
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="home-sec-inner">
-                        <div data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec9">
-                        <h2 class="h1">Our Transformation Guarantee</h2>
-                        <p>We're in this to change lives, not just to collect subscriptions. If you don't feel our program is moving you closer to your physical, mental, and spiritual goals - we'll give your money back.</p>
-                    </div>
-                        <img src="images/trans1.svg" alt="trans1" class="trans1" data-aos="fade-right" data-aos-delay="600" data-aos-anchor="#sec9"/>
-                        <img src="images/trans2.svg" alt="trans2" class="trans2" data-aos="fade-left" data-aos-delay="600" data-aos-anchor="#sec9"/>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-10">
+                        <div class="home-sec-inner">
+                            <div data-aos="fade-in" data-aos-delay="1200" data-aos-anchor="#sec9">
+                                <h2 class="h1">Our Transformation Guarantee</h2>
+                                <p>We're in this to change lives, not just to collect subscriptions. If you don't feel
+                                    our program is moving you closer to your physical, mental, and spiritual goals -
+                                    we'll give your money back.</p>
+                            </div>
+                            <img src="images/trans1.svg" alt="trans1" class="trans1 hide-mobile hide-tab" data-aos="fade-right"
+                                data-aos-delay="600" data-aos-anchor="#sec9" />
+                            <img src="images/trans2.svg" alt="trans2" class="trans2 hide-mobile hide-tab" data-aos="fade-left"
+                                data-aos-delay="600" data-aos-anchor="#sec9" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="common-section home-sec10" id="sec10">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <div class="home-sec-inner subscribe-left-col">
-                        <h2>A Happier, Healthier <br> <span>"You"</span> Awaits</h2>
-                        <p class="p-18">Learn how the program works, and schedule your free demo session in a quick chat with one of our world-class holistic wellness experts.</p>
-                        <div class="form-subscribe-wrap">
-                            <input type="text" class="subscribe-form-control" placeholder="Enter your email address" /> 
-                            <button type="button" class="btn bttn-primary">Subscribe</button>
+        </section>
+        <section class="common-section home-sec10" id="sec10">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home-sec-inner subscribe-left-col">
+                            <h2>A Happier, Healthier <br class="hide-mobile hide-tab"> <span>"You"</span> Awaits</h2>
+                            <p class="p-18">Learn how the program works, and schedule your free demo session in a quick
+                                chat with one of our world-class holistic wellness experts.</p>
+                            <div class="form-subscribe-wrap">
+                                <input type="text" class="subscribe-form-control"
+                                    placeholder="Enter your email address" />
+                                <button type="button" class="btn bttn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscribe-right-col">
+                            <div class="transform-scale-img">
+                                <img src="images/subscribe1.png" alt="subscribe1" class="subscribe1" data-aos="fade-in"
+                                    data-aos-delay="1200" data-aos-anchor="#sec10" />
+                                <img src="images/subscribe2.png" alt="subscribe2" class="subscribe2" data-aos="fade-in"
+                                    data-aos-delay="600" data-aos-anchor="#sec10" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="subscribe-right-col">
-                        <img src="images/subscribe1.png" alt="subscribe1" class="subscribe1" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec9"/>
-                        <img src="images/subscribe2.png" alt="subscribe2" class="subscribe2" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec10"/>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <div class="common-footer-wrap common-footer-wrap-fixed"></div>
+        </section>
+        <div class="common-footer-wrap"></div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="widgets/aos/aos.js"></script>
-    <script src="js/custom.js"></script>    
+    <!-- <script src="widgets/aos/aos.js"></script> -->
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

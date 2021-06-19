@@ -12,8 +12,8 @@ $(document).ready(function () {
                           return window.innerWidth < maxWidth;
                   },
                   once: true,
-                  offset: 120,
-                  easing: 'easeOutExpo', //easing: 'ease-in-out',
+                  offset: 200,
+                  easing: 'linear', //easing: 'ease-in-out',
           });
 
         /*  
