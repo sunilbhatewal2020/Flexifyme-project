@@ -140,24 +140,28 @@
       }
     }
   }
-  .assessment-wrap ul li {
-	display: inline-block;
-	margin-right: 7px;
-    button{
-        margin-bottom: 10px;
+  .assessment-wrap {
+    ul{
+      li {
+        display: inline-block;
+        margin-right: 7px;
+          button{
+              margin-bottom: 10px;
+          }
+          .btn-time{
+              width: 90px;
+              height: 43px;
+          }
+          .btn-day{
+              height: 90px;
+              width: 43px;
+              em{
+                  font-size: 16px;
+              }
+          }
+      }
     }
-    .btn-time{
-        width: 90px;
-        height: 43px;
-    }
-    .btn-day{
-        height: 90px;
-        width: 43px;
-        em{
-            font-size: 16px;
-        }
-    }
-}
+  }
 .thanks-wrap{
     .p-18{
     font-size: 16px;
