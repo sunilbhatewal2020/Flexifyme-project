@@ -52,5 +52,25 @@ $(document).ready(function () {
     // $(this).trigger("click");
   });
 
+  $(".home-sec4 .pills-tab-wrap .nav-pills .nav-link#pills-yoga-asana-tab").click(function(){
+    $(".home-sec4-5-1, .home-sec4-6-1, .home-sec4-7-1").removeClass("active");
+    $(".home-sec4-5-1").addClass("active");
+  });
+  $(".home-sec4 .pills-tab-wrap .nav-pills .nav-link#pills-meditation-tab").click(function(){
+    $(".home-sec4-5-1, .home-sec4-6-1, .home-sec4-7-1").removeClass("active");
+    $(".home-sec4-6-1").addClass("active");
+  });
+  $(".home-sec4 .pills-tab-wrap .nav-pills .nav-link#pills-nutrition-tab").click(function(){
+    $(".home-sec4-5-1, .home-sec4-6-1, .home-sec4-7-1").removeClass("active");
+    $(".home-sec4-7-1").addClass("active");
+  });
+  $(".btn-time").click(function(){
+    $(".btn-time").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".btn-day").click(function(){
+    $(".btn-day").removeClass("active");
+    $(this).addClass("active");
+  });
   
 });

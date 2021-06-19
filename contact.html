@@ -22,110 +22,410 @@
     </div>
 
     <div class="inner-body">
-        <section class="common-section cntc-page-form-sec no-padding position-relative">
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="col-md-7">
+        <section class="common-section contact-section">
+            <a href="index.html" class="logo-wrap">
+                <img src="images/color-logo.svg" alt="color-logo" class="color-logo" />
+            </a>
+            <div class="container">               
+                <div class="row align-items-center contact-row-adj">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="contact-col-left">
+                            <div id="contact-caro" class="carousel slide carousel-fade contact-caro"
+                                data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <!-- form 1 -->
+                                        <form>
+                                            <div class="row contact-caro-row">
+                                                <div class="col-lg-12">
+                                                    <h3>Welcome to Flexifyme</h3>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="fm-mb">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="First Name" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="fm-mb">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Last Name" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="fm-mb">
+                                                        <input type="email" class="form-control"
+                                                            placeholder="Email Id" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="fm-mb form-group-wrap-tel-outer">
+                                                        <div class="tele-num-wrap">
+                                                            <input class="input-control-wrap" tabindex="5" type="text"
+                                                                placeholder="" id="ph_no" name="ph_no">
+                                                        </div> <input type="hidden" name="countryCode" id="countryCode">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 text-center">
+                                                    <button type="button" class="btn bttn-primary mt10"
+                                                        data-bs-target="#contact-caro"
+                                                        data-bs-slide="next">Continue</button>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="continue-with">
+                                                        <p class="p-16">Continue with</p>
+                                                        <ul class="continue-ul">
+                                                            <li>
+                                                                <a href="#">
+                                                                    <img src="images/facebook.png" alt="facebook" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <img src="images/google.png" alt="google" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- form 2 -->
+                                        <form>
+                                            <div class="row contact-caro-row">
+                                                <div class="col-lg-12">
+                                                    <h3>Welcome to Flexifyme
+                                                        <span class="p-16"
+                                                            style="color: #2E2E2E; display: block; margin-top: 15px;">Please
+                                                            enter the code we just sent you</span>
 
-                    </div>
-                    <div class="col-md-5">
-                        <div class="cntc-page-form-wrap">
-                            <form method="post" action="registerMail.php" class="contact-form-wrap" id="register-form">
-                                <div class="fm-mb">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name*"
-                                        tabindex="1" required>
-                                </div>
-                                <div class="fm-mb">
-                                    <input type="text" class="form-control" name="designation" id="designation"
-                                        placeholder="Designation*" tabindex="2" required>
-                                </div>
-                                <div class="fm-mb">
-                                    <input type="text" class="form-control" name="company" id="company" placeholder="Company Name*"
-                                        tabindex="3" required>
-                                </div>
-                                <div class="fm-mb">
-                                    <input type="email" class="form-control" name="email_id" id="email_id"
-                                        placeholder="Company Email*" tabindex="4" required>
-                                </div>
-                                <div class="fm-mb form-group-wrap-tel-outer">
-                                    <label class="form-label">Phone Number*</label>
-                                    <div class="tele-num-wrap">
-                                        <input class="input-control-wrap" tabindex="5" type="text" placeholder="" id="ph_no"
-                                            name="ph_no">
-                                    </div> <input type="hidden" name="countryCode" id="countryCode">
-                                </div>
-                                <div class="fm-mb">
-                                    <label class="form-label">Why are you attending this webinar?*</label>
-                                    <select class="form-select form-control bg-white" name="attending" id="attending" tabindex="6">
-                                        <option value="Personal" selected>Personal</option>
-                                        <option value="Business">Business</option>
-                                    </select>
-                                </div>
-                                <div class="fm-mb text-center xs-mb20">
-                                    <button type="submit" class="btn bttn-primary" style="margin: auto !important;"
-                                        tabindex="7">Register Now</button>
-                                </div>
-                            </form>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="otp-form-wrap">
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                                <td>
+                                                                    <input type="tel" maxlength="1"
+                                                                        class="otp-control" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="p-16">00:57</p>
+                                                        <button type="button" class="btn bttn-primary mt10"
+                                                            data-bs-target="#contact-caro"
+                                                            data-bs-slide="next">Confirm</button>
+                                                        <p class="p-16 resent-otp-text">Didn’t receive OTP? <a
+                                                                href="#">Resend</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- form 3 -->
+                                        <form>
+                                            <div class="row contact-caro-row">
+                                                <div class="col-lg-12">
+                                                    <h3>Select category
+                                                        <span class="p-16"
+                                                            style="color: #2E2E2E; display: block; margin-top: 15px;">Do
+                                                            you want to scedule a free demo session?</span>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="row book-assessment-row-col">
+                                                        <div class="col-6">
+                                                            <a href="#" class="book-assessment-btn active"
+                                                                data-bs-target="#contact-caro" data-bs-slide="next">
+                                                                <div class="book-assessment-img-wrap">
+                                                                    <img src="images/book-assessment1.svg"
+                                                                        alt="Stress Reduction"
+                                                                        class="book-assessment-img1" />
+                                                                    <img src="images/book-assessment-circle.svg"
+                                                                        alt="Stress Reduction"
+                                                                        class="book-assessment-circle floatingX-r" />
+                                                                </div>
+                                                                <p class="p-16">Stress Reduction</p>
+                                                                <span class="right-arrow"><i
+                                                                        class="fas fa-chevron-right"></i></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a href="#" class="book-assessment-btn">
+                                                                <div class="book-assessment-img-wrap"
+                                                                    data-bs-target="#contact-caro" data-bs-slide="next">
+                                                                    <img src="images/book-assessment2.svg"
+                                                                        alt="Flexibility & Fitness"
+                                                                        class="book-assessment-img1" />
+                                                                    <img src="images/book-assessment-circle.svg"
+                                                                        alt="Flexibility & Fitness"
+                                                                        class="book-assessment-circle floatingX-l" />
+                                                                </div>
+                                                                <p class="p-16">Flexibility & Fitness</p>
+                                                                <span class="right-arrow"><i
+                                                                        class="fas fa-chevron-right"></i></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a href="#" class="book-assessment-btn"
+                                                                data-bs-target="#contact-caro" data-bs-slide="next">
+                                                                <div class="book-assessment-img-wrap">
+                                                                    <img src="images/book-assessment3.svg"
+                                                                        alt="Chronic Pain Relief"
+                                                                        class="book-assessment-img1" />
+                                                                    <img src="images/book-assessment-circle.svg"
+                                                                        alt="Chronic Pain Relief"
+                                                                        class="book-assessment-circle floatingX-r" />
+                                                                </div>
+                                                                <p class="p-16">Chronic Pain Relief</p>
+                                                                <span class="right-arrow"><i
+                                                                        class="fas fa-chevron-right"></i></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a href="#" class="book-assessment-btn"
+                                                                data-bs-target="#contact-caro" data-bs-slide="next">
+                                                                <div class="book-assessment-img-wrap">
+                                                                    <img src="images/book-assessment4.svg"
+                                                                        alt="Weight Loss"
+                                                                        class="book-assessment-img1" />
+                                                                    <img src="images/book-assessment-circle.svg"
+                                                                        alt="Weight Loss"
+                                                                        class="book-assessment-circle floatingX-l" />
+                                                                </div>
+                                                                <p class="p-16">Weight Loss</p>
+                                                                <span class="right-arrow"><i
+                                                                        class="fas fa-chevron-right"></i></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- form 4 -->
+                                        <form>
+                                            <div class="row contact-caro-row">
+                                                <div class="col-lg-12">
+                                                    <h3 class="book-h3-adj">
+                                                        Book your
+                                                        <span class="restlessRegular-wrap"><span
+                                                                class="restlessRegular">Free</span></span>
+                                                        Assessment For
+                                                    </h3>
+                                                    <div class="assessment-wrap">
+                                                        <p class="p-18">Select Date for July</p>
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button" class="btn-day active">
+                                                                    <span>Sun</span>
+                                                                    <em>11</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-day">
+                                                                    <span>Mon</span>
+                                                                    <em>12</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-day">
+                                                                    <span>Tue</span>
+                                                                    <em>13</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-day">
+                                                                    <span>Wed</span>
+                                                                    <em>14</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-day">
+                                                                    <span>Thus</span>
+                                                                    <em>15</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-day">
+                                                                    <span>Fri</span>
+                                                                    <em>16</em>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="assessment-wrap">
+                                                        <p class="p-18">Select Time </p>
+                                                        <ul>
+                                                            <li>
+                                                                <button type="button" class="btn-time active">
+                                                                    <span>10:00</span>
+                                                                    <em>am</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>11:00</span>
+                                                                    <em>am</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>12:00</span>
+                                                                    <em>am</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>1:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>2:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>3:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>4:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>5:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>6:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button type="button" class="btn-time">
+                                                                    <span>7:00</span>
+                                                                    <em>pm</em>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="button" class="btn bttn-primary mt10"
+                                                            data-bs-target="#contact-caro"
+                                                            data-bs-slide="next">Submit</button>
 
-        <section class="common-section cont-map-sec no-padding">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.714214600791!2d55.151792415007215!3d25.077673683951975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ca6b576edbd%3A0xd70876ee1f0b4885!2sSpire%20Solutions!5e0!3m2!1sen!2sin!4v1623069362959!5m2!1sen!2sin"
-                style="width: 100%;" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </div>
-
-    <div class="common-footer-wrap" style="margin-top: -10px;"></div>
-
-  <!-- register-now-modal thanks -->
-<div class="enquiry-form-modal modal fade contact-modal" id="mail-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-        <div class="modal-content" style="background: #F7F9FD;">
-            <div class="modal-body contact-form">
-                <div class="container-fluid">
-                    <div class="form-row">
-                        <div class="col-md-12 text-center">
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <div class="modal-head">
-                                <img src="images/white-logo.svg" alt="Modal-img" class="modal-logo" />
+                                                            <button type="button" class="btn btn-back mt10"
+                                                            data-bs-target="#contact-caro"
+                                                            data-bs-slide="prev">
+                                                        <span>Back</span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- form 5 -->
+                                        <form>
+                                            <div class="row contact-caro-row">
+                                                <div class="col-lg-12">
+                                                    <div class="thanks-wrap">
+                                                        <img src="images/smile.svg" alt="smile" class="smile">
+                                                        <h6 class="h3">Thank you for registration</h6>
+                                                        <p class="p-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Graecum enim hunc</p>
+                                                        <button type="button" class="btn bttn-primary mt10" onclick="location.href='index.html'">Home</button>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <h4 class="h4">Thank you!</h4>
-                            <p class="p4">For registration. <br> We will get back to you soon!</p>
+                            <div class="contact-caro-bottom">
+                                <ul>
+                                    <li>
+                                        <div class="home-sec-img-outer">
+                                            <img src="images/yogo2.svg" alt="Meditation"
+                                                class="home-sec-images" />
+                                        </div>
+                                        <p class="p-16">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li>
+                                        <div class="home-sec-img-outer">
+                                            <img src="images/yoga1.svg" alt="Asana"
+                                                class="home-sec-images" />
+                                        </div>
+                                        <p class="p-16">Lorem ipsum dolor</p>
+                                    </li>
+                                    <li>
+                                        <div class="home-sec-img-outer">
+                                            <img src="images/yoga3.svg" alt="Nutrition"
+                                                class="home-sec-images" />
+                                        </div>
+                                        <p class="p-16">Lorem ipsum dolor</p>
+                                    </li>
+                                </ul>                                            
+                            </div>
+                            <p class="p-18 copy-right-text">&copy;2021 Flexifyme. All Right Reserved</p>
                         </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="contact-col-right-outer hide-tab hide-mobile">
+                        <div class="contact-col-right">
+                            <img src="images/contact-caro-img1.jpg" alt="contact-caro-img1" class="contact-caro-img1" />
+                            <img src="images/contact-caro-img2.svg" alt="contact-caro-img2"
+                                class="contact-caro-img2 floatingY" style="animation-delay: 1s;" />
+                            <img src="images/contact-caro-img3.svg" alt="contact-caro-img3"
+                                class="contact-caro-img3 floatingY" style="animation-delay: 1.5s;" />
+                            <img src="images/contact-caro-img4.svg" alt="contact-caro-img4"
+                                class="contact-caro-img4 floatingY" style="animation-delay: 2s;" />
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
 
-    
+    </div>
+
+
+
     <script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="widgets/intl-tel-input-master/js/intlTelInput.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js" type="text/javascript"></script>
     <script src="js/custom.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-                  //for registraion form
-        var mailModal = new bootstrap.Modal(document.getElementById('mail-modal'));
-        var url_msg = window.location.href;
-        var ext_msg = url_msg.split('?').pop();
-        if (ext_msg == 'succ=true') {
-            // $('#mail-modal').modal('show')
-            mailModal.show();
-            setTimeout(function () {
-                mailModal.hide();
-            }, 3000);
-        }        
-        });
-    </script>
 </body>
 
 </html>
