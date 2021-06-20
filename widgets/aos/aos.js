@@ -12,7 +12,7 @@ $(document).ready(function () {
                           return window.innerWidth < maxWidth;
                   },
                   once: true,
-                  offset: 200,
+                  offset: 80,
                   easing: 'linear', //easing: 'ease-in-out',
           });
 

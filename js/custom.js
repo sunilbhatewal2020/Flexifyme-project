@@ -1,34 +1,38 @@
 $(document).ready(function () {
   $(".loader").delay("600").fadeOut("5000");
   // $(".common-header-wrap").load("include/header.html");
-  $(".common-footer-wrap").load("include/footer.html");
+  // $(".common-footer-wrap").load("include/footer.html");
 
   //active tab
   var wid = $(window).width();
-  var pageURL = document.location.href.match(/[^\/]+$/)[0];
-  //alert(pageURL);
-  $(".common-header .navbar .pr-nav-item").each(function () {
-    var href = $(this).find("a.nav-link").attr("href");
-    if (href === pageURL) {
-      // $('.common-header .navbar .pr-nav-item .nav-link').removeClass('active-a');
-      // $(this).find('a.nav-link').addClass('text-success-nav');
-    }
-  });
-  $(".toggle-mnu").removeClass("on");
-  $(".toggle-mnu").click(function () {
+
+  $(".common-header").removeClass("fixed-xs");
+  $(".common-header .navbar .navbar-toggler").click(function () {
     // $(this).toggleClass("on");
-    $(".main-mnu").slideToggle();
+    $(".common-header").toggleClass("fixed-xs");
     return false;
   });
   // if (wid >= 992) {}
+  if (wid >= 992) {
     $(window).bind("scroll", function () {
       var navHeight = $(window).height() - 0;
-      if ($(window).scrollTop() > 250) {
+      if ($(window).scrollTop() > 150) {
         $(".common-header").addClass("fixed");
       } else {
         $(".common-header").removeClass("fixed");
       }
     });
+  }
+  if (wid <= 991) {
+    $(window).bind("scroll", function () {
+      var navHeight = $(window).height() - 0;
+      if ($(window).scrollTop() > 50) {
+        $(".common-header").addClass("fixed");
+      } else {
+        $(".common-header").removeClass("fixed");
+      }
+    });
+  }
   
 
   // $("#trainer5").removeClass("active show");
@@ -75,6 +79,10 @@ $(document).ready(function () {
     $(".btn-day").removeClass("active");
     $(this).addClass("active");
   });
+  
+  
+
+
   // overflow x hidden  
   var widthWindow = $(window).width();
   $('.overflow-hidden-js').css({'width': widthWindow, 'overflow': 'hidden'});

@@ -464,6 +464,7 @@ a:focus {
     }
   }
 }
+.fixed-xs,
 .fixed {
   background: #ffffff;
   box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.15);
@@ -479,6 +480,10 @@ a:focus {
     .pr-nav-item {
       .nav-link {
         color: #47347c;
+        @extend .st;
+        &:hover{
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -564,30 +569,16 @@ a:focus {
 
 /* coming soon page */
 .coming-soon-sec {
-  .coming-soon-sec-img {
-    display: block;
-    max-width: 650px;
-    margin: auto;
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+  h1{
+    margin-bottom: 20px;
+color: #311a75;
   }
-  .p {
-    color: $black;
+  .p-20{
+    color: #2e2e2e;
   }
-  .ttl {
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 72px;
-    color: $black;
-    margin-bottom: 60px;
-  }
-  .lnk {
-    color: $green;
+  .resent-otp-btn {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 43px;
   }
 }
@@ -743,9 +734,9 @@ a:focus {
   .input-control-wrap {
     border: 1px solid #d4d4d4;
     font-family: $font-dm;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -1352,7 +1343,7 @@ font-size: 14px;
     .footer-logo-wrap {
       text-align: center;
       margin-bottom: 28px;
-      a{
+      a {
         display: inline-block;
       }
     }
@@ -1375,6 +1366,10 @@ font-size: 14px;
             letter-spacing: 0.5px;
             color: #ffffff;
             padding: 7px 27px;
+            @extend .st;
+            &:hover{
+              opacity: 0.7;
+            }
           }
         }
       }
@@ -1475,16 +1470,17 @@ font-size: 14px;
       background-color: transparent;
       background-clip: padding-box;
       border: 0;
-      p {
+      span.p-22 {
         font-family: $font-dm;
         font-style: normal;
         font-weight: normal;
         color: #47347c;
         opacity: 0.2;
         margin-bottom: 40px;
+        display: block;
       }
       &.active {
-        p {
+        span.p-22 {
           color: #311a75;
           font-weight: 600;
           opacity: 1;
@@ -1649,7 +1645,7 @@ font-size: 14px;
 }
 .home-sec9 {
   position: relative;
-  background: url("../images/trans-bg.jpg") repeat-x;
+  background: url("../images/trans-bg.jpg") repeat;
   animation: scroll 70s linear infinite;
   .overlay {
     width: 100%;
@@ -1756,7 +1752,7 @@ font-size: 14px;
     background: #ffffff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
     border-radius: 50px;
-    border: 0;
+    border: 1px solid rgba(145,143,148,0.3) !important;
     font-family: $font-dm;
     font-style: normal;
     font-weight: normal;
@@ -2013,24 +2009,27 @@ font-size: 14px;
   background: #ffffff;
   border: 1px solid rgba(145, 143, 148, 0.3);
   box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
-  max-width: 1120px;
+  max-width: 950px;
   margin: 30px auto 0;
+  .pricing-plan-col-left {
+    margin-left: -60px;
+  }
   .pricing-plan-col {
     position: relative;
     .bg-strip {
       position: absolute;
-      left: 0;
+      left: -2px;
       bottom: 0;
       z-index: 9;
       height: 5px;
-      width: 100%;
+      width: calc(100% - 108px);
       display: block;
       z-index: 2;
     }
     .pricing-plan-card {
       .pricing-plan-card-head {
         position: relative;
-        padding: 30px 30px 15px;
+        padding: 30px 35px 15px;
         .offer-label {
           background: url("../images/offer.svg") no-repeat 0 0;
           text-align: center;
@@ -2038,11 +2037,11 @@ font-size: 14px;
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
-          color: #ff6555;
+          color: #fff;
           position: absolute;
           top: 35px;
           right: -14px;
-          width: 115px;
+          width: 182px;
           height: 36px;
           padding-top: 3px;
         }
@@ -2064,6 +2063,7 @@ font-size: 14px;
         }
       }
       .pricing-plan-card-body {
+        margin-top: 30px;
         ul {
           padding: 0;
           margin: 0;
@@ -2074,12 +2074,15 @@ font-size: 14px;
             font-size: 18px;
             color: #2e2e2e;
             background: url("../images/check.svg") no-repeat 0 0;
-            margin-bottom: 28px;
+            margin-bottom: 22px;
             padding: 0 0 0 40px;
             margin-left: 27px;
             line-height: 24px;
           }
         }
+      }
+      .pricing-plan-card-foot {
+        padding-top: 33px;
       }
     }
   }
@@ -2090,8 +2093,13 @@ font-size: 14px;
   border: 1px solid rgba(145, 143, 148, 0.3);
   box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
   margin-bottom: 80px;
+  .basic-plan-text {
+    margin-top: -15px;
+    margin-left: 40px;
+    margin-bottom: 26px;
+  }
   .pricing-plan-card {
-    margin-top: -34px;
+    margin-top: -44px;
     .pricing-plan-card-head {
       background: linear-gradient(218.34deg, #ff668e 4.91%, #3f1f68 180.24%);
       h3,
@@ -2100,10 +2108,10 @@ font-size: 14px;
       }
       .offer-label {
         top: 30px;
-        right: 0;
+        right: 0px;
       }
       h4 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
     .pricing-plan-card-body {
@@ -2121,17 +2129,18 @@ font-size: 14px;
 }
 
 .bg-strip1 {
-  left: 52px !important;
+  left: 108px !important;
 }
 .bg-strip2 {
-  left: 0px;
-  right: 0px;
-  z-index: 9 !important;
-  bottom: -81px !important;
+	left: 0px;
+	right: 108px;
+	z-index: 9 !important;
+	bottom: -81px !important;
+	width: calc(100% - 60px) !important;
 }
 .bg-strip3 {
   left: auto !important;
-  right: 52px !important;
+  right: 108px !important;
 }
 .common-footer-wrap-fixed {
   margin-bottom: 444px;
@@ -2263,7 +2272,7 @@ font-size: 14px;
         justify-content: space-between;
         align-items: flex-start;
         align-content: stretch;
-        text-align: center;        
+        text-align: center;
         li {
           position: relative;
           .p-16 {
@@ -2367,7 +2376,7 @@ font-size: 14px;
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
-          color: #2e2e2e;         
+          color: #2e2e2e;
         }
       }
       .book-assessment-btn {
@@ -2642,6 +2651,44 @@ a.book-assessment-btn {
     @extend .st;
   }
 }
+.btn.btn-link-adj{
+  font-family: $font-dm;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #7352d1;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: -15px;
+  font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+height: 50px;
+border-radius: 32px;
+-webkit-border-radius: 32px;
+-moz-border-radius: 32px;
+-ms-border-radius: 32px;
+-o-border-radius: 32px;
+padding: 0 30px;
+  &:hover {
+    background-color: #7352d1;
+border-color: #7352d1;
+color: #fff;
+    i {
+      display: none;
+      transform: translateX(10px);
+      -webkit-transform: translateX(10px);
+      -moz-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+      -o-transform: translateX(10px);
+    }
+  }
+  i {
+    margin-left: 5px;
+    color: #ff668e;
+    @extend .st;
+  }
+}
 .btn.btn-back {
   font-family: $font-dm;
   font-style: normal;
@@ -2751,36 +2798,41 @@ a.book-assessment-btn {
   }
 }
 
-.label-radio{
+.label-radio {
   font-family: $font-dm;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
 }
-.form-check.form-check-inline{
+.form-check.form-check-inline {
   position: relative;
-  .form-check-label{
-    font-family: $font-dm;font-style: normal;font-weight: 500;font-size: 14px;text-transform: capitalize;color: #000000;
+  .form-check-label {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000000;
   }
   .form-check-input:checked {
     background-color: #fff;
-    border-color: #7352D1;
-    &::after{
-      content: '';
+    border-color: #7352d1;
+    &::after {
+      content: "";
       position: absolute;
       top: 8px;
       left: 4px;
       z-index: 2;
       width: 10px;
       height: 10px;
-      background: #7352D1;
+      background: #7352d1;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-}
+    }
   }
 }
 a.resent-otp-btn {
@@ -2792,3 +2844,5 @@ a.resent-otp-btn {
   font-weight: 500;
   margin-left: 5px;
 }
+
+
