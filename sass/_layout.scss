@@ -707,6 +707,7 @@ a:focus {
   height: 50px;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: #fff !important;
   &:focus {
     border: 1px solid #d4d4d4;
   }
@@ -741,6 +742,10 @@ a:focus {
   }
   .input-control-wrap {
     border: 1px solid #d4d4d4;
+    font-family: $font-dm;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -761,9 +766,6 @@ a:focus {
       box-shadow 0.15s ease-in-out;
     -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    &:focus {
-      border-bottom: 1px solid $green;
-    }
   }
 }
 .grey-triangle-before,
@@ -1232,7 +1234,7 @@ a:focus {
       }
       .build-plan2 {
         top: 378px;
-        left: 131px;
+        left: 100px;
         z-index: 4;
       }
       .build-plan3 {
@@ -2261,13 +2263,14 @@ a:focus {
         justify-content: space-between;
         align-items: flex-start;
         align-content: stretch;
-        text-align: center;
+        text-align: center;        
         li {
           position: relative;
           .p-16 {
             color: #311a75;
             margin-top: 10px;
             margin-bottom: 0;
+            font-weight: 500;
           }
           &:first-child {
             margin-top: 30px;
@@ -2303,6 +2306,7 @@ a:focus {
             -o-transform: scale(0.8);
             position: relative;
             z-index: 5;
+            margin: auto;
           }
         }
       }
@@ -2363,13 +2367,7 @@ a:focus {
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
-          color: #2e2e2e;
-          a {
-            color: #7352d1;
-            text-decoration: underline !important;
-            font-weight: 500;
-            margin-left: 5px;
-          }
+          color: #2e2e2e;         
         }
       }
       .book-assessment-btn {
@@ -2751,4 +2749,46 @@ a.book-assessment-btn {
       }
     }
   }
+}
+
+.label-radio{
+  font-family: $font-dm;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #000000;
+}
+.form-check.form-check-inline{
+  position: relative;
+  .form-check-label{
+    font-family: $font-dm;font-style: normal;font-weight: 500;font-size: 14px;text-transform: capitalize;color: #000000;
+  }
+  .form-check-input:checked {
+    background-color: #fff;
+    border-color: #7352D1;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 4px;
+      z-index: 2;
+      width: 10px;
+      height: 10px;
+      background: #7352D1;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+  }
+}
+a.resent-otp-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7352d1;
+  text-decoration: underline !important;
+  font-weight: 500;
+  margin-left: 5px;
 }
