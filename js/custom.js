@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(".main-mnu").slideToggle();
     return false;
   });
-  if (wid >= 992) {
+  // if (wid >= 992) {}
     $(window).bind("scroll", function () {
       var navHeight = $(window).height() - 0;
       if ($(window).scrollTop() > 250) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
         $(".common-header").removeClass("fixed");
       }
     });
-  }
+  
 
   // $("#trainer5").removeClass("active show");
   $(".nav-pills-row .nav-pills .nav-link").hover(function () {
