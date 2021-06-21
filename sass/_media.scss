@@ -1452,6 +1452,8 @@ background-size: 25px 25px;
     background: transparent;
     border: 0;
     box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     max-width: 100%;
     margin: 30px auto 0;
     .bg-strip1 {
@@ -1476,6 +1478,8 @@ background-size: 25px 25px;
       position: relative;
       border: 1px solid rgba(145, 143, 148, 0.3);
       box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: -5px 4px 50px rgba(0, 0, 0, 0.1);
       margin-bottom: 26px;
       padding-bottom: 30px;
       .pricing-plan-card {
