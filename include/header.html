@@ -1,35 +1,52 @@
-<header class="common-header st">
+<header class="common-header st fixed">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <nav class="navbar navbar-expand-md navbar-light st" id="mainNav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/white-logo.svg" alt="logo"></a>
-                <button class="navbar-toggler navbar-toggler-xs" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/white-logo.svg" alt="logo" class="white-logo" />
+                    <img src="images/color-logo.svg" alt="logo" class="color-logo" />
+                </a>
+                <div class="navbar-toggler navbar-toggler-btn">
+                    <div class="nav-item pr-nav-item pr-nav-item-adj">
+                        <button type="button" onclick="location.href='contact.html'"
+                            style="white-space: nowrap;" class="btn bttn-buy-now">Buy Now</button>
+                        <button type="button" onclick="location.href='contact.html'"
+                            style="white-space: nowrap;" class="btn bttn-primary">Buy Now</button>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="toggle-mnu">
-                        <span></span>
-                    </span>
+                    <!-- <img src="images/menu-icon.svg" alt="menu icon" class="menu-icon" /> -->
+                    <svg width="22" height="22" class="menu-icon" viewBox="0 0 22 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H17" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <path d="M6.75977 7.72021H16.9998" stroke="white" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M10.6001 14.4399H17.0001" stroke="white" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+
                 </button>
                 <nav class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto custom-navbar-nav-adj">                        
+                    <ul class="navbar-nav ms-auto custom-navbar-nav-adj">
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link " href="#featres">Features</a>
+                            <a class="nav-link " href="index.html#sec4">Features</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link " href="#how-it-work">How it Works</a>
+                            <a class="nav-link " href="index.html#sec5">How it Works</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link " href="#trainers">Trainers</a>
+                            <a class="nav-link " href="index.html#sec6">Trainers</a>
                         </li>
                         <li class="nav-item pr-nav-item">
-                            <a class="nav-link " href="#partner">Partners</a>
+                            <a class="nav-link " href="index.html#sec8">Pricing Plan</a>
                         </li>
-                        <li class="nav-item pr-nav-item">
-                            <a class="nav-link " href="#pricing-plan">Pricing Plan</a>
-                        </li>
-                        <li class="nav-item pr-nav-item pr-nav-item-adj">
-                            <button type="button" onclick="location.href='contact.html'" style="white-space: nowrap;"
-                                class="btn bttn-buy-now">Buy Now</button>
+                        <li class="nav-item pr-nav-item pr-nav-item-adj hide-mobile">
+                            <button type="button" onclick="location.href='contact.html'"
+                                style="white-space: nowrap;" class="btn bttn-buy-now">Buy Now</button>
+                            <button type="button" onclick="location.href='contact.html'"
+                                style="white-space: nowrap;" class="btn bttn-primary">Buy Now</button>
                         </li>
                     </ul>
                 </nav>

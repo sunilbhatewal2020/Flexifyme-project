@@ -1626,7 +1626,16 @@ background-size: 25px 25px;
 .pricing-plan-col.pricing-plan-col-center{
   margin-top: 40px;
 }
-
+.term-card-wrap-inner {
+  h3{
+    font-size: 22px;
+line-height: 35px;
+  }
+  .p-18{
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 }
 
 @media (max-width: 575px) {
