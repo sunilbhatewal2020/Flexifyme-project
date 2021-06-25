@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Home</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="widgets/aos/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Lora';
+
+body {
+	margin: 0;
+	padding: 0;
+    scroll-snap-type: y mandatory;
+}
+
+body, html, .flex-wrapper {
+	display: flex;
+	flex: 1;
+}
+
+
+.flex-wrapper {
+	background: #fff;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.common-section{
+    background-color: transparent;
+}
+.home-sec3 .home-sec3-inner {
+	position: relative;
+	z-index: 3;
+	background: transparent;
+}
+.c-scene {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+
+.c-scene__quote {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.c-scene__author {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+}
+
+/* // Scene Colours */
+/* #scene1 { 
+    background-color: #7ECB61;
+    background-image: linear-gradient( #7ECB61, #53CBB8 );
+}
+#scene2 { 
+    background-color: #D74848;
+    background-image: linear-gradient( #D74848, #DB905C );
+}
+#scene3 { 
+    background-color: #7453CB;
+    background-image: linear-gradient( #7453CB, #3EA7E4 );
+}
+#scene4 { 
+    background-color: #9F40A1;
+    background-image: linear-gradient( #9F40A1, #E6868C );
+} */
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+
+
+		<section id="scene1" class="c-scene common-section home-sec3 home-hero-caro-sec">
+            <div class="home-sec3-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-10">
+                            <div class="home-sec-inner home-caro-wrap">
+                                <h2>
+                                    <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
+                                        Does this <br class="hide-mobile hide-tab" />
+                                        sound like <br class="hide-mobile hide-tab" />
+                                        you?
+                                    </span>
+                                </h2>
+                                <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                                    data-bs-touch="true" data-bs-interval="false">
+                                    <div class="carousel-indicators carousel-indicators-adj">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Training alone but can't stay motivated?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Not getting the attention you need from group lessons?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Having Difficulty sticking to a diet program?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Struggling to make progress towards your goals?
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="carousel-indicators carousel-indicators-testimonial hide-desktop show-mobile hide-tab text-center">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="900"
+                                        data-aos-anchor="#sec2">
+                                        <div class="carousel-item active" id="firstSlide">
+                                            <img src="images/slider1.png" class="d-block w-100"
+                                                alt="Training alone but can't stay motivated?">
+                                        </div>
+                                        <div class="carousel-item" id="secondSlide">
+                                            <img src="images/slider2.png" class="d-block w-100"
+                                                alt="Not getting the attention you need from group lessons?">
+                                        </div>
+                                        <div class="carousel-item" id="thirdSlide">
+                                            <img src="images/slider3.png" class="d-block w-100"
+                                                alt="Having Difficulty sticking to a diet program?">
+                                        </div>
+                                        <div class="carousel-item" id="fourthSlide">
+                                            <img src="images/slider4.png" class="d-block w-100"
+                                                alt="Struggling to make progress towards your goals?">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-btn-outer"
+                                        style="opacity: 0 !important; z-index: -9999 !important ;">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="scene2" class="c-scene common-section home-sec3 home-hero-caro-sec">
+            <div class="home-sec3-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-10">
+                            <div class="home-sec-inner home-caro-wrap">
+                                <h2>
+                                    <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
+                                        Does this <br class="hide-mobile hide-tab" />
+                                        sound like <br class="hide-mobile hide-tab" />
+                                        you?
+                                    </span>
+                                </h2>
+                                <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                                    data-bs-touch="true" data-bs-interval="false">
+                                    <div class="carousel-indicators carousel-indicators-adj">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Training alone but can't stay motivated?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                        class="active" aria-label="Slide 2">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Not getting the attention you need from group lessons?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Having Difficulty sticking to a diet program?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Struggling to make progress towards your goals?
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="carousel-indicators carousel-indicators-testimonial hide-desktop show-mobile hide-tab text-center">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="900"
+                                        data-aos-anchor="#sec2">
+                                        <div class="carousel-item" id="firstSlide">
+                                            <img src="images/slider1.png" class="d-block w-100"
+                                                alt="Training alone but can't stay motivated?">
+                                        </div>
+                                        <div class="carousel-item active" id="secondSlide">
+                                            <img src="images/slider2.png" class="d-block w-100"
+                                                alt="Not getting the attention you need from group lessons?">
+                                        </div>
+                                        <div class="carousel-item" id="thirdSlide">
+                                            <img src="images/slider3.png" class="d-block w-100"
+                                                alt="Having Difficulty sticking to a diet program?">
+                                        </div>
+                                        <div class="carousel-item" id="fourthSlide">
+                                            <img src="images/slider4.png" class="d-block w-100"
+                                                alt="Struggling to make progress towards your goals?">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-btn-outer"
+                                        style="opacity: 0 !important; z-index: -9999 !important ;">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="scene3" class="c-scene common-section home-sec3 home-hero-caro-sec">
+            <div class="home-sec3-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-10">
+                            <div class="home-sec-inner home-caro-wrap">
+                                <h2>
+                                    <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
+                                        Does this <br class="hide-mobile hide-tab" />
+                                        sound like <br class="hide-mobile hide-tab" />
+                                        you?
+                                    </span>
+                                </h2>
+                                <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                                    data-bs-touch="true" data-bs-interval="false">
+                                    <div class="carousel-indicators carousel-indicators-adj">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                             aria-current="true" aria-label="Slide 1">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Training alone but can't stay motivated?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Not getting the attention you need from group lessons?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                        class="active" aria-label="Slide 3">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Having Difficulty sticking to a diet program?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Struggling to make progress towards your goals?
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="carousel-indicators carousel-indicators-testimonial hide-desktop show-mobile hide-tab text-center">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="900"
+                                        data-aos-anchor="#sec2">
+                                        <div class="carousel-item" id="firstSlide">
+                                            <img src="images/slider1.png" class="d-block w-100"
+                                                alt="Training alone but can't stay motivated?">
+                                        </div>
+                                        <div class="carousel-item" id="secondSlide">
+                                            <img src="images/slider2.png" class="d-block w-100"
+                                                alt="Not getting the attention you need from group lessons?">
+                                        </div>
+                                        <div class="carousel-item active" id="thirdSlide">
+                                            <img src="images/slider3.png" class="d-block w-100"
+                                                alt="Having Difficulty sticking to a diet program?">
+                                        </div>
+                                        <div class="carousel-item" id="fourthSlide">
+                                            <img src="images/slider4.png" class="d-block w-100"
+                                                alt="Struggling to make progress towards your goals?">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-btn-outer"
+                                        style="opacity: 0 !important; z-index: -9999 !important ;">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="scene4" class="c-scene common-section home-sec3 home-hero-caro-sec">
+            <div class="home-sec3-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-10">
+                            <div class="home-sec-inner home-caro-wrap">
+                                <h2>
+                                    <span data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec2">
+                                        Does this <br class="hide-mobile hide-tab" />
+                                        sound like <br class="hide-mobile hide-tab" />
+                                        you?
+                                    </span>
+                                </h2>
+                                <div id="home-caro" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                                    data-bs-touch="true" data-bs-interval="false">
+                                    <div class="carousel-indicators carousel-indicators-adj">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                             aria-current="true" aria-label="Slide 1">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Training alone but can't stay motivated?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Not getting the attention you need from group lessons?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Having Difficulty sticking to a diet program?
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                        class="active" aria-label="Slide 4">
+                                            <span class="p-22">
+                                                <span data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec2">
+                                                    Struggling to make progress towards your goals?
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="carousel-indicators carousel-indicators-testimonial hide-desktop show-mobile hide-tab text-center">
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="0"
+                                             aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#home-caro" data-bs-slide-to="3"
+                                        class="active" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner" data-aos="zoom-in" data-aos-delay="900"
+                                        data-aos-anchor="#sec2">
+                                        <div class="carousel-item" id="firstSlide">
+                                            <img src="images/slider1.png" class="d-block w-100"
+                                                alt="Training alone but can't stay motivated?">
+                                        </div>
+                                        <div class="carousel-item" id="secondSlide">
+                                            <img src="images/slider2.png" class="d-block w-100"
+                                                alt="Not getting the attention you need from group lessons?">
+                                        </div>
+                                        <div class="carousel-item" id="thirdSlide">
+                                            <img src="images/slider3.png" class="d-block w-100"
+                                                alt="Having Difficulty sticking to a diet program?">
+                                        </div>
+                                        <div class="carousel-item active" id="fourthSlide">
+                                            <img src="images/slider4.png" class="d-block w-100"
+                                                alt="Struggling to make progress towards your goals?">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-btn-outer"
+                                        style="opacity: 0 !important; z-index: -9999 !important ;">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#home-caro"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- <script src="js/jquery.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="widgets/aos/aos.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script>
+    var scene = $( '.c-scene' );
+
+// Initialise the scrollmagic controller
+var scrollMagicController = new ScrollMagic.Controller({
+    globalSceneOptions:
+    {
+        triggerHook: 'onLeave'
+    }
+});
+
+// Loop through each scene and create a new
+// scrollmagic scene for each one
+scene.each( function() 
+{
+    var scene = new ScrollMagic.Scene({
+        triggerElement: this
+    })
+    .setPin( this )
+    .addTo( scrollMagicController )
+    .addIndicators()
+    .setClassToggle( scene, 'is-active' )
+});
+
+
+</script>
+</body>
+</html>

@@ -2,11 +2,14 @@
 
 
 $(document).ready(function () {
+      
+        /*  
         AOS.init({
-                  duration: 600,
+                  duration: 1000,
                   disable: 'mobile',
+                  delay: 600,
                   // disable: false,
-                  anchorPlacement: 'top-top',
+                  anchorPlacement: 'center-center',
                   disable: function () {
                           var maxWidth = 1199;
                           return window.innerWidth < maxWidth;
@@ -16,7 +19,6 @@ $(document).ready(function () {
                   easing: 'linear', //easing: 'ease-in-out',
           });
 
-        /*  
           
           var wido = $(window).width();
           if (wido <= 1198) {
