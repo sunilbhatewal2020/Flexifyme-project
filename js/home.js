@@ -65,7 +65,7 @@ $('.gotop').click(function () {
     duration: heightS,
   })
     .setPin("#pin1")
-    .addIndicators({ name: "1 (duration: )" .heightS }) // add indicators (requires plugin)
+    // .addIndicators({ name: "1 (duration: )" .heightS }) // add indicators (requires plugin)
     .setClassToggle(".home-hero-caro-sec", "fixed-pin")
     .addTo(controller)
     .on("progress", function (f) {
