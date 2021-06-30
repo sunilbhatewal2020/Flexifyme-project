@@ -956,6 +956,7 @@ line-height: normal;
   }
   .contact-section {
     .logo-wrap {
+      top: 50px;
       left: 50% !important;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -1659,6 +1660,7 @@ line-height: 35px;
   .contact-section {
     .contact-col-left {
       padding: 0 5px;
+      margin-bottom: 0;
       .contact-caro-bottom {
         ul {
           display: block;
