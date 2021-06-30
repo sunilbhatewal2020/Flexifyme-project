@@ -836,6 +836,8 @@
 }
 
 @media (max-width: 767px) {
+  
+  .xs-mt30{margin-top: 30px !important;}
   .btn.btn-link-adj{
     background-color: #7352d1;
 border-color: #7352d1;
@@ -849,6 +851,7 @@ border-color: rgba(115,82,209,0.9);
   .xs-pl-15{padding-left: 15px !important;}
   .common-header {
     min-height: inherit;
+    
     &.fixed-xs,
     &.fixed{
       .navbar-light {
@@ -916,6 +919,10 @@ border-color: rgba(115,82,209,0.9);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
+      }
+      .pr-nav-item .btn {
+        margin-left: -40px;
+        margin-top: -4px;
       }
     }
     .navbar-nav.ms-auto.custom-navbar-nav-adj{
