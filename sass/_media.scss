@@ -899,6 +899,15 @@ border-color: rgba(115,82,209,0.9);
       }
       .navbar-toggler {
         border: 0 !important;
+        &:active,
+        &:focus,
+        &:hover{
+          box-shadow: none !important;
+          -webkit-box-shadow: none !important;
+          -moz-box-shadow: none !important;
+          outline: 0 !important;
+          border: 0 !important;
+        }
         svg.menu-icon{
     transform: scale(1.2);
     transform-origin: -50px -20px;
@@ -1514,8 +1523,8 @@ background-size: 25px 25px;
             margin-bottom: 28px;
             padding: 0 0 0 30px;
             margin-left: 7px;
-            font-size: 16px;
-            line-height: 26px;
+            font-size: 14px;
+            line-height: 24px;
             margin-bottom: 10px;
           }
         }
