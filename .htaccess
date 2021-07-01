@@ -141,6 +141,6 @@ gzip_vary on;
 RewriteEngine On
 #RedirectMatch 301 /old-page/ /new-page/
 RewriteEngine on
-ErrorDocument 404 /error404.html
+ErrorDocument 404 /coming-soon.html
 </IfModule>
 
