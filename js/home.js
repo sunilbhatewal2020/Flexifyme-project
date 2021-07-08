@@ -212,4 +212,83 @@ AOS.init({
   offset: 200,
   anchorPlacement: 'top-center'
 });
+
+if (wid <= 767) {
+  // next prev arrow
+(function ($) {
+	$.fn.scrollList = function (numVisibleItems) {
+		var visibleItems = numVisibleItems.visibleItems;
+    var $carousel = $(this);
+    var $slideItems = $("li", this);
+    var $firstItem;
+    var $width = $('ul').width();
+
+    var setCurrentItems = function () {
+      
+         
+      
+    }
+    
+    
+
+    var nextItem = function () {
+    	 
+       $('.book-assessment-b-ul-wrap ul').animate({
+         left: $('.book-assessment-b-ul-wrap ul').position().left - $('.book-assessment-b-ul-wrap ul').width() + "px"
+       }, 200, function() {
+         $('.book-assessment-b-ul-wrap ul').css({
+         		"left": "auto",
+          	"right": "auto"
+         });
+       });
+
+      $firstItem = $("li:nth-child(-n+" + visibleItems + ")", $carousel);
+      $carousel.append($firstItem);
+            
+    }
+
+    var previousItem = function () {
+    	
+      $('.book-assessment-b-ul-wrap ul').animate({
+        right: $('.book-assessment-b-ul-wrap ul').position().left - $('.book-assessment-b-ul-wrap ul').width() + "px"
+      }, 200, function() {
+        $('.book-assessment-b-ul-wrap ul').css({
+        	"left": "auto",
+          "right": "auto"
+        });
+      });
+            
+			$lastItem = $("li:nth-last-child(-n+" + visibleItems + ")", $carousel);
+      $carousel.prepend($lastItem);
+      setCurrentItems();
+    }
+		
+		function addArrows(){
+			if ($slideItems.length > visibleItems) {
+      	if($($carousel).parent().find(".next").length == 0 && 				
+        
+        	$($carousel).parent().find(".previous").length == 0){
+						$carousel.parent().append('<span class="carousel-btn previous">&#x276E;</span>');
+         		$carousel.parent().append('<span class="carousel-btn next">&#x276F;</span>');
+        	}
+          
+					$($carousel).siblings(".next").click(nextItem);
+          
+          
+					$($carousel).siblings(".previous").click(previousItem);
+        }
+		}
+
+    setCurrentItems();
+		addArrows();
+	};
+})(jQuery);
+
+$(document).ready(function () {
+	$(".num-list").scrollList({
+		visibleItems: $(".num-list").data("numitems")
+	});
+});
+
+}
 });
