@@ -500,6 +500,7 @@
       .book-assessment-b-ul-wrap {
         overflow-x: auto;
         &::after {
+          display: none !important;
           content: "";
           position: absolute;
           top: auto;
@@ -1058,7 +1059,7 @@
     }
   }
   .home-sec1 {
-    margin-bottom: 110px;
+    margin-bottom: 230px;
     video {
       min-width: 100%;
       min-height: 100%;
@@ -1078,9 +1079,9 @@
       padding: 0 20px;
     }
     .home-sec2 {
-      bottom: -230px;
-      width: calc(100% - 40px);
-      margin: 0 auto 100px;
+      bottom: -400px;
+      width: calc(100% - 0px);
+      margin: 0 auto 130px;
     }
     .bg-video-wrap {
       height: 550px;
@@ -1091,9 +1092,12 @@
   }
   a.book-assessment-btn {
     padding: 15px 5px;
-    width: 150px;
-    margin: 0;
+    width: 145px;
+    margin: 0 auto;
     height: inherit;
+    &::after{
+      height: 3px !important;
+    }
     p.p-16 {
       font-size: 13px;
       margin: 0;
@@ -1103,6 +1107,10 @@
     }
     .book-assessment-img-wrap {
       min-height: 80px;
+      .book-assessment-img1 {
+        max-height: 53px;
+        margin-top: 19px;
+      }
     }
   }
   @-webkit-keyframes hvr-icon-wobble-horizontal {
@@ -1162,6 +1170,7 @@
   }
   .home-sec2 {
     .home-sec-inner {
+      /*
       .book-assessment-b-ul-wrap {
         overflow-x: auto;
         &::after {
@@ -1222,10 +1231,11 @@
           margin: 10px 0 0;
         }
       }
+      */
       .book-assessment-list {
         max-width: inherit;
         min-width: inherit;
-        padding: 15px 15px 15px;
+        padding: 15px 0px 15px;
         margin-right: 0;
         margin-left: 0;
         .book-assessment-head {
@@ -1729,8 +1739,9 @@
     max-width: 400px;
     position: relative;
     margin: 0 auto;
-    overflow: hidden !important;
+    // overflow: hidden !important;
     .carousel-btn {
+      display: none !important;
       position: absolute;
       background: rgba(255, 255, 255, 0.5);
       padding: 0.5em;
@@ -1757,11 +1768,19 @@ font-size: 20px;
       white-space: nowrap;
       list-style: none;
       padding: 0;
+      flex-wrap: wrap;
       // overflow: visible;
       li {
         display: inline-block;
         width: 160px;
         text-align: center;
+        padding-bottom: 15px;
+        &:last-child{
+          .book-assessment-img1 {            
+    max-height: 40px;
+    margin-top: 25px;
+          }
+        }
       }
     }
   }

@@ -215,6 +215,7 @@ AOS.init({
 
 if (wid <= 767) {
   // next prev arrow
+  /*
 (function ($) {
 	$.fn.scrollList = function (numVisibleItems) {
 		var visibleItems = numVisibleItems.visibleItems;
@@ -222,17 +223,8 @@ if (wid <= 767) {
     var $slideItems = $("li", this);
     var $firstItem;
     var $width = $('ul').width();
-
-    var setCurrentItems = function () {
-      
-         
-      
-    }
-    
-    
-
+    var setCurrentItems = function () {}
     var nextItem = function () {
-    	 
        $('.book-assessment-b-ul-wrap ul').animate({
          left: $('.book-assessment-b-ul-wrap ul').position().left - $('.book-assessment-b-ul-wrap ul').width() + "px"
        }, 200, function() {
@@ -244,11 +236,8 @@ if (wid <= 767) {
 
       $firstItem = $("li:nth-child(-n+" + visibleItems + ")", $carousel);
       $carousel.append($firstItem);
-            
     }
-
     var previousItem = function () {
-    	
       $('.book-assessment-b-ul-wrap ul').animate({
         right: $('.book-assessment-b-ul-wrap ul').position().left - $('.book-assessment-b-ul-wrap ul').width() + "px"
       }, 200, function() {
@@ -284,6 +273,7 @@ if (wid <= 767) {
 	};
 })(jQuery);
 
+*/
 $(document).ready(function () {
 	$(".num-list").scrollList({
 		visibleItems: $(".num-list").data("numitems")
