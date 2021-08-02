@@ -131,6 +131,12 @@
     bottom: 16px;
     right: 130px;
   }
+  .contact-section .contact-col-left{
+    max-width: 500px;
+  }
+  .contact-caro-info-outer h2 {
+    font-size: 38px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -387,6 +393,22 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+  .contact-section .contact-col-left{
+    max-width: 400px;
+    left: -100px;
+  }
+  .contact-col-right-outer-carosual{
+    width: 50%;
+  }
+  .contact-caro-info-outer{    
+    h2 {
+      font-size: 32px;
+      padding: 0 15px;
+      br{
+        display: none;
+      }
+    }
+  }
 }
 @media (min-width: 992px) {
   .hide-desktop {
@@ -396,7 +418,66 @@
     height: 100vh !important;
   }
 }
-
+@media (max-width: 991.98px){
+  .xs-sm-no-padding{
+    padding: 0 !important;
+  }
+  .order-sm-xs-1{order: 1 !important;}
+  .contact-col-right-outer-carosual {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    .contact-caro-info-outer{
+      .carousel-item-ul {
+        li{
+          &:not(:last-child) {
+            margin-bottom: 13px;
+        }
+        span.number-span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: #ff668e;
+          width: 25px;
+          height: 25px;
+          min-width: 25px;
+          min-height: 25px;
+          padding-top: 1px;
+      }
+        }
+      }
+      .contact-caro-info1{
+        top: 10px;
+      }
+      overflow: hidden;
+      padding-top: 70px;
+      padding-bottom: 100px;
+      height: inherit !important;
+    }
+    .carousel-indicators button {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .feature-div{
+    margin: 0 0 15px;
+    div {
+      font-size: 16px;
+      .fas.fa-plus.fa-circle-div {
+        font-size: 10px;
+        vertical-align: middle;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 3px;
+        margin: 0 8px;
+    }
+    }
+  }
+  
+}
 @media (max-width: 991.98px) and (min-width: 768px) {
   .grey-triangle-before,
   .grey-triangle-after,
@@ -966,7 +1047,7 @@
   }
   .contact-section {
     .logo-wrap {
-      top: 50px;
+      top: 20px;
       left: 50% !important;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -1784,6 +1865,67 @@ font-size: 20px;
       }
     }
   }
+  .contact-caro-info-outer{
+    .contact-caro-info-outer{
+      .carousel-indicators button {
+        width: 13px;
+        height: 13px;
+      }
+    }
+    .carousel-item-inner{
+      .carousel-item-inner-wrap {
+        max-width: inherit;
+        margin: auto;
+        width: 85%;
+      }
+    }
+  }
+  .contact-col-right-outer-carosual {   
+    margin-top: 80px;
+    min-height: 30px;
+    .contact-caro-info-outer{
+      overflow: hidden;
+      padding-top: 65px;
+      padding-bottom: 80px;
+      height: inherit !important;
+      .contact-caro-info1{
+        top: 10px;
+        right: -220px;
+      }
+      .contact-caro-info2{
+        display: none;
+      }
+    }
+  }
+  .common-section.contact-section{
+    padding-top: 0;
+    .logo-wrap{
+      .color-logo{
+        height: 35px;
+      }
+    }
+  }
+  .panel-carosual-xs{
+    text-align: center;
+    .hide-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+    }
+    .open-btn{
+      position: absolute;
+      top: 20px;
+      z-index: 3;
+      display: none;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+}
+  }
 }
 
 @media (max-width: 575px) {
@@ -1791,6 +1933,7 @@ font-size: 20px;
     .contact-col-left {
       padding: 0 5px;
       margin-bottom: 0;
+      margin-top: 10px;
       .contact-caro-bottom {
         ul {
           display: block;
