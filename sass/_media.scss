@@ -917,40 +917,6 @@
     }
   }
 
-  .login-page {
-    background-color: $white !important;
-    .login-section {
-      background-color: $white !important;
-      .login-col-right {
-        background-color: $white !important;
-        width: 100%;
-        position: relative;
-        
-        .login-col-right-inner {
-          .form-control,
-            .form-group-wrap-tel-outer .input-control-wrap {
-              background-color: $white !important;
-            }
-          .login-caro .carousel-item {
-            background-color: $white !important;
-            .otp-form-wrap {
-              table {
-                td {
-                  .otp-control {
-                    background-color: $white !important;
-                  }
-                }
-              }
-            }
-            .or-text .or-text-wrap {
-              background-color: $white !important;
-            }
-            
-          }
-        }
-      }
-    }
-  }
 }
 
 @media (max-width: 767px) {
@@ -1962,48 +1928,8 @@
       -o-transform: translateX(-50%);
     }
   }
-  .login-page {
-    background-color: $white !important;
-    .login-section {
-      background-color: $white !important;
-      margin-bottom: 50px;
-      .login-col-right {
-        background-color: $white !important;
-        width: 100%;
-        position: relative;
-        .p-18.copy-right-text{
-          bottom: -10px !important;
-        }
-        .login-col-right-inner {
-          margin: 30px auto;
-          .login-caro {
-            .logo-wrap{
-              margin-bottom: 43px;
-            }
-            .carousel-item {
-              background-color: $white !important;
-              .otp-form-wrap {
-                table {
-                  td {
-                    .otp-control {
-                      background-color: $white !important;
-                    }
-                  }
-                }
-              }
-              .or-text .or-text-wrap {
-                background-color: $white !important;
-              }
-              .form-control,
-              .form-group-wrap-tel-outer .input-control-wrap {
-                background-color: $white !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+ 
+ 
 }
 
 @media (max-width: 575px) {
