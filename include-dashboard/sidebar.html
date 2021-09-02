@@ -1,0 +1,114 @@
+<section class="common-dashboard-sidebar">
+    <div class="common-dashboard-sidebar-mobile">
+        <ul class="common-dashboard-sidebar-mobile-ul">
+            <li>
+                <a href="#" class="dashboard-link st">
+                    <img src="images/text-logo.svg" alt="FlexifyMe" class="flexifyMe-footer-logo">
+                </a>
+            </li>
+            <li>
+                <div class="d-flex">
+                <button type="button" onclick="location.href='book-session.html'" style="white-space: nowrap;height: 40px;font-weight: 500;" class="btn bttn-primary bttn-sm mr20">Book</button>
+           
+                <a href="#" class="toggle-mnu-xs">
+                    <i class="ri-menu-line"></i>
+                    <i class="ri-close-line"></i>
+                </a>
+            </div>
+            </li>
+        </ul>      
+    </div>
+    <div class="common-dashboard-sidebar-desktop">
+        <ul class="common-dashboard-sidebar-desktop-ul">
+            <li>
+                <a href="#" class="dashboard-link logo-dashboard-link  st mb10 hide-mobile">
+                    <i> <img src="images/logo.svg" alt="FlexifyMe" class="logo-img-dashboard" /></i>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html" class="dashboard-link st profile-a-link" data-title="Profile & Settings">
+                    <i> <img src="images/avatar.png" alt="John D'Souza" class="avatar-img" /></i>
+                    <span>Profile & Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Dashboard">
+                    <i class="ri-home-5-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="My Classes & Calendar">
+                    <i class="ri-calendar-check-line"></i>
+                    <span>My Classes & Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Statistics">
+                    <i class="ri-bar-chart-box-line"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Dashboard">
+                    <i class="ri-user-2-line"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Goal Tacking">
+                    <!-- <i class="ri-compass-2-line"></i> -->
+                    <i class="img-posi-rel">
+                        <img src="images/icon-goal.svg" alt="Goal Tacking" class="black-img" />
+                        <img src="images/icon-goal-purple.svg" alt="Goal Tacking" class="purple-img" />
+                    </i>
+                    <span>Goal Tacking</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Scenes & Music">
+                    <i class="ri-music-2-line"></i>
+                    <span>Scenes & Music</span>
+                </a>
+            </li>
+            <li class="hide-desktop show-mobile">
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Notifications">
+                    <i class="ri-notification-line"></i>
+                    <span>Notifications</span>
+                </a>
+            </li>
+            <li class="log-out-li">
+                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Log out">
+                    <i class="ri-logout-circle-line"></i>
+                    <span>Log out</span>
+                </a>
+            </li>
+        </ul>      
+    </div>
+</section>
+
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //active tab
+        var wid = $(window).width();
+        var pageURL = document.location.href.match(/[^\/]+$/)[0];
+        //alert(pageURL);  
+        $('.common-dashboard-sidebar-desktop li').each(function () {
+            var href = $(this).find('a').attr('href');
+            if (href === pageURL) {
+                $('.common-dashboard-sidebar-desktop li a').removeClass('active-a');
+                $(this).find('a').addClass('active-a');
+            }
+        });
+        $("body.dashboard-page").removeClass("active-sidebar");
+        $(".toggle-mnu-xs").click(function () {
+            // $(this).toggleClass("on");
+            $("body.dashboard-page").toggleClass("active-sidebar");
+            // $(".main-mnu").slideToggle();
+            return false;
+        });
+   });
+
+</script>

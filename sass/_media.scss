@@ -920,6 +920,9 @@
 }
 
 @media (max-width: 767px) {
+  .xs-d-block{
+    display: block !important;
+  }
   .xs-mt30 {
     margin-top: 30px !important;
   }

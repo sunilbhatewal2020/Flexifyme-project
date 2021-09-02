@@ -1,0 +1,40 @@
+<header class="common-dashboard-header st hide-mobile">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="common-dashboard-heade-ul">
+                    <li>
+                        <a href="#" class="btn-circle"><i class="ri-volume-down-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-circle"><i class="ri-notification-line"></i> <span class="counter">12</span> </a>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">Book a session</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {        
+        //active tab
+        var wid = $(window).width();
+        if (wid >= 992) {
+            $(window).bind('scroll', function () {
+                var navHeight = $(window).height() - 0;
+                if ($(window).scrollTop() > 200) {
+                    $('.common-dashboard-header').addClass('fixed');
+                }
+                else {
+                    $('.common-dashboard-header').removeClass('fixed');
+                }
+            });
+        }
+        
+   });
+
+</script>

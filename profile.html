@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Profile</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+</head>
+
+<body class="dashboard-page">
+
+    <div class="common-header-wrap"></div>
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title">Profile & Settings</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12 col-lg-5 col-xl-4">
+                                    <div class="common-card profile-common-card">
+                                        <div class="common-card-body">
+                                            <a href="#" class="btn-icon-link btn-icon-link-adj float-end" data-bs-toggle="modal" data-bs-target="#edit-profile-modal">
+                                                <i class="ri-pencil-line"></i>
+                                            </a>
+                                            <div class="clearfix"></div>
+                                            <div class="profile-pic-wrap">
+                                                <div class="circle">
+                                                    <!-- User Profile Image -->
+                                                    <img class="profile-pic" src="images/avatar.png">
+
+                                                    <!-- Default Image -->
+                                                    <!-- <i class="fa fa-user fa-5x"></i> -->
+                                                </div>
+                                                <div class="p-image">
+                                                    <i class="ri-camera-line upload-button"></i>
+                                                    <input class="file-upload" type="file" accept="image/*" />
+                                                </div>
+                                            </div>
+                                            <h4 class="profile-name">John D'Souza</h4>
+                                            <table class="profile-table-card1">
+                                                <tr>
+                                                    <td><i class="ri-mail-line"></i></td>
+                                                    <td><span>johntr@gmail.com</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="ri-phone-line"></i></td>
+                                                    <td> <span>+91 000 000 0000</span> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i> <img src="images/icon-height.svg" alt="height" style="margin-left: 5px;" /> </i></td>
+                                                    <td> <span>5'3 Ft</span> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i> <img src="images/icon-weight-scale.svg" alt="weight" style="margin-left: 0px;" /> </i></td>
+                                                    <td> <span>80 Kg</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="ri-map-pin-line"></i></td>
+                                                    <td><span>8968 West Glenwood Road 
+                                                            Mc Lean, VA 22101</span></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-7 col-xl-8">
+                                    <div class="common-card settings-common-card">
+                                        <div class="common-card-head">
+                                            <h5 class="common-card-title">Settings</h5>
+                                        </div>
+                                        <div class="common-card-body">
+                                            <table class="profile-table-card2">
+                                                <tr>
+                                                    <td><span>Password :</span></td>
+                                                    <td><a href="#change-password" data-bs-toggle="modal" class="resent-otp-btn text-decoration-none">Change
+                                                            Password</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>Notifications :</span></td>
+                                                    <td><a href="#unscrbscribe-modal" data-bs-toggle="modal" class="resent-otp-btn text-decoration-none">Unsubscribe</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="common-card commu-settings-common-card">
+                                        <div class="common-card-head">
+                                            <h5 class="common-card-title">Communication Settings</h5>
+                                        </div>
+                                        <div class="common-card-body">
+                                            <p class="p-16">How do you want us to keep in touch?</p>
+                                            <p class="p-14">Control what you hear from us and how. This will help us
+                                                improve your experience through relevant and timely communication.</p>
+                                                <div class="fm-mb inline-checkbox">
+                                                    <div class="form-check form-check-box">
+                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                                        <label class="form-check-label" for="checkbox-email">
+                                                            Email
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check form-check-box">
+                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox-sms">
+                                                        <label class="form-check-label" for="checkbox-sms">
+                                                            SMS
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check form-check-box">
+                                                        <input class="form-check-input" type="checkbox" value="" id="checkbox-whatapps" checked>
+                                                        <label class="form-check-label" for="checkbox-whatapps">
+                                                            WhatsApp
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                            <p class="p-16">Receive notifications about </p>
+                                           
+                                            <table class="table-settings-switch">
+                                                <tr>
+                                                    <td>
+                                                        <p class="p-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="fm-mb">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="switch-1">
+                                                                <label class="form-check-label" for="switch-1">&nbsp;</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="p-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="fm-mb">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="switch-2"
+                                                                    checked="">
+                                                                <label class="form-check-label" for="switch-2">&nbsp;</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="p-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="fm-mb">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="switch-3"
+                                                                    checked="">
+                                                                <label class="form-check-label" for="switch-3">&nbsp;</label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- edit-profile-modal -->
+    <div class="modal fade profile-modal" id="edit-profile-modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">                
+                <div class="modal-header">
+                    <h5 class="modal-title">Profile & Settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="fm-mb">
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fm-mb">
+                                    <input type="text" class="form-control" placeholder="Email ID">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fm-mb">
+                                    <input type="text" class="form-control" placeholder="Phone No">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fm-mb">
+                                    <input type="text" class="form-control" placeholder="Height">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fm-mb">
+                                    <input type="text" class="form-control" placeholder="Weight">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="fm-mb">
+                                    <textarea class="form-control" rows="3" placeholder="Address"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="btn bttn-primary" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- change-password-modal -->
+    <div class="modal fade profile-modal" id="change-password" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">                
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <div class="row">                           
+                            <div class="col-md-12">
+                                <div class="fm-mb password-input-wrap">
+                                    <i class="far fa-eye password-visible-btn btn-pass-visible"></i>
+                                    <i class="far fa-eye-slash password-invisible-btn btn-pass-visible"></i>
+                                    <input type="password" class="form-control"
+                                        placeholder="Old Password" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="fm-mb password-input-wrap">
+                                    <i class="far fa-eye password-visible-btn btn-pass-visible"></i>
+                                    <i class="far fa-eye-slash password-invisible-btn btn-pass-visible"></i>
+                                    <input type="password" class="form-control"
+                                        placeholder="New Password" />
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="btn bttn-primary" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- unscrbscribe-modal -->
+     <div class="modal fade profile-modal" id="unscrbscribe-modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">                
+                <div class="modal-header">
+                    <h5 class="modal-title">Unsubscribe Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <div class="row">                           
+                            <div class="col-md-12">
+                               <p class="alert-para min-h-50">Are you sure, you want to unsubscribe notifications?</p>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="btn bttn-primary mr15" data-bs-dismiss="modal">Yes</button>
+                                <button type="button" class="btn bttn-outline-primary2" data-bs-dismiss="modal">No</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+
+            var readURL = function (input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+
+            $(".file-upload").on('change', function () {
+                readURL(this);
+            });
+
+            $(".upload-button").on('click', function () {
+                $(".file-upload").click();
+            });
+        });
+    </script>
+</body>
+
+</html>

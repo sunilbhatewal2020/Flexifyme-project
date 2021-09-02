@@ -14,6 +14,12 @@ $(document).ready(function () {
     $(".btn-day").removeClass("active");
     $(this).addClass("active");
   });
+  $(".btn-weight-height").click(function () {
+    $(".btn-weight-height").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  
 
   $(".panel-carosual-xs .hide-btn").click(function () {
     $(".panel-carosual-xs .hide-btn, .panel-carosual-xs .open-btn").hide();

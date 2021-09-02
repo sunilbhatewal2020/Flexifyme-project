@@ -90,6 +90,20 @@ h6,
     font-size: 16px;
     line-height: 26px;
   }
+  .p-14 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-12 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 // X-Large devices (large desktops, min than 1400px)
 @media (min-width: 1200px) and (max-width: 1599px){
@@ -166,6 +180,20 @@ h6,
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
+  }
+  .p-14 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-12 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
   }
 }
 
@@ -245,6 +273,20 @@ h6,
     font-size: 16px;
     line-height: 26px;
   }
+  .p-14 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-12 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 
 // Large devices (desktops, less than 992)
@@ -322,6 +364,20 @@ h6,
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
+  }
+  .p-14 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-12 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
   }
 }
 
@@ -404,4 +460,33 @@ h6,
     font-size: 14px;
     line-height: 24px;
   }
+  .p-14 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .p-12 {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
+
+
+.alert-para{
+  margin-top: 0;
+margin-bottom: 1rem;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: normal;
+text-align: center;
+color: #2E2E2E;
+}
+
+

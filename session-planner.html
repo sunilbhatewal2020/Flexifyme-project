@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | My classes & Calendar</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/session-planner.css">
+</head>
+
+<body class="dashboard-page">
+
+    <div class="common-header-wrap"></div>
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title">My classes & Calendar</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12">
+                                    <div class="session-planner-tab">
+                                        <div class="search-input-wrap-outer">
+                                        <div class="fm-mb search-input-wrap">
+                                            <input type="text" class="form-control"
+                                                placeholder="Search" />
+                                                <a href="#" class="search-inpu-btn">
+                                                    <i class="ri-search-line"></i>
+                                                </a>
+                                        </div>
+                                    </div>
+                                        <div class="pills-tab-wrap">
+                                            <ul class="nav nav-pills planner-tab" id="planner-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-completed-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-completed"
+                                                        type="button" role="tab" aria-controls="pills-completed"
+                                                        aria-selected="true">
+                                                        <span>Completed Sessions </span>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-upcomming-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-upcomming"
+                                                        type="button" role="tab" aria-controls="pills-upcomming"
+                                                        aria-selected="false">
+                                                        <span>Upcoming Sessions </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="planner-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-completed"
+                                                    role="tabpanel" aria-labelledby="pills-completed-tab">
+                                                    <!-- 1 -->
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <h6 class="planner-title">May 2021</h6>
+                                                            <!-- 1 -->
+                                                            <div class="session-strip">
+                                                                <div class="date-wrap">
+                                                                    <div class="date-wrap-circle" style="background: #EFEBFA;">
+                                                                        <p class="p-14">Wed</p>
+                                                                        <p class="p-20">21</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-wrap">
+                                                                  <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                  <p class="p-14">8:00-8:30 AM</p>
+                                                                </div>
+                                                                <div class="button-wrap">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                </div>
+                                                              </div>
+                                                              <!-- 2 -->
+                                                              <div class="session-strip">
+                                                                <div class="date-wrap">
+                                                                    <div class="date-wrap-circle" style="background: #FFE0E8;">
+                                                                        <p class="p-14">Sun</p>
+                                                                        <p class="p-20">8</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-wrap">
+                                                                  <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                  <p class="p-14">8:00-8:30 AM</p>
+                                                                </div>
+                                                                <div class="button-wrap">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                </div>
+                                                              </div>
+                                                                 <!-- 3 -->
+                                                                 <div class="session-strip">
+                                                                    <div class="date-wrap">
+                                                                        <div class="date-wrap-circle" style="background: #EDF5F1;">
+                                                                            <p class="p-14">Mon</p>
+                                                                            <p class="p-20">11</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="content-wrap">
+                                                                      <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                      <p class="p-14">8:00-8:30 AM</p>
+                                                                    </div>
+                                                                    <div class="button-wrap">
+                                                                        <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                    </div>
+                                                                  </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 2 -->
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <h6 class="planner-title">Apr 2021</h6>
+                                                            <!-- 1 -->
+                                                            <div class="session-strip">
+                                                                <div class="date-wrap">
+                                                                    <div class="date-wrap-circle" style="background: #EFEBFA;">
+                                                                        <p class="p-14">Wed</p>
+                                                                        <p class="p-20">15</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-wrap">
+                                                                  <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                  <p class="p-14">8:00-8:30 AM</p>
+                                                                </div>
+                                                                <div class="button-wrap">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                </div>
+                                                              </div>
+                                                              <!-- 2 -->
+                                                              <div class="session-strip">
+                                                                <div class="date-wrap">
+                                                                    <div class="date-wrap-circle" style="background: #FFE0E8;">
+                                                                        <p class="p-14">Sun</p>
+                                                                        <p class="p-20">10</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-wrap">
+                                                                  <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                  <p class="p-14">8:00-8:30 AM</p>
+                                                                </div>
+                                                                <div class="button-wrap">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                </div>
+                                                              </div>
+                                                                 <!-- 3 -->
+                                                                 <div class="session-strip">
+                                                                    <div class="date-wrap">
+                                                                        <div class="date-wrap-circle" style="background: #EDF5F1;">
+                                                                            <p class="p-14">Mon</p>
+                                                                            <p class="p-20">8</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="content-wrap">
+                                                                      <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                      <p class="p-14">8:00-8:30 AM</p>
+                                                                    </div>
+                                                                    <div class="button-wrap">
+                                                                        <button type="button" class="btn bttn-outline-primary2 bttn-sm">View Details</button>
+                                                                    </div>
+                                                                  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-upcomming" role="tabpanel"
+                                                    aria-labelledby="pills-upcomming-tab">
+                                                <!-- 1 -->
+                                                <div class="common-card">
+                                                    <div class="common-card-body">
+                                                        <h6 class="planner-title">May 2021</h6>
+                                                        <!-- 1 -->
+                                                        <div class="session-strip">
+                                                            <div class="date-wrap">
+                                                                <div class="date-wrap-circle" style="background: #EFEBFA;">
+                                                                    <p class="p-14">Wed</p>
+                                                                    <p class="p-20">15</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-wrap">
+                                                              <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                              <p class="p-14">8:00-8:30 AM</p>
+                                                            </div>
+                                                            <div class="button-wrap">
+                                                                <button type="button" class="btn bttn-outline-primary2 bttn-sm">Cancel</button>
+                                                                <button type="button" class="btn bttn-outline-primary2 bttn-sm ml25">Join</button>
+                                                            </div>
+                                                          </div>
+                                                          <!-- 2 -->
+                                                          <div class="session-strip">
+                                                            <div class="date-wrap">
+                                                                <div class="date-wrap-circle" style="background: #FFE0E8;">
+                                                                    <p class="p-14">Sun</p>
+                                                                    <p class="p-20">10</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-wrap">
+                                                              <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                              <p class="p-14">8:00-8:30 AM</p>
+                                                            </div>
+                                                            <div class="button-wrap">
+                                                                <button type="button" class="btn bttn-outline-primary2 bttn-sm">Cancel</button>
+                                                                <button type="button" class="btn bttn-outline-primary2 bttn-sm ml25">Join</button>
+                                                            </div>
+                                                          </div>
+                                                             <!-- 3 -->
+                                                             <div class="session-strip">
+                                                                <div class="date-wrap">
+                                                                    <div class="date-wrap-circle" style="background: #EDF5F1;">
+                                                                        <p class="p-14">Mon</p>
+                                                                        <p class="p-20">8</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-wrap">
+                                                                  <p class="p-18">Patanjalee Institute of Yoga & Therapy offers live online yoga classes</p>
+                                                                  <p class="p-14">8:00-8:30 AM</p>
+                                                                </div>
+                                                                <div class="button-wrap">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">Cancel</button>
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm ml25">Join</button>
+                                                                </div>
+                                                              </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+        });
+    </script>
+</body>
+
+</html>

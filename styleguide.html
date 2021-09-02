@@ -8,6 +8,8 @@
     <title>FlexifyMe | Styleguide</title>
     <link rel="icon" type="image/png" href="images/loader.svg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <style>
 
@@ -50,6 +52,7 @@
                         <h6 class="f-font-playfair">.f-font-playfair{font-family: $font-playfair;}</h6>
                         <h6 class="f-font-restlessRegular">.f-font-restlessRegular{font-family: $font-rest;}
                         </h6>
+                        <p class="alert-para">Are you sure, you want to unsubscribe notifications?</p>
                     </div>
                     <div class="col-lg-6 typo-heading">
 
@@ -151,7 +154,203 @@
                         <button type="button" class="btn bttn-secondary bttn-sm" disabled>Disabled</button>
                         <button type="button" class="btn btn-link bttn-link">Link</button>
                         <button type="button" class="btn btn-back"><span>Back</span></button>
-                    <a href="index.html" class="resent-otp-btn">Home</a>
+                        <a href="index.html" class="resent-otp-btn">Home</a>
+                        <a href="#" class="btn-icon-link">
+                            <i class="ri-pencil-line"></i>
+                        </a>
+                        <div class="continue-with">
+                            <ul class="continue-ul">
+                                <li>
+                                    <p class="p-16" style="margin-right: 30px;">Continue
+                                        with</p>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/facebook.png" alt="facebook" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/google.png" alt="google" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="p-16 text-center text-black fw-500">Please enter the code
+                            we just sent you on +91 565352332</p>
+                        <div class="otp-form-wrap">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="tel" maxlength="1"
+                                            class="otp-control" />
+                                    </td>
+                                    <td>
+                                        <input type="tel" maxlength="1"
+                                            class="otp-control" />
+                                    </td>
+                                    <td>
+                                        <input type="tel" maxlength="1"
+                                            class="otp-control" />
+                                    </td>
+                                    <td>
+                                        <input type="tel" maxlength="1"
+                                            class="otp-control" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="p-16">00:57</p>
+                            <button type="button" class="btn bttn-primary mt10"
+                                data-bs-target="#contact-caro"
+                                data-bs-slide="next">Confirm</button>
+                            <p class="p-16 resent-otp-text">Didn’t receive OTP? <a href="#"
+                                    class="resent-otp-btn">Resend</a></p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">                                
+                                <div class="assessment-wrap">
+                                    <p class="p-18">Select Date For Free Assesment Session in July
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn-day active">
+                                                <span>Sun</span>
+                                                <em>11</em>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn-day">
+                                                <span>Mon</span>
+                                                <em>12</em>
+                                            </button>
+                                        </li>
+                                        </ul>
+                                </div>
+                            </div>
+                            <div class="col-6">     
+                                <div class="assessment-wrap">
+                                    <p class="p-18">Select Time </p>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn-time active">
+                                                <span>10:00</span>
+                                                <em>am</em>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn-time">
+                                                <span>11:00</span>
+                                                <em>am</em>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="assessment-wrap">
+                                        <p class="p-18 text-center">What is your height?</p>
+                                        <ul class="text-center">
+                                            <li>
+                                                <button type="button" class="btn-weight-height active">
+                                                    <span>Mtr</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn-weight-height">
+                                                    <span>Ft</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="range-slider slidecontainer">
+                                        <label class="range-slider-label"><span class="ranger-weight-val" id="ranger-weight-val"></span> KG</label>
+                                        <div class="slide-wrap">
+                                            <span class="slide"></span>
+                                            <input type="range" min="1" max="100" value="50" id="ranger-weight" class="ranger-weight" />                                        
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="fm-mb search-input-wrap">
+                            <input type="text" class="form-control"
+                                placeholder="First Name" />
+                                <a href="#" class="search-inpu-btn">
+                                    <i class="ri-search-line"></i>
+                                </a>
+                        </div>
+                        <div class="fm-mb">
+                            <input type="text" class="form-control"
+                                placeholder="First Name" />
+                        </div>
+                        <div class="fm-mb">
+                            <select class="form-select form-control">
+                                <option selected>Select Category</option>
+                                <option value="1">Stress Reduction</option>
+                                <option value="2">Flexibility & Fitness</option>
+                                <option value="3">Chronic Pain Relief</option>
+                                <option value="4">Weight Loss</option>
+                            </select>
+                        </div>
+                        <div class="fm-mb">
+                            <label class="label-radio">Do you have PC or Laptop?</label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Laptop"
+                                    id="Yes" value="Yes">
+                                <label class="form-check-label" for="Yes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Laptop"
+                                    id="No" value="No">
+                                <label class="form-check-label" for="No">No</label>
+                            </div>
+                        </div>
+                        <div class="fm-mb form-group-wrap-tel-outer">
+                            <div class="tele-num-wrap">
+                                <input class="input-control-wrap" tabindex="5" type="text"
+                                    placeholder="Telephone" id="ph_no" name="ph_no">
+                            </div> <input type="hidden" name="countryCode" id="countryCode">
+                        </div>
+                        <div class="fm-mb">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                              </div>
+                            </div>
+
+                            <div class="fm-mb">
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Default checkbox
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Checked checkbox
+                                    </label>
+                                  </div>
+                            </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -160,7 +359,18 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        var slider = document.getElementById("ranger-weight");
+        var output = document.getElementById("ranger-weight-val");
+        output.innerHTML = slider.value;
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+            var slideWidth = $(this).val() * 100 / 100;
+            $(".slide").css("width", slideWidth + "%");
+        }
+    </script>
 </body>
 
 </html>
