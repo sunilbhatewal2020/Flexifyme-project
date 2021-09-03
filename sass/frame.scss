@@ -407,6 +407,32 @@
           color: #2E2E2E;
           margin-bottom: 0;
         }
+        .dashboard-title-back-btn{
+          display: inline-block;
+          position: relative;
+          z-index: 49;
+          .dashboard-title{
+            color: #fff;
+            .ri-arrow-left-line{
+              margin-right: 20px;      
+              vertical-align: middle;                      
+              font-size: 28px;
+              position: relative;
+              left: 0;
+              @include xs {
+               font-size:24px;
+              }
+            }
+            span{
+              vertical-align: middle;
+            }
+          }
+          &:hover{
+            .ri-arrow-left-line{
+             left: -7px;
+            }
+          }
+        }
         .dashboard-row-body{
           margin-top: 43px;
           @include xs {

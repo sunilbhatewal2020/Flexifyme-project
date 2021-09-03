@@ -50,9 +50,9 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Dashboard">
+                <a href="personal-concierge.html" class="dashboard-link dashboard-link-span st" data-title="Personal Concierge">
                     <i class="ri-user-2-line"></i>
-                    <span>Dashboard</span>
+                    <span>Personal Concierge</span>
                 </a>
             </li>
             <li>
@@ -66,7 +66,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Scenes & Music">
+                <a href="scenes-music.html" id="scenes-music-a" class="dashboard-link dashboard-link-span st" data-title="Scenes & Music">
                     <i class="ri-music-2-line"></i>
                     <span>Scenes & Music</span>
                 </a>
@@ -100,6 +100,10 @@
             if (href === pageURL) {
                 $('.common-dashboard-sidebar-desktop li a').removeClass('active-a');
                 $(this).find('a').addClass('active-a');
+            }
+            if(pageURL === "scenes-music2.html"){
+                $('.common-dashboard-sidebar-desktop li a').removeClass('active-a');
+                $('#scenes-music-a').addClass('active-a');
             }
         });
         $("body.dashboard-page").removeClass("active-sidebar");

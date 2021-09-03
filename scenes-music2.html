@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Scenes & Music 2</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/scenes-music.css" />
+    <!-- https://www.jqueryscript.net/other/Minimalist-Custom-Audio-Player.html -->
+</head>
+
+<body class="dashboard-page">
+
+    <div class="common-header-wrap"></div>
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg2.jpg');">
+            <div class="dasboard-row-wrap wave-ani-section">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="scenes-music.html" class="dashboard-title-back-btn">
+                                        <h1 class="dashboard-title"><i class="ri-arrow-left-line st"></i><span>Scenes & Music</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body scenes-music-wrap2-outer align-items-end">
+                                <div class="col-12 scenes-music-wrap2">
+                                    <div class="play-music-wrap text-center">
+                                        <div class="play-music-wrap-inner">
+                                            <h6 class="panel-title-dashboard">Journey to fantacy Island</h6>
+                                            <div class="play-music-audio">
+                                                <audio preload="auto" src="https://traffic.libsyn.com/mindfulorg/winston-breathing-5mins.mp3"></audio>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn bttn-primary">Apply Theme</button>
+                                    </div>
+
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+            $('audio').initAudioPlayer();
+            $(".wave-ani-section").removeClass("active");
+            $('.play-pause-btn').on('click', function() {
+					if ($(this).parents(".ppq-audio-player").hasClass('player-playing')) {
+						$(".wave-ani-section").addClass("active");
+					} else {
+						$(".wave-ani-section").removeClass("active");
+					}
+				});
+        });
+    </script>
+</body>
+
+</html>

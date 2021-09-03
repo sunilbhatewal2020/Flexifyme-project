@@ -92,7 +92,7 @@ $font-rest: restlessRegular !default;
 .f-font-restlessRegular {
   font-family: $font-rest !important;
 }
-.text-decoration-none{
+.text-decoration-none {
   text-decoration: none !important;
 }
 .text-right {
@@ -179,7 +179,7 @@ $font-rest: restlessRegular !default;
 .pt30 {
   padding-top: 30px !important;
 }
-.min-h-50{
+.min-h-50 {
   min-height: 50px;
 }
 // body
@@ -474,15 +474,15 @@ a:focus {
     }
   }
 }
-.btn-icon-link{
-  color: $blue2;font-size: 28px;
+.btn-icon-link {
+  color: $blue2;
+  font-size: 28px;
   &:hover,
   &:focus,
   &:active,
   &.active {
     color: $blue2;
   }
-
 }
 // common header
 .common-header {
@@ -789,16 +789,37 @@ a:focus {
 .mb15 {
   margin-bottom: 15px !important;
 }
-.mb10{
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mb10 {
   margin-bottom: 10px !important;
 }
-.mb35{
+.mb35 {
   margin-bottom: 35px !important;
 }
-.mr20{
+.mr20 {
   margin-right: 20px !important;
 }
 // common .form-control
+.fm-mb.search-input-wrap {
+  .form-control {
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .search-inpu-btn {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    color: rgba(46, 46, 46, 0.5);
+    z-index: 9;
+    @extend .st;
+    &:hover {
+      color: $blue2;
+    }
+  }
+}
 .fm-mb {
   position: relative;
   margin-bottom: 30px;
@@ -811,7 +832,6 @@ a:focus {
     left: 3px;
     z-index: 3;
   }
-  
 }
 .forgot-pass-adj {
   margin-top: 5px;
@@ -879,7 +899,7 @@ a:focus {
     }
   }
 }
-.btn-circle{
+.btn-circle {
   width: 50px;
   height: 50px;
   background: rgba(255, 255, 255, 0.9);
@@ -896,15 +916,15 @@ a:focus {
   font-size: 24px;
   border: 1px solid transparent !important;
   @extend .st;
-  .counter{
+  .counter {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 20px;
     height: 20px;
-    background: #FF205D;
+    background: #ff205d;
     display: inline-block;
     text-align: center;
     padding-top: 3px;
@@ -918,14 +938,14 @@ a:focus {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     @extend .st;
-}
-&:hover{
-background-color: $blue2;
-color: $white !important;
-.counter{
-  margin-top: -10px;
-}
-}
+  }
+  &:hover {
+    background-color: $blue2;
+    color: $white !important;
+    .counter {
+      margin-top: -10px;
+    }
+  }
 }
 // Version 2
 [data-title] {
@@ -942,11 +962,11 @@ color: $white !important;
   background: $blue2;
   color: #fff;
   border-radius: 2px;
-  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
   font-size: 12px;
   padding: 2px 10px;
 }
-textarea.form-control{
+textarea.form-control {
   height: auto !important;
 }
 .form-control {
@@ -1924,10 +1944,16 @@ textarea.form-control{
     background-position: -3000px 0px;
   }
 }
+@-webkit-keyframes scroll {
+  100% {
+    background-position: -3000px 0px;
+  }
+}
 .home-sec9 {
   position: relative;
   background: url("../images/trans-bg.jpg") repeat;
   animation: scroll 70s linear infinite;
+  -webkit-animation: scroll 70s linear infinite;
   .overlay {
     width: 100%;
     height: 100%;
@@ -2939,26 +2965,28 @@ a.book-assessment-btn {
 }
 
 .btn-time[disabled],
-.btn-day[disabled]{
-  background: #F0F0F0;border: 1px solid #DADADA; cursor: not-allowed;
-  span{
+.btn-day[disabled] {
+  background: #f0f0f0;
+  border: 1px solid #dadada;
+  cursor: not-allowed;
+  span {
     opacity: 0.5 !important;
     color: #2e2e2e !important;
   }
-  em{
+  em {
     opacity: 0.3 !important;
     color: #2e2e2e !important;
   }
   color: #2e2e2e !important;
   &:hover,
   &:active,
-  &:focus{
+  &:focus {
     color: #2e2e2e;
-    span{
+    span {
       opacity: 0.5 !important;
       color: #2e2e2e !important;
     }
-    em{
+    em {
       opacity: 0.3 !important;
       color: #2e2e2e !important;
     }
@@ -3591,41 +3619,40 @@ a.resent-otp-btn {
   }
 }
 
-
-.common-card{
+.common-card {
   position: relative;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   margin-bottom: 20px;
-  .common-card-body{
+  .common-card-body {
     padding: 18px 40px;
-    @include xs{
+    @include xs {
       padding: 16px 20px;
-     }
-  }  
-  .common-card-head{
+    }
+  }
+  .common-card-head {
     padding: 15px 40px;
     border-bottom: 1px solid rgba(46, 46, 46, 0.1);
-    @include xs{
+    @include xs {
       padding: 12px 20px;
-     }
-    .common-card-title{
+    }
+    .common-card-title {
       font-family: DM Sans;
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
-      color: #2E2E2E;
+      color: #2e2e2e;
       margin-bottom: 0;
-      @include xs{
+      @include xs {
         font-size: 16px;
-       }
+      }
     }
   }
 }
 
-.inline-checkbox{
+.inline-checkbox {
   display: flex;
 }
 
@@ -3636,24 +3663,38 @@ a.resent-otp-btn {
   font-weight: bold;
   font-size: 24px;
   line-height: normal;
-  color: #2E2E2E;
+  color: #2e2e2e;
   margin-top: 10px;
   margin-bottom: 30px;
-  @include xs{
+  @include xs {
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
-}  
+}
 
-
+.panel-title-dashboard {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2e2e2e;
+  line-height: normal;
+  @include xs {
+    font-size: 18px;
+  }
+}
 
 .session-planner-tab {
   margin-top: 30px;
-  position: relative; 
-  .search-input-wrap-outer{
-    max-width: 234px;position: absolute;top: 0;right: 0; z-index: 9;
-    @include xs{
+  position: relative;
+  .search-input-wrap-outer {
+    max-width: 234px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    @include xs {
       width: calc(100% - 40px);
       max-width: 100%;
       position: absolute;
@@ -3666,43 +3707,26 @@ a.resent-otp-btn {
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
-}
-  }
-  .fm-mb.search-input-wrap{
-    .form-control{
-      height: 40px;
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-    .search-inpu-btn {
-      position: absolute;
-      top: 6px;
-      right: 20px;
-      color: rgba(46, 46, 46, 0.5);
-      z-index: 9;
-      @extend .st;
-      &:hover{
-        color: $blue2;
-      }
     }
   }
-  @include xs{
+
+  @include xs {
     margin-top: 5px;
   }
-  .trainer-tab{
-    max-width: 915px;margin: auto;
-    @include xs{
-     padding: 0 10px;
+  .trainer-tab {
+    max-width: 915px;
+    margin: auto;
+    @include xs {
+      padding: 0 10px;
     }
   }
   .pills-tab-wrap {
-    .common-card{
-      @include xs{
-        &:first-child{
+    .common-card {
+      @include xs {
+        &:first-child {
           padding-top: 50px !important;
         }
       }
-      
     }
     .nav-pills {
       flex-wrap: nowrap;
@@ -3724,40 +3748,40 @@ a.resent-otp-btn {
           -o-border-radius: 0;
           position: relative;
           min-width: 215px;
-          @include xs{
+          @include xs {
             font-size: 14px;
             min-width: inherit;
             padding-bottom: 15px;
           }
-          span{
+          span {
             margin-bottom: 0;
-            @include xs{
+            @include xs {
               font-size: 14px;
               font-weight: 600;
             }
           }
-          span{
-            font-style: normal;
-            display: block;
-            width: 100%;     
-            white-space: nowrap;
-            @include xs{
-              font-size: 14px;
-              font-weight: 600;
-            }      
-          }
-          em{
+          span {
             font-style: normal;
             display: block;
             width: 100%;
             white-space: nowrap;
-            @include xs{
+            @include xs {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          em {
+            font-style: normal;
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+            @include xs {
               font-size: 12px;
               margin-top: -10px;
             }
           }
-          &::after{
-            content: '';
+          &::after {
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
@@ -3774,7 +3798,7 @@ a.resent-otp-btn {
             opacity: 0;
           }
           &:hover {
-            &::after{
+            &::after {
               background: #7352d1;
               opacity: 1;
             }
@@ -3784,12 +3808,82 @@ a.resent-otp-btn {
     }
     .nav-pills .nav-link.active {
       color: #7352d1;
-      &::after{
+      &::after {
         background: #7352d1;
         opacity: 1;
       }
     }
     .tab-content {
     }
-  } 
+  }
+}
+
+.play-music-wrap.text-center {
+  max-width: 600px;
+  margin: auto;
+  .ppq-audio-player .play-pause-btn {
+    position: absolute;
+    float: none;
+    margin: 0;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+  .play-music-wrap-inner {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 18px;
+  
+    .ppq-audio-player {
+      background: transparent;
+      padding-top: 25px;
+      height: 98px;
+      max-width: 370px;
+    }
+    .ppq-audio-player .player-time {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center;
+      color: #242424;
+    }
+  }
+  .ppq-audio-player .player-bar .player-bar-played {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    background: #7352d1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  .ppq-audio-player .player-bar .player-bar-loaded {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: rgba(115, 82, 209, 0.4);
+  }
+  .ppq-audio-player.player-playing .play-pause-icon::after {
+    background-position: -17px 0;
+    width: 20px;
+    height: 17px;
+  }
 }

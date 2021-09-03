@@ -1,0 +1,259 @@
+// responsive view variable
+@mixin xs {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tabMobile {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin tabdesktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktopXl {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+.profile-pic-wrap{
+  position: relative;
+  width: 186px;
+  height: 186px;
+  margin: auto;
+  margin-top: 10px !important;
+  @include xs{
+    width: 125px;
+    height: 125px;
+  }
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .file-upload {
+    display: none;
+  }
+  .circle {
+    border-radius: 50% !important;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid rgba(46,46,46,0.1);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .p-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 48px;
+    height: 48px;
+    background: #7352D1;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    @include xs{
+      width: 40px;
+      height: 40px;
+      padding-top: 5px;
+      bottom: 0;
+      right: 0;
+    }
+    &:hover{
+      transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      -webkit-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      -moz-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      -ms-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      -o-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.08);
+      -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.08);
+      -moz-box-shadow: 0px 10px 10px rgba(0,0,0,0.08);
+      }
+  }
+  
+}
+
+
+.profile-common-card{
+  height: calc(100% - 20px);
+  .profile-name {
+    text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: normal;
+    color: #2E2E2E;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .btn-icon-link-adj{
+    margin-top: -10px;
+    margin-right: -30px;
+    @include xs{
+      margin-top: 0px;
+      margin-right: 0;
+     }
+  }   
+}
+
+.profile-name {
+  text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #2E2E2E;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  @include xs{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}  
+.profile-table-card1{
+  padding-top: 15px;
+  width: 242px;margin: auto;display: block;
+  vertical-align: top;
+  @include xs{
+    padding-top: 0;
+   }
+  tr{
+    vertical-align: top;
+    td{
+      vertical-align: top;
+      &:first-child{
+        width: 38px;text-align: left; height: 47px;
+        @include xs{
+         height: 40px;
+        }
+      }
+      i{
+        color: #FF668E;font-size: 24px;
+      }
+      span{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: normal;
+        color: #2E2E2E;
+        @include xs{
+          font-weight: 400;
+        font-size: 14px;
+         }
+      }
+    }
+  }
+}
+.search-input-wrap{
+  @include xs{
+    width: calc(100% - 30px);margin: 10px auto 0 !important;
+  }
+}
+.personal-tab-accordion{
+ 
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  .accordion-button::after{
+    background: url("../images/icon-plus.svg") no-repeat 0 0;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    background-position: center center;
+}
+  .accordion-button:not(.collapsed)::after{
+    background: url("../images/icon-minus.svg") no-repeat 0 0;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    background-position: center center;
+  }
+  .accordion-item{
+    position: relative;background: rgba(255,255,255,0.9);box-shadow: 0px 4px 12px rgba(0,0,0,0.08);backdrop-filter: blur(10px);border-radius: 10px;margin-bottom: 15px;
+    .accordion-button{
+      box-shadow: none !important;
+      background-color: transparent;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: normal;
+      text-align: center;
+      color: #2E2E2E;
+      min-height: 55px;
+      padding-left: 40px;
+      @include xs{
+       padding-left: 20px;
+       padding-right: 20px;
+       min-height: 50px;
+      }
+    }
+    .accordion-body{
+      font-family: DM Sans;font-style: normal;font-weight: normal;font-size: 14px;line-height: 22px;color: #2E2E2E;
+      padding: 0 40px 40px;
+      @include xs{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+       }
+      .resent-otp-btn.text-decoration-none {
+        font-size: 14px;
+        text-decoration: none !important;
+      }
+    }
+  }
+}

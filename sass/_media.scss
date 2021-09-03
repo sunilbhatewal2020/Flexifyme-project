@@ -920,6 +920,15 @@
 }
 
 @media (max-width: 767px) {
+  .xs-text-white{
+    color: $white !important;
+  }
+  .panel-title-dashboard.mb-0.xs-text-white.xs-text-center{
+    color: $white !important;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    -webkit-text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    -moz-text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
   .xs-d-block{
     display: block !important;
   }
@@ -1931,7 +1940,25 @@
       -o-transform: translateX(-50%);
     }
   }
- 
+.play-music-wrap.text-center .play-music-wrap-inner{
+  padding: 20px !important;
+  .ppq-audio-player .play-pause-btn{
+    transform: translateX(-50%) scale(0.8, 0.8);
+    -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+    -moz-transform: translateX(-50%) scale(0.8, 0.8);
+    -ms-transform: translateX(-50%) scale(0.8, 0.8);
+    -o-transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  &+.btn.bttn-primary{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform-origin: center center;
+}
+} 
+
  
 }
 
