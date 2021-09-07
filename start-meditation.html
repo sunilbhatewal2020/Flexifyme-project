@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Start Meditation</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="widgets/timer/assets/circle.css" />
+    <!-- https://www.jqueryscript.net/loading/Progress-Bar-Countdown-Timer-jQuery-circlebars.html -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/start-meditation.css" />
+</head>
+
+<body class="dashboard-page">
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title">&nbsp;</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12">
+                                    <div class="meditation-col-wrap">
+                                        <div class="row progressbar-row">
+                                            <div class="col-lg-12">
+                                                <ul class="progressbar">
+                                                    <li data-bs-target="#meditation-caro" class="current"><span>Warm Up</span></li>
+                                                    <li data-bs-target="#meditation-caro"> <span>Asana</span></li>
+                                                    <li data-bs-target="#meditation-caro"> <span>Pranayam</span> </li>
+                                                    <li data-bs-target="#meditation-caro"> <span>Meditation</span> </li>
+                                                </ul>
+                                            </div>                       
+                                        </div>
+                                        <!-- meditation row 1 -->
+                                        <div class="row meditation-row" id="meditation-row1">
+                                            <div class="col-lg-12">
+                                                <div class="meditation-bs-col">
+                                                <div class="meditation-timer-wrap">
+                                                    <div class="circlebar-wrap">
+                                                        <div class="circlebar" data-circle-startTime=0 data-circle-maxValue=300 data-circle-dialWidth=6 data-circle-size="112px">
+                                                            <!-- <div class="circlebar" id="circlebar"> -->
+                                                            <div class="loader-bg">
+                                                                <div class="text">00:00:00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="circlebar-btn-wrap">
+                                                        <li>
+                                                            <a href="#" class="btn-stop btn-timer-control st">
+                                                                <i class="ri-stop-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="btn-play-pause btn-timer-control st">
+                                                                <i class="ri-play-fill"></i>
+                                                                <i class="ri-pause-line"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="meditation-pictures-wrap">
+                                                    <img src="images/meditation/meditation1-kapalbhati.png" alt="Kapalbhati" class="meditation-pictures img-fluid" />
+                                                </div>
+                                                <div class="meditation-info-wrap">
+                                                    <h6 class="meditation-heading">Kapalbhati</h6>
+                                                     <p class="meditation-time">1 to 2 minutes</p>   
+                                                     <ol class="meditation-info">
+                                                         <li>
+                                                            Sit comfortably with your spine erect. Place your hands on the knees with palms open to the sky. Take a deep breath in. 
+                                                        </li>
+                                                        <li>
+                                                            As you exhale, pull your navel back towards the spine. Do as much as you comfortably can. You may keep your right hand on the stomach to feel the abdominal muscles contract.
+                                                        </li>
+                                                        <li>
+                                                            As you relax the navel and abdomen, the breath flows into your lungs automatically.
+                                                        </li>
+                                                     </ol>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/timer/assets/circle.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+          function playTimer(){
+                $("#circlebar").Circlebar({
+                    startValue: 0,
+                    maxValue: 300,
+                    counter: 1000,
+                    dialWidth: 6,
+                    size: "112px"
+                })
+            }
+            function pauseTimer(){
+                $("#circlebar").Circlebar({
+                    startValue: 0,
+                    maxValue: 300,
+                    counter: 1000,
+                    dialWidth: 6,
+                    size: "112px"
+                })
+            } 
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+             
+                          
+        });
+    </script>
+</body>
+
+</html>

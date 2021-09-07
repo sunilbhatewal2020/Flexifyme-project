@@ -1,0 +1,233 @@
+// responsive view variable
+@mixin xs {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tabMobile {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin tabdesktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktopXl {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+.meditation-col-wrap {
+  position: relative;
+  .progressbar-row {
+    .progressbar {
+      li {
+        width: 25%;
+        &:after{
+          background: #DADADA;
+        }
+        &:not(.current){
+          &::before{
+            background: #C5C5C5;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          }
+        }
+        span{
+          color: rgba(46, 46, 46, 0.5) !important;
+        }
+      }
+    }
+  }
+
+  .meditation-row {
+    .meditation-bs-col {
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px solid #ffffff;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;      
+      padding: 54px;
+      @include md{
+        flex-direction: column;  
+        padding: 20px;
+      }
+      @include sm{
+        flex-direction: column;  
+        padding: 20px;
+      }
+      @include xs{
+        flex-direction: column;  
+        padding: 20px;
+      }
+      .meditation-timer-wrap{
+        width: 150px;
+        height: 150px;
+        margin-right: 45px;
+        margin-top: 45px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+        display: block;
+        padding: 19px;        
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        @include md{
+         margin: 20px auto 80px !important;
+        }
+        @include sm{
+          margin: 20px auto 80px !important;
+        }
+        @include xs{
+          margin: 0px auto 80px !important;
+        }
+        .circlebar-btn-wrap{
+          padding: 0;
+          margin: 5px 0 0;
+          list-style: none;          
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: stretch;
+          align-content: stretch;
+        }
+        .circlebar-wrap{
+          min-height: 135px;          
+          .circlebar.loader{
+            display: block !important;
+            position: relative !important;
+            z-index: 1 !important;
+            .loader-bg{
+              border: 6px solid rgba(255, 102, 142, 0.1);
+            }
+            .loader-spinner{
+              border: 5px solid #FF668E !important;
+            }
+            .text {
+              font-family: DM Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px !important;
+              color: #2E2E2E !important;
+            }
+          }
+        }
+      }
+      .meditation-pictures-wrap {
+        min-width: 400px;
+        height: auto;
+        padding-right: 40px;
+        @include md{
+          min-width: auto;
+          height: auto;
+          padding-right: 0;
+          text-align: center;
+          margin-bottom: 30px;
+         }
+         @include sm{
+          min-width: auto;
+          height: auto;
+          padding-right: 0;
+          text-align: center;
+          margin-bottom: 30px;
+         }
+         @include xs{
+          min-width: auto;
+          height: auto;
+          padding-right: 0;
+          text-align: center;
+          margin-bottom: 30px;
+         }
+      }
+      .meditation-info-wrap{
+        width: 100%;
+        .meditation-heading {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          color: #2E2E2E;
+          margin-bottom: 15px;
+          @include xs{
+            font-size: 16px;
+          }
+        }
+        .meditation-time {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: #2E2E2E;
+          margin-bottom: 15px;
+          @include xs{
+            font-size: 14px;
+            line-height: normal;
+          }
+        }
+        .meditation-info{
+          list-style: decimal !important;
+          padding-left: 12px !important;
+          li{
+            list-style: decimal !important;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #2E2E2E;
+            @include xs{
+              font-size: 14px;
+              line-height: normal;
+            }
+            &:not(:last-child){
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

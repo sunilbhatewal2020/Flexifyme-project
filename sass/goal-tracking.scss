@@ -1,0 +1,288 @@
+// responsive view variable
+@mixin xs {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tabMobile {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin tabdesktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktopXl {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+.common-card-body-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  @include xs{
+    display: block;
+     text-align: center;
+     margin-top: 0px;
+     margin-bottom: 10px;
+  }
+  .p-14 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #898989;
+    @include xs{
+      line-height: normal;
+      margin-bottom: 5px;
+    }
+    b {
+      font-weight: normal;
+    }
+  }
+}
+
+.asana-card-row {
+  .asana-card-left {
+    border-right: 1px solid rgba(46, 46, 46, 0.15);
+    margin-right: 100px;
+    padding-right: 30px;
+    float: left;
+    @include sm {
+      border-right: 0 !important;
+      border-bottom: 1px solid rgba(46, 46, 46, 0.15);
+      margin-right: 0;
+      padding-right: 0;
+      float: none;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+
+    @include xs {
+      border-right: 0 !important;
+      border-bottom: 1px solid rgba(46, 46, 46, 0.15);
+      margin-right: 0;
+      padding-right: 0;
+      float: none;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .asana-card-right {
+    float: right;
+    width: calc(100% - 380px);
+    @include xs {
+      float: none;
+      width: 100%;
+    }
+    @include sm {
+      float: none;
+      width: 100%;
+    }
+    .owl-stage-outer {
+      margin-right: 30px;
+      @include xs {
+        margin-left: 30px;
+      }
+      @include sm {
+        margin-left: 30px;
+      }
+      @include lg {
+        margin-right: 80px;
+      }
+    }
+  }
+}
+
+.asana-card-main {
+  max-width: 240px;
+  margin: auto;
+  .asana-card-main-head {
+    h6 {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      color: #2e2e2e;
+      margin-bottom: 10px;
+    }
+  }
+  .asana-card-main-img {
+    margin-bottom: 15px;
+    img {
+      background: #c4c4c4;
+      border-radius: 5px;
+    }
+  }
+  .asana-card-main-info {
+    ol {
+      padding: 0 0 0 20px;
+      margin: 0;
+      li {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #2e2e2e;
+        position: relative;
+        line-height: 120%;
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          left: -20px;
+          top: 6px;
+          background: #cdcdcd;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.common-card-body.common-card-body-plr30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.owl-comman-asana {
+  .owl-prev,
+  .owl-next {
+    width: 54px;
+    height: 54px;
+    text-indent: -999px;
+    overflow: hidden;
+  }
+  .owl-prev {
+    background: url("../images/prev.svg") no-repeat 0 0 !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -90px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    @include xs {
+      margin-top: -20px !important;
+      left: 0;
+    }
+    @include sm {
+      margin-top: -20px !important;
+      left: 0;
+    }
+  }
+  .owl-next {
+    background: url("../images/next.svg") no-repeat 0 0 !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    @include xs {
+      margin-top: -20px !important;
+    }
+    @include sm {
+      margin-top: -20px !important;
+    }
+  }
+}
+
+.asana-chart-wrap {
+  max-width: 605px;
+  margin: 20px auto 30px;
+  text-align: center;
+  @include xs{
+    margin-top: 0 !important;
+  }
+  .asana-chart-head {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 5px;
+  }
+  p {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+  }
+  .asana-chart {
+    margin-top: 57px;
+    padding: 0 30px;
+    @include xs {
+      margin-top: 20px;
+    padding: 0 0px;
+    }
+  }
+}
+.session-planner-tab {
+  @include xl {
+    width: 1280px;
+  }
+  @include lg {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .session-planner-tab .pills-tab-wrap .common-card.common-card-xs{
+  padding-top: 5px !important;
+}
+.session-planner-tab .pills-tab-wrap .nav-pills{
+  overflow-x: auto;
+}
+}

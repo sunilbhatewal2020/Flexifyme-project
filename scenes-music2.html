@@ -19,7 +19,7 @@
 
 <body class="dashboard-page">
 
-    <div class="common-header-wrap"></div>
+    
     <!-- <div class="loader">
         <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
     </div> -->
@@ -74,13 +74,15 @@
             $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
             $('audio').initAudioPlayer();
             $(".wave-ani-section").removeClass("active");
-            $('.play-pause-btn').on('click', function() {
-					if ($(this).parents(".ppq-audio-player").hasClass('player-playing')) {
-						$(".wave-ani-section").addClass("active");
-					} else {
-						$(".wave-ani-section").removeClass("active");
-					}
-				});
+            setTimeout(function(){
+                    $('.play-music-audio .ppq-audio-player .audio-hidden').on('pause play', function(e) {
+                        if (e.currentTarget.paused) {
+                            $(".wave-ani-section").removeClass("active");
+                        } else {
+                            $(".wave-ani-section").addClass("active");
+                        }
+                    });
+                    }, 600);
         });
     </script>
 </body>
