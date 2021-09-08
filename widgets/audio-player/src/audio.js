@@ -64,7 +64,7 @@
 			}
 
 			// 添加播放器盒子
-			var $player = $('<div class="ppq-audio-player">' + $('<div>').append($this.eq(0).clone()).html() + '<div class="play-pause-btn"><a href="javascript: void(0);" class="play-pause-icon"></a></div></div>'),
+			var $player = $('<div class="ppq-audio-player">' + $('<div>').append($this.eq(0).clone()).html() + '<div class="play-pause-btn"><a href="javascript: void(0);" class="play-pause-icon" title="Play/Pause"></a></div></div>'),
 				audioEle = $player.find('audio')[0];
 
 			$player.find('audio').addClass('audio-hidden');
