@@ -241,23 +241,7 @@
                 type: 'line',
                 data: {
                     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
-                    datasets: [{
-                        label: "Actual Progress",
-                        borderColor: gradientStroke1,
-                        pointBorderColor: gradientStroke1,
-                        pointBackgroundColor: gradientStroke1,
-                        pointHoverBackgroundColor: gradientStroke1,
-                        pointHoverBorderColor: gradientStroke1,
-                        pointBorderWidth: 2,
-                        pointBorderWidth: 3,
-                        pointHoverBorderWidth: 1,
-                        pointRadius: 3,
-                        fill: true,
-                        backgroundColor: gradientFill1,
-                        borderWidth: 4,
-                        data: [85, 80, 75, 65],    
-                        borderWidth: 2                  
-                    },
+                    datasets: [
                     {
                         label: "Expected Progress",
                         borderColor: gradientStroke2,
@@ -274,7 +258,25 @@
                         borderWidth: 4,
                         data: [80, 60, 45, 60],        
                         borderWidth: 2              
-                    }]
+                    },
+                    {
+                        label: "Actual Progress",
+                        borderColor: gradientStroke1,
+                        pointBorderColor: gradientStroke1,
+                        pointBackgroundColor: gradientStroke1,
+                        pointHoverBackgroundColor: gradientStroke1,
+                        pointHoverBorderColor: gradientStroke1,
+                        pointBorderWidth: 2,
+                        pointBorderWidth: 3,
+                        pointHoverBorderWidth: 1,
+                        pointRadius: 3,
+                        fill: true,
+                        backgroundColor: gradientFill1,
+                        borderWidth: 4,
+                        data: [85, 80, 75, 65],    
+                        borderWidth: 2                  
+                    }
+                   ]
                 },
                 options: {
                     // responsive: true,
