@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Dashboard</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="widgets/bootstrap-datepicker/css/datepicker.css" type="text/css"/> 
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body class="dashboard-page">
+    <div class="dashboard-body" style="height: 100vh;">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');height: 100%;">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title">&nbsp;</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12">
+                                    <button type="button" id="body-analysis-modal-btn" style="opacity: 0 !important;" data-bs-toggle="modal" data-bs-target="#body-analysis-modal">
+                                        body-analysis-modal
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+      <!-- body-analysis-modal -->
+      <div class="modal fade body-analysis-modal" id="body-analysis-modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content body-analysis-modal-content">
+                <div class="modal-body">
+                    <div id="body-analysis-caro" class="carousel slide carousel-fade body-analysis-caro" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <!-- carousel-item 1 -->
+                            <div class="carousel-item active">
+                                <!-- form 1 -->
+                                    <div class="row body-analysis-caro-row">
+                                        <div class="col-lg-12">
+                                            <div class="body-analysis-caro-head-row">
+                                                <table>
+                                                    <tr>
+                                                        <td class="back-btn-td">
+                                                            <!-- <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                                <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                            </a> -->
+                                                        </td>
+                                                        <td class="title-td">
+                                                            <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                        </td>
+                                                        <td class="que-td">
+                                                            <p class="p-16"><b> <span class="hide-mobile">Question:</span> 1</b> of 10</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <div class="progress custom-progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="body-analysis-caro-outer">
+                                            <div class="body-analysis-caro-left">
+                                                <div class="step-wrap">
+                                                    <div class="circle-span-outer">
+                                                    <span class="circle-span">1</span>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="body-analysis-caro-right">
+                                                <form>
+                                                    <div class="row form-row1 max-w-500">
+                                                        <div class="col-lg-6">
+                                                            <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">What is your Birthdate ?</p>
+                                                            <div class="fm-mb date-fm-mb max-w-180">                                                                    
+                                                                <input type="text" class="form-control default-date-picker" id="dob" placeholder="dd/mm/yy" >
+                                                                <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="assessment-wrap">
+                                                                <p class="p-18 text-center">Your Gender?</p>
+                                                                <ul class="text-center">
+                                                                    <li>
+                                                                        <button type="button" class="btn-weight-height active">
+                                                                            <span>Male</span>
+                                                                        </button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <button type="button" class="btn-weight-height">
+                                                                            <span>Female</span>
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>                                                           
+                                                    </div>
+                                                    <div class="row form-row2">
+                                                        <div class="col-sm-12">
+                                                            <button type="button" class="btn bttn-primary min-w-150" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row form-row3">
+                                                        <div class="col-sm-12">
+                                                            <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                        </div>
+                                                    </div>                                                        
+                                                </form>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- carousel-item 2 -->
+                            <div class="carousel-item">
+                                <!-- form 2 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 2</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">2</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1 max-w-400">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">Where are you from ?</p>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                        <div class="fm-mb">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected>Select City</option>
+                                                                                <option value="1">Option 1</option>
+                                                                                <option value="1">Option 2</option>
+                                                                                <option value="1">Option 3</option>
+                                                                                <option value="1">Option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="fm-mb">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected>Select State</option>
+                                                                                <option value="1">Option 1</option>
+                                                                                <option value="1">Option 2</option>
+                                                                                <option value="1">Option 3</option>
+                                                                                <option value="1">Option 4</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row2">
+                                                    <div class="col-sm-12">
+                                                        <button type="button" class="btn bttn-primary min-w-150" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 3 -->
+                            <div class="carousel-item">
+                                <!-- form 3 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 3</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">3</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1 max-w-570">
+                                                    <div class="col-lg-5 col-md-12">
+                                                        <div class="assessment-outer-wrap">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">What is your weight?</p>
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <button type="button" class="btn-weight-height">
+                                                                        <span>Lbs</span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn-weight-height active">
+                                                                        <span>Kg</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                    
+                                                        <div class="range-slider slidecontainer sm-xs-mt-30">
+                                                            <label class="range-slider-label"><span class="ranger-weight-val" id="ranger-weight-val"></span></label>
+                                                            <div class="slide-wrap">
+                                                                <span class="slide slideWidth"></span>
+                                                                <input type="range" min="1" max="100" value="50" id="ranger-weight" class="ranger-weight" />
+                                                            </div>
+                                                        </div>       
+                                                        </div>                                                  
+                                                    </div>  
+                                                    <div class="col-lg-2 col-md-12">
+                                                        <div class="verticle-line hide-mobile"></div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-12">
+                                                        <div class="assessment-outer-wrap">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">What is your height?</p>
+                                                            <ul class="text-center">
+                                                                <li>
+                                                                    <button type="button" class="btn-weight-height">
+                                                                        <span>Mtr</span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn-weight-height active">
+                                                                        <span>Ft</span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                    
+                                                        <div class="range-slider slidecontainer slidecontainerHeight sm-xs-mt-30">
+                                                            <label class="range-slider-label"><span class="ranger-weight-val" id="ranger-height-val"></span> </label>
+                                                            <div class="slide-wrap">
+                                                                <span class="slide slideHeight"></span>
+                                                                <input type="range" min="1" max="10" step="0.1" value="5" id="ranger-height" class="ranger-weight" />                                        
+                                                            </div>
+                                                        </div>  
+                                                        </div>                                                       
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row2">
+                                                    <div class="col-sm-12 mt25">
+                                                        <button type="button" class="btn bttn-primary min-w-150" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 4 -->
+                            <div class="carousel-item">
+                                <!-- form 4 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 4</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">4</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">What is your Profession ?</p>
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Working Professional</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Business</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Homemaker/Housewife</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Student</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Retired</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Currently  on break from work</button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="other-btn-usecase-wrap-js">
+                                                                        <div class="other-btn-usecase-wrap">
+                                                                            <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250 other-btn-usecase">Other</button>
+                                                                            <div class="other-btn-usecase-wrap-inner">
+                                                                            <div class="fm-mb">
+                                                                                <textarea class="form-control" placeholder="Your Answer" rows="3"></textarea>
+                                                                            </div>
+                                                                            <button type="button" class="btn bttn-primary" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                                            </div>
+                                                                        </div>        
+                                                                    </div>                                                                
+                                                                </li>
+                                                            </ul>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 5 -->
+                            <div class="carousel-item">
+                                <!-- form 5 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 5</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">5</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1 max-w-500">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">Preference of the session? </p>
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Personal 1-on-1 interactive sessions</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Group Sessions</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 6 -->
+                            <div class="carousel-item">
+                                <!-- form 6 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 6</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">6</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap max-w-500">
+                                                            <p class="p-18 text-center">Have any chronic illness such as back pain, neck pain, or any joint pain? </p>
+                                                            <div class="">
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Back pain</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Neck Pain</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Homemaker/Housewife</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Joint Pain</button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="other-btn-usecase-wrap-js">
+                                                                        <div class="other-btn-usecase-wrap">
+                                                                            <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250 other-btn-usecase">Other</button>
+                                                                            <div class="other-btn-usecase-wrap-inner">
+                                                                            <div class="fm-mb">
+                                                                                <textarea class="form-control" placeholder="Your Answer" rows="3"></textarea>
+                                                                            </div>
+                                                                            <button type="button" class="btn bttn-primary" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                                            </div>
+                                                                        </div>           
+                                                                    </div>                                                             
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 7 -->
+                            <div class="carousel-item">
+                                <!-- form 7 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 7</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">7</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap max-w-500">
+                                                            <p class="p-18 text-center">How much physical activity you have to do in your profession?</p>
+                                                            <div class="">
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Not Much</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Average</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Too Much</button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="other-btn-usecase-wrap-js">
+                                                                        <div class="other-btn-usecase-wrap">
+                                                                            <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250 other-btn-usecase">Other</button>
+                                                                            <div class="other-btn-usecase-wrap-inner">
+                                                                            <div class="fm-mb">
+                                                                                <textarea class="form-control" placeholder="Your Answer" rows="3"></textarea>
+                                                                            </div>
+                                                                            <button type="button" class="btn bttn-primary" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                                            </div>
+                                                                        </div>    
+                                                                    </div>                                                                    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 8 -->
+                            <div class="carousel-item">
+                                <!-- form 8 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 8</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">8</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap max-w-500">
+                                                            <p class="p-18 text-center">Do you do any form of exercise? </p>
+                                                            <div class="">
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Yoga</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Gym</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">Zumba</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250" data-bs-target="#body-analysis-caro" data-bs-slide="next">No</button>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="other-btn-usecase-wrap-js">
+                                                                        <div class="other-btn-usecase-wrap">
+                                                                            <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0 max-w-250 other-btn-usecase">Other</button>
+                                                                            <div class="other-btn-usecase-wrap-inner">
+                                                                            <div class="fm-mb">
+                                                                                <textarea class="form-control" placeholder="Your Answer" rows="3"></textarea>
+                                                                            </div>
+                                                                            <button type="button" class="btn bttn-primary" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Next</span> <i class="ri-arrow-right-s-line bttn-icon-font st"></i></button>
+                                                                            </div>
+                                                                        </div>         
+                                                                    </div>                                                               
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 9 -->
+                            <div class="carousel-item">
+                                <!-- form 9 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 9</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">9</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1 max-w-500">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap">
+                                                            <p class="p-18 text-center">Sleep pattern and quality</p>
+                                                            <ul class="text-center button-group-wrap">
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Sound uninterrupted sleep  7 ~ 8 hrs</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Sound sleep for 3 ~ 4 hrs and rest of the time awake/conscious</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Wakes up every 1 ~ 2 hrs</button>
+                                                                </li>
+                                                                <li>
+                                                                    <button type="button" class="btn bttn-outline-secondary-sm w-100 bttn-sm f-13 mb-0" data-bs-target="#body-analysis-caro" data-bs-slide="next">Very difficult falling asleep</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 10 -->
+                            <div class="carousel-item">
+                                <!-- form 10 -->
+                                <div class="row body-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-head-row">
+                                            <table>
+                                                <tr>
+                                                    <td class="back-btn-td">
+                                                        <a href="#" class="back-btn" data-bs-target="#body-analysis-caro" data-bs-slide="prev">
+                                                            <img src="images/back-icon.svg" alt="back-btn" class="back-btn-img" />
+                                                        </a>
+                                                    </td>
+                                                    <td class="title-td">
+                                                        <h5 class="p-20">Tell us something about you!</h5>                                                                
+                                                    </td>
+                                                    <td class="que-td">
+                                                        <p class="p-16"><b> <span class="hide-mobile">Question:</span> 10</b> of 10</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div class="progress custom-progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>                                                        
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="body-analysis-caro-outer">
+                                        <div class="body-analysis-caro-left">
+                                            <div class="step-wrap">
+                                                <div class="circle-span-outer">
+                                                <span class="circle-span">10</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="body-analysis-caro-right">
+                                            <form>
+                                                <div class="row form-row1">
+                                                    <div class="col-lg-12">
+                                                        <div class="assessment-wrap max-w-500">
+                                                            <div class="medical-histroy-wrap">
+                                                            <p class="p-18 text-center">Do you have any medical history. Please share brief</p>
+                                                            <p class="p-14 text-center">Please also describe if you had any major or minor surgeries in lifetime</p>                                                                
+                                                                <div class="other-btn-usecase-wrap">
+                                                                    <div class="other-btn-usecase-wrap-inner">
+                                                                        <div class="fm-mb">
+                                                                            <textarea class="form-control" placeholder="Your Answer" rows="3"></textarea>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <button type="button" class="btn bttn-primary" data-bs-target="#body-analysis-caro" data-bs-slide="next"><span>Submit</span></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>   
+                                                                </div>
+                                                        </div>                                               
+                                                    </div>                                                          
+                                                </div>
+                                                <div class="row form-row3">
+                                                    <div class="col-sm-12">
+                                                        <p class="p-14">Your information is saved to provide you with the best results.</p>
+                                                    </div>
+                                                </div>                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- carousel-item 11 -->
+                            <div class="carousel-item">
+                                <!-- form 11 -->
+                                <div class="row thanks-analysis-caro-row">
+                                    <div class="col-lg-12">
+                                        <div class="thanks-analysis-caro-card-outer">
+                                        <div class="thanks-analysis-caro-card">
+                                            <h3>Thank you!</h3>
+                                            <p class="p-14">your response has been recorded.
+                                                Can't wait to get on our first live one-on-one session!</p>
+                                                <p class="p-14">Our Expert trainers will define a plan for you to 
+                                                    achive your goal !</p>
+                                                <button type="button" class="btn bttn-primary" onclick="location.href='daily-practise-session.html'"><span>Go to Dashboard</span></button>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // modal show by default
+        // var bodyAnalysisCaroModal = new bootstrap.Modal(document.getElementById('body-analysis-caro'), {})
+        // bodyAnalysisCaroModal.show()
+
+        // range slider 
+        // var sliderW = document.getElementById("ranger-weight");
+        // var outputW = document.getElementById("ranger-weight-val");
+        // outputW.innerHTML = sliderW.value;
+        // sliderW.oninput = function() {
+        //     outputW.innerHTML = this.value;
+        //     var slideWidthW = $(this).val() * 100 / 100;
+        //     $(this).parents('.slidecontainer').find(".slide").css("width", slideWidthW + "%");
+        // }
+
+        // https://codepen.io/thrgsmypny/pen/dyWadPy
+        
+
+        // weight
+        let sliderW = document.getElementById("ranger-weight");
+        let outputW = document.querySelector("#ranger-weight-val");
+        function decimalSeparator(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+        outputW.innerHTML = `${decimalSeparator(sliderW.value)} <em class="ranger-weight-val-em">Kg</em>`; 
+        $(".slideWidth").css("width", (sliderW.value) + "%");
+        sliderW.oninput = function () {
+            outputW.innerHTML = `${decimalSeparator(this.value)} <em class="ranger-weight-val-em">Kg</em>`;
+            $(".slideWidth").css("width", (sliderW.value) + "%");
+        };
+
+        // height
+        let sliderH = document.getElementById("ranger-height");
+        let outputH = document.querySelector("#ranger-height-val");
+        function decimalSeparator(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+        outputH.innerHTML = `${decimalSeparator(sliderH.value)} <em class="ranger-weight-val-em">Ft</em>`; 
+        $(".slideHeight").css("width", (sliderH.value * 10) + "%");
+        sliderH.oninput = function () {
+            outputH.innerHTML = `${decimalSeparator(this.value)} <em class="ranger-weight-val-em">Ft</em>`;
+            $(".slideHeight").css("width", (sliderH.value * 10) + "%");
+        };
+
+        // other usecase handle
+        $(".other-btn-usecase-wrap-js .other-btn-usecase-wrap .other-btn-usecase-wrap-inner").hide();
+        $(document).ready(function(){
+            $(".other-btn-usecase-wrap-js .other-btn-usecase-wrap .other-btn-usecase").click(function(){
+                $(this).parents(".other-btn-usecase-wrap-js").find(".other-btn-usecase-wrap-inner").fadeIn();
+                $(this).addClass("active");
+            });
+
+            //show modal
+            $("#body-analysis-modal-btn").trigger("click");
+
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+        });
+        
+    </script>
+</body>
+
+</html>

@@ -480,6 +480,9 @@
   }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
+  .sm-xs-mt-30{
+    margin-top: -30px !important;
+  }
   .grey-triangle-before,
   .grey-triangle-after,
   .white-triangle-after {
@@ -920,6 +923,9 @@
 }
 
 @media (max-width: 767px) {
+.sm-xs-mt-30{
+  margin-top: -30px !important;
+}
   .xs-text-white{
     color: $white !important;
   }

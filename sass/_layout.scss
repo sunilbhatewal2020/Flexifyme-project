@@ -376,7 +376,8 @@ a:focus {
   &.bttn-light,
   &.bttn-outline-primary,
   &.bttn-outline-primary2,
-  &.bttn-outline-secondary {
+  &.bttn-outline-secondary,
+  &.bttn-outline-secondary-sm {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -470,6 +471,19 @@ a:focus {
     &.active {
       background-color: $black;
       border-color: $black;
+      color: $white;
+    }
+  }
+  &.bttn-outline-secondary-sm{
+    background-color: transparent;
+    border-color: #DADADA;
+    color: $black;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background: linear-gradient(218.34deg, #FF668E 4.91%, #3F1F68 180.24%), #FFFFFF;
+      border-color: transparent;
       color: $white;
     }
   }
@@ -892,6 +906,16 @@ height: 40px;
     bottom: -20px;
     left: 3px;
     z-index: 3;
+  }
+  &.date-fm-mb{
+    .icon-label{
+      color: #555F5B;
+font-size: 18px;
+position: absolute;
+top: 10px;
+right: 20px;
+z-index: 9;
+    }
   }
 }
 .forgot-pass-adj {
@@ -3184,6 +3208,13 @@ a.book-assessment-btn {
     font-weight: normal;
     font-size: 14px;
     color: #898989;
+    .ranger-weight-val-em{
+         font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #898989;
+    }
     .ranger-weight-val {
       font-family: $font-dm;
       font-style: normal;
@@ -3983,4 +4014,26 @@ a.resent-otp-btn {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+}
+
+.bttn-icon-font{
+  vertical-align: middle;font-size: 20px;
+}
+.min-w-150{
+  min-width: 150px;
+}
+.max-w-210{
+  max-width: 210px;
+}
+.max-w-180{
+  max-width: 180px;
+}
+.max-w400{
+  max-width: 400px;
+}
+.max-w-250{
+  max-width: 250px;
+}
+.datepicker{
+  z-index: 9999 !important;
 }
