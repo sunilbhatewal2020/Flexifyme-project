@@ -480,6 +480,9 @@
   }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
+  .sm-xs-order-1{
+    order: 1 !important;
+  }
   .sm-xs-mt-30{
     margin-top: -30px !important;
   }
@@ -923,6 +926,9 @@
 }
 
 @media (max-width: 767px) {
+  .sm-xs-order-1{
+    order: 1 !important;
+  }
 .sm-xs-mt-30{
   margin-top: -30px !important;
 }
@@ -1638,6 +1644,7 @@
     left: 230px !important;
   }
 
+  
   .pricing-plan-row {
     background: transparent;
     border: 0;

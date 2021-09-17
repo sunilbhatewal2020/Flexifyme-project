@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Progress Report</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="widgets/owl/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="widgets/owl/dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/goal-tracking.css">
+</head>
+
+<body class="dashboard-page">
+
+    
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                        <h1 class="dashboard-title"><span class="text-black">Health Report</span></h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12">
+                                    <div class="session-planner-tab">
+                                        <div class="pills-tab-wrap">
+                                            <ul class="nav nav-pills planner-tab" id="planner-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="ProgressReport-tab">
+                                                        <span>Progress Report</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="planner-tabContent">
+                                                <div class="tab-pane fade show active" id="ProgressReport">
+                                                    <div class="common-card common-card-xs">
+                                                        <div class="common-card-head">
+                                                            <ul class="list-inline common-card-report-ul">
+                                                                <li class="list-inline-item">
+                                                                    <h5 class="common-card-title">Report for Demo session</h5>
+                                                                </li>
+                                                                <li class="list-inline-item">
+                                                                    <div class="fm-mb fm-mb-sm mb-0">
+                                                                        <select class="form-select form-control">
+                                                                            <option selected="">19 July 2021</option>
+                                                                            <option value="1">20 July 2021</option>
+                                                                            <option value="1">21 July 2021</option>
+                                                                            <option value="1">22 July 2021</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-inline-item download-item">
+                                                                    <button type="button" class="btn bttn-outline-primary2 bttn-sm">Download</button>
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                        <div class="common-card-body no-padding">  
+                                                            <iframe src="pdf-progress-report.html" title="pdf-progress-report-iframe" class="pdf-progress-report-iframe"></iframe> 
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+        });
+        </script>
+</body>
+
+</html>
