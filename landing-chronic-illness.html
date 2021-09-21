@@ -83,7 +83,7 @@
     </div> -->
     <div class="overflow-hidden-js">
         <section class="common-section home-sec1 landing-home-sec1 no-padding" id="sec1"
-            style="background-image:url('images/landing-chronic-illness-bg.png')">
+            style="background-image:url('images/landing-chronic-illness-bg.jpg')">
             <div class="bg-video-wrap">
                 <!-- <video src="images/meditation.mp4" loop muted autoplay poster="images/hero-bg.jpg">
                 </video> -->
@@ -91,8 +91,8 @@
                 </div>
             </div>
             <div class="container no-padding home-sec1-container" id="how-it-work">
-                <div class="row h-100vh justify-content-center text-center align-items-center" id="how-it-work-row">
-                    <div class="col-lg-8 sm-xs-order-1">
+                <div class="row justify-content-center text-center how-it-work-row align-items-center" id="how-it-work-row">
+                    <div class="col-lg-8">
                         <div class="home-sec-inner home-sec-inner-top">
                             <h2 class="text-white" data-aos="fade-in" data-aos-delay="600" data-aos-anchor="#sec1">
                                 Say Goodbye To Chronic Illness With Personalized Online Exercise & Diet Coaching.
@@ -120,13 +120,13 @@
                                     </div> <input type="hidden" name="countryCode" id="countryCode">
                                 </div>
                                 <div class="fm-mb">
-                                    <select class="form-select form-control">
+                                    <select class="form-select form-control" id="select-program">
                                         <option selected>Select Program</option>
-                                        <option value="1">Program for Back/Neck/ pain</option>
-                                        <option value="2">Program for Thyroid</option>
-                                        <option value="3">Program for high BP</option>
-                                        <option value="4">Program for Diabetes</option>
-                                        <option value="5">Program for PCOS/PCOD</option>
+                                        <option value="ProgramforBackNeckpain">Program for Back/Neck/ pain</option>
+                                        <option value="ProgramThyroid">Program for Thyroid</option>
+                                        <option value="ProgramHighBP">Program for high BP</option>
+                                        <option value="ProgramDiabetes">Program for Diabetes</option>
+                                        <option value="ProgramPCOSPCOD">Program for PCOS/PCOD</option>
                                     </select>
                                 </div>
                                 <div class="fm-mb">
@@ -142,42 +142,44 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>         
+        </section>
+        <div class="slider-landing-wrap">
             <div class="container landing-slider-contaniner" >
                 <div class="row">
                     <div class="col-12">
                         <div class="home-sec2-landing"  data-aos="fade-in" data-aos-delay="1500" data-aos-anchor="#sec1">
                             <div class="owl-carousel owl-theme owl-comman-landing">
                                 <div class="item">
-                                    <div class="landing-owl-card">
+                                    <div class="landing-owl-card" id="ProgramforBackNeckpain">
                                         <img src="images/landing-owl-card1.png" alt="Program for Back/Neck pain"
                                             class="img-fluid" />
                                         <p class="p-18">Program for Back/Neck pain</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="landing-owl-card">
+                                    <div class="landing-owl-card" id="ProgramThyroid">
                                         <img src="images/landing-owl-card2.png" alt="Program for Thyroid"
                                             class="img-fluid" />
                                         <p class="p-18">Program for Thyroid</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="landing-owl-card">
+                                    <div class="landing-owl-card" id="ProgramHighBP">
                                         <img src="images/landing-owl-card3.png" alt="Program for high BP"
                                             class="img-fluid" />
                                         <p class="p-18">Program for high BP</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="landing-owl-card">
+                                    <div class="landing-owl-card" id="ProgramDiabetes">
                                         <img src="images/landing-owl-card4.png" alt="Program for Diabetes"
                                             class="img-fluid" />
                                         <p class="p-18">Program for Diabetes</p>
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="landing-owl-card">
+                                    <div class="landing-owl-card" id="ProgramPCOSPCOD">
                                         <img src="images/landing-owl-card5.png" alt="Program for PCOS/PCOD"
                                             class="img-fluid" />
                                         <p class="p-18">Program for PCOS/PCOD</p>
@@ -188,7 +190,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="common-section home-sec3 home-hero-caro-sec home-sec3-landing" id="sec2">
             <div id="trigger1"></div>
             <div class="home-sec3-inner">
@@ -273,6 +275,9 @@
                                     <p class="p-18">Multiple Time Slots (6:00 AM to 8:00 PM)</p>
                                 </li>
                             </ul>
+                            <div class="text-center" data-aos="fade-in" data-aos-delay="1200" data-aos-anchor="#sec3">
+                                <button type="button" class="btn bttn-outline-primary2">Request call back</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -729,16 +734,6 @@
                                             aria-label="Slide 2"></button>
                                         <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="2"
                                             aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="4"
-                                            aria-label="Slide 5"></button>
-                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="5"
-                                            aria-label="Slide 6"></button>
-                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="6"
-                                            aria-label="Slide 7"></button>
-                                        <button type="button" data-bs-target="#trainer-caro-xs2" data-bs-slide-to="7"
-                                            aria-label="Slide 8"></button>
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -785,18 +780,8 @@
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                    <p class="p-16 more"> is a therapeutic yoga (Hatha & Ashtanga)
-                                                        practitioner,
-                                                        mind trainer & speaker with a P.G Diploma in Yogic Science. He
-                                                        is a
-                                                        registered 500-hour yoga teacher ( E-RYT 500) with the U.S Yoga
-                                                        Alliance. For more than a decade, he's been striving to
-                                                        amalgamate
-                                                        Yoga, Positive psychology & Spirituality together and working in
-                                                        the
-                                                        field as a therapist providing physiological and physical
-                                                        therapy
-                                                        and yoga sessions in corporate and private environments.
+                                                    <p class="p-16 more">
+                                                         is a therapeutic yoga (Hatha & Ashtanga) practitioner, mind trainer & speaker with a P.G Diploma in Yogic Science. He is a registered 500-hour yoga teacher ( E-RYT 500)  with the  U.S Yoga Alliance.  For more than a decade, he’s been striving to amalgamate Yoga, Positive psychology & Spirituality together and working in the field as a therapist providing physiological and physical therapy and yoga sessions in corporate and private environments.
                                                     </p>
                                                 </div>
                                             </div>
@@ -805,8 +790,8 @@
                                             <div class="trainer-content-wrap trainer-content2">
                                                 <img src="images/trainer/trainer2.png" alt="trainer"
                                                     class="trainer-img" />
-                                                <div class="more-content-wrap-overflow">
                                                     <h3>Palak Dingra</h3>
+                                                <div class="more-content-wrap-overflow">
                                                     <ul class="trainer-content1-ul">
                                                         <li>
                                                             <div class="trainer-feature-wrap">
@@ -846,25 +831,7 @@
                                                         </li>
                                                     </ul>
                                                     <p class="p-16 more">
-                                                        has completed 6 months of advanced yoga teacher training from
-                                                        Bharat
-                                                        Thakur Artistic Yoga, with specialization in Power Yoga. She did
-                                                        pioneering work in the domain of yoga for more than 3 years from
-                                                        various places like Nepal, Bangalore, Mumbai, Dubai and Delhi
-                                                        NCR.
-                                                        Weaving ancient yogic philosophy into 21st century life to
-                                                        achieve a
-                                                        state of balance, she teaches a form of yoga that would help
-                                                        people
-                                                        first get fit, become healthy and then move towards the higher
-                                                        practices. Put simply, Yoga transformed her life and she wants
-                                                        to
-                                                        share that magic with others. She passionately believes that
-                                                        yoga is
-                                                        for everyone. No matter your age or fitness level, she offers
-                                                        training that will work for you, empowering your journey to
-                                                        personal
-                                                        growth and well-being.
+                                                        is a Certified Advanced Yoga Teacher from Bharat Thakur Artistic Yoga, specializing in Power Yoga. As a leader in his field, he has done pioneering work in several countries over the last 5 years. His unique approach is to weave ancient yogic philosophy into 21st-century life to achieve a state of balance.
                                                     </p>
                                                 </div>
                                             </div>
@@ -873,7 +840,7 @@
                                             <div class="trainer-content-wrap trainer-content2">
                                                 <img src="images/trainer/trainer3.png" alt="trainer"
                                                     class="trainer-img" />
-                                                <h3>Dr Pramod Choudhary</h3>
+                                                <h3>Pramod Choudhary</h3>
                                                 <div class="more-content-wrap-overflow">
                                                     <ul class="trainer-content1-ul">
                                                         <li>
@@ -914,341 +881,11 @@
                                                         </li>
                                                     </ul>
                                                     <p class="p-16 more">
-                                                        is an IT graduate who started his spiritual journey at the early
-                                                        age
-                                                        of 16. Profoundly changed by the teachings of spiritual giants
-                                                        like
-                                                        Sri Paramahansa Yogananda and Sri Ramakrishna Paramahansa, he
-                                                        decided to dedicate his life to teaching the science of yoga and
-                                                        spreading the wisdom of these great yoga masters of India. He
-                                                        completed his master's and PhD in “Vedic Yoga and Psycho
-                                                        Neurobics”
-                                                        (alternative therapies). He is also registered with the Yoga
-                                                        Alliance as a 200-hour multi-style yoga teacher and he has been
-                                                        practicing Raja Yoga for the past several years, this allows him
-                                                        to
-                                                        enrich his teachings with personal experience and best
-                                                        practices.
-                                                        Pramod currently provides classes and workshops on Hatha Yoga,
-                                                        Yin
-                                                        Yoga, Pranayama, Meditations, Yoga Philosophy, Delta Healing and
-                                                        Psycho-Neurobics.
+                                                        is a registered 200-hour yoga teacher with the Yoga Alliance. Inspired by the teachings of spiritual giants like Sri Paramahansa Yogananda and Sri Ramakrishna Paramahansa, he has decided to dedicate his life to teaching the science of yoga and spreading the wisdom of these great yoga masters of India.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <div class="trainer-content-wrap trainer-content2">
-                                                <img src="images/trainer/trainer4.png" alt="trainer"
-                                                    class="trainer-img" />
-                                                <h3>Kaveri Banga</h3>
-                                                <div class="more-content-wrap-overflow">
-                                                    <ul class="trainer-content1-ul">
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Ashtanga Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Ashtanga Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Bikram Yoga"
-                                                                        class="trainer-circle floatingX-r" />
-                                                                </div>
-                                                                <p class="p-16">Bikram Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Hatha Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Hatha Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="p-16 more">
-                                                        is a software engineer and has worked with one of the best IT
-                                                        companies in India for a span of 4+years. Her keen desire to
-                                                        understand the Indian Vedic Scriptures and to explore the path
-                                                        of spirituality introduced her to yoga and since then it has
-                                                        become her passion. She is a dynamic, motivated and goal
-                                                        oriented yoga teacher with 5+ years of rich experience in
-                                                        training students across 20+ different countries. She is well
-                                                        versed in designing the yoga programs which help improve
-                                                        flexibility, core strength, ability to focus better and overall
-                                                        quality of life. She has completed 350 hours of yoga TTC and Pre
-                                                        & Post natal yoga TTC. She is also a certified yoga teacher and
-                                                        evaluator by the Yoga Certification Board.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="carousel-item">
-                                            <div class="trainer-content-wrap trainer-content2">
-                                                <img src="images/trainer/trainer5.png" alt="trainer"
-                                                    class="trainer-img" />
-                                                <h3>Neha Mittal</h3>
-                                                <div class="more-content-wrap-overflow">
-                                                    <ul class="trainer-content1-ul">
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Ashtanga Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Ashtanga Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Bikram Yoga"
-                                                                        class="trainer-circle floatingX-r" />
-                                                                </div>
-                                                                <p class="p-16">Bikram Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Hatha Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Hatha Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="p-16 more">
-                                                        A sports Nutritionist, clinical and weight management specialist
-                                                        having vast experience with own diet consultancy. She advises
-                                                        clients on nutritional principles, diet modifications and food
-                                                        selection in order to lead a healthy lifestyle and achieve a
-                                                        specific health related goal. She provides guidelines for
-                                                        prevention and treatment of illness and lifestyle disorders. She
-                                                        provides diet charts and nutrition guidance for athletes, and
-                                                        general people with weight management or lifestyle disorders or
-                                                        health issues. She provides a customised diet plan to meet the
-                                                        targets that fits in an individual's schedule.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <div class="trainer-content-wrap trainer-content2">
-                                                <img src="images/trainer/trainer6.png" alt="trainer"
-                                                    class="trainer-img" />
-                                                <h3>Bhoomika Yagwani</h3>
-                                                <div class="more-content-wrap-overflow">
-                                                    <ul class="trainer-content1-ul">
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Ashtanga Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Ashtanga Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Bikram Yoga"
-                                                                        class="trainer-circle floatingX-r" />
-                                                                </div>
-                                                                <p class="p-16">Bikram Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Hatha Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Hatha Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="p-16 more">
-                                                        is a Postgraduate in Applied economics & Masters diploma in
-                                                        Interior Designing and a full time graduation degree in Yoga
-                                                        science. She is a certified yoga teacher & evaluator by Yoga
-                                                        Certification Board. Ministry of Ayush. She has represented
-                                                        India as a cultural ambassador at Indian Embassy, South Korea
-                                                        for 1 year. She has completed her 2nd teacher training program
-                                                        at Sivananda Vedanta Centre, Kerala post which got a title of
-                                                        "Yoga Shiromani"
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <div class="trainer-content-wrap trainer-content2">
-                                                <img src="images/trainer/trainer7.png" alt="trainer"
-                                                    class="trainer-img" />
-                                                <h3>Rahul Singh</h3>
-                                                <div class="more-content-wrap-overflow">
-                                                    <ul class="trainer-content1-ul">
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Ashtanga Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Ashtanga Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Bikram Yoga"
-                                                                        class="trainer-circle floatingX-r" />
-                                                                </div>
-                                                                <p class="p-16">Bikram Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Hatha Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Hatha Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="p-16 more">
-                                                        is a certified yoga professional from International Yoga
-                                                        Alliance, a Registered Yoga School (RYS) with 500 hours of
-                                                        intense yoga training. He is also a level 2 certified
-                                                        professional from Indea Yoga, Mysore. His aim is to provide the
-                                                        right balance in your tensed lifestyle with regular yoga
-                                                        sessions and to make you explore different types of yoga
-                                                        practices. He strongly believes that yoga re-unites the
-                                                        optimistic connection of body, mind, and soul. He has done some
-                                                        pioneering work by initiating his career with the aim of
-                                                        spreading apprehensive Yoga and Wellness as a lifestyle in the
-                                                        community. Rahul specializes in Hatha Yoga, Ashtanga Vinyasa
-                                                        Yoga and Mysore style Yoga. We're glad to have Rahul in our team
-                                                        and is a part of our mission to transform lives.
-                                                        <br />
-                                                        Hatha Yoga, Ashtanga Vinyasa Yoga, Mysore Style Yoga
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <div class="trainer-content-wrap trainer-content2">
-                                                <img src="images/trainer/trainer8.png" alt="trainer"
-                                                    class="trainer-img" />
-                                                <h3>Dr Trishita Issar</h3>
-                                                <div class="more-content-wrap-overflow">
-                                                    <ul class="trainer-content1-ul">
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose1.svg" alt="Ashtanga Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Ashtanga Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Ashtanga Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose2.svg" alt="Bikram Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Bikram Yoga"
-                                                                        class="trainer-circle floatingX-r" />
-                                                                </div>
-                                                                <p class="p-16">Bikram Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="trainer-feature-wrap">
-                                                                <div class="trainer-feature-img">
-                                                                    <img src="images/yoga-pose3.svg" alt="Hatha Yoga"
-                                                                        class="trainer-feature" />
-                                                                    <img src="images/trainer-feature-circle.svg"
-                                                                        alt="Hatha Yoga"
-                                                                        class="trainer-circle floatingX-l" />
-                                                                </div>
-                                                                <p class="p-16">Hatha Yoga</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="p-16 more">
-                                                        is one of India's top dietitians & nutritionists. She holds a
-                                                        doctorate in foods, nutrition and dietetics and is the founder
-                                                        and CEO of Diet Solutions. With over eleven years of work
-                                                        experience Dr. Trishita is a certified bariatric nutritionist, a
-                                                        trusted diabetes educator and a gold medalist in MSC Food,
-                                                        Nutrition and Dietetics from the prestigious Andhra University.
-                                                        Over the years Trishita has collaborated with some of the top
-                                                        healthcare organisations namely, Manipal Hospitals,Max Hospitals
-                                                        at Visakhapatnam, IDEP, Pune and Apollo Hospitals, Hyderabad. As
-                                                        a way to give back to the nutrition community, Dr. Trishita is
-                                                        also a guest lecturer at her alma mater, Andhra University. She
-                                                        has even lectured students at Yashoda hospital, Hyderabad. Dr.
-                                                        Trishita is even associated with corporates, restaurants and
-                                                        fitness centers in the capacity of a chief nutritionist and
-                                                        consultant. To name a few - HSBC Bank,Apparel park ITZ, Fit with
-                                                        Fab, Kaloreez and Gluttons garage.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                     <!-- <button class="carousel-control-prev" type="button"
                                         data-bs-target="#trainer-caro-xs2" data-bs-slide="prev">
@@ -1752,27 +1389,29 @@
       <div class="modal fade compare-plans-modal" id="compare-plans-modal" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-body no-padding">
-                    <div class="compare-plans-modal-body clearfix">
-                        <div class="compare-plans-modal-header clearfix">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="fm-mb tab-toggle-btn-wrap">
-                                <div class="toggle-wrap">
-                                    <input type="radio" name="Session-tab" value="weight-tab" id="one-tab" checked="checked"/>
-                                    <label id="one-session-btn-tab" for="one-tab">One to One Session</label>
-                                    <input type="radio" name="Session-tab" value="group-tab" id="group-tab"/>
-                                    <label id="group-session-btn-tab" for="group-tab" data-bs-toggle="tab">Group Session</label>
-                                </div>
+                <div class="modal-header">
+                    <div class="compare-plans-modal-header clearfix" style="margin: auto;display: block; text-align: center;">
+                        <div class="fm-mb tab-toggle-btn-wrap">
+                            <div class="toggle-wrap">
+                                <input type="radio" name="Session-tab" value="weight-tab" id="one-tab" checked="checked"/>
+                                <label id="one-session-btn-tab" for="one-tab">One to One Session</label>
+                                <input type="radio" name="Session-tab" value="group-tab" id="group-tab"/>
+                                <label id="group-session-btn-tab" for="group-tab" data-bs-toggle="tab">Group Session</label>
                             </div>
-                            <ul class="nav nav-tabs w-100" id="compare-plans-tab" role="tablist" style="opacity: 0 !important; display: none !important;">
-                                <li class="nav-item" role="presentation">
-                                  <button id="one-session-btn-trigger" class="nav-link active" data-bs-toggle="tab" data-bs-target="#one-session-tab" type="button" role="tab">One to One Session</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button id="group-session-btn-trigger" class="nav-link" data-bs-toggle="tab" data-bs-target="#group-session-tab" type="button" role="tab">Group Session</button>
-                                </li>
-                              </ul>
                         </div>
+                        <ul class="nav nav-tabs w-100" id="compare-plans-tab" role="tablist" style="opacity: 0 !important; display: none !important;">
+                            <li class="nav-item" role="presentation">
+                              <button id="one-session-btn-trigger" class="nav-link active" data-bs-toggle="tab" data-bs-target="#one-session-tab" type="button" role="tab">One to One Session</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button id="group-session-btn-trigger" class="nav-link" data-bs-toggle="tab" data-bs-target="#group-session-tab" type="button" role="tab">Group Session</button>
+                            </li>
+                          </ul>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                <div class="modal-body no-padding">
+                    <div class="compare-plans-modal-body clearfix">                        
                         <div class="compare-plans-modal-body clearfix">                           
                               <div class="tab-content" id="compare-plans-tabContent">
                                 <div class="tab-pane fade show active" id="one-session-tab" role="tabpanel">
@@ -1781,7 +1420,7 @@
                                             <table class="compare-plans-table w-100">
                                                 <tbody>
                                                 <tr class="tr-head1">
-                                                <td class="td-head1 bg-grey-adj">1-on-1 Session</td>
+                                                <td class="td-head1 bg-grey-adj no-wrap">1-on-1 Session</td>
                                                 <td class="td-head1" colspan="3">Basic</td>
                                                 <td class="td-head1 td-head-border" rowspan="17"></td>
                                                 <td class="td-head1" colspan="3">Holistic</td>
@@ -1958,7 +1597,7 @@
                                     <table class="compare-plans-table w-100">
                                         <tbody>
                                         <tr class="tr-head1">
-                                        <td class="td-head1 bg-grey-adj">Group Session</td>
+                                        <td class="td-head1 bg-grey-adj no-wrap">Group Session</td>
                                         <td class="td-head2"><span>Quarterly</span> <em>₹300</em></td>
                                         <td class="td-head2"><span>Half Yearly</span> <em>₹500</em></td>
                                         <td class="td-head2"><span>Yearly</span> <em>₹700</em></td>

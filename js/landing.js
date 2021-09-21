@@ -7,7 +7,6 @@ $(document).ready(function () {
     $(".common-header").toggleClass("fixed-xs");
     return false;
   });
-  // if (wid >= 992) {}
   //for fixed header
   $(window).bind("scroll", function () {
     var navHeight = $(window).height() - 0;
@@ -89,7 +88,7 @@ responsive: {
         items:1, 
           },
     600:{
-        items:0
+        items:2
     },
     1000:{
         items:2
@@ -142,6 +141,33 @@ responsive: {
         $(this).prev().toggle();
         return false;
     });
+
+    // for landing-slider-contaniner 
+    $(".landing-slider-contaniner .landing-owl-card#ProgramforBackNeckpain").click(function(){
+      $('#select-program').val('ProgramforBackNeckpain')
+      $("#select-program").focus();
+    });
+
+    $(".landing-slider-contaniner .landing-owl-card#ProgramThyroid").click(function(){
+      $('#select-program').val('ProgramThyroid')
+      $("#select-program").focus();
+    });
+
+    $(".landing-slider-contaniner .landing-owl-card#ProgramHighBP").click(function(){
+      $('#select-program').val('ProgramHighBP')
+      $("#select-program").focus();
+    });
+
+    $(".landing-slider-contaniner .landing-owl-card#ProgramDiabetes").click(function(){
+      $('#select-program').val('ProgramDiabetes')
+      $("#select-program").focus();
+    });
+
+    $(".landing-slider-contaniner .landing-owl-card#ProgramPCOSPCOD").click(function(){
+      $('#select-program').val('ProgramPCOSPCOD')
+      $("#select-program").focus();
+    });
+
     }, 1000);
   
  
