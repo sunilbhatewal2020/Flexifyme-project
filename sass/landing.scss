@@ -273,6 +273,24 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  .form-check.form-check-box {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    z-index: 5;
+    opacity:0;
+    transition: all 0.2s linear;
+    pointer-events: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+  &.active-click-card{
+    .form-check.form-check-box {
+      opacity: 1;
+    }
+  }
   .p-18{
     background: #311a75;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
