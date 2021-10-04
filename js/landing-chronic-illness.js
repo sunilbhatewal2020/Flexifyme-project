@@ -144,47 +144,47 @@ responsive: {
     // for landing-slider-contaniner 
     $(".landing-slider-contaniner .landing-owl-card#ProgramforBackNeckpain").click(function(){
       $('#select-program').val('ProgramforBackNeckpain');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});      
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramThyroid").click(function(){
       $('#select-program').val('ProgramThyroid');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramHighBP").click(function(){
       $('#select-program').val('ProgramHighBP');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramDiabetes").click(function(){
       $('#select-program').val('ProgramDiabetes');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramPCOSPCOD").click(function(){
       $('#select-program').val('ProgramPCOSPCOD');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();   
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");   
+      $("#yourName").focus();
     });
 
     }, 1000);

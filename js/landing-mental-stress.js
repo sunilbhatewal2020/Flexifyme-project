@@ -24,7 +24,6 @@ $(document).ready(function () {
       opacity: function () {
         var elementHeight = $(this).height(),
           opacity =(1 - (elementHeight - scrollTop) / elementHeight) * 0.7 + 0.6;
-
         return opacity;
       },
     });
@@ -144,38 +143,38 @@ responsive: {
     // for landing-slider-contaniner 
     $(".landing-slider-contaniner .landing-owl-card#ProgramforMentalStress").click(function(){
       $('#select-program').val('ProgramforMentalStress');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});     
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramforAnxietyDisorder").click(function(){
       $('#select-program').val('ProgramforAnxietyDisorder');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});      
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramforSleepDisorders").click(function(){
       $('#select-program').val('ProgramforSleepDisorders');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});      
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
     $(".landing-slider-contaniner .landing-owl-card#ProgramforAngerIssues").click(function(){
       $('#select-program').val('ProgramforAngerIssues');
-      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom - 10}, 300);
-      $("#yourName").focus();
+      $('html, body').animate({scrollTop: $("#how-it-work-row").offset().bottom});      
       $("#select-program").addClass("focus-select-box")
       $(".landing-owl-card").removeClass("active-click-card");
       $(this).addClass("active-click-card");
+      $("#yourName").focus();
     });
 
 

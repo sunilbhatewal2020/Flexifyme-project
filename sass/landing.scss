@@ -1301,6 +1301,12 @@ padding-bottom: 80px;
 }
 
 @media screen and (max-width: 767px) {
+  .landing-home-sec1-xs{
+    background-position: -630px center !important;
+  }
+  .landing-home-sec1-xs2{
+    background-position: 46% center !important;
+  }
   .trainer-caro-xs-cols {
     background: #47347c;
     padding-top: 60px;
