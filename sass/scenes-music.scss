@@ -95,8 +95,8 @@
       background-position-x: -8px;
     }
     @include xs {
-      width: 155px;
-      height: 172px;
+      width: 145px;
+      height: 162px;
     }
     .scenes-music-card-bottom {
       position: absolute;
@@ -105,6 +105,9 @@
       right: 0;
       z-index: 9;
       padding: 10px 20px 15px;
+      @include xs {
+        padding: 10px;
+      }
       p.p-14 {
         font-family: DM Sans;
         font-style: normal;
