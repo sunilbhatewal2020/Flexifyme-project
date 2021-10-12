@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Meditation</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/scenes-music.css" />
+</head>
+
+<body class="dashboard-page">
+
+
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title">Meditation</h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body rescheduled-session-cols meditation-col">
+                                <div class="col-12 meditation-col-inner-adj">
+                                    <div class="row align-items-center mb10">
+                                        <div class="col-12 col-sm-6 order-2 order-sm-0">
+                                            <div class="meditation-left-col">
+                                                <div class="fm-mb">
+                                                    <select class="form-select form-control">
+                                                        <option selected="">Select Category</option>
+                                                        <option value="1">Stress Reduction</option>
+                                                        <option value="2">Flexibility &amp; Fitness</option>
+                                                        <option value="3">Chronic Pain Relief</option>
+                                                        <option value="4">Weight Loss</option>
+                                                    </select>
+                                                </div>
+                                                <div class="fm-mb">
+                                                    <select class="form-select form-control">
+                                                        <option selected="">Select Tag</option>
+                                                        <option value="1">Stress Reduction</option>
+                                                        <option value="2">Flexibility &amp; Fitness</option>
+                                                        <option value="3">Chronic Pain Relief</option>
+                                                        <option value="4">Weight Loss</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="meditation-right-col">
+                                                <ul class="nav meditation-right-pill" id="pills-tab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="grid-view-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#grid-view"
+                                                            type="button" role="tab" aria-controls="grid-view"
+                                                            aria-selected="false">
+                                                            <img src="images/icon-grid-view.svg" alt="grid-view"
+                                                                class="black-img" />
+                                                            <img src="images/icon-grid-view-purple.svg" alt="grid-view"
+                                                                class="purple-img" />
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="list-view-tab"
+                                                            data-bs-toggle="pill" data-bs-target="#list-view"
+                                                            type="button" role="tab" aria-controls="list-view"
+                                                            aria-selected="true">
+                                                            <img src="images/icon-list-view.svg" alt="list-view"
+                                                                class="black-img" />
+                                                            <img src="images/icon-list-view-purple.svg" alt="list-view"
+                                                                class="purple-img" />
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="list-view" role="tabpanel"
+                                        aria-labelledby="list-view-tab">
+                                        <div class="col-12 xs-sm-no-padding">
+                                            <ul class="scenes-music-card-ul2">
+                                                <li class="w-100">
+                                                    <div class="d-flex align-items-center list-view-media like-card">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="list-view-media1">
+                                                                <img src="images/dashboard-bg.jpg" alt="Ocean Love" class="list-view-media1-img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="list-view-media2">
+                                                                <p class="p-18">Ocean Love</p>
+                                                                <p class="p-16">5:50</p>                                                                
+                                                            </div>
+                                                            <div class="list-view-media3">
+                                                                <div class="like-btn st" title="Liked">
+                                                                    <i class="ri-heart-fill"></i>
+                                                                </div>
+
+                                                                <button type="button" class="btn bttn-outline-primary2 btn-sm">Play</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="w-100">
+                                                    <div class="d-flex align-items-center list-view-media">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="list-view-media1">
+                                                                <img src="images/dashboard-bg2.jpg" alt="Ocean Love" class="list-view-media1-img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="list-view-media2">
+                                                                <p class="p-18">Ocean Love</p>
+                                                                <p class="p-16">5:50</p>                                                                
+                                                            </div>
+                                                            <div class="list-view-media3">
+                                                                <div class="like-btn st" title="Liked">
+                                                                    <i class="ri-heart-fill"></i>
+                                                                </div>
+
+                                                                <button type="button" class="btn bttn-outline-primary2 btn-sm">Play</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="w-100">
+                                                    <div class="d-flex align-items-center list-view-media">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="list-view-media1">
+                                                                <img src="https://picsum.photos/seed/picsum/200/300" alt="Ocean Love" class="list-view-media1-img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="list-view-media2">
+                                                                <p class="p-18">Ocean Love</p>
+                                                                <p class="p-16">5:50</p>                                                                
+                                                            </div>
+                                                            <div class="list-view-media3">
+                                                                <div class="like-btn st" title="Liked">
+                                                                    <i class="ri-heart-fill"></i>
+                                                                </div>
+
+                                                                <button type="button" class="btn bttn-outline-primary2 btn-sm">Play</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="w-100">
+                                                    <div class="d-flex align-items-center list-view-media">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="list-view-media1">
+                                                                <img src="images/dashboard-bg2.jpg" alt="Ocean Love" class="list-view-media1-img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="list-view-media2">
+                                                                <p class="p-18">Ocean Love</p>
+                                                                <p class="p-16">5:50</p>                                                                
+                                                            </div>
+                                                            <div class="list-view-media3">
+                                                                <div class="like-btn st" title="Liked">
+                                                                    <i class="ri-heart-fill"></i>
+                                                                </div>
+
+                                                                <button type="button" class="btn bttn-outline-primary2 btn-sm">Play</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="w-100">
+                                                    <div class="d-flex align-items-center list-view-media">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="list-view-media1">
+                                                                <img src="https://picsum.photos/seed/picsum/200/300" alt="Ocean Love" class="list-view-media1-img" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="list-view-media2">
+                                                                <p class="p-18">Ocean Love</p>
+                                                                <p class="p-16">5:50</p>                                                                
+                                                            </div>
+                                                            <div class="list-view-media3">
+                                                                <div class="like-btn st" title="Liked">
+                                                                    <i class="ri-heart-fill"></i>
+                                                                </div>
+
+                                                                <button type="button" class="btn bttn-outline-primary2 btn-sm">Play</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="grid-view" role="tabpanel"
+                                        aria-labelledby="grid-view-tab">
+                                        <div class="col-12 xs-sm-no-padding">
+                                            <ul class="scenes-music-card-ul">
+                                                <li>
+                                                    <a href="scenes-music2.html"
+                                                        class="scenes-music-card-btn like-card">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('images/dashboard-bg.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="scenes-music2.html" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://image.shutterstock.com/image-photo/aerial-sunset-view-over-blue-600w-1937284945.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="scenes-music2.html" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://image.shutterstock.com/image-photo/wooden-table-empty-trees-blurred-600w-1904903830.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="scenes-music2.html" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-600w-721703848.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('images/dashboard-bg.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="pro-version-icon">
+                                                                <i class="ri-vip-crown-fill" title="Pro"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://picsum.photos/seed/picsum/200/300');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="pro-version-icon">
+                                                                <i class="ri-vip-crown-fill" title="Pro"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://image.shutterstock.com/image-photo/table-background-spring-time-600w-1054844264.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="pro-version-icon">
+                                                                <i class="ri-vip-crown-fill" title="Pro"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="scenes-music-card-btn">
+                                                        <div class="scenes-music-card"
+                                                            style="background-image: url('https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-600w-1029171697.jpg');">
+                                                            <div class="like-btn st" title="Liked">
+                                                                <i class="ri-heart-fill"></i>
+                                                            </div>
+                                                            <div class="pro-version-icon">
+                                                                <i class="ri-vip-crown-fill" title="Pro"></i>
+                                                            </div>
+                                                            <div class="scenes-music-card-bottom">
+                                                                <p class="p-14">Journey to Fantacy <br> Island</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="music-strip-bottom-wrap-outer">
+                                        <div class="music-strip-bottom-wrap">
+                                            <div class="music-strip-bottom1">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="images/song-img.png" alt="song-img"
+                                                            class="song-img" />
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class="p-18">Audio meditation for today</p>
+                                                        <p class="p-14">Supernaturals - Be Calm (2021)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="music-strip-bottom2">
+                                                <div class="play-music-audio">
+                                                    <audio preload="auto"
+                                                        src="https://traffic.libsyn.com/mindfulorg/winston-breathing-5mins.mp3"></audio>
+                                                </div>
+                                            </div>
+                                            <div class="music-strip-bottom3">
+                                                <a href="#" class="btn-like st" title="Make Favorite"><i
+                                                        class="ri-heart-line"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+            // for play music
+            $('audio').initAudioPlayer();
+            $(".song-img").removeClass("rotating");
+            setTimeout(function () {
+                $('.play-music-audio .ppq-audio-player .audio-hidden').on('pause play', function (e) {
+                    if (e.currentTarget.paused) {
+                        $(".song-img").removeClass("rotating");
+                        $(".dashboard-body").removeClass("hide-card-overlay-active")
+                    } else {
+                        $(".song-img").addClass("rotating");
+                    }
+                });
+            }, 600);
+
+            // for .hide-card-overlay
+            $(".hide-card-overlay").click(function () {
+                $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            })
+            // for like button            
+            $(".btn-like").click(function () {
+                $(this).toggleClass("active")
+            })
+        });
+    </script>
+</body>
+
+</html>
