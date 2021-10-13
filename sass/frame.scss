@@ -46,13 +46,19 @@
   }
 }
 
+@mixin xl-h {
+  @media screen and (min-height: 550px) and (max-height: 720px) {
+    @content;
+  }
+}
+
 .common-dashboard-header-wrap {
   .common-dashboard-header {
     top: 0;
     left: 0;
     right: 0;
     bottom: auto;
-    z-index: 9;
+    z-index: 99;
     position: fixed;
     width: 100%;
     padding: 20px 15px;
@@ -150,6 +156,9 @@
       -moz-transition: all 0.2s linear 0s;
       -ms-transition: all 0.2s linear 0s;
       -o-transition: all 0.2s linear 0s;
+      @include xl-h{
+        overflow-y: auto;height: 100%;overflow-x: hidden;
+      }
       @include xs{
         position: fixed;
         background: #4a2b53;
@@ -192,6 +201,9 @@
             align-content: stretch;
             color: #898989;
             padding: 18px 5px;
+            @include sm {
+              padding: 20px 5px 0;
+          }
             font-size: 28px;
             position: relative;
             @include xs {
@@ -297,7 +309,7 @@
               }
             }
             &.dashboard-link-span {
-              padding: 15px 5px 30px;
+              padding: 15px 5px 22px;
               font-size: 28px;
               min-height: 58px;
               @include sm {
@@ -334,6 +346,12 @@
             bottom: 0;
             left: 10px;
             z-index: 99;
+            @include xl-h{
+              position: relative;
+              bottom: 0;
+              left: 0;
+              margin-top: 20px;
+            }
             &::before{
                 content: '';
                 border-top: 1px solid rgba(137, 137, 137, 0.5);
