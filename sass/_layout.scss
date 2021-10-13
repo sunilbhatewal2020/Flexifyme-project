@@ -1115,6 +1115,25 @@ a:focus {
   }
 }
 
+
+.custom-tooltip-sidebar{
+  .tooltip-arrow::before, 
+.tooltip-arrow::before {
+  right: -1px;
+  border-width: .4rem .4rem .4rem 0;
+  border-right-color: $blue2;
+}
+  .tooltip-inner{
+  width: auto;
+  white-space: nowrap;
+  background: $blue2;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  padding: 7px 10px;
+  }
+}
 // Version 2
 [data-title] {
   position: relative;

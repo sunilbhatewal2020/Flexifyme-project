@@ -26,37 +26,37 @@
                 </a>
             </li>
             <li>
-                <a href="profile.html" class="dashboard-link st profile-a-link" data-title="Profile & Settings">
+                <a href="profile.html" class="dashboard-link st profile-a-link" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Profile & Settings">
                     <i> <img src="images/avatar.png" alt="John D'Souza" class="avatar-img" /></i>
                     <span>Profile & Settings</span>
                 </a>
             </li>
             <li>
-                <a href="daily-practise-session.html" class="dashboard-link dashboard-link-span st" data-title="Dashboard">
+                <a href="daily-practise-session.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Dashboard">
                     <i class="ri-home-5-line"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="session-planner.html" class="dashboard-link dashboard-link-span st" data-title="My Classes & Calendar">
+                <a href="session-planner.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="My Classes & Calendar">
                     <i class="ri-calendar-check-line"></i>
                     <span>My Classes & Calendar</span>
                 </a>
             </li>
             <li>
-                <a href="progress-report.html" class="dashboard-link dashboard-link-span st" data-title="Statistics">
+                <a href="progress-report.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Statistics">
                     <i class="ri-bar-chart-box-line"></i>
                     <span>Statistics</span>
                 </a>
             </li>
             <li>
-                <a href="personal-concierge.html" class="dashboard-link dashboard-link-span st" data-title="Personal Concierge">
+                <a href="personal-concierge.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Personal Concierge">
                     <i class="ri-user-2-line"></i>
                     <span>Personal Concierge</span>
                 </a>
             </li>
             <li>
-                <a href="goal-tracking.html" class="dashboard-link dashboard-link-span st" data-title="Goal Tacking">
+                <a href="goal-tracking.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Goal Tacking">
                     <!-- <i class="ri-compass-2-line"></i> -->
                     <i class="img-posi-rel">
                         <img src="images/icon-goal.svg" alt="Goal Tacking" class="black-img" />
@@ -66,13 +66,13 @@
                 </a>
             </li>
             <li>
-                <a href="scenes-music.html" id="scenes-music-a" class="dashboard-link dashboard-link-span st" data-title="Scenes & Music">
+                <a href="scenes-music.html" id="scenes-music-a" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Scenes & Music">
                     <i class="ri-music-2-line"></i>
                     <span>Scenes & Music</span>
                 </a>
             </li>
             <li>
-                <a href="meditation.html" class="dashboard-link dashboard-link-span st" data-title="Meditation">
+                <a href="meditation.html" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Meditation">
                     <!-- <i class="ri-compass-2-line"></i> -->
                     <i class="img-posi-rel">
                         <img src="images/icon-meditation.svg" alt="Meditation" class="black-img" />
@@ -82,13 +82,13 @@
                 </a>
             </li>
             <li class="hide-desktop show-mobile hide-tab">
-                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Notifications">
+                <a href="#" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Notifications">
                     <i class="ri-notification-line"></i>
                     <span>Notifications</span>
                 </a>
             </li>
             <li class="log-out-li">
-                <a href="#" class="dashboard-link dashboard-link-span st" data-title="Log out">
+                <a href="#" class="dashboard-link dashboard-link-span st" data-bs-container="body" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip-sidebar" data-bs-placement="right" title="Log out">
                     <i class="ri-logout-circle-line"></i>
                     <span>Log out</span>
                 </a>
@@ -99,6 +99,7 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
 <script type="text/javascript">
     $(document).ready(function () {
         //active tab
@@ -123,6 +124,31 @@
             // $(".main-mnu").slideToggle();
             return false;
         });
+
+
+        // for leftsidebar tooltip
+        setTimeout(function(){ 
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+            tooltipTriggerList.show()
+
+
+            var tooltip = new bootstrap.Tooltip(element, {
+  popperConfig: function (defaultBsPopperConfig) {
+    // var newPopperConfig = {...}
+    // use defaultBsPopperConfig if needed...
+    // return newPopperConfig
+  }
+})
+
+            tooltip.show()
+
+
+        }, 600);
+
    });
 
 </script>

@@ -156,7 +156,7 @@
       -moz-transition: all 0.2s linear 0s;
       -ms-transition: all 0.2s linear 0s;
       -o-transition: all 0.2s linear 0s;
-      @include xl-h{
+      @include tabdesktop{
         overflow-y: auto;height: 100%;overflow-x: hidden;
       }
       @include xs{
