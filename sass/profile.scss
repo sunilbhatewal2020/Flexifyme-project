@@ -210,6 +210,51 @@ font-size: 14px;
     }
   }
 }
+.daily-practise-table{
+  width: 100%; margin: 0;
+  min-width: 630px;
+  vertical-align: middle;
+  margin-top: -13px;
+  thead{
+    tr{
+      th{        
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #898989;
+border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+white-space: nowrap;
+      }
+    }
+  }
+  tr{
+    vertical-align: middle;
+    td{
+      vertical-align: middle;    
+      &:first-child{
+        width: 146px;
+        height: 47px;
+        @include xs{
+          height: 38px;
+         }
+      }
+      span{
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          text-align: center;
+          line-height: normal;
+          color: #2E2E2E;
+      }
+      .resent-otp-btn.text-decoration-none {
+        text-decoration: none !important;
+        font-size: 14px;
+      }
+    }
+  }
+}
 .commu-settings-common-card{
   .p-16{
     font-family: DM Sans;
@@ -262,6 +307,9 @@ font-size: 14px;
     td{
       vertical-align: middle;      
       height: 55px;
+      @include xs{
+        height: 70px;
+      }
       &:last-child{
         width: 47px;
       }
@@ -288,4 +336,40 @@ font-size: 14px;
       margin-bottom: 20px;
     }
   }
+}
+.common-card-title-adj{
+  span{
+    width: calc(100% - 110px);display: inline-block;
+    @include xs{
+      width: calc(100% - 140px);
+    }
+  }
+  a.resent-otp-btn{
+    @include xs{
+      left: -30px !important;
+    }
+  }
+}
+.collapsing-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #7352d1;
+  font-size: 22px;
+  z-index: 3;
+  transition: all 0.2s linear;  
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  @include xs{
+    top: 10px;
+  }
+  &.active-a{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
 }

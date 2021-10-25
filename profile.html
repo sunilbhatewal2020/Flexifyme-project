@@ -88,11 +88,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-7 col-xl-8">
+                                    <!-- 1 -->
                                     <div class="common-card settings-common-card">
                                         <div class="common-card-head">
                                             <h5 class="common-card-title">Settings</h5>
+                                            <a href="#" id="collapsing-btn" class="collapsing-btn"><i class="fas fa-angle-down"></i></a>
                                         </div>
-                                        <div class="common-card-body">
+                                        <div class="common-card-body ">
                                             <table class="profile-table-card2">
                                                 <tr>
                                                     <td><span>Password :</span></td>
@@ -107,10 +109,11 @@
                                             </table>
                                         </div>
                                     </div>
-
+                                    <!-- 2 -->
                                     <div class="common-card commu-settings-common-card">
                                         <div class="common-card-head">
                                             <h5 class="common-card-title">Communication Settings</h5>
+                                            <a href="#" id="collapsing-btn" class="collapsing-btn"><i class="fas fa-angle-down"></i></a>
                                         </div>
                                         <div class="common-card-body">
                                             <p class="p-16">How do you want us to keep in touch?</p>
@@ -185,6 +188,61 @@
                                         </div>
                                     </div>
 
+                                    <!-- 3 -->
+                                    <div class="common-card settings-common-card">
+                                        <div class="common-card-head">
+                                            <h5 class="common-card-title common-card-title-adj clearfix"> <span>Total Discound Earned 20% </span> <a href="#invite-now-modal" style="float: right;white-space: nowrap;position: relative;left: -10px; margin-top:3px;" data-bs-toggle="modal" class="resent-otp-btn resent-otp-btn-r text-decoration-none"><span> Invite a friend</span></a></h5>
+                                            <a href="#" id="collapsing-btn" class="collapsing-btn active-a"><i class="fas fa-angle-down"></i></a>
+                                        </div>
+                                        <div class="common-card-body table-responsive d-none">
+                                            <table class="daily-practise-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sent On</th>
+                                                        <th>Via</th>
+                                                        <th>Subscribed On</th>
+                                                        <th>User Name</th>
+                                                        <th>Discount Earned</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Whtsapp</span></td>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Shital Wagh</span></td>
+                                                    <td><span><del>20% Discount</del></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Email</span></td>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Shital Wagh</span></td>
+                                                    <td><span class="text-red">20% Discount Earned</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Link</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><a href="#invite-now-modal" data-bs-toggle="modal" class="resent-otp-btn resent-otp-btn-r text-decoration-none">Invite Again</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Email</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><a href="#invite-now-modal" data-bs-toggle="modal" class="resent-otp-btn resent-otp-btn-r text-decoration-none">Invite Again</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span>12 Aug 2020</span></td>
+                                                    <td><span>Email</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><span>-</span></td>
+                                                    <td><a href="#invite-now-modal" data-bs-toggle="modal" class="resent-otp-btn resent-otp-btn-r text-decoration-none">Invite Again</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -312,6 +370,50 @@
         </div>
     </div>
 
+    
+    <!-- invite-now-modal -->
+    <div class="modal fade" id="invite-now-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>More ways to invite your friend</h3>
+                    <ul class="social-icon-list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Google.svg" alt="Google" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/LinkedIN.svg" alt="LinkedIN" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/WhatsApp.svg" alt="WhatsApp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Skype.svg" alt="Skype" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fm-mb search-input-wrap social-input-wrap">
+                        <input type="text" class="form-control" value="https://www.flexifyme.com" readonly>
+                            <button type="button" class="btn bttn-outline-primary2"><span class="hide-mobile">Copy Link</span>  <i class="far fa-copy show-mobile hide-desktop"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
@@ -341,6 +443,11 @@
             $(".upload-button").on('click', function () {
                 $(".file-upload").click();
             });
+            $(".collapsing-btn").click(function(){
+                $(this).toggleClass("active-a");
+                // $(this).parents(".common-card").find(".common-card-body").slideToggle();
+                $(this).parents(".common-card").find(".common-card-body").toggleClass('d-none');
+            })
         });
     </script>
 </body>

@@ -40,6 +40,24 @@
                             </div>
                             <div class="row dashboard-row-body justify-content-center">
                                 <div class="col-md-12 col-lg-10 col-xl-10 rescheduled-session-cols">
+                                    <div class="common-card refer-friend-card1">
+                                        <div class="common-card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                   <img src="images/discount.svg" alt="discount" class="icon-discount" />
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3>Refer Friends & Get Discount</h3>
+                                                    <p class="p-16">Refer your friend & get attractive discounts on each referal </p>
+                                                </div>
+                                                <div class="flex-shrink-0 align-items-center btn-wrapper">
+                                                    <button type="button" class="btn btn-link bttn-link">View Referrals</button>
+                                                    <button type="button" class="btn bttn-primary" data-bs-toggle="modal" data-bs-target="#invite-now-modal">Invite Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="common-card rescheduled-session-card1">
                                         <div class="common-card-body">
                                             <div class="d-flex align-items-center">
@@ -131,6 +149,50 @@
             </div>
         </section>
     </div>
+
+    <!-- invite-now-modal -->
+    <div class="modal fade" id="invite-now-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>More ways to invite your friend</h3>
+                    <ul class="social-icon-list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Google.svg" alt="Google" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/LinkedIN.svg" alt="LinkedIN" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/WhatsApp.svg" alt="WhatsApp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Skype.svg" alt="Skype" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fm-mb search-input-wrap social-input-wrap">
+                        <input type="text" class="form-control" value="https://www.flexifyme.com" readonly>
+                            <button type="button" class="btn bttn-outline-primary2"><span class="hide-mobile">Copy Link</span>  <i class="far fa-copy show-mobile hide-desktop"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
