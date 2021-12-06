@@ -47,6 +47,12 @@
 }
 
 .body-analysis-modal{
+  .assessment-wrap .p-18 {
+    @include xs{
+    color: #7352D1;
+    }
+  }
+
   // @include xs{
   //   background: #fff !important;
   //   .modal-dialog-centered {
@@ -57,6 +63,7 @@
   // }
 
     @include xs{
+      padding-top: 75px;
       .pagination-num.text-white.hide-desktop.show-mobile {
         position: absolute;
         top: 0;
@@ -68,7 +75,7 @@
       margin: 16px;
       align-items: flex-start !important;
       .body-analysis-caro-right {
-        padding: 47px 15px 0 15px;
+        padding: 30px 15px 0 15px;
     }
     .form-row3.desc-strip{
       background: #F7F4FF;
