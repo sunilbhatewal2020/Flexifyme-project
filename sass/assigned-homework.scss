@@ -1,0 +1,782 @@
+// responsive view variable
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @mixin surface{
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  }
+  @mixin xxs{
+    @media screen and (max-width: 440px) {
+      @content;
+    }
+  }
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+.session-planner-tab.assigned-homework-tab{
+    .pills-tab-wrap{
+        .nav-pills{
+            li{
+                .nav-link {
+                    min-width: auto;
+                }
+            }
+            @include xs{
+              overflow-x: auto;
+           } 
+        } 
+    } 
+    .assign-new{
+        max-width: 234px;
+        position: absolute;
+        top:-20px;
+        right: 0;
+        z-index: 9;
+        @include xs{
+          top:-60px;
+       }
+       @include xxs{
+        position: fixed;
+        max-width: 100%;
+        left: auto;
+        right: auto;
+        bottom: 0;
+        top: auto;
+        background-color: #FFF;
+        display: block;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding: 10px 16px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        .btn-assigned{
+          margin-bottom: 0px;
+          width: 100%;
+        }
+     }
+    
+    }
+} 
+
+.session-planner-tab {
+  .pills-tab-wrap {
+    .common-card {
+      @include xs {
+        &:first-child {
+          padding-top:0px !important;
+        }
+      }
+    }
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.06);
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    display: none;
+    @include xs {
+      display: block;
+
+    }
+  }
+}
+.assigned-homework-main-wrap{
+    .common-card{
+        .common-card-body{
+            padding: 3px;
+            position: relative;
+            @include tabMobile{  
+            padding: 10px;
+
+            .align-items-center{
+              align-items:normal !important;
+            }
+            }
+
+            @include xs{
+              padding-top: 10px !important;
+              padding-bottom: 65px;
+              .d-flex {
+                // flex-direction: column;
+              }
+              .align-items-center{
+                align-items: flex-start!important;
+              }
+              }
+              @include xxs{
+                padding-bottom: 50px;
+              .flex-shrink-0{
+                // width: 100%;
+              }
+              .flex-grow-1{
+                // width: 100%;
+              }
+              }
+              .drop-menu{
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                 
+               .dropdown-toggle{
+                    border:0px;
+                    background: transparent;
+                    &::after{
+                        display: none;
+                    }
+                }
+                .dropdown-menu{
+                  left: -68px !important;
+                  top: -23px !important;
+                  min-width: 6.375rem !important;
+                  border:0px;
+                  box-shadow: 0px 4px 12px rgba(49, 48, 48, 0.2);
+                  border-radius: 3px;
+                  padding: 0;
+                  li{
+                    &:last-child{
+                      .dropdown-item{
+                        border-bottom: 0px;
+                      }
+                    }
+                  }
+                }
+                .dropdown-item{
+                  color: #2e2e2e;
+                  border-bottom: 1px solid #E7E7E7;
+                  display: flex;
+                  padding: 0.5rem 1rem;
+                  &:focus{
+                    background-color:transparent;
+                  }
+                  &:hover{
+                    background-color:transparent;
+                  }
+                  
+                  i{
+                    color: #A1A1A1;
+                    font-size: 20px;
+                    margin-right: 10px;
+                  }
+                }
+               
+            }
+          }
+          @include xs{
+            &:first-child {
+              padding-top:10px !important;
+            }
+        }
+    }
+    .assigned-homework-media{
+      @include tabMobile{
+        width:200px;
+        margin-right: 10px;
+      }
+      @include xs{
+           margin-bottom: 10px;
+           margin-right: 10px;
+           width:150px;
+         }
+         @include xxs{
+          margin-bottom: 10px;
+          width:100px;
+        }
+         text-align: center;
+         
+        .assigned-homework-media-img{
+            border-radius: 10px 0px 0px 10px;
+            margin-right: 30px;
+            @include tabMobile{
+              width: 100%;
+            }
+            @include xs{
+              width: 100%;
+            }
+            @include xxs{
+              margin-right: 0;
+            }
+        }
+    }
+    .assigned-homework-detail{
+        // position: relative;
+        // margin-top: -30px;
+        @include xs{
+              margin-top: 0;
+            }
+  
+        .p-16{
+            color: #2e2e2e;
+            font-weight: 500;
+            margin-bottom: 5px;
+            @include tabMobile{
+              margin-bottom:0px;
+              }
+  
+        }
+     
+     
+    }
+
+
+
+    
+    .assigned-user{
+        text-align: center;
+        margin-right: 25px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @include tabMobile{  
+          flex-direction: unset;
+          position: absolute;
+          top: 7px;
+          right: 57px;
+          }
+          @include xs{
+            display: flex;
+            align-items: center;
+            top: auto;
+            bottom: 41px;
+            right: auto;
+            left: 10px;
+          }
+          @include xxs{
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: 55px;
+            left: 14px;
+            flex-direction: unset;
+          }
+         
+        .profile-pic-wrap{
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            @include tabMobile{
+              margin-right:5px;
+            }
+            @include xs{
+              width: 25px;
+              height: 30px;
+              margin-right: 10px;
+            }
+            img{
+              @include xs{
+                width: 100%;
+              }
+            }
+        }
+        .assigned-profile-name{
+            font-size: 14px;
+            color: #2e2e2e;
+            font-weight: 500;
+            margin-top: 10px;
+            @include xs{
+              font-size: 12px;
+            }
+        }
+    }
+}
+
+.assigned-homework-detail-inner{
+  ul{
+       display: flex;
+       margin: 0px;
+       padding: 0px;
+       @include xs{
+        flex-direction: unset;
+        
+      }
+      @include surface{
+        li:nth-child(2){
+          width: 50%;
+        }
+        li:last-child{
+          margin-right: 0px;
+        }
+  
+       }
+
+       li{
+           font-size: 14px;
+           color: #2E2E2E;
+           line-height: 14px;
+           font-weight: 500;
+           align-items: center;
+           display: flex;
+
+            @include xs{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 10px;
+            width: 35%;
+            font-size: 12px;
+            }
+           
+           @include xxs{
+              margin-bottom:10px;
+              flex-direction: column;
+           }
+          
+           span{
+               color: #969697;
+               margin-right: 10px;
+               font-weight: 400;
+               @include xs{
+                margin-right: 10px;
+                margin-bottom: 5px;
+              }
+               @include xxs{
+                width: 100%;
+                margin-bottom:0px;
+                margin-right: 0;
+              }
+
+           }
+
+           &::after{
+               content: '';
+               width: 1px;
+               height: 100%;
+               background-color:#969697;
+               margin: 0px 15px 0px 15px;
+               @include xs{
+                display: none;
+             }
+           }
+           &:last-child{
+            &::after{
+              display: none;
+          } 
+        }
+       }
+
+  } 
+}
+.view-details{
+   font-size: 14px;
+   font-weight: 600;
+   color: #7352D1;
+   text-decoration: underline !important;
+   margin-top: 10px;
+   display: block;
+   background: transparent;
+   border: 0px;
+
+   @include tabMobile{
+    margin-top:0px;
+  }
+   @include surface{
+      margin-top:0px;
+   }
+   @include xs{
+     margin-top: 0px;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     transform: translateX(-50%);
+     bottom: 6px;
+     position: absolute;
+   }
+}
+.progress{
+  width: min-content;
+  height: 20px;
+  font-size: 12px;
+  color: #FFF;
+  padding: 0px 10px;
+  line-height: 0;
+  display: grid;
+  align-items: center;
+  text-transform:uppercase;
+  margin-bottom: 10px;
+}
+.yellow-bg{
+  background-color: #FFBA52;
+}
+.green-bg{
+  background-color: #1CC2AF;
+}
+
+.modal-right{
+    @include xs{
+      height: 50%;
+    }
+     font-size: 18px;
+    .modal-dialog{
+      position: fixed;
+       z-index: 1055;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       margin: 0;
+       max-width: 100%;
+       width: 470px;
+       left: auto !important;
+       transform: translate3d(100%, 0, 0) !important;
+       transition: transform .3s cubic-bezier(.25, .8, .25, 1)
+    }
+    .modal-content{
+      height: 100vh;
+      border-radius: .3rem 0 0 .3rem;
+      border: 0;
+      box-shadow: -6px 0px 6px rgba(0, 0, 0, 0.08);
+      @include xs{
+          height: auto;
+          border-radius:2rem 1.5em 0 0em;
+          bottom: -89px;
+      }
+      @include xxs{
+        height: 95%;
+        border-radius: 2rem 1.5em 0 0em;
+        bottom: -19px;
+    }
+    }
+    &.show{
+      .modal-dialog{transform: translate3d(0, 0, 0) !important;}
+    }
+    .btn-close {
+      width: 0.2em;
+      height: 0.2em;
+      top: 20px !important;
+      right: 20px !important;
+  }
+   }
+
+  .assigned-homework-card-modal{
+    padding: 20px 20px !important;
+    .assigned-homework-detail-modal{
+      overflow-y: scroll;
+      height: 93vh;
+      margin-right: -15px;
+      padding-right: 10px;
+      @include xxs{
+        height: 86vh;
+        margin-right: -15px;
+        padding-right: 10px;
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 7px;
+     
+      }
+     /* Track */
+     &::-webkit-scrollbar-track {
+      background:transparent; 
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+     
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+      background:#C4C4C4; 
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      position: absolute;
+      right: -10px;
+
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background:#C4C4C4; 
+      }
+
+      .refer-friends-img-wrap{
+        img{
+          @include xs{
+            width: 100%;
+        }
+          @include xxs{
+            width: 100%;
+        }
+          
+        }
+      }
+    }
+
+
+    h5{
+      font-size: 20px;
+      color: #2e2e2e;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+    .assigned-homework-card-info-wrap{
+      background-color: #F4F4F4;
+      padding: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      position: relative;
+
+      .home-work-duration{
+        background-color: #F1ECFF;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        position: absolute;
+        right: 30px;
+        top: -40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #7352D1;
+        .no{
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 18px;
+        }
+        .week{
+          font-size:12px;
+          font-weight:400;
+          line-height: 18px;
+        }
+
+      }
+
+      .assigned-homework-detail-inner{
+        .p-18{
+          margin-bottom: 5px;
+          font-weight: 500;
+        }
+        ul{
+          li{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            padding-right:20px;
+            margin-right: 10px;
+            line-height: 20px;
+            // width: auto;
+
+            @include tabMobile{  
+              flex-direction: unset;
+              flex-direction: column;
+              }
+              @include xxs{
+                padding-right:10px;
+                margin-right: 10px;
+            }
+            &::after{
+              content: '';
+              width: 1px;
+              height: 100%;
+              background-color:#D1D1D1;
+              margin: 0px 0px 0px 0px;
+              position: absolute;
+              right: 0;
+
+              @include xs{
+                display: block;
+             }
+          }
+          &:nth-child(2){
+            width: 100%;
+          }
+
+          &:last-child{
+              padding-right: 0px;
+              margin-right: 0px;
+              &::after{
+                display: none;
+            } 
+          }
+          }
+          
+        } 
+      }
+
+    }
+  } 
+
+
+ .collapsing-btn {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: #898989;
+    font-size: 22px;
+    z-index: 3;
+    transition: all 0.2s linear;  
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    @include xs{
+      top: 0px;
+    }
+    &:hover{
+      color: #898989;
+    }
+    &.active-a{
+      transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+  }
+  }
+   
+  .homework-detail-card{
+    position: relative;
+    margin-bottom: 30px;
+    .homework-detail-card-head{
+      .homework-detail-card-title{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #898989;
+        @include xxs{
+          margin-bottom: 10px;
+        }
+        .task-time{
+          margin-right: 60px;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      .title-number{
+        background-color: #F4F4F4;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 600;
+        font-weight: 500;
+        color: #2e2e2e;
+        display: grid;
+        align-items: center;
+        margin-right: 20px;
+      }
+    }
+    .homework-detail-card-body{
+      .homework-detail-card-wrap{
+        position: relative;
+        padding: 0px 50px;
+        &::before{
+              content: '';
+              width: 1px;
+              height: 100%;
+              background-color:#DCDCDC;
+              margin: 0px 25px 0px 0px;
+              position: absolute;
+              left:20px;
+              top: 50%;
+              transform: translateY(-50%);
+              @include xxs{
+                left: 14px;
+              }
+        }
+      }
+      .assigned-list{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        @include xxs{
+          margin-bottom: 10px;
+        }
+        .warmup-img-wrap{
+          border: 1px solid #DCDCDC;
+          border-radius: 3px;
+          padding: 10px;
+          position: relative;
+          &::before{
+            content: '';
+            width: 6px;
+            height:6px;
+            background-color: #7352D1;
+            position: absolute;
+            left:-2.380rem;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            @include xxs{
+              left:-2.88rem;
+            }
+          }
+        }
+        
+        .warmup-info{
+          margin-left: 20px;
+          .p-14{
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            color: #2e2e2e;
+            @include xxs{
+              line-height: 14px;
+              margin-bottom: 5px;
+            }
+          }
+          .p-13{
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 0px;
+            @include xxs{
+              line-height: 14px;
+            }
+            span{
+              
+              color: #969697;
+            }
+          }
+        }
+
+      }
+    }
+  }
+   
