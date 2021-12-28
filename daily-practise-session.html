@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,55 +14,37 @@
     <link rel="stylesheet" href="css/frame.css" />
     <link rel="stylesheet" href="css/daily-practise-session.css" />
 </head>
-
 <body class="dashboard-page">
-    <!-- <div class="loader">
-        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
-    </div> -->
-
     <div class="dashboard-body">
         <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
             <div class="dasboard-row-wrap">
+               
                 <div class="dasboard-col-left st">
                     <div class="common-dashboard-header-wrap"></div>
                     <div class="common-dashboard-sidebar-wrap"></div>
                 </div>
-
+                <div class="icon-gift-wrap-outer">
+                    <button type="button" class="btn-refer-friend" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">
+                    <div class="icon-gift-bg">
+                        <span> <img src="images/icon-gift.svg" alt="Refer Friends" class="icon-gift"/></span>
+                      </div>
+                    </button>
+                </div> 
+                
                 <div class="dasboard-col-right">
                     <div class="hide-card-overlay"></div>
                     <div class="dasboard-col-right-inner st">
                         <div class="container dasboard-col-right-container">
-                            <div class="row">
-                                <div class="col-12">
-                                        <h1 class="dashboard-title"><span>Friday, Aug 20</span></h1>
-                                </div>
-                            </div>
                             <div class="row dashboard-row-body justify-content-center">
                                 <div class="col-md-12 col-lg-10 col-xl-10 rescheduled-session-cols">
-                                    <div class="common-card refer-friend-card1">
-                                        <div class="common-card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0">
-                                                   <img src="images/discount.svg" alt="discount" class="icon-discount" />
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <h3>Refer Friends & Get Discount</h3>
-                                                    <p class="p-16">Refer your friend & get attractive discounts on each referal </p>
-                                                </div>
-                                                <div class="flex-shrink-0 align-items-center btn-wrapper">
-                                                    <button type="button" class="btn btn-link bttn-link">View Referrals</button>
-                                                    <button type="button" class="btn bttn-primary" data-bs-toggle="modal" data-bs-target="#invite-now-modal">Invite Now</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                               
                                     <div class="common-card rescheduled-session-card1">
                                         <div class="common-card-body">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
                                                    <img src="images/icon-calendar.svg" alt="Reschedule" class="icon-calendar" />
                                                 </div>
+                                                
                                                 <div class="flex-grow-1 ms-3">
                                                     <h5>Your demo session is scheduled </h5>
                                                     <p class="p-16">On Sunday, 11 August at 10:00 AM</p>
@@ -150,6 +131,35 @@
         </section>
     </div>
 
+
+     <!-- refer-friend-side-ease-out-wrap-->
+       <div class="modal fade modal-right" id="refer-friend-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body refer-friend-card-modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="refer-friend-card-inner-wrap">
+                            <div class="refer-friends-img-wrap"><img src="images/refer-friends.svg" alt="Refer Friends & Get Discount"></div>
+                            <div class="flex-grow-1">
+                                <h3>Refer Friends & Get <br/>Discount</h3>
+                                <p class="p-16">Refer your friend & get attractive<br/> discounts on each referal </p>
+                            </div>
+                            <div class="flex-shrink-0 align-items-center btn-wrapper">
+                                <button type="button" class="btn bttn-primary" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#invite-now-modal">
+                                    Invite Now</button>
+                                <button type="button" class="btn btn-link bttn-link">View Referrals</button>
+    
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
     <!-- invite-now-modal -->
     <div class="modal fade" id="invite-now-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -194,7 +204,7 @@
     </div>
 
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
     <script src="widgets/audio-player/dist/audio.min.js"></script>
     <script src="js/custom.js"></script>

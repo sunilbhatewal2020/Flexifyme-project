@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Daily Self Practice Session</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/assigned-homework.css" />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left st">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="dashboard-title"><span>Assigned Homework</span></h1>
+                                </div>
+                            </div>
+                            <div class="row dashboard-row-body">
+                                <div class="col-md-12">
+                                    <div class="session-planner-tab assigned-homework-tab">
+                                        <div class="assign-new">
+                                            <a href="assigned-new-homework.html" class="btn btn-assigned active"><span>+ Assign new</span></a>
+                                            
+                                        </div>
+                                        <div class="pills-tab-wrap">
+                                            <ul class="nav nav-pills planner-tab" id="planner-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="all-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#all"
+                                                        type="button" role="tab" aria-controls="all"
+                                                        aria-selected="true">
+                                                        <span>All </span>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="group-seesion-homework-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#group-seesion-homework"
+                                                        type="button" role="tab" aria-controls="group-seesion-homework"
+                                                        aria-selected="false">
+                                                        <span>Group seesion homework </span>
+                                                    </button>
+                                                </li>
+
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="individual-homework-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#individual-homework"
+                                                        type="button" role="tab" aria-controls="individual-homework"
+                                                        aria-selected="false">
+                                                        <span>Individual homework</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="planner-tabContent">
+                                                <div class="tab-pane fade show active" id="all"
+                                                    role="tabpanel" aria-labelledby="all-tab">
+                                                    <!-- 1 -->
+                                                    <div class="assigned-homework-main-wrap">
+                                                        <div class="common-card">
+                                                            <div class="common-card-body">
+                                                                <div class="d-flex align-items-center">
+                                                                       <div class="flex-shrink-0">
+                                                                           <div class="assigned-homework-media">
+                                                                            <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="flex-grow-1">
+                                                                           <div class="assigned-homework-detail">
+                                                                               <div class="progress yellow-bg">Inprogress</div> 
+                                                                              <p class="p-16">Full body work</p>  
+                                                                              <div class="assigned-homework-detail-inner">
+                                                                               <ul>
+                                                                                   <li><span>Level</span> Begginner</li>
+                                                                                   <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                                   <li><span>Time</span> 30min</li>
+                                                                               </ul>
+                                                                              </div>
+                                                                              <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                           </div>
+                                                                       </div> 
+                                                                       <div class="flex-grow-0">
+                                                                            <div class="assigned-user">
+                                                                                <div class="profile-pic-wrap">
+                                                                                    <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                                </div>
+                                                                                <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                                
+                                                                            </div>    
+                                                                        </div> 
+                                                                </div>
+
+                                                                <div class="drop-menu">
+                                                                       <div class="dropdown">
+                                                                           <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                            <img src="images/drop-menu.svg" alt=""/>
+                                                                           </button>
+                                                                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                             <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                             <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                           </ul>
+                                                                         </div>
+                                                                     </div>
+                                                               <div class="line"></div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="common-card">
+                                                            <div class="common-card-body">
+                                                                <div class="d-flex align-items-center">
+                                                                       <div class="flex-shrink-0">
+                                                                           <div class="assigned-homework-media">
+                                                                            <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="flex-grow-1">
+                                                                           <div class="assigned-homework-detail">
+                                                                               <div class="progress green-bg">Completed</div> 
+                                                                              <p class="p-16">Full body work</p>  
+                                                                              <div class="assigned-homework-detail-inner">
+                                                                               <ul>
+                                                                                   <li><span>Level</span> Begginner</li>
+                                                                                   <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                                   <li><span>Time</span> 30min</li>
+                                                                               </ul>
+                                                                              </div>
+                                                                              <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                           </div>
+                                                                       </div> 
+                                                                       <div class="flex-grow-0">
+                                                                            <div class="assigned-user">
+                                                                                <div class="profile-pic-wrap">
+                                                                                    <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                                </div>
+                                                                                <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                                
+                                                                            </div>    
+                                                                        </div> 
+                                                                        <div class="drop-menu">
+                                                                            <div class="dropdown">
+                                                                                <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                 <img src="images/drop-menu.svg" alt=""/>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                                </ul>
+                                                                              </div>
+                                                                          </div>
+                                                                        <div class="line"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="common-card">
+                                                            <div class="common-card-body">
+                                                                <div class="d-flex align-items-center">
+                                                                       <div class="flex-shrink-0">
+                                                                           <div class="assigned-homework-media">
+                                                                            <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="flex-grow-1">
+                                                                           <div class="assigned-homework-detail">
+                                                                               <div class="progress yellow-bg">Inprogress</div> 
+                                                                              <p class="p-16">Full body work</p>  
+                                                                              <div class="assigned-homework-detail-inner">
+                                                                               <ul>
+                                                                                   <li><span>Level</span> Begginner</li>
+                                                                                   <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                                   <li><span>Time</span> 30min</li>
+                                                                               </ul>
+                                                                              </div>
+                                                                              <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                           </div>
+                                                                       </div> 
+                                                                       <div class="flex-grow-0">
+                                                                            <div class="assigned-user">
+                                                                                <div class="profile-pic-wrap">
+                                                                                    <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                                </div>
+                                                                                <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                                
+                                                                            </div>    
+                                                                        </div> 
+                                                                        <div class="drop-menu">
+                                                                            <div class="dropdown">
+                                                                                <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                 <img src="images/drop-menu.svg" alt=""/>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                                </ul>
+                                                                              </div>
+                                                                          </div>
+                                                                        <div class="line"></div>
+
+
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="common-card">
+                                                            <div class="common-card-body">
+                                                                <div class="d-flex align-items-center">
+                                                                       <div class="flex-shrink-0">
+                                                                           <div class="assigned-homework-media">
+                                                                            <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="flex-grow-1">
+                                                                           <div class="assigned-homework-detail">
+                                                                               <div class="progress green-bg">Completed</div> 
+                                                                              <p class="p-16">Full body work</p>  
+                                                                              <div class="assigned-homework-detail-inner">
+                                                                               <ul>
+                                                                                   <li><span>Level</span> Begginner</li>
+                                                                                   <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                                   <li><span>Time</span> 30min</li>
+                                                                               </ul>
+                                                                              </div>
+                                                                              <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                           </div>
+                                                                       </div> 
+                                                                       <div class="flex-grow-0">
+                                                                            <div class="assigned-user">
+                                                                                <div class="profile-pic-wrap">
+                                                                                    <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                                </div>
+                                                                                <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                                
+                                                                            </div>    
+                                                                        </div> 
+                                                                        <div class="drop-menu">
+                                                                            <div class="dropdown">
+                                                                                <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                 <img src="images/drop-menu.svg" alt=""/>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                                  <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                                </ul>
+                                                                              </div>
+                                                                          </div>
+                                                                        <div class="line"></div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  
+                                                </div>
+                                                <div class="tab-pane fade" id="group-seesion-homework" role="tabpanel"
+                                                    aria-labelledby="pills-upcomming-tab">
+                                                <!-- 2 -->
+                                                <div class="assigned-homework-main-wrap">
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <div class="d-flex align-items-center">
+                                                                   <div class="flex-shrink-0">
+                                                                       <div class="assigned-homework-media">
+                                                                        <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                       </div>
+                                                                   </div>
+                                                                   <div class="flex-grow-1">
+                                                                       <div class="assigned-homework-detail">
+                                                                           <div class="progress yellow-bg">Inprogress</div> 
+                                                                          <p class="p-16">Full body work</p>  
+                                                                          <div class="assigned-homework-detail-inner">
+                                                                           <ul>
+                                                                               <li><span>Level</span> Begginner</li>
+                                                                               <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                               <li><span>Time</span> 30min</li>
+                                                                           </ul>
+                                                                          </div>
+                                                                          <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                       </div>
+                                                                   </div> 
+                                                                   <div class="flex-grow-0">
+                                                                        <div class="assigned-user">
+                                                                            <div class="profile-pic-wrap">
+                                                                                <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                            </div>
+                                                                            <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                            
+                                                                        </div>    
+                                                                    </div> 
+                                                            </div>
+
+                                                            <div class="drop-menu">
+                                                                   <div class="dropdown">
+                                                                       <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <img src="images/drop-menu.svg" alt=""/>
+                                                                       </button>
+                                                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                         <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                         <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                       </ul>
+                                                                     </div>
+                                                                 </div>
+                                                           <div class="line"></div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <div class="d-flex align-items-center">
+                                                                   <div class="flex-shrink-0">
+                                                                       <div class="assigned-homework-media">
+                                                                        <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                       </div>
+                                                                   </div>
+                                                                   <div class="flex-grow-1">
+                                                                       <div class="assigned-homework-detail">
+                                                                           <div class="progress green-bg">Completed</div> 
+                                                                          <p class="p-16">Full body work</p>  
+                                                                          <div class="assigned-homework-detail-inner">
+                                                                           <ul>
+                                                                               <li><span>Level</span> Begginner</li>
+                                                                               <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                               <li><span>Time</span> 30min</li>
+                                                                           </ul>
+                                                                          </div>
+                                                                          <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                       </div>
+                                                                   </div> 
+                                                                   <div class="flex-grow-0">
+                                                                        <div class="assigned-user">
+                                                                            <div class="profile-pic-wrap">
+                                                                                <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                            </div>
+                                                                            <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                            
+                                                                        </div>    
+                                                                    </div> 
+                                                                    <div class="drop-menu">
+                                                                        <div class="dropdown">
+                                                                            <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                             <img src="images/drop-menu.svg" alt=""/>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                            </ul>
+                                                                          </div>
+                                                                      </div>
+                                                                    <div class="line"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <div class="d-flex align-items-center">
+                                                                   <div class="flex-shrink-0">
+                                                                       <div class="assigned-homework-media">
+                                                                        <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                       </div>
+                                                                   </div>
+                                                                   <div class="flex-grow-1">
+                                                                       <div class="assigned-homework-detail">
+                                                                           <div class="progress yellow-bg">Inprogress</div> 
+                                                                          <p class="p-16">Full body work</p>  
+                                                                          <div class="assigned-homework-detail-inner">
+                                                                           <ul>
+                                                                               <li><span>Level</span> Begginner</li>
+                                                                               <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                               <li><span>Time</span> 30min</li>
+                                                                           </ul>
+                                                                          </div>
+                                                                          <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                       </div>
+                                                                   </div> 
+                                                                   <div class="flex-grow-0">
+                                                                        <div class="assigned-user">
+                                                                            <div class="profile-pic-wrap">
+                                                                                <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                            </div>
+                                                                            <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                            
+                                                                        </div>    
+                                                                    </div> 
+                                                                    <div class="drop-menu">
+                                                                        <div class="dropdown">
+                                                                            <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                             <img src="images/drop-menu.svg" alt=""/>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                            </ul>
+                                                                          </div>
+                                                                      </div>
+                                                                    <div class="line"></div>
+
+
+                                                                </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="common-card">
+                                                        <div class="common-card-body">
+                                                            <div class="d-flex align-items-center">
+                                                                   <div class="flex-shrink-0">
+                                                                       <div class="assigned-homework-media">
+                                                                        <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                       </div>
+                                                                   </div>
+                                                                   <div class="flex-grow-1">
+                                                                       <div class="assigned-homework-detail">
+                                                                           <div class="progress green-bg">Completed</div> 
+                                                                          <p class="p-16">Full body work</p>  
+                                                                          <div class="assigned-homework-detail-inner">
+                                                                           <ul>
+                                                                               <li><span>Level</span> Begginner</li>
+                                                                               <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                               <li><span>Time</span> 30min</li>
+                                                                           </ul>
+                                                                          </div>
+                                                                          <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                       </div>
+                                                                   </div> 
+                                                                   <div class="flex-grow-0">
+                                                                        <div class="assigned-user">
+                                                                            <div class="profile-pic-wrap">
+                                                                                <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                            </div>
+                                                                            <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                            
+                                                                        </div>    
+                                                                    </div> 
+                                                                    <div class="drop-menu">
+                                                                        <div class="dropdown">
+                                                                            <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                             <img src="images/drop-menu.svg" alt=""/>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                              <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                            </ul>
+                                                                          </div>
+                                                                      </div>
+                                                                    <div class="line"></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                <div class="tab-pane fade" id="individual-homework" role="tabpanel"
+                                                aria-labelledby="individual-homework-tab">
+                                            <!-- 3 -->
+                                            <div class="assigned-homework-main-wrap">
+                                                <div class="common-card">
+                                                    <div class="common-card-body">
+                                                        <div class="d-flex align-items-center">
+                                                               <div class="flex-shrink-0">
+                                                                   <div class="assigned-homework-media">
+                                                                    <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                   </div>
+                                                               </div>
+                                                               <div class="flex-grow-1">
+                                                                   <div class="assigned-homework-detail">
+                                                                       <div class="progress yellow-bg">Inprogress</div> 
+                                                                      <p class="p-16">Full body work</p>  
+                                                                      <div class="assigned-homework-detail-inner">
+                                                                       <ul>
+                                                                           <li><span>Level</span> Begginner</li>
+                                                                           <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                           <li><span>Time</span> 30min</li>
+                                                                       </ul>
+                                                                      </div>
+                                                                      <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                   </div>
+                                                               </div> 
+                                                               <div class="flex-grow-0">
+                                                                    <div class="assigned-user">
+                                                                        <div class="profile-pic-wrap">
+                                                                            <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                        </div>
+                                                                        <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                        
+                                                                    </div>    
+                                                                </div> 
+                                                        </div>
+
+                                                        <div class="drop-menu">
+                                                               <div class="dropdown">
+                                                                   <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <img src="images/drop-menu.svg" alt=""/>
+                                                                   </button>
+                                                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                     <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                     <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                   </ul>
+                                                                 </div>
+                                                             </div>
+                                                       <div class="line"></div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="common-card">
+                                                    <div class="common-card-body">
+                                                        <div class="d-flex align-items-center">
+                                                               <div class="flex-shrink-0">
+                                                                   <div class="assigned-homework-media">
+                                                                    <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                   </div>
+                                                               </div>
+                                                               <div class="flex-grow-1">
+                                                                   <div class="assigned-homework-detail">
+                                                                       <div class="progress green-bg">Completed</div> 
+                                                                      <p class="p-16">Full body work</p>  
+                                                                      <div class="assigned-homework-detail-inner">
+                                                                       <ul>
+                                                                           <li><span>Level</span> Begginner</li>
+                                                                           <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                           <li><span>Time</span> 30min</li>
+                                                                       </ul>
+                                                                      </div>
+                                                                      <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                   </div>
+                                                               </div> 
+                                                               <div class="flex-grow-0">
+                                                                    <div class="assigned-user">
+                                                                        <div class="profile-pic-wrap">
+                                                                            <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                        </div>
+                                                                        <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                        
+                                                                    </div>    
+                                                                </div> 
+                                                                <div class="drop-menu">
+                                                                    <div class="dropdown">
+                                                                        <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                         <img src="images/drop-menu.svg" alt=""/>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                        </ul>
+                                                                      </div>
+                                                                  </div>
+                                                                <div class="line"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="common-card">
+                                                    <div class="common-card-body">
+                                                        <div class="d-flex align-items-center">
+                                                               <div class="flex-shrink-0">
+                                                                   <div class="assigned-homework-media">
+                                                                    <img src="images/assigned-homework1.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                   </div>
+                                                               </div>
+                                                               <div class="flex-grow-1">
+                                                                   <div class="assigned-homework-detail">
+                                                                       <div class="progress yellow-bg">Inprogress</div> 
+                                                                      <p class="p-16">Full body work</p>  
+                                                                      <div class="assigned-homework-detail-inner">
+                                                                       <ul>
+                                                                           <li><span>Level</span> Begginner</li>
+                                                                           <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                           <li><span>Time</span> 30min</li>
+                                                                       </ul>
+                                                                      </div>
+                                                                      <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                   </div>
+                                                               </div> 
+                                                               <div class="flex-grow-0">
+                                                                    <div class="assigned-user">
+                                                                        <div class="profile-pic-wrap">
+                                                                            <img src="images/avtar-sm1.png" alt="Dipen. S"/>
+                                                                        </div>
+                                                                        <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                        
+                                                                    </div>    
+                                                                </div> 
+                                                                <div class="drop-menu">
+                                                                    <div class="dropdown">
+                                                                        <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                         <img src="images/drop-menu.svg" alt=""/>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                        </ul>
+                                                                      </div>
+                                                                  </div>
+                                                                <div class="line"></div>
+
+
+                                                            </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="common-card">
+                                                    <div class="common-card-body">
+                                                        <div class="d-flex align-items-center">
+                                                               <div class="flex-shrink-0">
+                                                                   <div class="assigned-homework-media">
+                                                                    <img src="images/assigned-homework2.png" alt="Full body work" class="assigned-homework-media-img" />
+                                                                   </div>
+                                                               </div>
+                                                               <div class="flex-grow-1">
+                                                                   <div class="assigned-homework-detail">
+                                                                       <div class="progress green-bg">Completed</div> 
+                                                                      <p class="p-16">Full body work</p>  
+                                                                      <div class="assigned-homework-detail-inner">
+                                                                       <ul>
+                                                                           <li><span>Level</span> Begginner</li>
+                                                                           <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                                                           <li><span>Time</span> 30min</li>
+                                                                       </ul>
+                                                                      </div>
+                                                                      <button type="button" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">View Details</button>
+
+                                                                   </div>
+                                                               </div> 
+                                                               <div class="flex-grow-0">
+                                                                    <div class="assigned-user">
+                                                                        <div class="profile-pic-wrap">
+                                                                            <img src="images/avtar-sm2.png" alt="Dipen. S"/>
+                                                                        </div>
+                                                                        <h5 class="assigned-profile-name">Dipen. S</h5>
+                                                                        
+                                                                    </div>    
+                                                                </div> 
+                                                                <div class="drop-menu">
+                                                                    <div class="dropdown">
+                                                                        <button type="button" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                         <img src="images/drop-menu.svg" alt=""/>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-pencil-line"></i> Edit</a></li>
+                                                                          <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-6-line"></i> Delete</a></li>
+                                                                        </ul>
+                                                                      </div>
+                                                                  </div>
+                                                                <div class="line"></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+ <!-- refer-friend-side-ease-out-wrap-->
+ <div class="modal fade modal-right" id="refer-friend-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body invite-now-modal-body assigned-homework-card-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5>Dipen’s Homework</h5>
+                <div class="assigned-homework-detail-modal">
+                   
+                    <div class="refer-friends-img-wrap">
+                        <img src="images/assigned-homework1-detail.jpg" alt="Refer Friends & Get Discount">
+                    </div>
+                    <div class="assigned-homework-card-info-wrap">
+                        <div class="progress yellow-bg">Inprogress</div>
+                        <div class="assigned-homework-detail-inner">
+                            <div class="home-work-duration">
+                               <span class="no">1</span> 
+                               <span class="week">Week</span>
+                            </div>
+                            <p class="p-18">Full body work</p> 
+                            <ul>
+                                <li><span>Level</span> Begginner</li>
+                                <li><span>Duration</span> 1 Week 13 Dec - 20 Dec</li>
+                                <li><span>Time</span> 30min</li>
+                            </ul>
+                           </div>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="homework-detail-card">
+                        <div class="homework-detail-card-head">
+                            <h5 class="homework-detail-card-title">
+                                <span class="title-number flex-grow-0">1</span> 
+                                <span class="flex-grow-1">Warm up</span>  
+                                <span class="task-time flex-grow-0">10 min</span></h5>
+                            <a href="#" id="collapsing-btn" class="collapsing-btn"><i class="fas fa-angle-down"></i></a>
+                            
+                        </div>
+                        <div class="homework-detail-card-body">
+                                <div class="homework-detail-card-wrap">
+                                    <div class="assigned-list">
+                                    <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                    <div class="warmup-info">
+                                        <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                    </div>
+                                    </div>
+
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up2.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+
+                                    
+
+
+                                    
+        
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="homework-detail-card">
+                        <div class="homework-detail-card-head">
+                            <h5 class="homework-detail-card-title">
+                                <span class="title-number flex-grow-0">2</span> 
+                                <span class="flex-grow-1">Asanas</span>  
+                                <span class="task-time flex-grow-0">20 - 30 Min</span></h5>
+                            <a href="#" id="collapsing-btn" class="collapsing-btn active-a"><i class="fas fa-angle-down"></i></a>
+                            
+                        </div>
+                        <div class="homework-detail-card-body d-none">
+                                <div class="homework-detail-card-wrap">
+                                    <div class="assigned-list">
+                                    <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                    <div class="warmup-info">
+                                        <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                    </div>
+                                    </div>
+        
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up2.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+        
+        
+                                    
+        
+                                </div>
+                        </div>
+                    </div>
+        
+                    <!-- 3 -->
+                    <div class="homework-detail-card">
+                        <div class="homework-detail-card-head">
+                            <h5 class="homework-detail-card-title">
+                                <span class="title-number flex-grow-0">3</span> 
+                                <span class="flex-grow-1">Asanas</span>  
+                                <span class="task-time flex-grow-0">20 - 30 Min</span></h5>
+                            <a href="#" id="collapsing-btn" class="collapsing-btn active-a"><i class="fas fa-angle-down"></i></a>
+                            
+                        </div>
+                        <div class="homework-detail-card-body d-none">
+                                <div class="homework-detail-card-wrap">
+                                    <div class="assigned-list">
+                                    <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                    <div class="warmup-info">
+                                        <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                    </div>
+                                    </div>
+        
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up2.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+        
+        
+                                    
+        
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="homework-detail-card">
+                        <div class="homework-detail-card-head">
+                            <h5 class="homework-detail-card-title">
+                                <span class="title-number flex-grow-0">4</span> 
+                                <span class="flex-grow-1">Asanas</span>  
+                                <span class="task-time flex-grow-0">20 - 30 Min</span></h5>
+                            <a href="#" id="collapsing-btn" class="collapsing-btn active-a"><i class="fas fa-angle-down"></i></a>
+                            
+                        </div>
+                        <div class="homework-detail-card-body d-none">
+                                <div class="homework-detail-card-wrap">
+                                    <div class="assigned-list">
+                                    <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                    <div class="warmup-info">
+                                        <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                    </div>
+                                    </div>
+        
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up2.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+                                    <div class="assigned-list">
+                                        <div class="warmup-img-wrap"><img src="images/warm-up1.jpg" alt=""/></div> 
+                                        <div class="warmup-info">
+                                            <h6 class="p-14">Marjariasana</h6>
+                                        <p class="p-13"><span>Rept/Note</span> Hold for a minute</p> 
+                                        </div>
+                                    </div>
+        
+                                    
+        
+        
+                                    
+        
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- invite-now-modal -->
+    <div class="modal fade" id="assigned-new-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body assigned-new-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>More ways to invite your friend</h3>
+                    <ul class="social-icon-list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Google.svg" alt="Google" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/LinkedIN.svg" alt="LinkedIN" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/WhatsApp.svg" alt="WhatsApp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Skype.svg" alt="Skype" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fm-mb search-input-wrap social-input-wrap">
+                        <input type="text" class="form-control" value="https://www.flexifyme.com" readonly>
+                            <button type="button" class="btn bttn-outline-primary2"><span class="hide-mobile">Copy Link</span>  <i class="far fa-copy show-mobile hide-desktop"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+
+
+            // for .hide-card-overlay
+            // $(".hide-card-overlay").click(function(){
+            //     $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            // })
+            // for like button            
+            // $(".btn-like").click(function(){
+            //     $(this).toggleClass("active")
+            // })
+         
+            $(".collapsing-btn").click(function(){
+                $(this).toggleClass("active-a");
+                // $(this).parents(".common-card").find(".common-card-body").slideToggle();
+                $(this).parents(".homework-detail-card").find(".homework-detail-card-body").toggleClass('d-none');
+            }) 
+
+            
+      
+        });
+        
+    </script>
+ 
+
+</body>
+
+</html>
