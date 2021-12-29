@@ -222,10 +222,13 @@
            margin-right: 10px;
            width:150px;
          }
-         @include xxs{
-          margin-bottom: 10px;
+         @include surface{
           width:100px;
-        }
+         }
+         @include xxs{
+          width:80px;
+         }
+        
          text-align: center;
          
         .assigned-homework-media-img{
@@ -234,6 +237,9 @@
             @include tabMobile{
               width: 100%;
             }
+            @include surface{
+              display: none;
+             }
             @include xs{
               width: 100%;
             }
@@ -285,13 +291,15 @@
             right: auto;
             left: 10px;
           }
-          @include xxs{
-            position: absolute;
-            top: auto;
+          @include surface{
+            flex-direction: column;
+            bottom: 65px;
             right: auto;
-            bottom: 55px;
-            left: 14px;
-            flex-direction: unset;
+            left: 28px;
+           }
+
+           @include xxs{
+            left: 20px;
           }
          
         .profile-pic-wrap{
@@ -302,11 +310,17 @@
             @include tabMobile{
               margin-right:5px;
             }
+           
             @include xs{
               width: 25px;
               height: 30px;
               margin-right: 10px;
             }
+            @include surface{
+              width: 40px;
+            height: 40px;
+            margin-right: 0px;
+             }
             img{
               @include xs{
                 width: 100%;
@@ -321,6 +335,9 @@
             @include xs{
               font-size: 12px;
             }
+            @include surface{
+              font-size: 14px;
+             }
         }
     }
 }

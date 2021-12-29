@@ -3271,6 +3271,51 @@ a.book-assessment-btn {
     opacity: 0.5;
   }
 }
+
+
+.btn-assigned{
+  border:0px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 160px;
+  height: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: $white;
+  margin-bottom: 20px;
+  display: grid;
+    align-items: center;
+  @extend .st;
+  &.active,
+  &:hover {
+    background: linear-gradient(218.34deg, $red 4.91%, #3f1f68 180.24%);
+    border-color: transparent;
+    span,
+    em {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  span {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+  }
+  em {
+    font-family: $font-dm;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $black2;
+    opacity: 0.5;
+  }
+}
+
 .slidecontainer {
   width: 100%;
 
@@ -3971,7 +4016,7 @@ a.resent-otp-btn {
 }
 
 .session-planner-tab {
-  margin-top: 30px;
+  margin-top: 25px;
   position: relative;
   .search-input-wrap-outer {
     max-width: 234px;
@@ -4297,5 +4342,20 @@ a.resent-otp-btn {
   }
   .p-18-adj{
     color: #898989;
+  }
+}
+.common-dashboard-header-wrap{
+  .common-dashboard-header-inner-wrap{
+    display: flex;
+    align-items: center;
+    .date{
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      color: #2E2E2E;
+      margin-bottom: 0;
+      margin-left: 85px;
+    }
   }
 }
