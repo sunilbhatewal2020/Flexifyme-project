@@ -737,23 +737,23 @@ to {
         background:#C4C4C4; 
       }
 
-      .rating-wrap{
-        background-color: #F4F4F4;
-        border-radius: 30px;
-        padding: 10px 30px;
-        display: grid;
-        align-items: center;
-        @include xs{
-          padding: 10px 15px;
-        }
-      }
+      // .rating-wrap{
+      //   background-color: #F4F4F4;
+      //   border-radius: 30px;
+      //   padding: 10px 30px;
+      //   display: grid;
+      //   align-items: center;
+      //   @include xs{
+      //     padding: 10px 15px;
+      //   }
+      // }
 
       .star-rating {
         font-size: 0;
         white-space: nowrap;
         display: inline-block;
         /* width: 250px; remove this */
-        height:30px;
+        height:50px;
         overflow: hidden;
         position: relative;
         background: url('../images/rating.png');
@@ -774,6 +774,8 @@ to {
         z-index: 1;
         background: url('../images/rating-selected.png');
         // background-size: contain;
+
+      
         @include xs{
           background: url('../images/rating-selected-d.png');
         }
@@ -785,13 +787,11 @@ to {
         display: inline-block;
         /* width: 20%; remove this */
         height: 100%;
-        margin: 0 37px 0 0 ;
+        margin: 0px;
         padding: 0;
         z-index: 2;
         position: relative;
-        @include xs{
-          margin: 0 22px 0 0 ;
-        }
+       
       }
       .star-rating input:hover + i,
       .star-rating input:checked + i {
@@ -819,33 +819,21 @@ to {
         vertical-align: middle;
       }
       
-      .star-rating.star-5 {width: 298px;
+      .star-rating.star-5 {width: 340px;
         @include xs{
-          width:238px;
+          width:300px;
         }
       }
       .star-rating.star-5 input,
-      .star-rating.star-5 i {width:10%;
-        @include xs{
-          width:13%;
-        }
+      .star-rating.star-5 i {width:20%;
       }
       .star-rating.star-5 i ~ i {
-        width:33%;
-        @include xs{
-          width:35%;
-        }
+        width:40%;
       }
       .star-rating.star-5 i ~ i ~ i {
-        width:55%;
-        @include xs{
-          width:56%;
-        }
+        width:60%;
       }
-      .star-rating.star-5 i ~ i ~ i ~ i {width:78%;
-        @include xs{
-          width:79%;
-        }
+      .star-rating.star-5 i ~ i ~ i ~ i {width:80%;
       }
       .star-rating.star-5 i ~ i ~ i ~ i ~i {width: 100%;}
       
