@@ -147,7 +147,7 @@
                             <div class="flex-shrink-0 align-items-center btn-wrapper">
                                 <button type="button" class="btn bttn-primary" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#invite-now-modal">
                                     Invite Now</button>
-                                <button type="button" class="btn btn-link bttn-link">View Referrals</button>
+                                <button type="button" class="btn btn-link bttn-link" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#feedback-modal">View Referrals</button>
     
                             </div>
                         </div>
@@ -202,6 +202,136 @@
             </div>
         </div>
     </div>
+
+
+
+
+       <!-- Feedback-modal -->
+       <div class="modal fade" id="feedback-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered feedback-dialog">
+            <div class="modal-content">
+                <div class="modal-body feedback-modal-body">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <h3>Share your feedback</h3>
+                    
+                    <form>
+                    <div class="feedback-main-wrap row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p>Teacher made good use of time?<span class="mandatory">*</span></p>
+                                <div class="rating-wrap">
+                                    <span class="star-rating star-5">
+                                        <input type="radio" name="rating" value="1"><i></i>
+                                        <input type="radio" name="rating" value="2"><i></i>
+                                        <input type="radio" name="rating" value="3"><i></i>
+                                        <input type="radio" name="rating" value="4"><i></i>
+                                        <input type="radio" name="rating" value="5"><i></i>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Teacher seemed knowlegeable about Yoga<span class="mandatory">*</span></p>
+                            <div class="rating-wrap">
+                                <span class="star-rating star-5">
+                                    <input type="radio" name="ratingYoga" value="6"><i></i>
+                                    <input type="radio" name="ratingYoga" value="7"><i></i>
+                                    <input type="radio" name="ratingYoga" value="8"><i></i>
+                                    <input type="radio" name="ratingYoga" value="9"><i></i>
+                                    <input type="radio" name="ratingYoga" value="10"><i></i>
+                                  </span>
+                            </div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found especially valuable?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found unnecessary or not useful?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there anything that you wished we had covered?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Any other comments, suggestions, ideas, wishes?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <p>How satisfied were you with the overall session?*</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <p>How did you came to know about us?</p>
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                Word of mouth
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Internet Search or other website
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Directly from one of the faculty teachers
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn bttn-primary mt30" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                        
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="js/jquery.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
