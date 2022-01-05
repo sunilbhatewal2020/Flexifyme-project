@@ -1,0 +1,323 @@
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @mixin surface{
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  }
+  @mixin xxs{
+    @media screen and (max-width: 440px) {
+      @content;
+    }
+  }
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  .session-planner-tab.studen-information-tab{
+    .pills-tab-wrap{
+        .nav-pills{
+            li{
+                .nav-link {
+                    min-width: auto;
+                }
+            }
+            @include xs{
+              overflow-x: auto;
+           } 
+        } 
+    } 
+
+    .common-card{
+        border-radius: 5px;
+        background-color: rgba(255,255,255,1);
+        &:first-child{
+            @include surface{
+                padding-top:0px !important;
+             }
+    
+        }
+        .common-card-body {
+            padding: 20px 40px;
+        }
+    }
+    .students-information-main-wrap{
+        display: flex;
+        align-items: center;
+            @include tabMobile{  
+                flex-direction: column;
+            }
+        .assigned-user{
+            text-align: center;
+            margin-right: 30px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            @include tabMobile{  
+              }
+         
+    
+          
+            .profile-pic-wrap{
+                border-radius: 50%;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 100%;
+                }
+                @include tabMobile{
+                  margin-right:5px;
+                }
+               
+                @include xs{
+                  width: 25px;
+                  height: 30px;
+                  margin-right: 10px;
+                }
+                @include surface{
+                  width: 40px;
+                height: 40px;
+                margin-right: 0px;
+                 }
+                img{
+                  @include xs{
+                    width: 100%;
+                  }
+                }
+            }
+            .assigned-profile-name{
+                font-size: 16px;
+                color: #2e2e2e;
+                font-weight: 500;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+
+            .dob{
+                font-size: 14px;
+                color: #898989;
+                font-weight: 500;
+                margin-bottom: 0px;
+            }
+        }
+        .students-information-inner-wrap{
+            position: relative;
+            padding-left: 30px;
+            @include tabMobile{  
+                padding-left: 0px;
+                position: unset;
+                margin-top: 20px;
+            }
+            &::before{
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: #D4D5D5;
+                margin: 0px;
+                position: absolute;
+                left: 0;
+                @include tabMobile{  
+                   display: none;
+                }
+            }
+        }
+        .view-details{
+            font-size: 14px;
+            font-weight: 600;
+            color: #7352D1;
+            text-decoration: underline !important;
+            margin-top: 10px;
+            display: block;
+            background: transparent;
+            border: 0px;
+            line-height: 15px;
+            @include tabMobile{  
+             text-align: center;
+             margin-top: 20px;
+             }
+         }
+        .subscribe{
+            background: url(../images/subscribe.jpg) no-repeat;
+            font-size: 14px;
+            color: #FFF;
+            font-weight: 500;
+            padding:0px 10px;
+            height: 27px;
+            margin-bottom: 30px;
+
+            @include tabMobile{
+                position: absolute;
+                top: 15px;
+                left: -2px;
+                width: 95px;
+            }
+        }
+        .unsubscribe{
+            background: url(../images/unsubscribe.jpg) no-repeat;
+            color: #858585;
+            @include tabMobile{
+                width: 114px;
+            }
+        }
+        .info-content{
+            // display: flex;
+            margin-bottom: 20px;
+              ul{
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                @include surface{
+                    justify-content: center;
+                 }
+       li{
+           font-size: 14px;
+           color: #2E2E2E;
+           line-height: 14px;
+           font-weight: 500;
+           display: flex;
+           flex-direction: column;
+           margin-right: 45px;
+           @include md{
+            margin-right: 15px;
+           }
+           @include tabMobile{  
+            margin-right: 28px;
+        }
+        @include surface{
+           font-size: 12px;
+           margin-right: 10px;
+        }
+           span{
+               color: #898989;
+               margin-bottom:8px;
+               font-weight: 400;
+           }
+
+           &::after{
+               content: '';
+               width: 1px;
+               height: 100%;
+               background-color:#969697;
+               margin: 0px 15px 0px 15px;
+               @include xs{
+                display: none;
+             }
+           }
+           &:last-child{
+            &::after{
+              display: none;
+          } 
+        }
+       }
+     } 
+        }
+    }
+    .session{
+        position: absolute;
+        right: -40px;
+        top: -20px;
+        background-color: #F3F3F3;
+        padding: 25px 40px;
+        border-radius: 0px 5px 5px 0px;
+        @include tabMobile{  
+            position: unset;
+            display: flex;
+            margin: 0px -60px;
+            border-radius: 0px;
+            padding:20px 40px;
+    align-items: center;
+    justify-content: center;
+        }
+        @include sm{
+            margin: 0px -33px
+        }
+        @include xs{
+            margin: 0px 0px
+        }
+        
+        .session-remaining{
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            @include tabMobile{  
+                margin-bottom: 0px;
+                margin-right: 20px;
+            }
+            &::before{
+                content: '';
+                width:2px;
+                height: 84%;
+                background-color: #FF3131;
+                margin: 0px;
+                position: absolute;
+                left: 0;
+            }
+        }
+        .session-done{
+            position: relative;
+            padding-left: 15px;
+            &::before{
+                content: '';
+                width:2px;
+                height: 84%;
+                background-color: #16BF59;
+                margin: 0px;
+                position: absolute;
+                left: 0;
+            }
+        }
+        .days{
+            font-size: 24px;
+             color: #2e2e2e;
+             font-weight: 600;
+             margin: 0px;
+             line-height: 20px;
+         }
+         span{
+             font-size: 14px;
+              color: #898989;
+         }
+    }
+  
+} 
