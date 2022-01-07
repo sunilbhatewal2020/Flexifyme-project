@@ -326,13 +326,14 @@
  }
 
  .feedback-rating-outer-wrap{
-        margin-top: 20px;
-        display: none;
-    .feedback-rating-inner-wrap{
+        margin:18px -40px 0px;
         border-top: 1px solid #DBDCDC;
-        margin:18px -40px;
         padding:30px 40px;
-
+        display: grid;
+        align-items: center;
+        min-height:367px;
+       
+    .feedback-rating-inner-wrap{
         .p14{
             font-weight: 400;
             color: #2e2e2e;
@@ -433,3 +434,19 @@
   .star-rating.star-3 i ~ i {width: 66.66%;}
   .star-rating.star-3 i ~ i ~ i {width: 100%;}
   
+.no-feedback{
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  h5{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e2e2e; ;
+  }
+  p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #898989;
+  }
+}
