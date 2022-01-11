@@ -238,6 +238,7 @@
   .home-sec7 {
     padding-top: 0 !important;
   }
+
 }
 
 @media (max-width: 1199.98px) and (min-width: 992px) {
@@ -477,6 +478,9 @@
         margin: 0 8px;
       }
     }
+  }
+  .hide-tabMobile{
+    display: none !important;
   }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
@@ -1071,6 +1075,7 @@
   .hide-mobile {
     display: none !important;
   }
+
   .contact-section {
     .logo-wrap {
       top: 20px;
