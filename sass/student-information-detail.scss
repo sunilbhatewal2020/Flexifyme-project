@@ -325,13 +325,19 @@
      font-size: 14px !important;
  }
 
+ .feedback-header{
+  min-height:120px;
+  align-items: center;
+    display: grid;
+ }
  .feedback-rating-outer-wrap{
-        margin:93px -40px 0px;
+        margin:20px -40px 0px;
         border-top: 1px solid #DBDCDC;
-        padding:30px 40px;
+        padding:60px 40px 30px 40px;
         display: grid;
         align-items: center;
-        min-height:367px;
+        // max-height:367px;
+        min-height: 374px;
        
     .feedback-rating-inner-wrap{
         .p14{
@@ -448,5 +454,6 @@
     font-size: 14px;
     line-height: 16px;
     color: #898989;
+    margin: 10px 0px 0px 0px;
   }
 }
