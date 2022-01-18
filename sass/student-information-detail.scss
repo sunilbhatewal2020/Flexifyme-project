@@ -134,6 +134,11 @@
             color: #2e2e2e;
             margin-top: 30px; 
         }
+        .bottom-content-section{
+          border-top: 1px solid #DBDCDC;
+          margin-top: 10px;
+          padding-top: 10px;
+        }
         .bottom-content-wrap-detail{
             margin-top: 10px;  
             padding: 0;
@@ -141,7 +146,7 @@
             p{
                 font-size: 16px;
                 color: #2E2E2E;
-                line-height: 16px;
+                line-height:20px;
                 font-weight: 500;
                 display: flex;
                 flex-direction: column;
