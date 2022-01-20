@@ -486,7 +486,7 @@
   margin: 0 auto;
   text-align: center;
   h5{
-    margin: 0px;
+    margin:10px 0px 0px 0px;
     font-size: 20px;
     font-weight: 600;
     color: #2e2e2e; ;
@@ -497,4 +497,24 @@
     color: #898989;
     margin: 10px 0px 0px 0px;
   }
+}
+.no-reports{
+  width: 350px;
+  min-height: 159px;
+  display: grid;
+  align-items: center;
+  margin: 0 auto 20px;
+  text-align: center;
+  h5 {
+    margin:10px 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e2e2e;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #898989;
+    margin: 10px 0px 0px 0px;
+}
 }
