@@ -18,7 +18,10 @@
     <div class="dashboard-body">
         <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
             <div class="dasboard-row-wrap">
-               
+                    <button type="button" class="new-goal" data-bs-toggle="modal" data-bs-target="#new-goal-modal">
+                        <span> New year goal         </span>
+                    </button>
+
                 <div class="dasboard-col-left st">
                     <div class="common-dashboard-header-wrap"></div>
                     <div class="common-dashboard-sidebar-wrap"></div>
@@ -39,15 +42,11 @@
                                 <div class="col-md-12 col-lg-10 col-xl-10 rescheduled-session-cols">
                                
                                     <div class="common-card rescheduled-session-card1">
-                                        <div class="common-card-body">
+                                        <div class="common-card-body scheduled-card-body">
                                             <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0">
-                                                   <img src="images/icon-calendar.svg" alt="Reschedule" class="icon-calendar" />
-                                                </div>
-                                                
-                                                <div class="flex-grow-1 ms-3">
-                                                    <h5>Your demo session is scheduled </h5>
-                                                    <p class="p-16">On Sunday, 11 August at 10:00 AM</p>
+                                                <div>
+                                                    <h5>Good morning, Rohit </h5>
+                                                    <p class="p-16">Your demo session is scheduled on  <span>Sun 11 | 10:00 AM</span></p>
                                                 </div>
                                                 <div class="flex-shrink-0">
                                                     <button type="button" class="btn bttn-outline-primary2" onclick="location.href='reschedule-session.html'">Reschedule</button>
@@ -56,6 +55,31 @@
                                         </div>
                                     </div>
 
+                                    <div class="common-card play-card">
+                                        <div class="common-card-body play-card-body">
+                                            <div class="play-view">
+                                                <img src="../images/dashboard-bg2.jpg" alt="" class="play-view-img"/>
+                                            </div>
+
+                                            <div>
+                                                <h5> Supernaturals - Be Calm (2021)</h5>
+                                                <p class="p-16"> Lorem ipsum dolor sit </p>
+                                               
+                                               
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <a href="#" class="btn-like st" title="Make Favorite"><i class="ri-heart-line"></i></a>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-grow-0">
+                                                <div class="play-music-audio">
+                                                        <audio preload="auto" src="https://traffic.libsyn.com/mindfulorg/winston-breathing-5mins.mp3"></audio>
+                                                    </div>
+                                                <button type="button" class="btn bttn-outline-primary2" onclick="location.href='reschedule-session.html'">
+                                                    <i class="ri-download-line"></i> Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="common-card rescheduled-session-card2">
                                         <div class="common-card-body">
                                            <h2>Daily Self Practice Session</h2>
@@ -147,7 +171,8 @@
                             <div class="flex-shrink-0 align-items-center btn-wrapper">
                                 <button type="button" class="btn bttn-primary" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#invite-now-modal">
                                     Invite Now</button>
-                                <a href="profile.html" type="button" class="btn btn-link bttn-link">View Referrals</button>
+                                <!-- <a href="profile.html" type="button" class="btn btn-link bttn-link">View Referrals</button> -->
+                                <button type="button" class="btn btn-link bttn-link" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#feedback-modal">View Referrals</button>
     
                             </div>
                         </div>
@@ -203,8 +228,25 @@
         </div>
     </div>
 
+   <!--   new-goal-modal -->
+   <div class="modal fade" id="new-goal-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content new-goal-content">
+            <div class="modal-body invite-now-modal-body new-goal-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
+                <div class="new-goal-wrap text-center">   
+                    <div class="text-center"><img src="images/new-goal.jpg" alt=""/></div>
+                     <h3>Your New Year Goal </h3>
+                     <p class="p-16">You haven’t set any goal for 2022 please add new goal </p>
+                     <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">+ New goal</button>
+                 </div>  
+            </div>
+        </div>
+    </div>
+</div>
 
-
+  
 
        <!-- Feedback-modal -->
        <div class="modal fade" id="feedback-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
@@ -331,7 +373,7 @@
         </div>
     </div>
 
-
+ 
 
     <script src="js/jquery.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
@@ -359,6 +401,10 @@
             // for .hide-card-overlay
             $(".hide-card-overlay").click(function(){
                 $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            })
+
+            $(".play-pause-btn").click(function(){
+                $(".music-strip-bottom-wrap-outer").toggleClass("music-strip-active")
             })
             // for like button            
             $(".btn-like").click(function(){
