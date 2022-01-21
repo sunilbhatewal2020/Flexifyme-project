@@ -196,7 +196,7 @@
     }
 }
 .our-heroes-wrap{
-    text-align: center;
+  padding-right: 50px;
     h2{
         color: #311A75;
         margin-bottom:30px;
@@ -213,9 +213,26 @@
     }
   }
 .heros-content-wrap{
-    display: flex;
-    margin-top: 70px;
-   
+   .heros-img-wrap{
+    @include xs{
+     max-width:50px;
+     .transform-scale-img{
+      transform-origin:center
+     }
+    }
+    @include surfaceDao{
+      max-width: 103px;
+      transform: scale(0.65);
+      transform-origin: 0 0px;
+      text-align: center;
+      -webkit-transform: scale(0.65);
+      -moz-transform: scale(0.65);
+      -ms-transform: scale(0.65);
+      -o-transform: scale(0.65);
+      max-height: 250px !important;
+    }
+      
+   }
 }
 
 
@@ -320,79 +337,143 @@
     text-align: center;
     h2{
         color: #311A75;
-        margin-bottom:20px;
+        margin-bottom:0px;
     }
     .health-crew-inner-wrap{
-        margin-top: 100px;
-        @include surfaceDao{
-          margin-top:0px;
+      margin-top:230px;
+      .crew-img{
+      position: relative;
+        .crew-member{
+          position: absolute;
+          top:-165px;
+          left: 0px;
+          right: 0;  
+          margin: 0 auto;
+          transition: all 0.4s ease-in-out;
         }
-        .crew-img{
-            position: relative;
-            @include surfaceDao{
-              max-height:350px;
-            }
-            .crew-bg{
-                position: absolute;
-                top: 100px;
-                left: 0px;
-                z-index: -1;
-
-                
-            }
+        }
+        .crew-img-one{
+          .crew-bg1{
+            position: absolute;
+            top: -73px;
+            left: 145px;
+            transition: all 0.4s ease-in-out;
+          }
+          .crew-bg2{
+            position: absolute;
+            top: -74px;
+            right: 122px;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+        .crew-img-two{
+          .crew-bg1{
+            position: absolute;
+            top: -14px;
+            left:123px;
+            transition: all 0.4s ease-in-out;
+          }
+          .crew-bg2{
+            position: absolute;
+            top: -22px;
+            right: 131px;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+        .crew-img-three{
+          .crew-bg1{
+            position: absolute;
+            top: -90px;
+            left:170px;
+            transition: all 0.4s ease-in-out;
+          }
+          .crew-bg2{
+            position: absolute;
+            top: -24px;
+            right: 90px;
+            transition: all 0.4s ease-in-out;
+          }
         }
         .crew-detail{
-            margin-top:30px;
-            @include surfaceDao{
-              margin-top:0px;
-            }
+          background-color: #F6F6F9;
+          border-radius: 30px;
+          padding:170px 30px 50px;
             .crew-heading{
-                font-family: restlessRegular;
-                font-style: normal;
-                font-weight: normal;
-                color: #FF668E;
-                font-size: 48px;
-                line-height:50px;
-                margin-bottom:20px;
+              font-family: DM Sans;
+              font-size: 24px;
+              color: #2E2E2E;
+              font-weight: 600;
+              
             }
             p{
                 font-size: 14px;
+                color: #898989;
                 line-height: 24px;
                 margin-bottom: 0px;
             }
         }
         .crew-social{
+          width: 170px;
+          padding: 10px 0px;
+          background-color: #2B2343;
+          border-radius: 30px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px;
+            margin:-22px auto 0px;
+
             .social{
-                width: 36px;
-                height: 36px;
+                width: 20px;
+                height: 20px;
                 background-color: transparent;
                 color: transparent;
                 display: grid;
                 align-items: center;
                 justify-content: center;
-                margin: 0px 4px;
-                img{
-                    filter: brightness(0%);
-                    opacity: .6;
-                }
-                &:hover{
-                    background-color:#F6F6F9;
-                    border-radius: 50%;
-
-                    img{
-                        filter: brightness(100%);
-                        opacity: 1;
-                    }
-                }
+                margin:0px 8px;
+              
             }
         }
+       &:hover{
+         .crew-member{
+          transform: scale(1.02);
+         }
+          .crew-img-one{
+            .crew-bg1{
+              top:-115px;
+              left:103px;
+            }
+            .crew-bg2{
+              top: -110px;
+              right: 17px;
+            }
+          }
+
+          .crew-img-two{
+            .crew-bg1{
+              left:50px;
+            }
+            .crew-bg2{
+              top: -132px;
+              right: 11px;
+            }
+          }
+
+          .crew-img-three{
+            .crew-bg1{
+              top:-115px;
+              left:70px;
+            }
+            .crew-bg2{
+              top: -143px;
+              right: 0px;
+            }
+          }
+       } 
     }
 }
+
 
   .gradinent-section-traning {
     background: rgb(246, 246, 249);
