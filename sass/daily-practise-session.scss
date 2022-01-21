@@ -48,8 +48,31 @@
     @content;
   }
 }
-
+.dasboard-col-right-container{
+  margin-left: 0;
+  .dashboard-row-body{
+    justify-content: flex-start !important;
+  }
+}
 .rescheduled-session-card1 {
+  overflow: hidden;
+  .scheduled-card-body{
+    background: url(../images/demo-scheduled-bg.png) right bottom  no-repeat;
+    padding:18px 30px;
+    @include xs{
+      padding-bottom:25px; 
+    }
+    &::before{
+      content: '';
+      width: 6px;
+      height: 100%;
+      background-color: #FF668E;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+  }
   .icon-calendar {
     margin-left: -10px;
     margin-right: 5px;
@@ -59,12 +82,20 @@
     width: 44px;
     }
   }
+  .bttn-outline-primary2{
+    height: 41px;
+    margin-left: 50px;
+    background-color: #FFF;
+    @include xs{
+     margin-top: 20px;
+     margin-left: 0px;
+    }
+  }
   @include xs{
     .d-flex.align-items-center {
-      display: block !important;
-      text-align: center;
+      justify-content: space-between;
     }
-    .btn.bttn-outline-primary2{
+    .bttn-outline-primary2{
       transform: scale(0.9);
       -webkit-transform: scale(0.9);
       -moz-transform: scale(0.9);
@@ -82,8 +113,8 @@
   h5 {
     font-family: DM Sans;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     color: #242424;
     margin-bottom: 0;
     @include xs{
@@ -92,11 +123,26 @@
   }
   .p-16 {
     font-style: normal;
-    font-weight: 500;
-    color: #2e2e2e;
+    font-weight: 400;
+    color: #898989;
+    margin-bottom: 0px;
+    span{
+      font-size: 16px;
+      color: #2e2e2e;
+      font-weight: 500;
+      border-right: 1px solid #898989;
+
+      &:last-child{
+        border-right: 0px;
+      }
+      @include xs{
+        display: block;
+      }
+    }
     @include xs{
       font-size: 12px;
     }
+    
   }
 }
 .rescheduled-session-card2 {
@@ -175,7 +221,160 @@
   }
 }
 
-.music-strip-bottom-wrap-outer {
+.play-card{
+  .play-card-body{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    .play-view{
+      border-radius:5px;
+      overflow: hidden;
+    }
+    .play-view-img{
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      @include xs{
+        width: 40px;
+      height: 40px;
+       }
+    }
+  }
+  h5 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #242424;
+    margin-bottom: 0;
+    @include tabMobile{
+      font-size: 14px;
+    }
+    @include xs{
+     display: none;
+    }
+  }
+  .p-16 {
+    font-style: normal;
+    font-weight: 400;
+    color: #898989;
+    margin-bottom: 0px;
+    @include tabMobile{
+      font-size: 12px;
+    }
+    @include xs{
+      display: none;
+     }
+  }
+  .btn-like{
+    margin-left: 20px;
+    background: transparent;
+    border: 1px solid #C1C3C4;
+    color: #2E2E2E;
+    @include xs{
+      margin-left:0px;
+      margin-right:10px;
+
+     }
+  }
+
+ 
+.ppq-audio-player{
+  line-height:0px;
+  height:auto;
+  margin: 0 auto;
+  background: transparent;
+  .play-pause-btn {
+    margin:0px;
+    .play-pause-icon {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: #FF668E;
+      &:after {
+        filter: brightness(100);
+        background-image: url(../images/icon-play-pause-black.png);
+        background-size: 37px 18px;
+    }
+  }
+  }
+  .player-time {
+    display: none;
+  }
+  .player-bar{
+    display: none;
+  }
+}
+
+
+.bttn-outline-primary2{
+  height: 41px;
+  margin-left: 20px;
+  background-color: #FFF;
+  @include xs{
+ padding: 0px 15px;
+   }
+}
+@include xs{
+  .flex-grow-1{
+    flex-grow: 0!important;
+  }
+ }
+
+}
+.new-goal{
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  background-color: #2B2343;
+  border-radius: 30px;
+  width:210px;
+  height: 35px;
+  z-index: 6;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 500;
+  font-family: DM Sans;
+  padding: 0px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  &::after{
+    width: 70px;
+    height: 70px;
+    content: '';
+    display: block;
+    float: right;
+    background-image: url(../images/new-year-logo.svg);
+    margin-top: -5px;
+    margin-left: auto;
+  }
+}
+.new-goal-content{
+  border-radius: 10px;
+  padding: 20px;
+.new-goal-modal-body{
+  position: relative;
+.new-goal-wrap{
+  h3 {
+    margin-top: 30px;
+    font-family: Playfair Display !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    color: #2e2e2e !important;
+  }
+}
+}
+}
+
+.music-strip-active{
+display: block !important;
+}
+.music-strip-bottom-wrap-outer { 
+  display: none;
   position: fixed;
   bottom: 0;
   left: auto;
