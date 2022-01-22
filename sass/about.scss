@@ -341,6 +341,7 @@
     }
     .health-crew-inner-wrap{
       margin-top:230px;
+      
       .crew-img{
       position: relative;
         .crew-member{
@@ -358,12 +359,25 @@
             top: -73px;
             left: 145px;
             transition: all 0.4s ease-in-out;
+            @include xs{
+              left:266px;
+            }
+            @include surfaceDao{
+              left:160px;
+            }
           }
           .crew-bg2{
             position: absolute;
             top: -74px;
             right: 122px;
             transition: all 0.4s ease-in-out;
+            @include xs{
+              top: -44px;
+              right: 167px;
+            }
+            @include surfaceDao{
+              right: 110px;
+            }
           }
         }
         .crew-img-two{
@@ -372,12 +386,18 @@
             top: -14px;
             left:123px;
             transition: all 0.4s ease-in-out;
+            @include surfaceDao{
+              left: 170px;
+            }
           }
           .crew-bg2{
             position: absolute;
             top: -22px;
-            right: 131px;
+            right: 90px;
             transition: all 0.4s ease-in-out;
+            @include xs{
+              right:83px;
+            }
           }
         }
         .crew-img-three{
@@ -386,12 +406,22 @@
             top: -90px;
             left:170px;
             transition: all 0.4s ease-in-out;
+            @include xs{
+              left: 240px;
+            }
+            @include surfaceDao{
+              right: 37px;
+            }
           }
           .crew-bg2{
             position: absolute;
             top: -24px;
             right: 90px;
             transition: all 0.4s ease-in-out;
+            @include xs{
+              right: 127px;
+            }
+           
           }
         }
         .crew-detail{
@@ -443,10 +473,23 @@
             .crew-bg1{
               top:-115px;
               left:103px;
+              @include xs{
+                left:160px;
+              }
+              @include surfaceDao{
+                left:103px;
+              }
+              
             }
             .crew-bg2{
               top: -110px;
               right: 17px;
+              @include xs{
+                right: 89px;
+              }
+              @include surfaceDao{
+                right: 37px;
+              }
             }
           }
 
@@ -457,6 +500,12 @@
             .crew-bg2{
               top: -132px;
               right: 11px;
+              @include surfaceDao{
+                top: -115px;
+                right: 30px;
+              }
+            
+
             }
           }
 
@@ -464,6 +513,10 @@
             .crew-bg1{
               top:-115px;
               left:70px;
+              @include xs{
+                top: -158px;
+                right: 68px;
+              }
             }
             .crew-bg2{
               top: -143px;
