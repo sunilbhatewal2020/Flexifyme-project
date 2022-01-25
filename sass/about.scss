@@ -214,24 +214,13 @@
   }
 .heros-content-wrap{
    .heros-img-wrap{
-    @include xs{
-     max-width:50px;
-     .transform-scale-img{
-      transform-origin:center
+     position: relative;
+     .heros-img{
+       position: absolute;
+     } 
+     .heros-img1{
+
      }
-    }
-    @include surfaceDao{
-      max-width: 103px;
-      transform: scale(0.65);
-      transform-origin: 0 0px;
-      text-align: center;
-      -webkit-transform: scale(0.65);
-      -moz-transform: scale(0.65);
-      -ms-transform: scale(0.65);
-      -o-transform: scale(0.65);
-      max-height: 250px !important;
-    }
-      
    }
 }
 
