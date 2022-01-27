@@ -4902,3 +4902,14 @@ line-height: 26px;
 }
   
 }
+.global-time{
+  display: flex;
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: 500;
+  i{
+    font-size: 23px;
+    color: rgba(46,46,46,0.5);
+    margin-right: 5px;
+  }
+}
