@@ -127,7 +127,7 @@
                     bottom:-60px;
                   }
                   @include surfaceDao{
-                    bottom: -100px;
+                    bottom: 0px;
                   }
                   
             }
@@ -138,8 +138,8 @@
                     right: -80px;
                   }
                   @include surfaceDao{
-                    right:-110px;
-                    top: -60px;
+                    right: -142px;
+                    top: -118px;
                   }
             }
     
@@ -150,6 +150,9 @@
         h2{
             color: #311A75;
             margin-bottom:30px;
+            @include xs{
+              margin-bottom:10px;
+            }
         }
     }
 
@@ -172,10 +175,16 @@
       @include surfaceDao{
         width: 90%;
         margin: 0 auto;
+        padding: 30px;
+        min-height: 300px;
       }
     p{
         font-size: 22px;
         font-weight: 400;
+        @include xs{
+          font-size: 16px;
+          line-height: 20px;
+        }
     }
     h3{
         font-family: Playfair Display;
@@ -187,19 +196,36 @@
         @include surfaceDao{
           font-size: 30px;
         }
+        @include xs{
+          font-size: 23px;
+          line-height: 30px;
+        }
     }
 }
 .about-sec3{
-    padding: 70px 0px 100px;
-    @include surfaceDao{
-      padding-top:0px;
+    padding:130px 0px 70px;
+    @include md{
+      padding-top: 100px;
+      padding-bottom:100px;
+    }
+    @include xs{
+      padding-top:40px;
     }
 }
 .our-heroes-wrap{
-  padding-right: 50px;
+  padding-right:90px;
+  @include md{
+    padding-right:0px;
+  }
+  @include xs{
+    padding-right:0px;
+  }
     h2{
         color: #311A75;
         margin-bottom:30px;
+        @include surfaceDao{
+          margin-bottom:10px;
+        }
     }
 }
 @keyframes scroll {
@@ -215,14 +241,164 @@
 .heros-content-wrap{
    .heros-img-wrap{
      position: relative;
+     left: -57px;
+     min-height: 590px;
+     @include md{
+      top:60px;
+      left: 0;
+    }
+    @include tabMobile{
+      top:60px;
+      left: 0;
+    }
+    @include xs{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+     .bg-cricle1{
+       position: absolute;
+       top: 60px;
+       left: -40px;
+      
+     }
+
+     .bg-cricle2{
+      position: absolute;
+      top: -47px;
+      right: 188px;
+      z-index: 1;
+    }
+    .bg-cricle3{
+      position: absolute;
+      top: 80px;
+      right: -110px;
+    }
+    .bg-cricle4{
+      position: absolute;
+      bottom: 190px;
+      left: 298px;
+    }
+
+    .bg-cricle5{
+      position: absolute;
+      bottom: 67px;
+    right: 140px;
+    z-index: 1;
+    }
+
      .heros-img{
        position: absolute;
+       border-radius: 10px;
+       overflow: hidden;
+    
+      @include xs{
+        position: unset;
+        width: 145px;
+        float: left;
+        height: 185px;
+        margin: 0px 10px 20px;
+      }
      } 
      .heros-img1{
-
+        top: 0px;
      }
-   }
+    .heros-img2{
+      top: -24px;
+      left: 166px;
+      @include xs{
+        .h-img{
+          height: 185px;
+          margin-left: -73px;
+      }
+    }
+    }
+    .heros-img3{
+      top: 25px;
+      right:-52px;
+    }
+    .heros-img4{
+      top: 197px;
+      left:63px;
+    }
+    .heros-img5{
+      top: 197px;
+      left: 268px;
+      @include xs{
+        .h-img{
+          height: 185px;
+          margin-left: -73px;
+      }
+    }
+
+    }
+    .heros-img6{
+      bottom: 45px;
+      right: 153px;
+    }
+    .heros-img7{
+      bottom: 98px;
+      right: -78px;
+      @include xs{
+        margin: 0 auto;
+        float: none;
+       .h-img{
+          height: 185px;
+          margin-left: -44px;
+      }
+    }
+    }
+
+  }
+  .hero-detail-wrap{
+      position: relative;
+      @include xs{
+        height: 185px;
+        
+      .transform-scale-img{
+        min-height: 185px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+      }
+      }
+     
+    .hero-name-social{
+      position: absolute;
+      bottom:15px;
+      left: 20px;
+      z-index: 1;
+    h5{
+      font-size: 16px;
+      font-weight: 500;
+      color: #FFF;
+      margin-bottom: 0;
+    span{
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+    }
+    }
+    .hero-social{
+      display: flex;
+     a{
+       margin: 0px 3px;
+       img{
+        opacity: 0.8;
+        width: 15px;
+        height: 15px;
+       }
+       &:first-child{
+         margin-left:-3px;
+       }
+     }
+    }
+    }
+  }
 }
+
 
 
 @-webkit-keyframes slidertop {
@@ -261,7 +437,6 @@
     background-color: #F6F6F9;
     display: grid;
     align-items: center;
-    padding: 50px 0px;
     h2{
         color: #311A75;
         margin-bottom:20px;
@@ -270,21 +445,66 @@
         .our-guide-img-wrap{
             position: relative;
             min-height:655px;
-            @include surfaceDao{
-             
-              transform: scale(0.85);
-              transform-origin: 0 0px;
-              text-align: center;
-              -webkit-transform: scale(0.85);
-              -moz-transform: scale(0.85);
-              -ms-transform: scale(0.85);
-              -o-transform: scale(0.85);
-              max-height:420px;
-              min-height:420px;
-              width: 423px;
+
+            @include md{
+              width: 72%;
             }
-            img{
+            @include xs{
+              max-height:100%;
+              min-height:100%;
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .ourguide-content-wrap{
+              position: relative;
+              @include xs{
+                height: 250px;
+              }
+              }
+              .ourguide-name{
                 position: absolute;
+                bottom: 25px;
+                left: 25px;
+                padding-right: 20px;
+                @include xs{
+                  bottom: 10px;
+                  left: 10px;
+                }
+                h5{
+                  font-size: 18px;
+                  color: #FFF;
+                  font-weight: 500;
+                  margin-bottom: 0px;
+                }
+                p{
+                  font-size: 14px;
+                  color: #FFF;
+                  font-weight: 400;
+                  line-height: 18px;
+                  margin-bottom: 0px;
+                }
+              }
+            }
+            .ourguides{
+                position: absolute;
+                 @include xs{
+                   position: unset;
+                height: 250px;
+                width: 44%;
+                margin: 0 10px 20px;
+                overflow: hidden;
+                border-radius: 10px;
+
+                img{
+                  width: auto;
+                  height: 100%;
+                }
+              }
+              @include surfaceDao(){
+              img{
+                margin-left: -40px;
+              }
+             }
             }
             .ourguides1{
                 top: 0px;
@@ -296,7 +516,10 @@
             }
             .ourguides2{
                 top: 57px;
-                right:33px;
+                right:138px;
+                @include lg{
+                  right:102px;
+                }
                 @include surfaceDao{
                   top: -76px;
                   right: -60px;
@@ -312,7 +535,11 @@
             }
             .ourguides4{
                 bottom: -8px;
-                right: 35px;
+                right: 10px;
+                @include lg{
+                  right:-25px;
+                }
+                
                 @include surfaceDao{
                   bottom: -92px;
                   right: -61px;
@@ -321,6 +548,12 @@
             }
         }
     }
+    .our-guide-right{
+      padding-left: 50px;
+      @include xs{
+        padding-left: 0px;
+      }
+  
 }
 .health-crew-section{
     text-align: center;
