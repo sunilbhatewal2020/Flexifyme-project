@@ -1333,63 +1333,7 @@ textarea.form-control {
     border: 0;
     z-index: 15;
   }
-  .review{
-    background: url(../images/reviews-bg.png) no-repeat;
-    width: 301px;
-    height: 266px;
-    margin-top: -150px;
-    display: grid;
-    align-items: center;
-    position: relative;
-    .reviews-no{
-      font-size: 40px;
-      color: $white;
-      font-weight: 700;
-      position: absolute;
-      top:75px;
-      left: 0;
-      right: 0;
-      span{
-        font-size: 18px;
-        font-weight: 400;
-        text-transform: uppercase;
-        display: block;
-        margin-top: 5px;
-        @include xs{
-        margin:0px 10px;
-        }
-      }
-      @include xs{
-        position: unset;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-     }
-    }
-    .rating{
-      position: absolute;
-      bottom: -30px;
-      left: 0;
-      right: 0;
-      font-size: 18px;
-      color: $white;
-       font-weight: 400;
-       margin-bottom: 0;
-       @include xs{
-        position: unset;
-     }
-    }
-    @include xs{
-      background: transparent;
-      height: auto;
-      width: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 0px;
-   }
-  }
+ 
   .btn-video{
     width: 212px;
     background-color: $white;
@@ -1403,18 +1347,19 @@ textarea.form-control {
     }
    
     @include xs{
-      width:49%;
+      width:45%;
       margin-bottom: 20px;
-      margin-right: 0px;
+      margin-right:10px;
       font-size: 14px;
       padding: 0 10px;
       
     }
-    &:last-child{
-      margin-right: 0px;
-    }
+   
   }
  
+  .btn-video:last-child{
+    margin-right: 0px;
+  }
 
   .home-sec-inner-top {
     text-align: center;
@@ -1443,6 +1388,9 @@ textarea.form-control {
       font-size: 62px;
       text-shadow: 0px 2px 1px rgba(90, 53, 121, 0.4);
       margin-bottom: 15px;
+      @include tabMobile(){
+        font-size: 32px;
+      }
       @include xs{
         font-size: 28px;
           }
@@ -1457,6 +1405,70 @@ textarea.form-control {
   }
   
 }
+
+
+.review{
+  background: url(../images/reviews-bg.png) no-repeat;
+  width: 301px;
+  height: 266px;
+  margin-top: -150px;
+  display: grid;
+  align-items: center;
+  position: relative;
+  .reviews-no{
+    font-size: 40px;
+    color: $white;
+    font-weight: 700;
+    position: absolute;
+    top:75px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    span{
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 5px;
+      @include xs{
+      margin:0px 10px;
+      }
+    }
+    @include tabMobile{
+      position: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+   }
+  }
+  .rating{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    color: $white;
+     font-weight: 400;
+     margin-bottom: 0;
+     text-align: center;
+     @include tabMobile{
+      position: unset;
+   }
+  }
+  @include tabMobile{
+    background: url(../images/star-rating.svg) 20px bottom no-repeat;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+ }
+}
+
+
 .bttn-buy-now {
   padding: 0 30px;
   height: 50px;
@@ -1504,6 +1516,12 @@ textarea.form-control {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  
+  @include tabMobile{
+    bottom: -420px;
+  }
+  
+
   .home-sec-inner {
     .book-assessment-btn {
       a {
@@ -1715,6 +1733,7 @@ textarea.form-control {
 
 .home-sec5 {
   background: #f6f6f9;
+  padding-bottom: 200px;
   .home-sec-inner {
     margin-bottom: 60px;
     // h2 {
@@ -1874,7 +1893,7 @@ textarea.form-control {
     .home-sec-right {
       .change-life1 {
         top: -7px;
-        left: -28px;
+        left: 0px;
         z-index: 5;
       }
       .change-life2 {
@@ -4780,6 +4799,7 @@ line-height: 26px;
 
 .testimonial-home-sec7{
   position: relative;
+  padding-bottom: 200px;
   .testimonial-outer-wrap{
     h2 {
       color: #311a75;
@@ -4911,5 +4931,33 @@ line-height: 26px;
     font-size: 23px;
     color: rgba(46,46,46,0.5);
     margin-right: 5px;
+  }
+}
+.call-back-modal{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-dialog-call-back{
+  max-width: 550px;
+  .request-call-back-wrap{
+    padding:30px 40px;
+    h2{
+      font-size: 20px;
+      color: #2E2E2E;
+      font-family: $font-play;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .modal-content{
+    border-radius: 1rem;
+  }
+  .btn{
+    width: 100%;
+  }
+  .btn-close{
+    width: 0.2em;
+    height: 0.2em;
+    top: 20px !important;
+    right: 20px !important;
   }
 }
