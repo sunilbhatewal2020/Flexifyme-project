@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="widgets/aos/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="widgets/owl/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="widgets/owl/dist/assets/owl.theme.default.min.css" />
@@ -105,7 +106,7 @@
                             <p class="p-20" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1">Achieve
                                 mental, physical, and spiritual harmony through live 1-on-1 sessions
                                 with our world-class yoga, meditation, and nutrition coaches.</p>
-                                <button type="button" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1" style="white-space: nowrap;" class="btn bttn-primary btn-video active">Request a Callback</button>
+                                <button type="button" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#call-back-modal" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1" style="white-space: nowrap;" class="btn bttn-primary btn-video active">Request a Callback</button>
                                 <button type="button" data-aos="fade-in" data-aos-delay="900" data-aos-anchor="#sec1" style="white-space: nowrap;" class="btn bttn-primary btn-video">Watch video</button>
                         </div>
                     </div>
@@ -1517,7 +1518,7 @@
             </div>
         </section>
      
-        <section class="common-section home-sec7 testimonial-home-sec7" id="sec7">
+        <section class="common-section home-sec7 testimonial-home-sec7 grey-triangle-before" id="sec7">
             <img src="images/testimonial/testi-circle3.svg" alt="Circle"
             class="testimonial-circle3 floatingY"
             style="animation-delay: 1s;" />
@@ -1859,11 +1860,60 @@
     <div class="gotop hidden-xs">
         <img src="images/go-to-top-.svg" alt="gotop" class="gotop-img" />
     </div>
+
+        <!-- Request a call back-->
+       
+        <div class="modal fade call-back-modal" id="call-back-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-call-back">
+                <div class="modal-content">
+                    <div class="modal-body invite-now-modal-body refer-friend-card-modal">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         <div class="request-call-back-wrap">
+                           <h2>Request a call back</h2>
+                            <form class="modal-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="fm-mb">
+                                            <input type="text" class="form-control" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="fm-mb">
+                                            <input type="text" class="form-control" placeholder="Email ID">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="fm-mb">
+                                            <div class="fm-mb form-group-wrap-tel-outer">
+                                                <div class="tele-num-wrap">
+                                                    <input class="input-control-wrap" tabindex="5" type="text"
+                                                        placeholder="Mobile Number" id="ph_no" name="ph_no">
+                                                </div> <input type="hidden" name="countryCode" id="countryCode">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn bttn-primary" data-bs-dismiss="modal">Submit</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                         </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="widgets/aos/aos.js"></script>
     <script src="widgets/lazy/jquery.lazy.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
     <script src="widgets/ScrollMagic/ScrollMagic.min.js"></script>
     <script src="widgets/ScrollMagic/plugins/debug.addIndicators.min.js"></script>
     <script src="widgets/owl/dist/owl.carousel.min.js"></script>
