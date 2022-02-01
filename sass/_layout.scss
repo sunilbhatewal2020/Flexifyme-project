@@ -1342,7 +1342,9 @@ textarea.form-control {
     font-family: $font-dm;
     margin-right: 30px;
     &:hover,
-    &.active{
+    &.active,
+    &:active,
+    &:focus{
       color: $white !important;
     }
    
@@ -1861,7 +1863,7 @@ textarea.form-control {
     margin-top: 40px;
     .home-sec-right {
       .do-work1 {
-        top: -74px;
+        top:274px;
         left: 450px;
         z-index: 5;
         width: 300px;
