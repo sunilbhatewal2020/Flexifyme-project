@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="widgets/bootstrap-datepicker/css/datepicker.css" type="text/css"/> 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/frame.css" />
     <link rel="stylesheet" href="css/assigned-new-homework.css" />
@@ -35,8 +36,10 @@
                                        <div class="new-homework-common-card">
                                         <h3>Assign New Homework</h3>
                                         <div class="common-card">
+
                                             <div class="common-card-body new-homework-common-card-body">
                                                 <div class="overflow-wrap">
+                                                 <form>
                                                 <div class="fm-mb20">
                                                     <input type="text" class="form-control" placeholder="Homework Name">
                                                 </div>
@@ -51,8 +54,24 @@
                                                         <option selected="">Select student</option>
                                                     </select>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-6 col-xl-6">
+                                                        <div class="fm-mb date-fm-mb">                                                                    
+                                                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="Start Date" >
+                                                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-6 col-xl-6">
+                                                        <div class="fm-mb date-fm-mb">                                                                    
+                                                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="End Date" >
+                                                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>   
 
                                                 <div class="selected-plan-outer-wrap">
+
                                                   <p class="p-14"> Selected Homework plan</p>
                                                         <p class="homework-name">
                                                             <span class="flex-grow-1">Warm up</span> 
@@ -1203,6 +1222,9 @@
     <!-- <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
     <script src="widgets/audio-player/dist/audio.min.js"></script> -->
     <script src="js/custom.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
     <script>
         $(document).ready(function () {
             $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
