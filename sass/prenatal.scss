@@ -181,7 +181,9 @@
     }
   }
   
-  
+  .more-content-wrap-overflow2{
+    max-height:196px !important;
+  }
   
   .meditation-card {
     .book-assessment-img-wrap {
@@ -781,6 +783,7 @@
       -o-border-radius: 10px;
       padding: 30px;
       margin-top: 30px;
+      min-height: 317px;
       .step-landing-card-head {
         display: flex;
         flex-direction: row;
