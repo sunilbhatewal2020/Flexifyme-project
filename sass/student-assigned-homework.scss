@@ -336,6 +336,7 @@
               -moz-transition: height 10s ease;
               -ms-transition: height 10s ease;
               -o-transition:height 10s ease;
+              height: 60px;
                 .p-14{
                 font-weight: 600;
                 text-transform: uppercase;
@@ -350,6 +351,7 @@
                 font-weight: 400;
                 margin-bottom: 0px;
                 text-align: left;
+                line-height: 15px;
                 @include tabMobile{
                   display: none;
                 }
@@ -375,7 +377,7 @@
                   background-color: #7352D1;
                   position: absolute;
                   left: -2.4rem;
-                  top:-93%;
+                  top:-81%;
                   @include tabMobile{
                     width: 35px;
                     height: 2px;
