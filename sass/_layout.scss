@@ -1367,7 +1367,7 @@ textarea.form-control {
     text-align: center;
     position: relative;
     z-index: 3;
-    margin-top: -150px;
+    // margin-top: -150px;
     h1 {
       color: $white;
     }
@@ -3939,6 +3939,12 @@ a.book-assessment-btn {
       margin: 0 5px;
     }
   }
+
+  .trainer-content1-ul2 {
+    li {
+      width:auto;
+    }
+  }
 }
 .trainer-feature-wrap {
   text-align: center;
@@ -4870,6 +4876,11 @@ line-height: 26px;
         span{
           margin: 0px 5px;
         }
+      }
+
+      .morelink1{
+        color: #7352d1 !important;
+        display: block;
       }
   }
 }
