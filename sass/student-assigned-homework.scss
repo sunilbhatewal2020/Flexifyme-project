@@ -596,11 +596,11 @@ border-radius: 20px;
 
                 .completed-screen{
                   width: 405px;
-                  height: 100%;
+                  // height: 100%;
                   display: grid;
                   align-items: center;
                   justify-content: center;
-                  margin:-50px auto 180px;
+                  margin:0px auto 180px;
                 
                   .sucessful-msg-wrap{
                     text-align: center;
