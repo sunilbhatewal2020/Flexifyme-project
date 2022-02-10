@@ -593,6 +593,34 @@ border-radius: 20px;
                     margin-bottom: 20px;
                    
                 }
+
+                .completed-screen{
+                  width: 405px;
+                  height: 100%;
+                  display: grid;
+                  align-items: center;
+                  justify-content: center;
+                  margin:-50px auto 180px;
+                
+                  .sucessful-msg-wrap{
+                    text-align: center;
+                    background: url(../images/congratulations.png) 0px 0px no-repeat;
+                    padding-top: 236px;
+                    h3 {
+                      margin-top: 30px;
+                      font-family: Playfair Display !important;
+                      font-size: 26px !important;
+                      font-weight: 700 !important;
+                      color: #2e2e2e !important;
+                    }
+                    .user-name{
+                      font-size: 18px;
+                      font-weight: 700;
+                      color: #FFF;
+                    }
+                  }
+                }
+              
                 
             }
         }
