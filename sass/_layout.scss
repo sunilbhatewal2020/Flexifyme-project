@@ -4848,30 +4848,108 @@ line-height: 26px;
       background: #FFFFFF;
       box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      padding:90px 30px 30px 30px;
-      text-align: center;
+      padding:30px;
       position: relative;
+      display: flex;
+      @include tabMobile{
+        display: block;
+      }
+      h5{
+        font-family: $font-dm;
+        font-size: 22px;
+        color:#7352D1;
+        font-weight: 500;
+      }
+      .testimoni-name{
+        font-weight: 500;
+        span{
+          color: #898989;
+          display: block;
+        }
+      }
       h3{
         font-family: $font-dm;
         font-size: 22px;
         color:#2e2e2e;
         font-weight: 500;
       }
+      .testimonial-content-wrap{
+        padding-left:50px;
+        padding-right: 20px;
+        position: relative;
+        @include xs {
+          padding-left: 0px;
+          &::before{
+            display: none;
+          }
+        }
+        &::before{
+          content: '';
+          width: 40px;
+          height: 30px;
+          background: url(../images/double-quate.svg) no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
       .bttn-outline-primary2{
         height: 40px;
+        margin-top: 0px;
+        @include tabMobile{
+          margin-top: 0px;
+        }
+      }
+      .testimonial-profile-img-wrap{
+        display: flex;
+        @include tabMobile{
+          margin-top:20px;
+          padding-left: 63px;
+        }
+        @include xs {
+          padding-left: 0px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .testimonial-profile-img-inner-wrap{
+        position: relative;
+        margin: 0px 10px;
+        min-height: 382px;
+        @include xs {
+          min-height: 200px;
+        }
+        .tag-ba{
+          position: absolute;
+          bottom:20px;
+          left: -7px;
+          background: url(../images/tag-bg.png) no-repeat;
+          width: 90px;
+          height: 37px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #FFF;
+          padding-top: 7px;
+          text-align: center;
+        }
       }
       .testimonial-profile{
-        position: absolute;
-        top: -78px;
-        left: 0px;
-        right: 0px;
-        margin: 0 auto;
-        width: auto ;
+      width: auto ;
       }
+      .testimonial-profile2{
+        width: auto ;
+        @include tabMobile{
+          margin-top: 20px;
+        }
+        @include xs {
+          width: 100%;
+        }
+        }
       .rating-row{
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-bottom: 20px;
         span{
           margin: 0px 5px;
@@ -4879,13 +4957,18 @@ line-height: 26px;
       }
 
       .morelink1{
-        color: #7352d1 !important;
-        display: block;
+        position: absolute;
+        align-items: center;
+        display: grid;
+        bottom:0px;
       }
   }
 }
 
 .owl-comman-testimonial {
+  .owl-stage-outer{
+    overflow: visible !important;
+  }
   .owl-prev,
   .owl-next {
     width: 64px;
@@ -4932,8 +5015,51 @@ line-height: 26px;
   .owl-item {
     padding-top: 100px;
     padding-bottom: 50px;
+    @include xs {
+      padding-top:0px;
+    }
 }
-  
+ 
+.morecontent span {
+  display: none;
+}
+.more-content-wrap-overflow {
+  max-height:170px !important;
+  overflow: auto;
+  h3 {
+    text-align: center;
+  }
+  @include xs{
+    max-height: 400px !important;
+  }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 7px;
+     
+      }
+     /* Track */
+     &::-webkit-scrollbar-track {
+      background:transparent; 
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+     
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+      background:#C4C4C4; 
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      position: absolute;
+      right: -10px;
+
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background:#C4C4C4; 
+      }
+}
 }
 .global-time{
   display: flex;
@@ -4999,3 +5125,5 @@ line-height: 26px;
     padding: 30px 0px 0px 0px;
   }
 }
+
+
