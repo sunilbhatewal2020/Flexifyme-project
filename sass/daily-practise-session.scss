@@ -1510,7 +1510,8 @@ background:#C4C4C4;
 .group-session-detail-right{
   position: relative;
   padding-left: 30px;
-
+  padding-bottom: 30px;
+  height: 100%;
   @include tabMobile{
     padding-left: 0px;
   }  
@@ -1609,6 +1610,10 @@ ul{
     background-color: transparent;
     border: 0;
   }
+}
+.more-content-wrap-overflow {
+  max-height:196px !important;
+  overflow: auto;
 }
 }
 .modal-dialog-video{
