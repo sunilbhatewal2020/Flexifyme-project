@@ -145,7 +145,7 @@
                                                    <p class="p-14 dark"> 16 Years of yoga guru</p>
 
                                                    <p class="p-14 light mt30 mb5"> About Me</p>
-                                                   <div class="more-content-wrap-overflow">
+                                                   <div class="more-content-wrap-overflow ">
                                                   <p class="p-14 dark more1">Audatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in doloreAudatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore... 
                                                    </p>
                                                     </div>
@@ -613,6 +613,9 @@ we have sent  zoom link on your email</p>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script> 
+    <script src="widgets/aos/aos.js"></script>
+    <script src="widgets/lazy/jquery.lazy.min.js"></script>
+    <script src="js/custom.js"></script>
     <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
     <script src="widgets/ScrollMagic/ScrollMagic.min.js"></script>
     <script src="widgets/ScrollMagic/plugins/debug.addIndicators.min.js"></script>
@@ -621,7 +624,6 @@ we have sent  zoom link on your email</p>
     <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
     <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
     
-    <script src="js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
@@ -660,7 +662,7 @@ we have sent  zoom link on your email</p>
 <script>
     setTimeout(function () {
 // Configure/customize these variables.
-var showChartesti = 90;  // How many characters are shown by default
+var showChartesti = 145;  // How many characters are shown by default
 var ellipsestext = "...";
 var moretext = " Read more >";
 var lesstext = " Read less";
@@ -674,7 +676,7 @@ if(content.length > showChartesti) {
     var c = content.substr(0, showChartesti);
     var h = content.substr(showChartesti, content.length - showChartesti);
 
-    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="morelink1 resent-otp-btn1">' + moretext + '</a></span>';
+    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="morelink1 morelink2">' + moretext + '</a></span>';
 
     $(this).html(html);
 }
