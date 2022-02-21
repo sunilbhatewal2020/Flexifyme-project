@@ -1195,7 +1195,7 @@ to {
     display: block;
     margin: 20px auto 0px;
     line-height: 0px;
-    &:hover{
+    &:hover, &:focus{
       color: #7352d1;
     }
   }
