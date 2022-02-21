@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Daily Self Practice Session</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="widgets/bootstrap-datepicker/css/datepicker.css" type="text/css"/> 
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/daily-practise-session.css" />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                    <button type="button" class="new-goal" data-bs-toggle="modal" data-bs-target="#new-goal-modal">
+                        <span> New year goal         </span>
+                    </button>
+
+                <div class="dasboard-col-left st">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+                <div class="icon-gift-wrap-outer">
+                    <button type="button" class="btn-refer-friend" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">
+                    <div class="icon-gift-bg">
+                        <span> <img src="images/icon-gift.svg" alt="Refer Friends" class="icon-gift"/></span>
+                      </div>
+                    </button>
+                </div> 
+                
+                <div class="dasboard-col-right">
+                  
+                    <div class="dasboard-col-right-inner st">
+                        <div class="container">
+                            <div class="row dashboard-row-body justify-content-center">
+                                <div class="col-md-12 rescheduled-session-cols">
+                  
+                                    <div class="common-card recommended-group-session recommended-group-session-detail">
+                                        <div class="recommended-session-inner-wrap recommended-session-inner-wrap-detail">
+                                            <div class="row group-session-wrap">
+
+                                                <div class="session-heading">
+                                                    <div>
+                                                    <p class="p-16">Breathing and meditation</p>
+                                                    <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                     </div>
+
+                                                     <div class="d-flex align-items-center">
+                                                    <div class="favorite">
+                                                        <img src="images/favorite.svg" alt=""/>
+                                                    </div>
+                                                    <button type="button" class="btn bttn-primary bttn-sm active">Book</button>
+                                                </div>
+                                                </div>
+                                               
+
+                                                <div class="col-md-8">
+                                                  
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <p class="p-16">Session overview</p>
+                                                        <p class="p-14 ">audatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; Collatio igitur ista te nihil iuvat. Egone non intellego, quid sit don Graece, Latine voluptas? Cum autem negant ea quicquam ad beatam vitam pertinere, rursus naturam relinquunt. Quis istud possit, inquit, negare?</p>
+
+                                                        <p class="p-16">Recording</p>
+                                                        <div class="recording-main-video">
+                                                            <div class="recording-video-inner-wrap">
+                                                                <div class="recording-video">
+                                                                    <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                                                                        <img src="images/video-play.png" alt=""/> 
+                                                                    </button>
+                                                                    <img src="images/instruction.png" alt="" class="video-bg"/>
+                                                                </div>
+                                                                <p class="p-14 dark">Tue, Feb 01,</p>
+                                                                <p class="p-14">with Vineeta</p>
+                                                            </div>
+
+                                                            <div class="recording-video-inner-wrap">
+                                                                <div class="recording-video">
+                                                                    <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                                                                        <img src="images/video-play.png" alt=""/> 
+                                                                    </button>
+                                                                    <img src="images/instruction.png" alt="" class="video-bg"/>
+                                                                </div>
+                                                                <p class="p-14 dark">Tue, Feb 01,</p>
+                                                                <p class="p-14">with Vineeta</p>
+                                                            </div>
+
+
+                                                            <div class="recording-video-inner-wrap">
+                                                                <div class="recording-video">
+                                                                    <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                                                                        <img src="images/video-play.png" alt=""/> 
+                                                                    </button>
+                                                                    <img src="images/instruction.png" alt="" class="video-bg"/>
+                                                                </div>
+                                                                <p class="p-14 dark">Tue, Feb 01,</p>
+                                                                <p class="p-14">with Vineeta</p>
+                                                            </div>
+
+
+                                                            <div class="recording-video-inner-wrap">
+                                                                <div class="recording-video">
+                                                                    <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                                                                        <img src="images/video-play.png" alt=""/> 
+                                                                    </button>
+                                                                    <img src="images/instruction.png" alt="" class="video-bg"/>
+                                                                </div>
+                                                                <p class="p-14 dark">Tue, Feb 01,</p>
+                                                                <p class="p-14">with Vineeta</p>
+                                                            </div>
+                                                          
+                                                        </div>
+                                                </div>  
+
+
+                                                <div class="col-md-4">
+                                                    <div class="group-session-detail-right">
+                                                   <p class="p-16">About instructor</p>
+                                                   <div class="user"> 
+                                                    <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                    <div>
+                                                        Pratik. R
+                                                        <span>Audatum, ut artifex</span> 
+                                                    </div>
+                                                    </div>
+
+
+                                                   <p class="p-14 light mb5">Experience</p>
+                                                   <p class="p-14 dark"> 16 Years of yoga guru</p>
+
+                                                   <p class="p-14 light mt30 mb5"> About Me</p>
+                                                   <div class="more-content-wrap-overflow">
+                                                  <p class="p-14 dark more1">Audatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in doloreAudatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore... 
+                                                   </p>
+                                                    </div>
+
+                                                
+                                                    <div class="recording-video">
+                                                        <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                                                            <img src="images/video-play.png" alt=""/> 
+                                                        </button>
+                                                        <img src="images/video-detail.png" alt="" class="video-bg"/>
+                                                    </div>
+
+                                                    <p class="p-14 light mt30 mb5"> Expertise</p>
+                                                    <ul>
+                                                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                                    </ul>
+
+                                                    <p class="p-14 light mt30 mb5"> Certifications</p>
+                                                    <ul>
+                                                        <li>Master of Science in Yoga- SVYASA- Bangalore</li>
+                                                        <li>QCI Level 2 Teacher</li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+
+                                               
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="music-strip-bottom-wrap-outer">
+                                    <div class="music-strip-bottom-wrap">
+                                        <div class="music-strip-bottom1">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img src="images/song-img.png" alt="song-img" class="song-img" />
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="p-18">Audio meditation for today</p>
+                                                   <p class="p-14">Supernaturals - Be Calm (2021)</p>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="music-strip-bottom2">
+                                            <div class="play-music-audio">
+                                                <audio preload="auto" src="https://traffic.libsyn.com/mindfulorg/winston-breathing-5mins.mp3"></audio>
+                                            </div>
+                                        </div>  
+                                        <div class="music-strip-bottom3">
+                                            <a href="#" class="btn-like st" title="Make Favorite"><i class="ri-heart-line"></i></a>
+                                        </div>  
+                                    </div>       
+                                </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+     <!-- refer-friend-side-ease-out-wrap-->
+       <div class="modal fade modal-right" id="refer-friend-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body refer-friend-card-modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="refer-friend-card-inner-wrap">
+                            <div class="refer-friends-img-wrap"><img src="images/refer-friends.svg" alt="Refer Friends & Get Discount"></div>
+                            <div class="flex-grow-1">
+                                <h3>Refer Friends & Get <br/>Discount</h3>
+                                <p class="p-16">Refer your friend & get attractive<br/> discounts on each referal </p>
+                            </div>
+                            <div class="flex-shrink-0 align-items-center btn-wrapper">
+                                <button type="button" class="btn bttn-primary" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#invite-now-modal">
+                                    Invite Now</button>
+                                <!-- <a href="profile.html" type="button" class="btn btn-link bttn-link">View Referrals</button> -->
+                                <button type="button" class="btn btn-link bttn-link" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#feedback-modal">View Referrals</button>
+    
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+      <!-- assigned-homework-video-modal -->
+      <div class="modal fade  assigned-homework-image-modal assigned-homework-video-modal" id="assigned-homework-video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-video">
+            <div class="modal-content">
+                <div class="modal-body assigned-homework-image-modal-body assigned-homework-video-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+                    <div>
+                        <video id="video1" width="100%" controls>
+                            <source src="images/video.mp4" type="video/mp4">
+                            <source src="images/video.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                          </video>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- invite-now-modal -->
+    <div class="modal fade" id="invite-now-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>More ways to invite your friend</h3>
+                    <ul class="social-icon-list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Google.svg" alt="Google" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/LinkedIN.svg" alt="LinkedIN" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/WhatsApp.svg" alt="WhatsApp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Skype.svg" alt="Skype" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fm-mb search-input-wrap social-input-wrap">
+                        <input type="text" class="form-control" value="https://www.flexifyme.com" readonly>
+                            <button type="button" class="btn bttn-outline-primary2"><span class="hide-mobile">Copy Link</span>  <i class="far fa-copy show-mobile hide-desktop"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--   new-goal-modal -->
+   <div class="modal fade" id="new-goal-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content new-goal-content">
+            <div class="modal-body invite-now-modal-body new-goal-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
+                <div class="new-goal-wrap text-center">   
+                    <div class="text-center"><img src="images/new-goal.jpg" alt=""/></div>
+                     <h3>Your New Year Goal </h3>
+                     
+                     <p class="p-16">You haven’t set any goal for 2022 please add new goal </p>
+                     <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">+ New goal</button>
+                     <br/><br/>
+
+                    <div class="mt20">
+                        <div class="fm-mb">
+                            <input type="text" class="form-control" placeholder="Add your goal">
+                        </div>
+                        
+                        <div class="fm-mb date-fm-mb">                                                                    
+                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="Achive goal " >
+                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                        </div>
+
+                        <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">Save</button>
+                    </div>
+                    <br/>
+                    <div>
+                        <p class="p-16">I will lose my weight from 70 kg to 60 till <br/> the date <span class="date-active">30 May 2022</span></p>
+                        <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">Done</button>
+                    </div>
+
+                 </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+       <!-- Feedback-modal -->
+       <div class="modal fade" id="feedback-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered feedback-dialog">
+            <div class="modal-content">
+                <div class="modal-body feedback-modal-body">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <h3>Share your feedback</h3>
+                    
+                    <form>
+                    <div class="feedback-main-wrap row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p>Teacher made good use of time?<span class="mandatory">*</span></p>
+                                <div class="rating-wrap">
+                                    <span class="star-rating star-5">
+                                        <input type="radio" name="rating" value="1"><i></i>
+                                        <input type="radio" name="rating" value="2"><i></i>
+                                        <input type="radio" name="rating" value="3"><i></i>
+                                        <input type="radio" name="rating" value="4"><i></i>
+                                        <input type="radio" name="rating" value="5"><i></i>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Teacher seemed knowlegeable about Yoga<span class="mandatory">*</span></p>
+                            <div class="rating-wrap">
+                                <span class="star-rating star-5">
+                                    <input type="radio" name="ratingYoga" value="6"><i></i>
+                                    <input type="radio" name="ratingYoga" value="7"><i></i>
+                                    <input type="radio" name="ratingYoga" value="8"><i></i>
+                                    <input type="radio" name="ratingYoga" value="9"><i></i>
+                                    <input type="radio" name="ratingYoga" value="10"><i></i>
+                                  </span>
+                            </div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found especially valuable?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found unnecessary or not useful?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there anything that you wished we had covered?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Any other comments, suggestions, ideas, wishes?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <p>How satisfied were you with the overall session?*</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <p>How did you came to know about us?</p>
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                Word of mouth
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Internet Search or other website
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Directly from one of the faculty teachers
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn bttn-primary mt30" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                        
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
+    
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+            // for play music
+            $('audio').initAudioPlayer();
+            $(".song-img").removeClass("rotating");
+                setTimeout(function(){
+                    $('.play-music-audio .ppq-audio-player .audio-hidden').on('pause play', function(e) {
+                        if (e.currentTarget.paused) {
+                            $(".song-img").removeClass("rotating");
+                            $(".dashboard-body").removeClass("hide-card-overlay-active")
+                        } else {
+                            $(".song-img").addClass("rotating");
+                        }
+                    });
+            }, 600);
+
+            // for .hide-card-overlay
+            $(".hide-card-overlay").click(function(){
+                $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            })
+
+            $(".play-pause-btn").click(function(){
+                $(".music-strip-bottom-wrap-outer").toggleClass("music-strip-active")
+            })
+            // for like button            
+            $(".btn-like").click(function(){
+                $(this).toggleClass("active")
+            })
+        });
+    </script>
+
+
+
+<script>
+    setTimeout(function () {
+// Configure/customize these variables.
+var showChartesti = 90;  // How many characters are shown by default
+var ellipsestext = "...";
+var moretext = " Read more >";
+var lesstext = " Read less";
+
+
+$('.more1').each(function() {
+var content = $(this).html();
+
+if(content.length > showChartesti) {
+
+    var c = content.substr(0, showChartesti);
+    var h = content.substr(showChartesti, content.length - showChartesti);
+
+    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="morelink1 resent-otp-btn1">' + moretext + '</a></span>';
+
+    $(this).html(html);
+}
+
+});
+
+$(".morelink1").click(function(){
+if($(this).hasClass("less")) {
+    $(this).removeClass("less");
+    $(this).html(moretext);
+} else {
+    $(this).addClass("less");
+    $(this).html(lesstext);
+}
+$(this).parent().prev().toggle();
+$(this).prev().toggle();
+return false;
+});
+
+
+
+}, 1000);
+</script>
+</body>
+
+</html>
