@@ -1614,6 +1614,11 @@ ul{
 .more-content-wrap-overflow {
   max-height:196px !important;
   overflow: auto;
+  .morecontent{
+    span {
+      display: none;
+  }
+  } 
 }
 }
 .modal-dialog-video{
@@ -1624,5 +1629,15 @@ ul{
     top: 20px;
     right: 20px;
     z-index: 999;
+  }
+}
+
+
+.morelink2{
+  font-size: 14px;
+  font-weight: 500;
+  color: #7352D1;
+  &:hover, &:focus{
+    color: #7352D1;
   }
 }
