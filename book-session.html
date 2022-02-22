@@ -32,1229 +32,740 @@
 
                 <div class="dasboard-col-right">
                     <div class="dasboard-col-right-inner">
-                        <div class="container dasboard-col-right-container">
+                        <div class="dasboard-col-right-container">
                             <div class="row">
                                 <div class="col-12">
                                     <h1 class="dashboard-title">Book a Session</h1>
                                 </div>
                             </div>
+
                             <div class="row dashboard-row-body book-session-body">
                                 <div class="col-md-12">
                                     <p class="p-18-big"> <span class="restlessRegular text-red xs-d-block">Hurry
                                         Up</span> Only 10 Free sessions available for this week  
                                     </p>
                                  </div>
-                                 <div class="col-md-12">
-                                    <div class="fm-mb mw-310">
-                                        <select class="form-select form-control">
-                                            <option selected="">Yoga Instructor</option>
-                                            <option value="1">Ankit Garg</option>
-                                            <option value="1">Palak Dingra</option>
-                                            <option value="1">Pramod Choudhary</option>
-                                            <option value="1">Kaveri Banga</option>
-                                            <option value="1">Neha Mittal</option>
-                                            <option value="1">Bhoomika Yagwani</option>
-                                        </select>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="book-session-tab">
-                                        <div class="pills-tab-wrap">
-                                            <ul class="nav nav-pills trainer-tab" id="trainer-tab" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="pills-week1-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-week1" type="button" role="tab"
-                                                        aria-controls="pills-week1" aria-selected="true">
-                                                        <span>Week 1 </span>
-                                                        <em>9 Aug - 15 Aug</em>
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-            
-                                                    <button class="nav-link" id="pills-week2-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-week2" type="button" role="tab"
-                                                        aria-controls="pills-week2" aria-selected="false">
-                                                         <span>Week 2</span>
-                                                         <em>16 Aug - 22 Aug</em>
-                                                        </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="pills-week3-tab" data-bs-toggle="pill"
-                                                        data-bs-target="#pills-week3" type="button" role="tab"
-                                                        aria-controls="pills-week3" aria-selected="false">
-                                                        <span>Week 3</span>
-                                                        <em>23 Aug - 29 Aug</em>    
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content" id="trainer-tabContent">
-                                                <div class="tab-pane fade show active" id="pills-week1" role="tabpanel"
-                                                    aria-labelledby="pills-week1-tab">
-                                                    <div class="book-session-tab-inner-top">
-                                                        <!-- 1 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Mon</p>
-                                                            <p class="p-20">9</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time active">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>4:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>5:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
+                                </div>
+
+                                <div class="book-session-tab">
+                                <div class="pills-tab-wrap">
+                                <div class="row dashboard-row-body book-session-body">
+                                <div class="col-md-4 col-xl-3">
+                                   <p class="p-18"> Instructor booking slot</p>
+
+                                    <ul class="nav nav-pills trainer-tab instructor-booking-tab-nav" id="trainer-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-week1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-week1" type="button" role="tab"
+                                        aria-controls="pills-week1" aria-selected="true">
+                                            <div class="instructor-booking-inner-wrap">
+                                                <div class="card">
+                                                   <div class="instructor-position bg-orange"> Yoga</div>
+
+                                                   <div class="instructor-sort-detail">
+                                                    <div class="user"> 
+                                                        <div class="user-avtar"><img src="images/user.png" alt=""></div>
+    
+                                                        <span class="rating">
+                                                            4.5 <img src="images/single-star.svg" alt=""/>
+                                                        </span>
                                                         </div>
-                                                    </div>
-                                                    <!-- 2 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Tue</p>
-                                                            <p class="p-20">10</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time active">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>4:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>5:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
+                                                        <div>
+                                                           <p class="p-16 ">Pratik. R</p>
+                                                           <p class="p-14">Audatum, ut artifex</p> 
+    
+                                                          
+                                                           <p class="p-14 mt15"> Experience</p> 
+                                                           <p class="p-16">16 Years of yoga guru</p>
+                                                           <a href="#" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#about-instructor-modal" >View Details</a>
+                                                           
                                                         </div>
-                                                    </div>
-                                                    <!-- 3 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Wed</p>
-                                                            <p class="p-20">11</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time active">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!-- 4 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Thu</p>
-                                                            <p class="p-20">12</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>4:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>5:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!-- 5 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Fri</p>
-                                                            <p class="p-20">13</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time active">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>4:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!-- 6 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Sat</p>
-                                                            <p class="p-20">14</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time active">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>3:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>4:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>5:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <!-- 7 -->
-                                                    <div class="book-session-tab-inner">
-                                                        <div class="book-session-tab-inner-left">
-                                                            <p class="p-14">Sun</p>
-                                                            <p class="p-20">15</p>
-                                                        </div>                                                        
-                                                        <div class="book-session-tab-inner-right">
-                                                            <ul class="book-session-btn-tab">
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>10:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>11:00</span>
-                                                                        <em>am</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time">
-                                                                        <span>12:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>1:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                                <li>
-                                                                    <button type="button" class="btn-time" disabled>
-                                                                        <span>2:00</span>
-                                                                        <em>pm</em>
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="text-center pt10">
-                                                        <button type="button" class="btn bttn-primary btn-book-session">Book a session</button>
-                                                    </div>
+                                                   </div>
+                                                
                                                 </div>
-                                                <div class="tab-pane fade" id="pills-week2" role="tabpanel"
-                                                    aria-labelledby="pills-week2-tab">
-                                                    <div class="book-session-tab-inner-top">
-                                                        <!-- 16 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Mon</p>
-                                                               <p class="p-20">16</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 17 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Tue</p>
-                                                               <p class="p-20">17</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 18 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Wed</p>
-                                                               <p class="p-20">18</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 19 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Thu</p>
-                                                               <p class="p-20">19</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 20 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Fri</p>
-                                                               <p class="p-20">20</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 21 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Sat</p>
-                                                               <p class="p-20">21</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 22 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Sun</p>
-                                                               <p class="p-20">22</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       </div>
-                                                       <div class="text-center pt10">
-                                                           <button type="button" class="btn bttn-primary btn-book-session">Book a session</button>
-                                                       </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="pills-week3" role="tabpanel"
-                                                    aria-labelledby="pills-week3-tab">
-                                                    <div class="book-session-tab-inner-top">
-                                                        <!-- 23 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Mon</p>
-                                                               <p class="p-27">23</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 24 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Tue</p>
-                                                               <p class="p-27">24</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 25 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Wed</p>
-                                                               <p class="p-27">25</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 26 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Thu</p>
-                                                               <p class="p-27">26</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 27 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Fri</p>
-                                                               <p class="p-27">27</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 28 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Sat</p>
-                                                               <p class="p-27">28</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time active">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>3:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>4:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>5:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       <!-- 29 -->
-                                                       <div class="book-session-tab-inner">
-                                                           <div class="book-session-tab-inner-left">
-                                                               <p class="p-14">Sun</p>
-                                                               <p class="p-27">29</p>
-                                                           </div>                                                        
-                                                           <div class="book-session-tab-inner-right">
-                                                               <ul class="book-session-btn-tab">
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>10:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>11:00</span>
-                                                                           <em>am</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time">
-                                                                           <span>12:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>1:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                                   <li>
-                                                                       <button type="button" class="btn-time" disabled>
-                                                                           <span>2:00</span>
-                                                                           <em>pm</em>
-                                                                       </button>
-                                                                   </li>
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                       </div>
-                                                       <div class="text-center pt10">
-                                                           <button type="button" class="btn bttn-primary btn-book-session">Book a session</button>
-                                                       </div>
-                                                </div>
+                                            </div>    
+
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+    
+                                        <button class="nav-link" id="pills-week2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-week2" type="button" role="tab"
+                                        aria-controls="pills-week2" aria-selected="false">
+                                        <div class="instructor-booking-inner-wrap">
+                                            <div class="card">
+                                               <div class="instructor-position bg-green2"> Nutritionist</div>
+
+                                               <div class="instructor-sort-detail">
+                                                <div class="user"> 
+                                                    <div class="user-avtar"><img src="images/user.png" alt=""></div>
+
+                                                    <span class="rating">
+                                                        4.5 <img src="images/single-star.svg" alt=""/>
+                                                    </span>
+                                                    </div>
+                                                    <div>
+                                                       <p class="p-16 ">Pratik. R</p>
+                                                       <p class="p-14">Audatum, ut artifex</p> 
+
+                                                      
+                                                       <p class="p-14 mt15"> Experience</p> 
+                                                       <p class="p-16">16 Years of yoga guru</p>
+                                                       <a href="#" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#about-instructor-modal" >View Details</a>
+                                                       
+                                                    </div>
+                                               </div>
                                             </div>
-                                        </div>
+                                        </div>    
+
+                                        </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-week3-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-week3" type="button" role="tab"
+                                        aria-controls="pills-week3" aria-selected="false">
+                                        <div class="instructor-booking-inner-wrap">
+                                            <div class="card">
+                                               <div class="instructor-position bg-orange"> Yoga</div>
+
+                                               <div class="instructor-sort-detail">
+                                                <div class="user"> 
+                                                    <div class="user-avtar"><img src="images/user.png" alt=""></div>
+
+                                                    <span class="rating">
+                                                        4.5 <img src="images/single-star.svg" alt=""/>
+                                                    </span>
+                                                    </div>
+                                                    <div>
+                                                       <p class="p-16 ">Pratik. R</p>
+                                                       <p class="p-14">Audatum, ut artifex</p> 
+
+                                                      
+                                                       <p class="p-14 mt15"> Experience</p> 
+                                                       <p class="p-16">16 Years of yoga guru</p>
+                                                       <a href="#" class="view-details" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#about-instructor-modal" >View Details</a>
+                                                       
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>    
+
+                                        </button>
+                                        </li>
+                                        </ul>
+                                </div>
+                                <div class="col-md-8 col-xl-7">
+                               
+                                    <div class="week-control">
+                                        <button type="button" class="btn"><img src="images/previous.svg" alt=""/></button>
+                                        <p class="p-18 text-center">
+                                           19 Aug - 15 Aug
+                                        </p>
+                                        <button type="button" class="btn"><img src="images/next2.svg" alt=""/></button>
                                     </div>
 
-                                 </div>
-                            </div>
+                                    <div class="tab-content instructor-booking-tab-content" id="trainer-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-week1" role="tabpanel"
+                                    aria-labelledby="pills-week1-tab">
+                                
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th></th>
+                                            <th>
+                                                <span class="short">Mon</span>
+                                                <span class="day">09</span>
+                                            </th>
+                                            <th>
+                                                <span class="short">Tue</span>
+                                                <span class="day">10</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">We</span>
+                                              <span class="day">11</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Thur</span>
+                                              <span class="day">12</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Fri</span>
+                                              <span class="day active">13</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Sat</span>
+                                              <span class="day">14</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Sun</span>
+                                              <span class="day">15</span>
+                                            </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="hour" ><span>8 AM</span></td>
+                                            <td>
+                                                <button type="button" class="btn booked">Booked</button>  
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        
+                                          <tr>
+                                            <td class="hour"><span>9 AM</span></td>
+                                            <td></td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                          
+                                          <tr>
+                                            <td class="hour" ><span>10 AM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                                <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour"><span>11 AM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        
+                                          <tr>
+                                            <td class="hour"><span>12 AM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour" ><span>1 PM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <td class="hour" ><span>2 PM</span></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour" ><span>3 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>4 PM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>5 PM</span></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>6 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                        </tbody>
+                                      </table>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-week2" role="tabpanel"
+                                    aria-labelledby="pills-week2-tab">
+                                    <div class="book-session-tab-inner-top">
+                                        <table>
+                                            <thead>
+                                              <tr>
+                                                <th></th>
+                                                <th>
+                                                    <span class="short">Mon</span>
+                                                    <span class="day">09</span>
+                                                </th>
+                                                <th>
+                                                    <span class="short">Tue</span>
+                                                    <span class="day">10</span>
+                                                </th>
+                                                <th>
+                                                  <span class="short">We</span>
+                                                  <span class="day">11</span>
+                                                </th>
+                                                <th>
+                                                  <span class="short">Thur</span>
+                                                  <span class="day">12</span>
+                                                </th>
+                                                <th>
+                                                  <span class="short">Fri</span>
+                                                  <span class="day active">13</span>
+                                                </th>
+                                                <th>
+                                                  <span class="short">Sat</span>
+                                                  <span class="day">14</span>
+                                                </th>
+                                                <th>
+                                                  <span class="short">Sun</span>
+                                                  <span class="day">15</span>
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td class="hour" ><span>8 AM</span></td>
+                                                <td>
+                                                    <button type="button" class="btn booked">Booked</button>  
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            
+                                              <tr>
+                                                <td class="hour"><span>9 AM</span></td>
+                                                <td></td>
+                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                                <td></td>
+                                              </tr>
+                                              
+                                              
+                                              <tr>
+                                                <td class="hour" ><span>10 AM</span></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td> 
+                                                    <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                              </tr>
+                                             
+                                              <tr>
+                                                <td class="hour"><span>11 AM</span></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            
+                                              <tr>
+                                                <td class="hour"><span>12 AM</span></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td><button type="button" class="btn booked">Booked</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                              <tr>
+                                                <td class="hour" ><span>1 PM</span></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td><button type="button" class="btn booked">Booked</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              
+                                              <tr>
+                                                <td class="hour" ><span>2 PM</span></td>
+                                                <td><button type="button" class="btn booked">Booked</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                              <tr>
+                                                <td class="hour" ><span>3 PM</span></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn booked">Booked</button></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                              </tr>
+    
+                                              <tr>
+                                                <td class="hour" ><span>4 PM</span></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn selected">Selected</button></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+    
+                                              <tr>
+                                                <td class="hour" ><span>5 PM</span></td>
+                                                <td><button type="button" class="btn selected">Selected</button></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn available">Available</button></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+    
+                                              <tr>
+                                                <td class="hour" ><span>6 PM</span></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-week3" role="tabpanel"
+                                    aria-labelledby="pills-week3-tab">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th></th>
+                                            <th>
+                                                <span class="short">Mon</span>
+                                                <span class="day">09</span>
+                                            </th>
+                                            <th>
+                                                <span class="short">Tue</span>
+                                                <span class="day">10</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">We</span>
+                                              <span class="day">11</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Thur</span>
+                                              <span class="day">12</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Fri</span>
+                                              <span class="day active">13</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Sat</span>
+                                              <span class="day">14</span>
+                                            </th>
+                                            <th>
+                                              <span class="short">Sun</span>
+                                              <span class="day">15</span>
+                                            </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="hour" ><span>8 AM</span></td>
+                                            <td>
+                                                <button type="button" class="btn booked">Booked</button>  
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        
+                                          <tr>
+                                            <td class="hour"><span>9 AM</span></td>
+                                            <td></td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                          
+                                          <tr>
+                                            <td class="hour" ><span>10 AM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                                <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour"><span>11 AM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                        
+                                          <tr>
+                                            <td class="hour"><span>12 AM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour" ><span>1 PM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <td class="hour" ><span>2 PM</span></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td class="hour" ><span>3 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>4 PM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>5 PM</span></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td class="hour" ><span>6 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          
+                                        </tbody>
+                                      </table>
+
+                                  
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+       <!--   booking-slot-modal -->
+   <div class="modal fade" id="booking-slot-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-booking-slot">
+        <div class="modal-content new-goal-content">
+            <div class="modal-body invite-now-modal-body new-goal-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="booking-slot-modal-body">
+                <div class="instructor-position bg-green2"> Nutritionist</div>
+                <p class="p-16">Session book with Pratik .R</p>
+                <p class="p-14">Tuesday, 10 12 PM - 1PM</p>
+                <span class="rating">
+                    4.5 <img src="images/single-star.svg" alt=""/>
+                    
+                </span>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2  bttn-outline-primary3 active">Book </button>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <!-- refer-friend-side-ease-out-wrap-->
+ <div class="modal fade modal-right" id="about-instructor-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body invite-now-modal-body instructor-right-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="p-16 fw-500">About instructor</p>
+                <div class="instructor-booking-inner-wrap">
+                       <div class="instructor-position bg-green2"> Nutritionist</div>
+
+                       <div class="instructor-sort-detail">
+                        <div class="user"> 
+                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+
+                            <span class="rating">
+                                4.5 <img src="images/single-star.svg" alt=""/>
+                            </span>
+                            </div>
+                            <div>
+                               <p class="p-16 ">Pratik. R</p>
+                               <p class="p-14">Audatum, ut artifex</p> 
+
+                              
+                               <p class="p-14 mt15"> Experience</p> 
+                               <p class="p-16">16 Years of yoga guru</p>
+                               
+                            </div>
+                       </div>
+                </div>
+
+                <p class="p-14 light"> About Me</p>
+                <div class="more-content-wrap-overflow ">
+               <p class="p-14 dark more1">Audatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in doloreAudatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore... 
+                </p>
+                 </div>
+
+             
+                 <div class="recording-video">
+                     <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                         <img src="images/video-play.png" alt=""/> 
+                     </button>
+                     <img src="images/video-detail.png" alt="" class="video-bg"/>
+                 </div>
+
+                 <p class="p-14 light"> Expertise</p>
+                 <ul>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                 </ul>
+
+                 <p class="p-14 light mt30 mb5"> Certifications</p>
+                 <ul>
+                     <li>Master of Science in Yoga- SVYASA- Bangalore</li>
+                     <li>QCI Level 2 Teacher</li>
+                 </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1266,6 +777,48 @@
             $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
         });
     </script>
+
+<script>
+    setTimeout(function () {
+// Configure/customize these variables.
+var showChartesti = 145;  // How many characters are shown by default
+var ellipsestext = "...";
+var moretext = " Read more >";
+var lesstext = " Read less";
+
+
+$('.more1').each(function() {
+var content = $(this).html();
+
+if(content.length > showChartesti) {
+
+    var c = content.substr(0, showChartesti);
+    var h = content.substr(showChartesti, content.length - showChartesti);
+
+    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="morelink1 morelink2">' + moretext + '</a></span>';
+
+    $(this).html(html);
+}
+
+});
+
+$(".morelink1").click(function(){
+if($(this).hasClass("less")) {
+    $(this).removeClass("less");
+    $(this).html(moretext);
+} else {
+    $(this).addClass("less");
+    $(this).html(lesstext);
+}
+$(this).parent().prev().toggle();
+$(this).prev().toggle();
+return false;
+});
+
+
+
+}, 1000);
+</script>
 </body>
 
 </html>
