@@ -202,3 +202,17 @@
         }
      }
   }
+
+  .heading-search{
+      display: flex;
+      justify-content: space-between;
+      @include tabMobile{
+          flex-direction: column;
+      }
+      .search-input-wrap{
+          margin-top: 65px;
+          @include tabMobile{
+            margin-top: 10px;
+        }
+      }
+  }
