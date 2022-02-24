@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Daily Self Practice Session</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="widgets/bootstrap-datepicker/css/datepicker.css" type="text/css"/> 
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/recommended-group-session.css" />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+         
+                <div class="dasboard-col-left st">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+                <div class="icon-gift-wrap-outer">
+                    <button type="button" class="btn btn-refer-friend" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">
+                    <div class="icon-gift-bg">
+                        <span> <img src="images/icon-gift.svg" alt="Refer Friends" class="icon-gift"/></span>
+                      </div>
+                    </button>
+                </div> 
+                
+                <div class="dasboard-col-right">
+                
+                    <div class="dasboard-col-right-inner st">
+                        <div class="container dasboard-col-right-container">
+                            <div class="row  justify-content-center">
+                                <div class="col-md-9 col-12">
+                                    <a href="daily-practise-session.html" class="dashboard-title-back-btn text-black">
+                                        <h1 class="dashboard-title"><span class="text-black">Recommended group session for you</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="row dashboard-row-body justify-content-center">
+                                <div class="col-md-12 col-lg-10 col-xl-9 rescheduled-session-cols">
+                               
+                            
+                                    <div class="common-card recommended-group-session">
+                                        <div class="recommended-session-inner-wrap">
+                                            <div class="group-session-wrap group-session-wrap-recomm">
+                                                <div>
+                                                    <div class="card">
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <div class="favorite">
+                                                            <img src="images/favorite.svg" alt=""/>
+                                                        </div>
+                                                            <p class="p-16">Breathing and meditation</p>
+                                                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                        <p class="p-14">Audatum, ut artifex callidus audatum, ut artifex callidus comparandarum voluptatum</p>
+
+                                                        <div class="user"> 
+                                                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                            Pratik. R
+                                                        </div>
+                                                        <div class="card-bottom">
+                                                            
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2 active">Book </button>
+                                                            <button type="button" class="btn bttn-outline-primary2" onclick="location.href='group session-detail.html'">View Details</button>
+                                                        </div>
+                                                    </div>  
+                                                </div>  
+
+                                                <div>
+                                                    <div class="card">
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <div class="favorite">
+                                                            <img src="images/favorite.svg" alt=""/>
+                                                        </div>
+                                                            <p class="p-16">Breathing and meditation</p>
+                                                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                        <p class="p-14">Audatum, ut artifex callidus audatum, ut artifex callidus comparandarum voluptatum</p>
+
+                                                        <div class="user"> 
+                                                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                            Pratik. R
+                                                        </div>
+                                                        <div class="card-bottom">
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2 active">Book </button>
+
+                                                            <button type="button" class="btn bttn-outline-primary2" onclick="location.href='group session-detail.html'">View Details</button>
+                                                        </div>
+                                                    </div>  
+                                                </div> 
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                       
+                                    <div class="common-card recommended-group-session recommended-group-session2">
+                                        <div class="recommended-session-inner-wrap">
+                                           <h3> All Sessions</h3>
+                                           <div class="overflow-y">
+                                            <div class="row group-session-wrap">
+                                                <div class="col-md-12">
+                                                    <div class="recommended-session-detail">
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <div class="flex-grow-1 middle-content">
+                                                        
+                                                            <p class="p-16">Breathing and meditation 
+                                                                <span class="favorite">
+                                                                <img src="images/favorite.svg" alt=""/>
+                                                            </span>
+                                                            </p>
+                                                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                        <p class="p-14">Audatum, ut artifex callidus audatum, ut artifex</p>
+
+                                                        <div class="user"> 
+                                                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                            Pratik. R
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="card-bottom flex-grow-0">
+                                                            
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2 active">Book </button>
+                                                            <button type="button" class="btn bttn-outline-primary2" onclick="location.href='group session-detail.html'">View Details</button>
+                                                        </div>
+                                                    </div>  
+                                                </div>  
+
+                                                <div class="col-md-12">
+                                                    <div class="recommended-session-detail">
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <div class="flex-grow-1 middle-content">
+                                                        
+                                                            <p class="p-16">Breathing and meditation 
+                                                                <span class="favorite">
+                                                                <img src="images/favorite.svg" alt=""/>
+                                                            </span>
+                                                            </p>
+                                                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                        <p class="p-14">Audatum, ut artifex callidus audatum, ut artifex</p>
+
+                                                        <div class="user"> 
+                                                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                            Pratik. R
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="card-bottom flex-grow-0">
+                                                            
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2 active">Book </button>
+                                                            <button type="button" class="btn bttn-outline-primary2" onclick="location.href='group session-detail.html'">View Details</button>
+                                                        </div>
+                                                    </div>  
+                                                </div> 
+
+
+                                                <div class="col-md-12">
+                                                    <div class="recommended-session-detail">
+                                                        <div class="group-session-img-wrap">
+                                                            <div class="session-duration">
+                                                            <span>1</span> hr
+                                                            </div>
+                                                            <div class="rating">
+                                                            4.5 <img src="images/star2.svg" alt=""/>
+                                                            </div>
+                                                            <img src="images/recommended.png" alt="" class="recommended-img">
+                                                        </div>  
+
+                                                        <div class="flex-grow-1 middle-content">
+                                                        
+                                                            <p class="p-16">Breathing and meditation 
+                                                                <span class="favorite">
+                                                                <img src="images/favorite.svg" alt=""/>
+                                                            </span>
+                                                            </p>
+                                                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                                                        <p class="p-14">Audatum, ut artifex callidus audatum, ut artifex</p>
+
+                                                        <div class="user"> 
+                                                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                                                            Pratik. R
+                                                        </div>
+                                                    </div>
+
+                                                        <div class="card-bottom flex-grow-0">
+                                                            
+                                                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2 active">Book </button>
+                                                            <button type="button" class="btn bttn-outline-primary2" onclick="location.href='group session-detail.html'">View Details</button>
+                                                        </div>
+                                                    </div>  
+                                                </div> 
+
+                                             
+                                            </div>
+
+                                           </div>
+                                          
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+     <!-- refer-friend-side-ease-out-wrap-->
+       <div class="modal fade modal-right" id="refer-friend-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body refer-friend-card-modal">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="refer-friend-card-inner-wrap">
+                            <div class="refer-friends-img-wrap"><img src="images/refer-friends.svg" alt="Refer Friends & Get Discount"></div>
+                            <div class="flex-grow-1">
+                                <h3>Refer Friends & Get <br/>Discount</h3>
+                                <p class="p-16">Refer your friend & get attractive<br/> discounts on each referal </p>
+                            </div>
+                            <div class="flex-shrink-0 align-items-center btn-wrapper">
+                                <button type="button" class="btn bttn-primary" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#invite-now-modal">
+                                    Invite Now</button>
+                                <!-- <a href="profile.html" type="button" class="btn btn-link bttn-link">View Referrals</button> -->
+                                <button type="button" class="btn btn-link bttn-link" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#feedback-modal">View Referrals</button>
+    
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+ <!--   group-session-modal -->
+ <div class="modal fade" id="group-session-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content group-session-modal-content">
+            <div class="modal-body group-session-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="recommended-group-session">
+                    <div class="card">
+                        <div class="group-session-img-wrap">
+                            <div class="session-duration">
+                            <span>1</span> hr
+                            </div>
+                            <div class="rating">
+                            4.5 <img src="images/star2.svg" alt=""/>
+                            </div>
+                            <img src="images/recommended.png" alt="" class="recommended-img">
+
+                          
+                        </div>  
+                       
+                        <div class="top-content-modal">
+                        <p class="p-16">Breathing and meditation</p>
+                        <span class="date-time">Sun - Fri | 10:00 AM</span> 
+                        <div class="user"> 
+                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+                            Pratik. R
+                        </div>
+                        </div>
+
+                        <div class="session-time-select-wrap">
+                           <p class="p-16">Choose your session time</p>
+
+                            <form>
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox"  value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Select All
+                                    </label>
+                                    <div class="selected-all-msg" >
+                                        You have selected 10 session <span>Select all  20 session till 15th Feb</span>
+                                    </div>
+                                </div>
+
+                                <div class="overflow-y">
+
+                                
+
+                                <div class="form-check form-check-box booked">
+                                    <input class="form-check-input" type="checkbox" checked value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Tue, 15 Feb, 7:00-8:00AM
+                                    </label>
+                                </div>
+
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Sat, 20 Feb, 9:00-8:00AM
+                                    </label>
+                                </div>
+
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Mon, 18 Feb, 7:00-8:00AM
+                                    </label>
+                                </div>
+
+
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Tue, 15 Feb, 7:00-8:00AM
+                                    </label>
+                                </div>
+
+                                <div class="form-check form-check-box booked booked2">
+                                    <input class="form-check-input" type="checkbox" checked value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       Sat, 20 Feb, 9:00-8:00AM
+                                    </label>
+                                   <div class="already-book">You have already book at this time go to <a href="session-planner.html"> My classes</a> </div>
+                                </div>
+
+                                <div class="form-check form-check-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Sat, 20 Feb, 9:00-8:00AM
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-confirm-modal" class="btn bttn-outline-primary2 active d-block m-auto">Confirm </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>  
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!--group-session-confirm-modal -->
+ <div class="modal fade" id="group-session-confirm-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content group-session-modal-content">
+            <div class="modal-body group-session-confirm-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="recommended-group-session  recommended-group-session-confirm">
+                    <img src="images/confirm.png" alt=" Booking confirmed"/>
+                   <h3>Booking confirmed</h3>
+                   <p class="p-16">your breathing and meditation yoga session booked with instructor <span>Pratik. R.</span> 
+                    we have sent  zoom link on your email</p>
+
+                   <p class="p-14">Sat, 20 Feb, 9:00-8:00AM</p>
+                   <p class="p-14">Sat, 20 Feb, 9:00-8:00AM</p>
+                   <p class="p-14">Sun, 20 Feb, 9:00-8:00AM</p>
+
+                   <p class="p-16 mt30 fwm"> Get reminder on whatsapp</p>
+                   <button type="button" class="btn bttn-outline-primary2 active d-block m-auto">Remind me</button>
+                   <button type="button" class="skip" data-bs-dismiss="modal" aria-label="Close">Skip</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- invite-now-modal -->
+    <div class="modal fade" id="invite-now-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body invite-now-modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>More ways to invite your friend</h3>
+                    <ul class="social-icon-list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Google.svg" alt="Google" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/LinkedIN.svg" alt="LinkedIN" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/WhatsApp.svg" alt="WhatsApp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Twitter.svg" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social-icon/Skype.svg" alt="Skype" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fm-mb search-input-wrap social-input-wrap">
+                        <input type="text" class="form-control" value="https://www.flexifyme.com" readonly>
+                            <button type="button" class="btn bttn-outline-primary2"><span class="hide-mobile">Copy Link</span>  <i class="far fa-copy show-mobile hide-desktop"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--   new-goal-modal -->
+   <div class="modal fade" id="new-goal-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content new-goal-content">
+            <div class="modal-body invite-now-modal-body new-goal-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              
+                <div class="new-goal-wrap text-center">   
+                    <div class="text-center"><img src="images/new-goal.jpg" alt=""/></div>
+                     <h3>Your New Year Goal </h3>
+                     
+                     <p class="p-16">You haven’t set any goal for 2022 please add new goal </p>
+                     <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">+ New goal</button>
+                     <br/><br/>
+
+                    <div class="mt20">
+                        <div class="fm-mb">
+                            <input type="text" class="form-control" placeholder="Add your goal">
+                        </div>
+                        
+                        <div class="fm-mb date-fm-mb">                                                                    
+                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="Achive goal " >
+                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                        </div>
+
+                        <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">Save</button>
+                    </div>
+                    <br/>
+                    <div>
+                        <p class="p-16">I will lose my weight from 70 kg to 60 till <br/> the date <span class="date-active">30 May 2022</span></p>
+                        <button type="button" onclick="location.href='book-session.html'" class="btn bttn-primary">Done</button>
+                    </div>
+
+                 </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+       <!-- Feedback-modal -->
+       <div class="modal fade" id="feedback-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered feedback-dialog">
+            <div class="modal-content">
+                <div class="modal-body feedback-modal-body">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <h3>Share your feedback</h3>
+                    
+                    <form>
+                    <div class="feedback-main-wrap row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <p>Teacher made good use of time?<span class="mandatory">*</span></p>
+                                <div class="rating-wrap">
+                                    <span class="star-rating star-5">
+                                        <input type="radio" name="rating" value="1"><i></i>
+                                        <input type="radio" name="rating" value="2"><i></i>
+                                        <input type="radio" name="rating" value="3"><i></i>
+                                        <input type="radio" name="rating" value="4"><i></i>
+                                        <input type="radio" name="rating" value="5"><i></i>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Teacher seemed knowlegeable about Yoga<span class="mandatory">*</span></p>
+                            <div class="rating-wrap">
+                                <span class="star-rating star-5">
+                                    <input type="radio" name="ratingYoga" value="6"><i></i>
+                                    <input type="radio" name="ratingYoga" value="7"><i></i>
+                                    <input type="radio" name="ratingYoga" value="8"><i></i>
+                                    <input type="radio" name="ratingYoga" value="9"><i></i>
+                                    <input type="radio" name="ratingYoga" value="10"><i></i>
+                                  </span>
+                            </div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found especially valuable?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there any aspect of the session you found unnecessary or not useful?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Was there anything that you wished we had covered?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <p>Any other comments, suggestions, ideas, wishes?</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <div class="col-md-12">
+                        <div class="form-group">
+                            <p>How satisfied were you with the overall session?*</p>
+                            <input type="text" class="form-control" placeholder="Your Answer">
+                        </div>
+                        </div>
+
+                        <p>How did you came to know about us?</p>
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                Word of mouth
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Internet Search or other website
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Directly from one of the faculty teachers
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group fm-mb inline-checkbox">
+                            <div class="form-check form-check-box">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox-email">
+                                <label class="form-check-label" for="checkbox-email">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn bttn-primary mt30" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                        
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script src="js/jquery.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
+    
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+            // for play music
+            $('audio').initAudioPlayer();
+            $(".song-img").removeClass("rotating");
+                setTimeout(function(){
+                    $('.play-music-audio .ppq-audio-player .audio-hidden').on('pause play', function(e) {
+                        if (e.currentTarget.paused) {
+                            $(".song-img").removeClass("rotating");
+                            $(".dashboard-body").removeClass("hide-card-overlay-active")
+                        } else {
+                            $(".song-img").addClass("rotating");
+                        }
+                    });
+            }, 600);
+
+            // for .hide-card-overlay
+            $(".hide-card-overlay").click(function(){
+                $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            })
+
+            $(".play-pause-btn").click(function(){
+                $(".music-strip-bottom-wrap-outer").toggleClass("music-strip-active")
+            })
+            // for like button            
+            $(".btn-like").click(function(){
+                $(this).toggleClass("active")
+            })
+        });
+    </script>
+</body>
+
+</html>
