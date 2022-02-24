@@ -1,0 +1,204 @@
+// responsive view variable
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin xxs{
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  
+  @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+  .recommended-group-session{
+    .recommended-session-inner-wrap{
+        h3{
+            color: #2E2E2E;
+            font-size: 20px;
+            font-weight: 700;
+        }
+  
+        
+        .overflow-y{
+            overflow-y: scroll;
+            height: 370px;
+            padding-right: 15px;
+            @include xxs{
+                padding-right: 0px;
+                }
+        }
+        .group-session-wrap{
+            display: flex;
+            @include tabMobile{
+            width: 100%;
+           
+            }
+            
+            div{
+               
+                .card{
+                    margin-right: 10px;
+                    @include tabMobile{
+                        width: 350px;
+                        }
+
+                        @include xxs{
+                            width: 300px;
+                            }
+                }
+                &:last-child{
+                    .card{
+                        margin-right: 0px;
+                    }
+                }
+               }
+
+
+        }
+        .group-session-wrap-recomm{
+            overflow-x: scroll;
+            padding-bottom: 20px;
+        }
+    }
+ 
+ 
+  }
+  .recommended-group-session2{
+    background-color: rgba(255, 255, 255, 0.8);
+   
+    .recommended-session-detail{
+        border-bottom: 1px solid #CECECE;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        .group-session-img-wrap{
+            width: 187px;
+            height: 121px;
+            margin-right: 20px;
+            margin-bottom: 0;
+
+            @include tabMobile{
+                width: 38px;
+                height: 50px;
+                margin-right: 20px;
+                margin-bottom: 0;
+                position: absolute;
+                right: 0;
+             }
+
+            .recommended-img {
+                width: 100%;
+                height: 121px;
+                object-fit: cover;
+            }
+        }
+        .card-bottom{
+            flex-direction: column;
+            margin: 0;
+            padding: 0px;
+            border: 0px;
+            justify-content: flex-start;
+            .btn{
+                width: 100%;
+                margin-bottom: 10px;
+                @include tabMobile{
+                    margin-right: 15px;
+                }
+            }
+            @include tabMobile{
+             width: 290px;
+             flex-direction: row;
+             margin-top: 15px;
+              }
+        }
+        .p-14{
+            margin-bottom: 10px;
+        }
+        .middle-content{
+            margin-right: 20px;
+            @include tabMobile{
+                width: 100%;
+             flex-direction: row;
+              }
+            p{
+                position: relative;
+                width: max-content;
+                @include tabMobile{
+                    width: auto;
+                }
+            }
+            .favorite{
+                right: -45px;
+                top: 0;
+
+                @include tabMobile{
+                    right: 75px;
+                }
+            }
+        }
+        @include tabMobile{
+            flex-direction: column;
+            align-items: start;
+            position: relative;
+         }
+    }
+    @include tabMobile{
+        .recommended-img{
+            display: none;
+        }
+        .rating{
+            display: none;
+        }
+     }
+     .session-duration{
+        @include tabMobile{
+            width: 27px;
+            height: 39px;
+            &::after{
+                border-left: 15px solid transparent;
+                border-right: 13px solid transparent;
+                border-top: 10px solid #fff;
+                margin-top: 0px;
+            }
+        }
+     }
+  }

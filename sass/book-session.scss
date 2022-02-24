@@ -369,19 +369,7 @@
 .dasboard-col-right-container {
   margin-left: 0;
 }
-.common-dashboard-header-wrap{
-  .common-dashboard-header-inner-wrap{
-    .date{
-      span{
-        display: none;
-      }
-    }
-  }
-}
 
-.dashboard-title {
-  margin-top:-10px !important;
-}
 .week-control{
   display: flex;
   align-items: center;
@@ -591,6 +579,17 @@
       color: #fff;
       border: 1px solid #66DDC7;
       border-left:3px solid #33D1B5;
+      position: relative;
+      padding-right: 25px;
+      &::after{
+       content: '';
+      background: url(../images/button-selected-green.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right:5px;
+      top: 5px;
+      }
     }
   }  
 

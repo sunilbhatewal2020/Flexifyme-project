@@ -420,12 +420,16 @@
           }
         }
         .dashboard-title{
-          font-family: "Playfair Display", serif;
+          // font-family: DM Sans;
           font-style: normal;
           font-weight: bold;
           font-size: 20px;
           color: #2E2E2E;
           margin-bottom: 0;
+          margin-top: 70px;
+          @include xs{
+            margin-top:0px;
+          }
         }
         .dashboard-title-back-btn{
           display: inline-block;
@@ -454,7 +458,7 @@
           }
         }
         .dashboard-row-body{
-          margin-top: 43px;
+          margin-top:0px;
           @include xs {
            margin-top: 10px;
           }
