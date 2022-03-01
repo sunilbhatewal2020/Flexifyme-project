@@ -394,7 +394,7 @@
   min-height: 100vh;
   @include xs {
     background-attachment: inherit !important;
-    padding-top: 80px !important;
+    padding-top:50px !important;
   }
   .dasboard-row-wrap {
     display: flex;
@@ -428,6 +428,7 @@
           margin-bottom: 0;
           margin-top: 70px;
           @include xs{
+            font-size: 16px;
             margin-top:0px;
           }
         }

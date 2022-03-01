@@ -24,6 +24,11 @@
     @content;
   }
 }
+@mixin xxs{
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
 
 @mixin tabMobile {
   @media screen and (max-width: 991px) {
@@ -4918,6 +4923,7 @@ line-height: 26px;
         position: relative;
         margin: 0px 10px;
         min-height: 382px;
+        min-width: 220px;
         @include xs {
           min-height: 200px;
         }
@@ -5276,6 +5282,7 @@ to {
 
 // recommended-group-session
 
+
 .recommended-group-session{
   background-color: rgba(255, 255, 255, 0.5);
   border: 3px solid #FFF;
@@ -5283,15 +5290,12 @@ to {
   padding: 20px;
   margin-bottom: 0px;
   margin-top: 20px;
-      .card{
-        padding: 15px;
-        border-radius: 8px;
-        border: 0px;
-        @include xs{
-          margin-bottom: 15px;
-        }
-
-      }
+  @include xxs{
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+  }
+ 
         .p-16{
           font-weight: 500;
           margin-bottom: 0px;
@@ -5300,12 +5304,18 @@ to {
           font-size: 14px;
           color: #898989;
           line-height: 20px;
+          @include xxs{
+            margin-bottom:10px
+          }
         }
         .p-14{
             font-size: 14px;
             color: #898989;
             line-height: 18px;
             margin: 10px 0px 20px;
+            @include xxs{
+              display: none;
+            }
         }
         .group-session-img-wrap{
           position: relative;
@@ -5385,11 +5395,6 @@ to {
           }
         }
         
-
-    
-
-  
-
   .favorite{
     position: absolute;
     top: 42%;
@@ -5423,8 +5428,62 @@ to {
       color: #7352d1;
     }
   }
-}
+  .recommended-session-inner-wrap{
+      h3{
+          color: #2E2E2E;
+          font-size: 20px;
+          font-weight: 700;
+      }
 
+      
+      .overflow-y{
+          overflow-y: scroll;
+          height: 370px;
+          padding-right: 15px;
+         
+      }
+      .group-session-wrap{
+          display: flex;
+          @include tabMobile{
+          width: 100%;
+         
+          }
+          
+          div{
+             
+              .card{
+                padding: 15px;
+                  margin-right: 20px;
+                  border-radius: 8px;
+                 border: 0px;
+                  @include tabMobile{
+                      width: 350px;
+                      }
+
+                      @include xxs{
+                          width: 270px;
+                          }
+              }
+              &:last-child{
+                  .card{
+                      margin-right: 0px;
+                  }
+              }
+             }
+
+
+      }
+      .group-session-wrap-recomm{
+          @include tabMobile{
+            overflow-x: scroll;
+            }
+          
+
+      }
+  }
+
+
+}
 .overflow-y{
 
 /* width */

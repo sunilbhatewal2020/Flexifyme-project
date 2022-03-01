@@ -48,62 +48,70 @@
       @content;
     }
   }
-  .recommended-group-session{
-    .recommended-session-inner-wrap{
-        h3{
-            color: #2E2E2E;
-            font-size: 20px;
-            font-weight: 700;
-        }
+  // .recommended-group-session{
+  //   .recommended-session-inner-wrap{
+  //       h3{
+  //           color: #2E2E2E;
+  //           font-size: 20px;
+  //           font-weight: 700;
+  //       }
   
         
-        .overflow-y{
-            overflow-y: scroll;
-            height: 370px;
-            padding-right: 15px;
-            @include xxs{
-                padding-right: 0px;
-                }
-        }
-        .group-session-wrap{
-            display: flex;
-            @include tabMobile{
-            width: 100%;
+  //       .overflow-y{
+  //           overflow-y: scroll;
+  //           height: 370px;
+  //           padding-right: 15px;
+  //           @include xxs{
+  //               padding-right: 0px;
+  //               }
+  //       }
+  //       .group-session-wrap{
+  //           display: flex;
+  //           @include tabMobile{
+  //           width: 100%;
            
-            }
+  //           }
             
-            div{
+  //           div{
                
-                .card{
-                    margin-right: 10px;
-                    @include tabMobile{
-                        width: 350px;
-                        }
+  //               .card{
+  //                   margin-right: 10px;
+  //                   @include tabMobile{
+  //                       width: 350px;
+  //                       }
 
-                        @include xxs{
-                            width: 300px;
-                            }
-                }
-                &:last-child{
-                    .card{
-                        margin-right: 0px;
-                    }
-                }
-               }
+  //                       @include xxs{
+  //                           width: 300px;
+  //                           }
+  //               }
+  //               &:last-child{
+  //                   .card{
+  //                       margin-right: 0px;
+  //                   }
+  //               }
+  //              }
 
 
-        }
-        .group-session-wrap-recomm{
-            overflow-x: scroll;
-            padding-bottom: 20px;
-        }
-    }
+  //       }
+  //       .group-session-wrap-recomm{
+  //           padding-bottom: 20px;
+  //           @include tabMobile{
+  //             overflow-x: scroll;
+  //             }
+            
+
+  //       }
+  //   }
  
  
-  }
+  // }
   .recommended-group-session2{
     background-color: rgba(255, 255, 255, 0.8);
-   
+    @include xxs{
+      border: 3px solid #FFF;
+      border-radius: 10px;
+      padding: 20px 4px 20px 20px;
+    }
     .recommended-session-detail{
         border-bottom: 1px solid #CECECE;
         padding-bottom: 15px;
@@ -124,6 +132,9 @@
                 position: absolute;
                 right: 0;
              }
+             @include xxs(){
+              right:-24px;
+           }
 
             .recommended-img {
                 width: 100%;
@@ -173,6 +184,10 @@
                 @include tabMobile{
                     right: 75px;
                 }
+                @include xxs(){
+                  right: 40px;
+              }
+                
             }
         }
         @include tabMobile{
@@ -214,5 +229,8 @@
           @include tabMobile{
             margin-top: 10px;
         }
+        @include xs(){
+          margin-top:0px;
+      }
       }
   }
