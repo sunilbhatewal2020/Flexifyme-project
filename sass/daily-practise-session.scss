@@ -316,6 +316,12 @@
   @include xs{
  padding: 0px 15px;
    }
+   @include xxs{
+     display: flex;
+     align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+      }
 }
 @include xs{
   .flex-grow-1{
@@ -1162,10 +1168,22 @@ background:#C4C4C4;
   .session-heading{
     display: flex;
     justify-content: space-between;
+    .bttn-sm{
+      @include xxs{
+        padding:0 15px;
+      }
+    }
   }
   .favorite {
     position: unset;
     margin-right: 15px;
+    @include xxs{
+      margin-right:10px;
+      img{
+        width: 23px;
+        height: 23px;
+      }
+    }
   }
    .p-16 {
     font-weight: 500;
@@ -1173,40 +1191,77 @@ background:#C4C4C4;
   }
   .p-14 {
     margin:0px 0px 20px;
+
+    @include xxs{
+      display: block;
+    }
   }
   .group-session-img-wrap{
     margin-top: 20px;
     margin-bottom: 20px;
     max-height:235px;
+    @include xxs{
+      max-height:120px;
+    }
+    .recommended-img{
+      width: 100%;
+      height: 235px;
+      object-fit: cover;
+      @include xxs{
+        height:120px;
+      }
+    }
+   
   }
+
   .recommended-session-inner-wrap-detail{
     padding:10px 20px;
+    @include tabMobile{
+      padding:0px;
+    }
+    .group-session-wrap{
+      @include tabMobile{
+        flex-direction: column;
+      }
+    }
   }
   
   .recording-main-video{
-    
+      display: flex;
+      @include md{
+        flex-flow: row wrap;
+        align-content: space-between;
+      }
+      @include tabMobile{
+        overflow-x: scroll;
+        padding-bottom: 10px;
+      //  flex-flow: row wrap;
+      //  align-content: space-between;
+      }
     .recording-video-inner-wrap{
-      display: inline-block;
       margin-right: 30px;
-
-      @include xxs{
-        width: 45%;
+      @include tabMobile{
+        margin-right: 13px;
+       }
+       @include xxs{
         margin-right: 10px;
-
-        img{
-          width: 100%;
-        }
-      }  
+       }
+     
+     
       .recording-video{
         position: relative;
         height: 142px;
         width: 142px;
         margin-top: 15px;
         margin-bottom:10px;
-        @include xxs{
-          height:auto;
-        width: auto;
-        } 
+        @include tabMobile{
+          height: 120px;
+          width: 120px;
+         }
+        // @include xxs{
+        //   height: 70px;
+        //   width: 70px;
+        // } 
         .video-bg{
           width: 100%;
           height: 100%;
@@ -1231,17 +1286,37 @@ background:#C4C4C4;
       &:last-child{
         margin-right: 0px;
       }
+      .p-14{
+        margin-bottom: 0px;
+      }
     }
   }
 }
-
+.group-session-detail-left{
+  margin-right: 20px;
+  width: 70%;
+  @include tabMobile{
+    margin-right: 0px;
+    width: 100%;
+  }
+  .heading-right-section{
+    @include xxs{
+      position: absolute;
+      right:15px;
+    }
+  }
+ 
+}
 .group-session-detail-right{
   position: relative;
   padding-left: 30px;
   padding-bottom: 30px;
   height: 100%;
+  width: 30%;
   @include tabMobile{
     padding-left: 0px;
+    margin-top: 10px;
+    width: 100%;
   }  
 
   &::before{
@@ -1293,6 +1368,11 @@ ul{
     color: #2e2e2e;
     position: relative;
     padding-left: 25px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    @include xxs{
+      margin-bottom:10px !important;
+    }
     &::before {
       content: '';
       width: 6px;
@@ -1300,13 +1380,16 @@ ul{
       background-color: #C6C6C6;
       position: absolute;
       left: 0rem;
-      top: 40%;
+      top:20%;
       border-radius: 50%;
   }
   }
 }
 .mt30{
   margin-top: 30px;
+  @include xxs{
+    margin-top: 15px !important;
+  }
 }
 .mb5{
   margin-bottom:5px !important;
@@ -1314,7 +1397,7 @@ ul{
 .recording-video{
   position: relative;
   height: 166px;
-  width: 310px;
+  width: auto;
   margin-top: 15px;
   margin-bottom:10px;
   border-radius:5px;
@@ -1325,7 +1408,8 @@ ul{
   } 
   .video-bg{
     width: 100%;
-    height: 100%;
+    height:166px;
+    object-fit:cover
   }
   .video-play{
     position: absolute;
