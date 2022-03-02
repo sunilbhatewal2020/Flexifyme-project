@@ -4864,9 +4864,18 @@ line-height: 26px;
         font-size: 22px;
         color:#7352D1;
         font-weight: 500;
+        @include xxs {
+          font-size:16px;
+        }
+      }
+      .p-18{
+        @include xxs {
+          margin-bottom: 0px;
+        }
       }
       .testimoni-name{
         font-weight: 500;
+      
         span{
           color: #898989;
           display: block;
@@ -4923,7 +4932,7 @@ line-height: 26px;
         position: relative;
         margin: 0px 10px;
         min-height: 382px;
-        min-width: 220px;
+        max-width: 220px;
         @include xs {
           min-height: 200px;
         }
@@ -4991,7 +5000,7 @@ line-height: 26px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -90px;
+    left:-65px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -5009,7 +5018,7 @@ line-height: 26px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right:-90px;
+    right:-65px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
