@@ -41,11 +41,17 @@
       @content;
     }
   }
+  @mixin desktopmd {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
   @mixin lg {
     @media screen and (min-width: 1200px) and (max-width: 1399px) {
       @content;
     }
   }
+
   
   @mixin xl {
     @media screen and (min-width: 1400px) {
@@ -61,8 +67,8 @@
   }
   .assigned-new-homework{
     height:70vh;
-    display: grid;
-    align-items: center;
+    // display: grid;
+    // align-items: center;
     h3{
         font-size:24px;
         font-weight: 700;
@@ -77,12 +83,12 @@
         margin-top:0px;
      }
         .new-homework-common-card-body{
-            padding:50px 90px;
+            padding:50px 40px;
             @include surface{
               padding: 30px;
            }
            @include xxs{
-            padding: 20px 20px 20px 10px;
+            padding: 20px;
           }
 
             .overflow-wrap{
@@ -132,7 +138,7 @@
     }
     .form-control{
         font-weight: 500;
-        color: #898989;
+        // color: #2e2e2e;
         font-family: DM Sans;
         &::placeholder {  
             font-family: DM Sans;
@@ -140,10 +146,214 @@
             font-weight: 500;
             color: #898989;
         }
+
+        @include desktopmd{
+          margin-bottom: 20px;
+       }
+       @include xxs{
+        height: 48px;
+     }
+    }
+   .form-select{
+    color: #898989;
+    &::selection{
+      color: #212529;
+    }
+    }
+
+    .edit-form-wrap{
+     display: none;
+      position: relative;
+      margin: 0px -20px 10px;
+      padding: 0px 20px 20px; 
+      border-bottom:1px solid #DCDCDC;
+      @include surface(){
+      display: block;
+      }
+      .edit{
+        position: absolute;
+        right:20px;
+        top: 0px;
+
+      }
+      ul{
+           display: flex;
+           margin: 0px;
+           padding: 0px;
+           @include xs{
+            flex-direction: unset;
+            
+          }
+          @include surface{
+            li:last-child{
+              margin-right: 0px;
+            }
+           }
+    
+           li{
+               font-size: 13px;
+               color: #2E2E2E;
+               line-height: 14px;
+               font-weight: 500;
+               display: flex;
+               flex-direction: column;
+               position: relative;
+               padding-left: 20px;
+               margin-right: 20px;
+    
+               @include xxs{
+                  margin-bottom:10px;
+                  flex-direction: column;
+               }
+              
+               span{
+                   color: #969697;
+                   margin-right: 10px;
+                   font-weight: 400;
+                   display: block;
+                   margin-bottom: 5px;
+                 
+                   @include xxs{
+                    width: 100%;
+                    margin-right: 0;
+                  }
+    
+               }
+    
+               &::before{
+                   content: '';
+                   width: 1px;
+                   height: 100%;
+                   background-color:#D1D3D3;
+                   position: absolute;
+                   left: 0px;
+                   top: 0px;
+                  
+               }
+               &:first-child{
+                padding-left: 0px;
+                &::before{
+                  display: none;
+              } 
+            }
+           }
+    
+      } 
+      .p-16{
+        color: #2e2e2e;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @include tabMobile{
+          margin-bottom:0px;
+          }
+          @include xxs{
+          font-size: 16px;
+          margin-bottom:10px;
+         }
+        
+    }
+    .studentname{
+      font-size: 14px;
+      color: #2E2E2E;
+      line-height: 14px;
+      font-weight: 500;
+      span{
+        color: #969697;
+        margin-right: 10px;
+        font-weight: 400;
+        @include xs{
+         margin-right: 10px;
+         margin-bottom: 5px;
+       }
+        @include xxs{
+         width: 100%;
+         margin-bottom:0px;
+         margin-right: 0;
+       }
+
+    }
+    }
+    }
+
+
+
+    .assigned-new-homework-form-wrap{
+      margin: 0px -40px 20px;
+      padding: 0px 40px 20px; 
+      border-bottom:1px solid #DCDCDC;
+      @include surface{
+        margin: 0px 0px 20px;
+        padding: 0px 0px 20px; 
+        display: none;
+     }
+    
+    
+      
+      .fm-mb{
+        margin-bottom: 0px;
+      }
+      form{
+        display: flex;
+        @include desktopmd{
+          flex-flow: row wrap;
+       }
+       @include desktopmd{
+        justify-content: space-between;
+     }
+        .mr15{
+          margin-right: 15px;
+          @include desktopmd{
+            margin-right:0px !important;
+         }
+         @include xxs{
+          margin-right:0px !important;
+       }
+        }
+        .w230{
+          width: 230px;
+          @include desktopmd{
+            width:100%;
+         }
+         @include xxs{
+          width:100%;
+       }
+
+        }
+        .w200{
+          width: 200px;
+          @include desktopmd{
+            width:47%;
+         }
+         @include xxs{
+          width:100%;
+       }
+
+        }
+        .w160{
+          width:160px;
+          @include desktopmd{
+            width:47%;
+         }
+         @include xxs{
+          width:100%;
+       }
+        }
+
+        .assign-new{
+          width: 130px;
+          @include desktopmd{
+            margin: 0 auto;
+         }
+        }
+        .btn-assigned{
+          margin-bottom: 0px;
+        }
+
+      }
     }
 }
 .fm-mb20{
-    margin-bottom: 20px;
+    margin-bottom:10px;
     @include xxs{
       margin-bottom:10px;
     }  
@@ -184,6 +394,14 @@
     }
   }
 
+  .edit-plan{
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+  }
   .select-home-work-plans{
 
     // &.show{
@@ -203,7 +421,7 @@
       @include xs{
         left:14px;
       }
-      @include surface(){
+      @include surface{
         left:8px;
       }
       
@@ -212,11 +430,22 @@
         border: 0px;
         padding:20px 40px 0px 40px;
         box-shadow:15px ​0px 20px  rgba(0, 0, 0, 0.18);
-        @include surface(){
+        @include surface{
           padding:0px;
         }
+        @include tabMobile{
+          border-radius: 10px 10px 0px 0px;
+        }
+
         .modal-footer{
             justify-content: center;
+            @include xxs{
+              background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+            }
         }
         .btn-close{
             background: transparent;
@@ -266,12 +495,120 @@
       .modal-dialog{
         transform:translateY(0%) !important;
         min-height:80px;
-        .modal-content{
-        }
+       
       }
     }
+
+    
     .session-planner-tab{
         margin-top: 0px;
+
+        .filter{
+          background-color: #F5F5F5;
+          padding:13px 30px;
+          // height: 80px;
+          margin-top: 10px;
+          display: grid;
+          align-items: center;
+          @include tabMobile{
+            padding:13px 20px;
+         }
+          .filter-inner-wrap{
+            display: flex;
+            align-items: center;
+            @include tabMobile{
+             justify-content: space-between;
+             flex-direction: column;
+             align-items: flex-start;
+          }
+
+            .filters-heading{
+              font-weight:600;
+              font-size: 14px;
+              margin-bottom: 0px;
+              margin-right: 30px;
+              padding-left: 30px;
+              position: relative;
+             
+              &::before{
+                content: '';
+                background: url(../images/filter-line.svg);
+                position: absolute;
+                top:2px;
+                left: 0px;
+                width: 24px;
+                height: 24px;
+
+              }
+            }
+            .btn{
+              margin-top: 0px;
+              margin-left: 0px;
+              &:hover{
+                color: #7352d1;
+              }
+              @include tabMobile{
+                margin: 0 auto;
+                display: block;
+              }
+            }
+            .w300{
+              width: 300px;
+              @include desktopmd{
+                width: auto;
+              }
+              @include tabMobile{
+                width: 100%;
+              }
+            }
+            .w200{
+              width:200px;
+              @include desktopmd{
+                width: auto;
+              }
+            }
+            .form-control{
+              height: 40px;
+              font-size: 14px;
+            }
+            .form-select{
+              color: #898989;
+              &::selection{
+                color: #212529;
+              }
+              }
+              .form-wrap{
+                display: flex;
+                @include tabMobile{
+                display: none;
+                width: 100%;
+                margin-top: 20px;
+
+                .mr15 {
+                  margin-bottom: 15px !important;
+              }
+              }
+
+              
+
+              }
+
+              .view-features{
+                display: none;
+                position: absolute;
+                right: 20px;
+                @include tabMobile{
+                    display: block;
+                }
+              }
+
+            
+
+          }
+
+
+
+        }
     }
     h3{
         font-size: 20px;
@@ -309,28 +646,18 @@
             }
         }
     }
-    .pills-tab-wrap{
-        .nav-pills{
-          @include tabMobile {
-            overflow-x: auto;
-          }
-            .nav-item{
-                margin-right: 40px;
-                @include tabMobile{
-                  margin-right: 10px;
-                }
-            }
-            .nav-link{
-                width: max-content;
-                min-width: max-content !important;
-            }
-        } 
-    } 
+
 
     .homework-plans-wrap{
         padding: 25px 0px 0px;
         overflow-y: scroll;
-        height: 380px;
+        height:450px;
+        @include tabMobile{
+          height:150px;
+        }
+        @include xxs(){
+          height:270px;
+        }
          /* width */
     &::-webkit-scrollbar {
         width: 7px;
@@ -416,23 +743,89 @@
        
     }
   }
+
+  .pills-tab-wrap{
+    position: relative;
+    .nav-pills{
+      @include tabMobile {
+        overflow-x: auto;
+      }
+        .nav-item{
+            margin-right: 40px;
+            @include tabMobile{
+              margin-right: 10px;
+            }
+        }
+        .nav-link{
+            width: max-content;
+            min-width: max-content !important;
+        }
+    } 
+    .overflow-y{
+      height: 460px;
+      overflow-y: auto;
+      padding-right: 12px;
+      @include xxs{
+        margin-right: -10px;
+        height:275px;
+      } 
+    }
+} 
   .selected-plan-outer-wrap{
    
+    .no-home-wrok-plan{
+      text-align: center;
+      min-height: 300px;
+      max-width: 313px;
+      margin: 40px auto 0px;
+      h5{
+        color: #2E2E2E;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+      .btn{
+        margin-top: 20px;
+      }
+    }
       .p-14{
           color: #969697;
+          margin-bottom: 0px;
           @include xxs{
-            margin-bottom: 0px;
           }  
       }
+      .session-planner-tab {
+        margin-top: 0px;
+
+        .nav-link{
+          font-weight:600!important;
+          min-width: max-content !important;
+        }
+        .planner-tab{
+          margin-bottom: 20px;
+          position: relative;
+          
+        }
+        .homework-name{
+          position: absolute;
+          right: 0px;
+          top: 12px;
+          @include tabMobile{
+            top:-26px;
+          }  
+
+        }
+    }
       .selected-plan-inner-wrap{
         display: flex;
-        align-items: center;
         margin-bottom: 20px;
-        border-bottom: 1px solid #DCDCDC;
-        padding-bottom: 20px;
-        @include xxs{
+        border:1px solid #DCDCDC;
+        border-radius: 5px;
+        padding: 20px;
+        flex-flow: row wrap;
+        @include surface{
           margin-bottom:10px;
-          padding-bottom: 10px;
+          padding: 0px;
+          border: 0px;
         }  
       }
       .warmup-img-wrap{
@@ -445,6 +838,11 @@
         display: grid;
         align-items: center;
         background-color: #FFF;
+        @include surface{
+          width: 80px;
+          height: 80px;
+        }  
+
         img{
             width: 100%;
         }
@@ -462,12 +860,16 @@
       }
       .selected-plan-inner-details{
           margin-left: 20px;
+          @include surface{
+            margin-left:10px;
+          }  
         .selected-homework-heading{
             color: #2e2e2e;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 600;
-            margin-bottom: 0px;
+            line-height: 14px;
+             margin-bottom: 10px;
         }
         .repatriation{
             display: flex;
@@ -482,15 +884,21 @@
             font-size: 13px;
             color:#A1A1A1;
             .form-select.form-control{
-                font-size: 14px;
+                font-size: 13px;
                 color: #2e2e2e;
-                width: 132px;
-                height: 35px;
-                padding-left: 20px;
-                padding-right: 20px;
+                width: 87px;
+                height: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
                 @include surface{
-                  width: 100px;
+                  width: 80px;
+                  margin-bottom: 0px;
                 }  
+                @include xxs{
+                 
+                  
+                } 
             }
         }
       }
