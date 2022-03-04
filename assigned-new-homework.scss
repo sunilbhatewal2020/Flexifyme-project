@@ -1,0 +1,1000 @@
+// responsive view variable
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @mixin surface{
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  }
+  @mixin xxs{
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+    @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  @mixin desktopmd {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+.st {
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+  }
+  .assigned-new-homework{
+    height:70vh;
+    // display: grid;
+    // align-items: center;
+    h3{
+        font-size:24px;
+        font-weight: 700;
+        color: #2e2e2e;
+        text-align: center;
+        font-family: Playfair Display;
+        margin-bottom: 20px;
+    }
+    .new-homework-common-card{
+      margin-top: 50px;
+      @include surface{
+        margin-top:0px;
+     }
+        .new-homework-common-card-body{
+            padding:50px 40px;
+            @include surface{
+              padding: 30px;
+           }
+           @include xs{
+            padding: 20px;
+          }
+
+            .overflow-wrap{
+                padding-right: 60px;
+                overflow-y: scroll;
+                margin-right: -68px;
+                max-height: 470px;
+                margin-bottom: 20px;
+                @include surface{
+                  margin-right: -20px;
+                  padding-right: 20px;
+               }
+               @include xxs{
+                margin-right:-10px;
+                padding-right: 10px;
+             }
+         /* width */
+    &::-webkit-scrollbar {
+        width: 7px;
+       
+        }
+       /* Track */
+       &::-webkit-scrollbar-track {
+        background:transparent; 
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+       
+        }
+         
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+        background:#C4C4C4; 
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        position: absolute;
+        right: -10px;
+  
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background:#C4C4C4; 
+        }
+
+    }
+     }
+    }
+    .form-control{
+        font-weight: 500;
+        // color: #2e2e2e;
+        font-family: DM Sans;
+        &::placeholder {  
+            font-family: DM Sans;
+            font-size: 16px;
+            font-weight: 500;
+            color: #898989;
+        }
+
+        @include desktopmd{
+          margin-bottom: 20px;
+       }
+       @include xxs{
+        height: 48px;
+     }
+    }
+   .form-select{
+    color: #898989;
+    &::selection{
+      color: #212529;
+    }
+    }
+
+    .edit-form-wrap{
+     display: none;
+      position: relative;
+      margin: 0px -20px 10px;
+      padding: 0px 20px 20px; 
+      border-bottom:1px solid #DCDCDC;
+      @include xs{
+      display: block;
+      }
+      .edit{
+        position: absolute;
+        right:20px;
+        top: 0px;
+
+      }
+      ul{
+           display: flex;
+           margin: 0px;
+           padding: 0px;
+           @include xs{
+            flex-direction: unset;
+            
+          }
+          @include surface{
+            li:last-child{
+              margin-right: 0px;
+            }
+           }
+    
+           li{
+               font-size: 13px;
+               color: #2E2E2E;
+               line-height: 14px;
+               font-weight: 500;
+               display: flex;
+               flex-direction: column;
+               position: relative;
+               padding-left: 20px;
+               margin-right: 20px;
+    
+               @include xxs{
+                  margin-bottom:10px;
+                  flex-direction: column;
+               }
+              
+               span{
+                   color: #969697;
+                   margin-right: 10px;
+                   font-weight: 400;
+                   display: block;
+                   margin-bottom: 5px;
+                 
+                   @include xxs{
+                    width: 100%;
+                    margin-right: 0;
+                  }
+    
+               }
+    
+               &::before{
+                   content: '';
+                   width: 1px;
+                   height: 100%;
+                   background-color:#D1D3D3;
+                   position: absolute;
+                   left: 0px;
+                   top: 0px;
+                  
+               }
+               &:first-child{
+                padding-left: 0px;
+                &::before{
+                  display: none;
+              } 
+            }
+           }
+    
+      } 
+      .p-16{
+        color: #2e2e2e;
+        font-weight: 600;
+        margin-bottom: 5px;
+        @include tabMobile{
+          margin-bottom:0px;
+          }
+          @include xxs{
+          font-size: 16px;
+          margin-bottom:10px;
+         }
+        
+    }
+    .studentname{
+      font-size: 14px;
+      color: #2E2E2E;
+      line-height: 14px;
+      font-weight: 500;
+      span{
+        color: #969697;
+        margin-right: 10px;
+        font-weight: 400;
+        @include xs{
+         margin-right: 10px;
+         margin-bottom: 5px;
+       }
+        @include xxs{
+         width: 100%;
+         margin-bottom:0px;
+         margin-right: 0;
+       }
+
+    }
+    }
+    }
+
+
+
+    .assigned-new-homework-form-wrap{
+      margin: 0px -40px 20px;
+      padding: 0px 40px 20px; 
+      border-bottom:1px solid #DCDCDC;
+      @include xs{
+        margin: 0px 0px 20px;
+        padding: 0px 0px 20px; 
+        display: none;
+     }
+    
+    
+      
+      .fm-mb{
+        margin-bottom: 0px;
+      }
+      form{
+        display: flex;
+        @include desktopmd{
+          flex-flow: row wrap;
+       }
+       @include desktopmd{
+        justify-content: space-between;
+     }
+        .mr15{
+          margin-right: 15px;
+          @include desktopmd{
+            margin-right:0px !important;
+         }
+         @include xxs{
+          margin-right:0px !important;
+       }
+        }
+        .w230{
+          width: 230px;
+          @include desktopmd{
+            width:100%;
+         }
+         @include xxs{
+          width:100%;
+       }
+
+        }
+        .w200{
+          width: 200px;
+          @include desktopmd{
+            width:47%;
+         }
+         @include xxs{
+          width:100%;
+       }
+
+        }
+        .w160{
+          width:160px;
+          @include desktopmd{
+            width:47%;
+         }
+         @include xxs{
+          width:100%;
+       }
+        }
+
+        .assign-new{
+          width: 130px;
+          @include desktopmd{
+            margin: 0 auto;
+         }
+        }
+        .btn-assigned{
+          margin-bottom: 0px;
+        }
+
+      }
+    }
+}
+.fm-mb20{
+    margin-bottom:10px;
+    @include xxs{
+      margin-bottom:10px;
+    }  
+}
+.fm-mb30{
+    margin-bottom:30px;
+}
+.btn-add-homework{
+    width: 100%;
+    display: grid;
+      align-items: center;
+      span {
+        font-family: DM Sans;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    @extend .st;
+    &.active,
+    &:hover {
+      border-color: transparent;
+    }
+  }
+  
+  .btn-assigned-homework{
+    width: 100%;
+    display: grid;
+      align-items: center;
+      span {
+        font-family: DM Sans;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    @extend .st;
+    &.active,
+    &:hover {
+      border-color: transparent;
+     
+    }
+  }
+
+  .edit-plan{
+    position: absolute;
+    bottom: 20px;
+    width: auto;
+    left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+  }
+  .select-home-work-plans{
+
+    // &.show{
+    //   overflow: hidden;
+         
+    // }
+     .modal-dialog{
+        width: 96%;
+        left: 79px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 100% !important;
+      margin: 0;
+      transform:translateY(100%) !important;
+
+      @include xs{
+        left:14px;
+      }
+      @include surface{
+        left:8px;
+      }
+      
+      .modal-content{
+        border-radius:0px;
+        border: 0px;
+        padding:20px 40px 0px 40px;
+        box-shadow:15px ​0px 20px  rgba(0, 0, 0, 0.18);
+        @include surface{
+          padding:0px;
+        }
+        @include tabMobile{
+          border-radius: 10px 10px 0px 0px;
+        }
+
+        .modal-footer{
+            justify-content: center;
+            @include xxs{
+              background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+            }
+        }
+        .btn-close{
+            background: transparent;
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            width: 50px;
+                height:50px;
+                
+            .btn-close-outer-wrap{
+                width: 50px;
+                height:50px;
+                background-color: #FFF;
+                box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.18);
+                border-radius: 50%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s linear;
+                -webkit-transition: all 0.2s linear;
+                color: #555F5B;
+
+                i{
+                    transition: all 0.2s linear;
+                    -webkit-transition: all 0.2s linear;
+                }
+                &:hover{
+                    i{
+                        transform: rotate(-180deg);
+                        -webkit-transform: rotate(-180deg);
+                        -moz-transform: rotate(-180deg);
+                        -ms-transform: rotate(-180deg);
+                        -o-transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+      }
+    }
+    
+    &.show{
+      overflow: hidden;
+     
+      .modal-dialog{
+        transform:translateY(0%) !important;
+        min-height:80px;
+       
+      }
+    }
+
+    
+    .session-planner-tab{
+        margin-top: 0px;
+
+        .filter{
+          background-color: #F5F5F5;
+          padding:13px 30px;
+          // height: 80px;
+          margin-top: 10px;
+          display: grid;
+          align-items: center;
+          @include tabMobile{
+            padding:13px 20px;
+         }
+          .filter-inner-wrap{
+            display: flex;
+            align-items: center;
+            @include tabMobile{
+             justify-content: space-between;
+             flex-direction: column;
+             align-items: flex-start;
+          }
+
+            .filters-heading{
+              font-weight:600;
+              font-size: 14px;
+              margin-bottom: 0px;
+              margin-right: 30px;
+              padding-left: 30px;
+              position: relative;
+             
+              &::before{
+                content: '';
+                background: url(../images/filter-line.svg);
+                position: absolute;
+                top:2px;
+                left: 0px;
+                width: 24px;
+                height: 24px;
+
+              }
+            }
+            .btn{
+              margin-top: 0px;
+              margin-left: 0px;
+              &:hover{
+                color: #7352d1;
+              }
+              @include tabMobile{
+                margin: 0 auto;
+                display: block;
+              }
+            }
+            .w300{
+              width: 300px;
+              @include desktopmd{
+                width: auto;
+              }
+              @include tabMobile{
+                width: 100%;
+              }
+            }
+            .w200{
+              width:200px;
+              @include desktopmd{
+                width: auto;
+              }
+            }
+            .form-control{
+              height: 40px;
+              font-size: 14px;
+            }
+            .form-select{
+              color: #898989;
+              &::selection{
+                color: #212529;
+              }
+              }
+              .form-wrap{
+                display: flex;
+                @include tabMobile{
+                display: none;
+                width: 100%;
+                margin-top: 20px;
+
+                .mr15 {
+                  margin-bottom: 15px !important;
+              }
+              }
+
+              
+
+              }
+
+              .view-features{
+                display: none;
+                position: absolute;
+                right: 20px;
+                @include tabMobile{
+                    display: block;
+                }
+              }
+
+            
+
+          }
+
+
+
+        }
+    }
+    h3{
+        font-size: 20px;
+        color: #2e2e2e;
+    }
+    .you-selected{
+        position: absolute;
+        right:45px;
+        top:57px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2e2e2e;
+        display: flex;
+        @include tabMobile {
+          top:16px;
+        }
+         @include xs{
+          right:20px;
+          text-indent: -999px;
+        }
+        .selected-plan-no{
+            width: 30px;
+            height: 30px;
+            background-color: #FF668E;
+            border-radius: 50%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #FFF;
+            font-weight: 600;
+            margin-left: 15px;
+            @include xs{
+            text-indent: 0px;
+            }
+        }
+    }
+
+
+    .homework-plans-wrap{
+        padding: 25px 0px 0px;
+        overflow-y: scroll;
+        height:450px;
+        @include tabMobile{
+          height:150px;
+        }
+        @include xxs(){
+          height:270px;
+        }
+         /* width */
+    &::-webkit-scrollbar {
+        width: 7px;
+       
+        }
+       /* Track */
+       &::-webkit-scrollbar-track {
+        background:transparent; 
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+       
+        }
+         
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+        background:#C4C4C4; 
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        position: absolute;
+        right: -10px;
+  
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background:#C4C4C4; 
+        }
+        .plans-outer-wrap{
+            border: 1px solid #DCDCDC;
+            border-radius: 3px;
+            padding: 0px 20px 20px 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 166px;
+            height: 166px;
+            display: grid;
+            align-items: center;
+            position: relative;
+            float: left;
+            @include surface{
+              margin-right:10px;
+            }
+            @include xxs{
+              width: 150px;
+              height: 150px;
+            }
+            .inline-checkbox{
+                margin-bottom: 0px;
+                position: absolute;
+                top: 5px;
+                right: 0px;
+            }
+            .form-check{
+                padding: 0px;
+                width: 100%;
+              
+            }
+            
+            .form-check-label{
+                // position: absolute;
+                // bottom: 0px;
+                // left: 0px;
+                display: none;
+            }
+        }
+
+        .plan-image-wrap{
+            margin-bottom:0px;
+            text-align: center;
+            min-height: 120px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        h5{
+            font-size: 14px;
+            color: #2e2e2e;
+            font-weight: 600;
+             position: absolute;
+             bottom: 10px;
+             left: 20px;
+        }
+       
+    }
+  }
+
+  .pills-tab-wrap{
+    position: relative;
+    .nav-pills{
+      @include tabMobile {
+        overflow-x: auto;
+      }
+        .nav-item{
+            margin-right: 40px;
+            @include tabMobile{
+              margin-right: 10px;
+            }
+        }
+        .nav-link{
+            width: max-content;
+            min-width: max-content !important;
+        }
+    } 
+    .overflow-y{
+      height: 460px;
+      overflow-y: auto;
+      padding-right: 12px;
+      @include xxs{
+        margin-right: -10px;
+        height:275px;
+      } 
+    }
+} 
+  .selected-plan-outer-wrap{
+   
+    .no-home-wrok-plan{
+      text-align: center;
+      min-height: 300px;
+      max-width: 313px;
+      margin: 40px auto 0px;
+      h5{
+        color: #2E2E2E;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+      .btn{
+        margin-top: 20px;
+      }
+    }
+      .p-14{
+          color: #969697;
+          margin-bottom: 0px;
+          @include xxs{
+          }  
+      }
+      .session-planner-tab {
+        margin-top: 0px;
+
+        .nav-link{
+          font-weight:600!important;
+          min-width: max-content !important;
+        }
+        .planner-tab{
+          margin-bottom: 20px;
+          position: relative;
+          
+        }
+        .homework-name{
+          position: absolute;
+          right: 0px;
+          top: 12px;
+          @include tabMobile{
+            top:-26px;
+          }  
+
+        }
+    }
+      .selected-plan-inner-wrap{
+        display: flex;
+        margin-bottom: 20px;
+        border:1px solid #DCDCDC;
+        border-radius: 5px;
+        padding: 20px;
+        flex-flow: row wrap;
+        @include surface{
+          margin-bottom:10px;
+          padding: 0px;
+          border: 0px;
+        }  
+      }
+      .warmup-img-wrap{
+        border: 1px solid #DCDCDC;
+        border-radius: 3px;
+        padding: 10px;
+        position: relative;
+        width: 102px;
+        height: 102px;
+        display: grid;
+        align-items: center;
+        background-color: #FFF;
+        @include surface{
+          width: 80px;
+          height: 80px;
+        }  
+
+        img{
+            width: 100%;
+        }
+      }
+      .homework-name{
+          font-size: 16px;
+          color: #2e2e2e;
+          font-weight: 600;
+          display: flex;
+          margin-bottom: 5px;
+      }
+      .delect-homework{
+        color:#A1A1A1;
+        font-size: 19px;
+      }
+      .selected-plan-inner-details{
+          margin-left: 20px;
+          @include surface{
+            margin-left:10px;
+          }  
+        .selected-homework-heading{
+            color: #2e2e2e;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+             margin-bottom: 10px;
+        }
+        .repatriation{
+            display: flex;
+            font-size: 13px;
+            color:#A1A1A1;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .slect-time{
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color:#A1A1A1;
+            .form-select.form-control{
+                font-size: 13px;
+                color: #2e2e2e;
+                width: 87px;
+                height: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+                @include surface{
+                  width: 80px;
+                  margin-bottom: 0px;
+                }  
+                @include xxs{
+                 
+                  
+                } 
+            }
+        }
+      }
+      textarea.form-control{
+          background-color: #EAEAEA !important;
+          height: 35px !important;
+          font-size: 12px;
+          color: #2e2e2e;
+          padding-left: 20px;
+          padding-top: 10px;
+          border: 0px;
+          &::placeholder {  
+            font-family: DM Sans;
+            font-size: 12px;
+            font-weight: 500;
+            color: #2e2e2e;
+        }
+      }
+  }
+  
+
+
+  .repatriation{
+/*Prevent text selection*/
+.qty {
+    display: flex;
+    align-items: center;
+    width: 90px;
+	.count {
+		color: #2e2e2e;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 30px;
+		padding: 0 2px;
+		min-width: 35px;
+		text-align: center;
+        &:hover{
+            background-color: transparent;
+        }
+
+	}
+	.plus {
+		cursor: pointer;
+		display: flex;
+        align-items: center;
+        justify-content: center;
+		vertical-align: top;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		border-radius: 50%;
+        border: 1px solid #D1D1D1;
+        color: #898989;
+        &:hover{
+            background-color: transparent;
+        }
+	}
+	.minus {
+		cursor: pointer;
+		display:flex;
+        align-items: center;
+        justify-content: center;
+		vertical-align: top;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		border-radius: 50%;
+		background-clip: padding-box;
+        border: 1px solid #D1D1D1;
+        color: #898989;
+	}
+}
+
+span {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+input {
+	border: 0;
+	width: 2%;
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	&:disabled {
+		background-color:transparent;
+	}
+}
+input {
+	&::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+  }
