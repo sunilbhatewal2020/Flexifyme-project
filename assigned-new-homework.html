@@ -32,155 +32,1292 @@
                             <div class="assigned-new-homework">
 
                                 <div class="row dashboard-row-body align-items-center justify-content-center">
-                                    <div class="col-md-12 col-lg-7 col-xl-6">
+                                    <div class="col-md-12">
                                        <div class="new-homework-common-card">
                                         <h3>Assign New Homework</h3>
                                         <div class="common-card">
 
+                                            
                                             <div class="common-card-body new-homework-common-card-body">
-                                                <div class="overflow-wrap">
+                                                <div class="assigned-new-homework-form-wrap">
                                                  <form>
-                                                <div class="fm-mb20">
+                                                <div class=" mr15 w230">
                                                     <input type="text" class="form-control" placeholder="Homework Name">
                                                 </div>
-                                                <div class="fm-mb20">
+                                                <div class="mr15 w200">
                                                     <select class="form-select form-control">
                                                           <option selected="">Level </option>
                                                     </select>
                                                 </div>
                                                 
-                                                <div class="fm-mb20">
+                                                <div class="mr15 w200">
                                                     <select class="form-select form-control">
                                                         <option selected="">Select student</option>
                                                     </select>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-6 col-lg-6 col-xl-6">
-                                                        <div class="fm-mb date-fm-mb">                                                                    
-                                                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="Start Date" >
-                                                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-lg-6 col-xl-6">
-                                                        <div class="fm-mb date-fm-mb">                                                                    
-                                                            <input type="text" class="form-control default-date-picker" id="dob" placeholder="End Date" >
-                                                            <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
-                                                        </div>
-                                                    </div>
+
+                                                <div class="fm-mb date-fm-mb mr15 w160">                                                                    
+                                                    <input type="text" class="form-control default-date-picker" id="dob" placeholder="Start Date" >
+                                                    <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
                                                 </div>
+
+
+                                                <div class="fm-mb date-fm-mb mr15 w160">                                                                    
+                                                    <input type="text" class="form-control default-date-picker" id="dob" placeholder="End Date" >
+                                                    <label for="dob" class="icon-label"><i class="ri-calendar-line"></i></label>
+                                                </div>
+
+
+                                                    <div class="assign-new">
+                                                        <a href="assigned-successfully.html" class="btn btn-assigned btn-assigned-homework active disabled"><span>Assign</span></a>
+                                                    </div>
                                             </form>   
 
+                                        </div>
+                                        
+                                        <div class="edit-form-wrap">
+                                            <a href="#" class="edit"><img src="images/edit.svg" alt=""/></a>
+                                            <p class="p-16">Full body work</p>
+                                           <p class="studentname"><span>Student</span> Dipen.s</p>
+                                            <ul>
+                                                <li><span>Level</span> Begginner</li>
+                                                <li><span>Start date</span> 05-2-2022</li>
+                                                <li><span>End date</span> 10-2-2022</li>
+                                            </ul>
+
+                                        </div>
                                                 <div class="selected-plan-outer-wrap">
 
-                                                  <p class="p-14"> Selected Homework plan</p>
-                                                        <p class="homework-name">
-                                                            <span class="flex-grow-1">Warm up</span> 
-                                                            <a href="#" class="delect-homework flex-grow-0"><i class="ri-delete-bin-6-line"></i></a>
-                                                        </p> 
-                                                        
-                                                       <div class="selected-plan-inner-wrap">
-                                                           <div class="warmup-img-wrap flex-grow-0">
-                                                               <img src="images/warm-up1-1.jpg" alt=""/>
-                                                           </div>
-                                                           <div class="selected-plan-inner-details flex-grow-1">
-                                                               <p class="selected-homework-heading">Marjariasana</p>
-                                                               <div class="repatriation">
-                                                                <span class="flex-grow-1">Repatriation</span>
-                                                                <div class="flex-grow-0 qty">
-                                                                        <span class="minus">-</span>
-                                                                        <input type="number" class="count" name="qty" value="1">
-                                                                        <span class="plus">+</span>
+                                                    <!-- <div class="no-home-wrok-plan">
+                                                           <img src="images/no-homework.png" alt="No Homework Plan"/> 
+                                                       <h5> No Homework Plan</h5>
+                                                      <p class="p-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare?</p>  
+                                                      <div class="fm-mb20">
+                                                        <button type="button" class="btn bttn-primary btn-add-homework active" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#select-home-work-plans">
+                                                            <span>Add homework plan</span>
+                                                        </button>
+                                                    </div>
+                                                    </div> -->
+                                                  
+
+                                                  <div class="session-planner-tab">
+                                                    <p class="p-14"> Selected Homework plan</p>
+
+                                                    <div class="pills-tab-wrap">
+
+    
+                                                    <ul class="nav nav-pills planner-tab" id="planner-tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="warm-up-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#warm-up"
+                                                                type="button" role="tab" aria-controls="warm-up"
+                                                                aria-selected="true">
+                                                                <span>Warm Up </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="asanas-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#asanas"
+                                                                type="button" role="tab" aria-controls="asanas"
+                                                                aria-selected="false">
+                                                                <span>Asanas </span>
+                                                            </button>
+                                                        </li>
+                                
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pranayama-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pranayama"
+                                                                type="button" role="tab" aria-controls="pranayama"
+                                                                aria-selected="false">
+                                                                <span>Pranayama</span>
+                                                            </button>
+                                                        </li>
+                                
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="meditaiton-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#meditaiton"
+                                                                type="button" role="tab" aria-controls="meditaiton"
+                                                                aria-selected="false">
+                                                                <span>Meditation in shavasana/yoga nidra</span>
+                                                            </button>
+                                                        </li>
+                                                       
+
+                                                    </ul>
+                                                  
+                                                    <div class="homework-name">
+                                                        <a href="#" class="delect-homework flex-grow-0"><i class="ri-delete-bin-6-line"></i></a>
+                                                    </div> 
+                                                    
+                                                    <div class="tab-content" id="planner-tabContent">
+                                                        <div class="tab-pane fade show active" id="warm-up" role="tabpanel" aria-labelledby="warm-up-tab">
+                                                            <div class="overflow-y">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+        
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+        
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+        
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xl-4">
+                                                                        <div class="selected-plan-inner-wrap">
+                                                                            <div class="warmup-img-wrap">
+                                                                                <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                            </div>
+                                                                            <div class="selected-plan-inner-details flex-grow-1">
+                                                                                <p class="selected-homework-heading">Marjariasana</p>
+                                                                                <div class="repatriation">
+                                                                                 <span class="flex-grow-1">Repatriation</span>
+                                                                                 <div class="flex-grow-0 qty">
+                                                                                         <span class="minus">-</span>
+                                                                                         <input type="number" class="count" name="qty" value="1">
+                                                                                         <span class="plus">+</span>
+                                                                                 </div>
+                 
+                                                                                </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                    <span class="flex-grow-1">Sequence</span>
+                                                                                    <div class="flex-grow-0">
+                                                                                        <select class="form-select form-control">
+                                                                                            <option selected="">2</option>
+                                                                                      </select>
+                                                                                    </div>
+                                                                                   </div>
+        
+        
+                                                                                <div class="slect-time fm-mb20">
+                                                                                 <span class="flex-grow-1">Select Time</span>
+                                                                                 <div class="flex-grow-0">
+                                                                                     <select class="form-select form-control">
+                                                                                         <option selected="">10 min</option>
+                                                                                   </select>
+                                                                                 </div>
+                                                                                </div>
+                                                                                
+                                                                             
+                 
+                                                                            </div>
+        
+                                                                                <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                            
+                                                                        </div>  
+                                                                          
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          
+                                                         
+                                                        </div>
+                            
+                                                        <div class="tab-pane fade" id="asanas" role="tabpanel" aria-labelledby="asanas-tab">
+                                                            <div class="overflow-y">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                       </div>
+                            
+                                                       <div class="tab-pane fade" id="pranayama" role="tabpanel" aria-labelledby="pranayama-tab">
+                                                        <div class="overflow-y">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+    
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="selected-plan-inner-wrap">
+                                                                        <div class="warmup-img-wrap">
+                                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                        </div>
+                                                                        <div class="selected-plan-inner-details flex-grow-1">
+                                                                            <p class="selected-homework-heading">Marjariasana</p>
+                                                                            <div class="repatriation">
+                                                                             <span class="flex-grow-1">Repatriation</span>
+                                                                             <div class="flex-grow-0 qty">
+                                                                                     <span class="minus">-</span>
+                                                                                     <input type="number" class="count" name="qty" value="1">
+                                                                                     <span class="plus">+</span>
+                                                                             </div>
+             
+                                                                            </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                                <span class="flex-grow-1">Sequence</span>
+                                                                                <div class="flex-grow-0">
+                                                                                    <select class="form-select form-control">
+                                                                                        <option selected="">2</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                               </div>
+    
+    
+                                                                            <div class="slect-time fm-mb20">
+                                                                             <span class="flex-grow-1">Select Time</span>
+                                                                             <div class="flex-grow-0">
+                                                                                 <select class="form-select form-control">
+                                                                                     <option selected="">10 min</option>
+                                                                               </select>
+                                                                             </div>
+                                                                            </div>
+                                                                            
+                                                                         
+             
+                                                                        </div>
+    
+                                                                            <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                        
+                                                                    </div>  
+                                                                      
+                                                                </div>
+                                                            </div>
+                            
+                                                        </div>
+                                                     
+                                                   </div>
+                            
+                                                   <div class="tab-pane fade" id="meditaiton" role="tabpanel" aria-labelledby="meditaiton-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
                                                                 </div>
 
-                                                               </div>
-                                                               <div class="slect-time fm-mb20">
-                                                                <span class="flex-grow-1">Select Time</span>
-                                                                <div class="flex-grow-0">
-                                                                    <select class="form-select form-control">
-                                                                        <option selected="">10 min</option>
-                                                                  </select>
-                                                                </div>
-                                                               </div>
-                                                               
-                                                               <div>
                                                                     <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
                                                                 </div>
 
-                                                           </div>
-                                                       </div>    
-
-                                                       <div class="selected-plan-inner-wrap">
-                                                        <div class="warmup-img-wrap flex-grow-0">
-                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                    <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
                                                         </div>
-                                                        <div class="selected-plan-inner-details flex-grow-1">
-                                                            <p class="selected-homework-heading">Marjariasana</p>
-                                                            <div class="repatriation">
-                                                             <span class="flex-grow-1">Repatriation</span>
-                                                             <div class="flex-grow-0 qty">
-                                                                     <span class="minus">-</span>
-                                                                     <input type="number" class="count" name="qty" value="1">
-                                                                     <span class="plus">+</span>
-                                                             </div>
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
 
-                                                            </div>
-                                                            <div class="slect-time fm-mb20">
-                                                             <span class="flex-grow-1">Select Time</span>
-                                                             <div class="flex-grow-0">
-                                                                 <select class="form-select form-control">
-                                                                     <option selected="">10 min</option>
-                                                               </select>
-                                                             </div>
-                                                            </div>
-                                                            
-                                                            <div>
-                                                                 <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
-                                                             </div>
 
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
+                                                                </div>
+
+                                                                    <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
                                                         </div>
-                                                    </div>    
+
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
 
 
-                                                    <div class="selected-plan-inner-wrap">
-                                                        <div class="warmup-img-wrap flex-grow-0">
-                                                            <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
+                                                                </div>
+
+                                                                    <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
                                                         </div>
-                                                        <div class="selected-plan-inner-details flex-grow-1">
-                                                            <p class="selected-homework-heading">Marjariasana</p>
-                                                            <div class="repatriation">
-                                                             <span class="flex-grow-1">Repatriation</span>
-                                                             <div class="flex-grow-0 qty">
-                                                                     <span class="minus">-</span>
-                                                                     <input type="number" class="count" name="qty" value="1">
-                                                                     <span class="plus">+</span>
-                                                             </div>
 
-                                                            </div>
-                                                            <div class="slect-time fm-mb20">
-                                                             <span class="flex-grow-1">Select Time</span>
-                                                             <div class="flex-grow-0">
-                                                                 <select class="form-select form-control">
-                                                                     <option selected="">10 min</option>
-                                                               </select>
-                                                             </div>
-                                                            </div>
-                                                            <div>
-                                                                 <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
-                                                             </div>
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
+                                                                </div>
+
+                                                                    <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
                                                         </div>
-                                                    </div>    
+                                                        <div class="col-md-4">
+                                                            <div class="selected-plan-inner-wrap">
+                                                                <div class="warmup-img-wrap">
+                                                                    <img src="images/warm-up1-1.jpg" alt=""/>
+                                                                </div>
+                                                                <div class="selected-plan-inner-details flex-grow-1">
+                                                                    <p class="selected-homework-heading">Marjariasana</p>
+                                                                    <div class="repatriation">
+                                                                     <span class="flex-grow-1">Repatriation</span>
+                                                                     <div class="flex-grow-0 qty">
+                                                                             <span class="minus">-</span>
+                                                                             <input type="number" class="count" name="qty" value="1">
+                                                                             <span class="plus">+</span>
+                                                                     </div>
+     
+                                                                    </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                        <span class="flex-grow-1">Sequence</span>
+                                                                        <div class="flex-grow-0">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">2</option>
+                                                                          </select>
+                                                                        </div>
+                                                                       </div>
+
+
+                                                                    <div class="slect-time fm-mb20">
+                                                                     <span class="flex-grow-1">Select Time</span>
+                                                                     <div class="flex-grow-0">
+                                                                         <select class="form-select form-control">
+                                                                             <option selected="">10 min</option>
+                                                                       </select>
+                                                                     </div>
+                                                                    </div>
+                                                                    
+                                                                 
+     
+                                                                </div>
+
+                                                                    <textarea class="form-control" rows="3" placeholder="Write note.."></textarea>
+                                                                
+                                                            </div>  
+                                                              
+                                                        </div>
+                                                    </div>
+                                                 
+                                               </div>
+                            
+                                                    </div>
+                                                </div> 
+                                                  </div>
+                                                
+
+
+
+                                                       
+                                                        
+                                                      
+
+                                                    
+
+   
                                                  </div>   
-                                                </div>
-                                                <div class="fm-mb20">
-                                                    <button type="button" class="btn bttn-primary btn-add-homework active" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#select-home-work-plans">
-                                                        <span>Add homework plan</span>
+                                               
+
+                                                    <button type="button" class="btn bttn-primary btn-add-homework edit-plan active" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#select-home-work-plans">
+                                                        <span>Edit Plan</span>
                                                     </button>
-                                                </div>
-                                                <div class="fm-mb20">
-                                                        <div class="assign-new">
-                                                            <a href="assigned-successfully.html" class="btn btn-assigned btn-assigned-homework active"><span>Assign Homework</span></a>
-                                                        </div>
-                                                </div>
+                                              
 
 
                                             </div>
@@ -248,6 +1385,45 @@
                                 </button>
                             </li>
                         </ul>
+
+                        <div class="filter">
+                               <form>
+                                   <div class="filter-inner-wrap">
+
+                                <p class="filters-heading">Filters</p> 
+
+                             
+
+                                <div class="form-wrap" id="content-view-features">
+
+                               
+                                <div class=" mr15 w230">
+                                    <input type="text" class="form-control w300" placeholder="Homework Name">
+                                </div>
+                                <div class="mr15 w200">
+                                    <select class="form-select form-control">
+                                          <option>Level </option>
+                                          <option>Level 2</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mr15 w200">
+                                    <select class="form-select form-control">
+                                        <option>Position</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-link bttn-link">Apply </button>
+                            </div>
+
+                            <div id="view-features" onclick="javascript:toggle5('content-view-features', 'view-features');" class="view-features">
+                               <img src="images/down-arrow.svg" alt=""> </div>
+                       
+
+                            </div>
+ 
+                               </form>     
+
+                        </div>
                         
                         <div class="tab-content" id="planner-tabContent">
                             <div class="tab-pane fade show active" id="warm-up" role="tabpanel" aria-labelledby="warm-up-tab">
@@ -1226,6 +2402,20 @@
     <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
     <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
     <script>
+            function toggle5(showHideDiv, switchImgTag) {
+                var ele = document.getElementById(showHideDiv);
+                var imageEle = document.getElementById(switchImgTag);
+                if(ele.style.display == "block") {
+                        ele.style.display = "none";
+                imageEle.innerHTML = ' <img src="images/down-arrow.svg">';
+                }
+                else {
+                        ele.style.display = "block";
+                        imageEle.innerHTML = ' <img src="images/down-arrow.svg" class="arrow-up">';
+                }
+        }
+
+
         $(document).ready(function () {
             $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
             $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
