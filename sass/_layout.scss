@@ -1113,6 +1113,10 @@ a:focus {
     cursor: pointer;
     width: 100%;
     white-space: nowrap;
+    @include xxs{
+      padding:6px 10px;
+    }
+
   }
   input:checked + label {
     background-color: #7352d1;
@@ -5564,4 +5568,109 @@ to {
 
 .arrow-up{
   transform: rotate(-180deg);
+}
+.renew-plan{
+  width: 160px;
+  height:37px;
+  text-align: center;
+  padding: 0px 25px;
+  background: url(../images/renew-plan.png) no-repeat;
+  font-size: 16px;
+  color: $white; 
+  font-family: $font-dm !important;
+  font-weight: 500;
+  &:hover{
+    color: $white;
+  }
+}
+
+.renew-dashboard-title{
+  text-align: center;
+  font-weight: 400 !important;
+  font-size: 36px !important;
+  font-family: $font-dm !important;
+  margin-top:80px !important;
+  margin-bottom:30px !important;
+}
+.renew-plan-modal{
+  display: block;
+  .modal-dialog-renew-plan{
+    max-width: 743px;
+    min-height: calc(35% - 3.5rem);
+    @include xs{
+      max-width:92%;
+      margin: 20px auto;
+
+    }
+
+    .renew-plan-modal-body{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include xs{
+       flex-flow: row wrap;
+      }
+    }
+    .plan-info-wrap{
+      position: relative;
+      padding-left: 52px;
+      width: 70%;
+      @include xs{
+        width: 100%;
+        margin-bottom: 15px;
+       }
+      &::before{
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: url(../images/info-icon.svg) no-repeat;
+          position: absolute;
+          top: 5px;
+          left: 0;
+      }
+    }
+    .modal-content{
+      border: 0px;
+      box-shadow:10px 0px 10px rgba(0, 0, 0, 0.08);
+      &::before {
+        content: '';
+        width: 100%;
+        height: 6px;
+        background-color: #FF668E;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+  }
+  .p-18{
+    font-weight: 500 !important;
+    margin-bottom: 0px;
+  }
+  .p-14{
+    color: #898989;
+    margin-bottom: 0px;
+  }
+  .modal-body{
+    padding:20px 50px 20px 30px;
+  }
+  .btn-close{
+    width: 0.5em;
+    height: 0.5em;
+    font-size: 13px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .btn{
+    align-items: center;
+    justify-content: space-between;
+    img{
+      margin-left:10px;
+    }
+  }
+}
+.disabled{
+  opacity: 0.70;
 }
