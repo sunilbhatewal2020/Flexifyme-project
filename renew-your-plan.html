@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Book a Session</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/book-session.css" />
+</head>
+
+<body class="dashboard-page">
+   
+    <!-- <div class="loader">
+        <div class='loading'><img src="images/loader.svg" alt="Loader" class="loader-img"></div>
+    </div> -->
+
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                <div class="dasboard-col-left">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+
+                <div class="dasboard-col-right">
+                    <div class="dasboard-col-right-inner">
+                        <div class="dasboard-col-right-container">
+                         
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                            <h1 class="dashboard-title renew-dashboard-title">Renew your plan</h1>
+
+                                        <div class="row dashboard-row-body book-session-body align-items-center justify-content-center group-session-plan"></div>
+                                </div>
+                            </div>
+                         
+                         
+                          
+                         
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+       <!--   booking-slot-modal -->
+   <div class="modal fade booking-slot-modal" id="booking-slot-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-booking-slot">
+        <div class="modal-content new-goal-content">
+            <div class="modal-body invite-now-modal-body new-goal-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="booking-slot-modal-body">
+                <div class="instructor-position bg-green2"> Nutritionist</div>
+                <p class="p-16">Session book with Pratik .R</p>
+                <p class="p-14">Tuesday, 10 12 PM - 1PM</p>
+                <span class="rating">
+                    4.5 <img src="images/single-star.svg" alt=""/>
+                    
+                </span>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2  bttn-outline-primary3 active">Book </button>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <!-- refer-friend-side-ease-out-wrap-->
+ <div class="modal fade modal-right" id="about-instructor-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body invite-now-modal-body instructor-right-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="p-16 fw-500">About instructor</p>
+                <div class="instructor-booking-inner-wrap">
+                       <div class="instructor-position bg-green2"> Nutritionist</div>
+
+                       <div class="instructor-sort-detail">
+                        <div class="user"> 
+                            <div class="user-avtar"><img src="images/user.png" alt=""></div>
+
+                            <span class="rating">
+                                4.5 <img src="images/single-star.svg" alt=""/>
+                            </span>
+                            </div>
+                            <div>
+                               <p class="p-16 ">Pratik. R</p>
+                               <p class="p-14">Audatum, ut artifex</p> 
+
+                              
+                               <p class="p-14 mt15"> Experience</p> 
+                               <p class="p-16">16 Years of yoga guru</p>
+                               
+                            </div>
+                       </div>
+                </div>
+
+                <p class="p-14 light"> About Me</p>
+                <div class="more-content-wrap-overflow ">
+               <p class="p-14 dark more1">Audatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in doloreAudatum, ut artifex callidus comparandarum voluptatum diceretur. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore... 
+                </p>
+                 </div>
+
+             
+                 <div class="recording-video">
+                     <button type="button" class="zoom-video video-play" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#assigned-homework-video-modal">  
+                         <img src="images/video-play.png" alt=""/> 
+                     </button>
+                     <img src="images/video-detail.png" alt="" class="video-bg"/>
+                 </div>
+
+                 <p class="p-14 light"> Expertise</p>
+                 <ul>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                     <li>Lorem ipsum dolor sit amet, consectetur</li>
+                 </ul>
+
+                 <p class="p-14 light mt30 mb5"> Certifications</p>
+                 <ul>
+                     <li>Master of Science in Yoga- SVYASA- Bangalore</li>
+                     <li>QCI Level 2 Teacher</li>
+                 </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+          function toggle5(showHideDiv, switchImgTag) {
+                var ele = document.getElementById(showHideDiv);
+                var imageEle = document.getElementById(switchImgTag);
+                if(ele.style.display == "block") {
+                        ele.style.display = "none";
+                imageEle.innerHTML = 'View Features <img src="images/down-arrow.svg">';
+                }
+                else {
+                        ele.style.display = "block";
+                        imageEle.innerHTML = 'Hide Features <img src="images/down-arrow.svg" class="arrow-up">';
+                }
+        }
+
+
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+        });
+
+        $(document).ready(function () {
+            $(".testimonial-inner-wrap").load("testimonial.html");
+            $(function(){ $(".group-session-plan").load("plan.html") });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

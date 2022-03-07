@@ -51,10 +51,10 @@
                                      </div>
                                     </div>
     
-                                    <div class="book-session-tab">
+                                    <div class="book-session-tab disabled">
                                     <div class="pills-tab-wrap">
                                     <div class="row dashboard-row-body book-session-body">
-                                    <div class="col-md-4 col-xl-3">
+                                    <div class="col-md-12 col-lg-12 col-xl-3">
                                        <p class="p-18"> Instructor booking slot</p>
     
                                         <ul class="nav nav-pills trainer-tab instructor-booking-tab-nav" id="trainer-tab" role="tablist">
@@ -74,7 +74,7 @@
                                                                 4.5 <img src="images/single-star.svg" alt=""/>
                                                             </span>
                                                             </div>
-                                                            <div>
+                                                            <div class="user-detail-info">
                                                                <p class="p-16 ">Pratik. R</p>
                                                                <p class="p-14">Audatum, ut artifex</p> 
         
@@ -108,7 +108,7 @@
                                                             4.5 <img src="images/single-star.svg" alt=""/>
                                                         </span>
                                                         </div>
-                                                        <div>
+                                                        <div class="user-detail-info">
                                                            <p class="p-16 ">Pratik. R</p>
                                                            <p class="p-14">Audatum, ut artifex</p> 
     
@@ -140,7 +140,7 @@
                                                             4.5 <img src="images/single-star.svg" alt=""/>
                                                         </span>
                                                         </div>
-                                                        <div>
+                                                        <div class="user-detail-info">
                                                            <p class="p-16 ">Pratik. R</p>
                                                            <p class="p-14">Audatum, ut artifex</p> 
     
@@ -158,8 +158,8 @@
                                             </li>
                                             </ul>
                                     </div>
-                                    <div class="col-md-8 col-xl-9">
-                                   
+                                    <div class="col-md-12 col-lg-12 col-xl-9">
+                                     <div class="calender-wrap">
                                         <div class="week-control">
                                             <button type="button" class="btn"><img src="images/previous.svg" alt=""/></button>
                                             <p class="p-18 text-center">
@@ -169,509 +169,510 @@
                                         </div>
     
                                         <div class="tab-content instructor-booking-tab-content" id="trainer-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-week1" role="tabpanel"
-                                        aria-labelledby="pills-week1-tab">
-                                    
-                                        <table>
-                                            <thead>
-                                              <tr>
-                                                <th></th>
-                                                <th>
-                                                    <span class="short">Mon</span>
-                                                    <span class="day">09</span>
-                                                </th>
-                                                <th>
-                                                    <span class="short">Tue</span>
-                                                    <span class="day">10</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">We</span>
-                                                  <span class="day">11</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Thur</span>
-                                                  <span class="day">12</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Fri</span>
-                                                  <span class="day active">13</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Sat</span>
-                                                  <span class="day">14</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Sun</span>
-                                                  <span class="day">15</span>
-                                                </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td class="hour" ><span>8 AM</span></td>
-                                                <td>
-                                                    <button type="button" class="btn booked">Booked</button>  
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                            
-                                              <tr>
-                                                <td class="hour"><span>9 AM</span></td>
-                                                <td></td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td></td>
-                                              </tr>
-                                              
-                                              
-                                              <tr>
-                                                <td class="hour" ><span>10 AM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> 
-                                                    <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour"><span>11 AM</span></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                            
-                                              <tr>
-                                                <td class="hour"><span>12 AM</span></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour" ><span>1 PM</span></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                <td class="hour" ><span>2 PM</span></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour" ><span>3 PM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>4 PM</span></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn selected">Selected</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>5 PM</span></td>
-                                                <td><button type="button" class="btn selected">Selected</button></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>6 PM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                              
-                                            </tbody>
-                                          </table>
-    
-                                        </div>
-    
-                                        <div class="tab-pane fade" id="pills-week2" role="tabpanel"
-                                        aria-labelledby="pills-week2-tab">
-                                        <div class="book-session-tab-inner-top">
+                                            <div class="tab-pane fade show active" id="pills-week1" role="tabpanel"
+                                            aria-labelledby="pills-week1-tab">
+                                            <div class="table-responsive">
                                             <table>
-                                                <thead>
-                                                  <tr>
-                                                    <th></th>
-                                                    <th>
-                                                        <span class="short">Mon</span>
-                                                        <span class="day">09</span>
-                                                    </th>
-                                                    <th>
-                                                        <span class="short">Tue</span>
-                                                        <span class="day">10</span>
-                                                    </th>
-                                                    <th>
-                                                      <span class="short">We</span>
-                                                      <span class="day">11</span>
-                                                    </th>
-                                                    <th>
-                                                      <span class="short">Thur</span>
-                                                      <span class="day">12</span>
-                                                    </th>
-                                                    <th>
-                                                      <span class="short">Fri</span>
-                                                      <span class="day active">13</span>
-                                                    </th>
-                                                    <th>
-                                                      <span class="short">Sat</span>
-                                                      <span class="day">14</span>
-                                                    </th>
-                                                    <th>
-                                                      <span class="short">Sun</span>
-                                                      <span class="day">15</span>
-                                                    </th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td class="hour" ><span>8 AM</span></td>
-                                                    <td>
-                                                        <button type="button" class="btn booked">Booked</button>  
-                                                    </td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-                                                
-                                                  <tr>
-                                                    <td class="hour"><span>9 AM</span></td>
-                                                    <td></td>
-                                                    <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                    <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                    <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                    <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                    <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                    <td></td>
-                                                  </tr>
-                                                  
-                                                  
-                                                  <tr>
-                                                    <td class="hour" ><span>10 AM</span></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td> 
-                                                        <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                  </tr>
-                                                 
-                                                  <tr>
-                                                    <td class="hour"><span>11 AM</span></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-                                                
-                                                  <tr>
-                                                    <td class="hour"><span>12 AM</span></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td><button type="button" class="btn booked">Booked</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                  </tr>
-                                                 
-                                                  <tr>
-                                                    <td class="hour" ><span>1 PM</span></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td><button type="button" class="btn booked">Booked</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-                                                  
-                                                  <tr>
-                                                    <td class="hour" ><span>2 PM</span></td>
-                                                    <td><button type="button" class="btn booked">Booked</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-                                                 
-                                                  <tr>
-                                                    <td class="hour" ><span>3 PM</span></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn booked">Booked</button></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                  </tr>
-        
-                                                  <tr>
-                                                    <td class="hour" ><span>4 PM</span></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn selected">Selected</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-        
-                                                  <tr>
-                                                    <td class="hour" ><span>5 PM</span></td>
-                                                    <td><button type="button" class="btn selected">Selected</button></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                    <td><button type="button" class="btn available">Available</button></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-        
-                                                  <tr>
-                                                    <td class="hour" ><span>6 PM</span></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                  </tr>
-                                                  
-                                                </tbody>
-                                              </table>
-                                        </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-week3" role="tabpanel"
-                                        aria-labelledby="pills-week3-tab">
-                                        <table>
                                             <thead>
-                                              <tr>
-                                                <th></th>
-                                                <th>
-                                                    <span class="short">Mon</span>
-                                                    <span class="day">09</span>
-                                                </th>
-                                                <th>
-                                                    <span class="short">Tue</span>
-                                                    <span class="day">10</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">We</span>
-                                                  <span class="day">11</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Thur</span>
-                                                  <span class="day">12</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Fri</span>
-                                                  <span class="day active">13</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Sat</span>
-                                                  <span class="day">14</span>
-                                                </th>
-                                                <th>
-                                                  <span class="short">Sun</span>
-                                                  <span class="day">15</span>
-                                                </th>
-                                              </tr>
+                                            <tr>
+                                            <th></th>
+                                            <th>
+                                            <span class="short">Mon</span>
+                                            <span class="day">09</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Tue</span>
+                                            <span class="day">10</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">We</span>
+                                            <span class="day">11</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Thur</span>
+                                            <span class="day">12</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Fri</span>
+                                            <span class="day active">13</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sat</span>
+                                            <span class="day">14</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sun</span>
+                                            <span class="day">15</span>
+                                            </th>
+                                            </tr>
                                             </thead>
                                             <tbody>
-                                              <tr>
-                                                <td class="hour" ><span>8 AM</span></td>
-                                                <td>
-                                                    <button type="button" class="btn booked">Booked</button>  
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                            
-                                              <tr>
-                                                <td class="hour"><span>9 AM</span></td>
-                                                <td></td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td>  <button type="button" class="btn booked">Booked</button>  </td>
-                                                <td></td>
-                                              </tr>
-                                              
-                                              
-                                              <tr>
-                                                <td class="hour" ><span>10 AM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> 
-                                                    <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour"><span>11 AM</span></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                            
-                                              <tr>
-                                                <td class="hour"><span>12 AM</span></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour" ><span>1 PM</span></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                              
-                                              <tr>
-                                                <td class="hour" ><span>2 PM</span></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                             
-                                              <tr>
-                                                <td class="hour" ><span>3 PM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn booked">Booked</button></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>4 PM</span></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn selected">Selected</button></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>5 PM</span></td>
-                                                <td><button type="button" class="btn selected">Selected</button></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td><button type="button" class="btn available">Available</button></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-    
-                                              <tr>
-                                                <td class="hour" ><span>6 PM</span></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                              </tr>
-                                              
+                                            <tr>
+                                            <td class="hour" ><span>8 AM</span></td>
+                                            <td>
+                                            <button type="button" class="btn booked">Booked</button>  
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>9 AM</span></td>
+                                            <td></td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td></td>
+                                            </tr>
+
+
+                                            <tr>
+                                            <td class="hour" ><span>10 AM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                            <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>11 AM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>12 AM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>1 PM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>2 PM</span></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>3 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>4 PM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>5 PM</span></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>6 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
                                             </tbody>
-                                          </table>
-    
-                                      
+                                            </table>
+                                            </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="pills-week2" role="tabpanel"
+                                            aria-labelledby="pills-week2-tab">
+                                            <div class="book-session-tab-inner-top">
+                                            <table>
+                                            <thead>
+                                            <tr>
+                                            <th></th>
+                                            <th>
+                                            <span class="short">Mon</span>
+                                            <span class="day">09</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Tue</span>
+                                            <span class="day">10</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">We</span>
+                                            <span class="day">11</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Thur</span>
+                                            <span class="day">12</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Fri</span>
+                                            <span class="day active">13</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sat</span>
+                                            <span class="day">14</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sun</span>
+                                            <span class="day">15</span>
+                                            </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                            <td class="hour" ><span>8 AM</span></td>
+                                            <td>
+                                            <button type="button" class="btn booked">Booked</button>  
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>9 AM</span></td>
+                                            <td></td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td></td>
+                                            </tr>
+
+
+                                            <tr>
+                                            <td class="hour" ><span>10 AM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                            <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>11 AM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>12 AM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>1 PM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>2 PM</span></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>3 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>4 PM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>5 PM</span></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>6 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                            </table>
+                                            </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-week3" role="tabpanel"
+                                            aria-labelledby="pills-week3-tab">
+                                            <table>
+                                            <thead>
+                                            <tr>
+                                            <th></th>
+                                            <th>
+                                            <span class="short">Mon</span>
+                                            <span class="day">09</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Tue</span>
+                                            <span class="day">10</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">We</span>
+                                            <span class="day">11</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Thur</span>
+                                            <span class="day">12</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Fri</span>
+                                            <span class="day active">13</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sat</span>
+                                            <span class="day">14</span>
+                                            </th>
+                                            <th>
+                                            <span class="short">Sun</span>
+                                            <span class="day">15</span>
+                                            </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                            <td class="hour" ><span>8 AM</span></td>
+                                            <td>
+                                            <button type="button" class="btn booked">Booked</button>  
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>9 AM</span></td>
+                                            <td></td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td>  <button type="button" class="btn booked">Booked</button>  </td>
+                                            <td></td>
+                                            </tr>
+
+
+                                            <tr>
+                                            <td class="hour" ><span>10 AM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                            <button type="button" class="btn available" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#booking-slot-modal">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>11 AM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour"><span>12 AM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>1 PM</span></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>2 PM</span></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>3 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn booked">Booked</button></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>4 PM</span></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>5 PM</span></td>
+                                            <td><button type="button" class="btn selected">Selected</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td><button type="button" class="btn available">Available</button></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="hour" ><span>6 PM</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                            </table>
+
+
+                                            </div>
                                         </div>
-                                        </div>
+                                      </div>
                                     </div>
                                     </div>
                                     </div>
@@ -687,8 +688,30 @@
         </section>
     </div>
 
+  <!--renew-plan-modal-->
+  <div class="modal fade renew-plan-modal show" id="booking-slot-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-renew-plan">
+        <div class="modal-content renew-plan-modal-content">
+            <div class="modal-body remew-plan-modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="renew-plan-modal-body">
+                  <div class="plan-info-wrap">
+                    <p class="p-18">Plan has been expired</p>
+                    <p class="p-14">Your free demo session plan has been expired on 1 March 2022, Please renew to enjoying session</p>
+                  </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#group-session-modal" class="btn bttn-outline-primary2  bttn-outline-primary3 active">Renew Plan <img src="images/arrow-right.svg" alt=""/></button>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
        <!--   booking-slot-modal -->
-   <div class="modal fade" id="booking-slot-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
+   <div class="modal fade booking-slot-modal" id="booking-slot-modal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-booking-slot">
         <div class="modal-content new-goal-content">
             <div class="modal-body invite-now-modal-body new-goal-modal-body">
