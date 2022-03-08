@@ -75,7 +75,7 @@ margin-bottom: 20px;
   margin: 0px -40px;
   padding: 0px 40px 0px;
   @include xs{
-    padding-bottom: 70px;
+    padding-bottom:40px;
   }
  
 
@@ -96,6 +96,7 @@ margin-bottom: 20px;
       @include xs{
         width: 56px;
         height: 56px;
+        margin-right: 10px;
       }
       .p-14 {
         font-family: DM Sans;
@@ -120,8 +121,9 @@ margin-bottom: 20px;
     }
   }
   .content-wrap{
-    flex-grow: 1;
+    // flex-grow: 1;
     text-align: left;
+    margin-right: 10px;
     .p-18 {
       font-family: DM Sans;
       font-style: normal;
