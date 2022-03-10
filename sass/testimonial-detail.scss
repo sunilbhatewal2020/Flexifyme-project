@@ -1,0 +1,326 @@
+// responsive view variable
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin surface{
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  }
+
+  @mixin xxs{
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  
+.home-sec1 {
+    position: relative;
+    background: url("../images/testimonial-detail-bg.png") no-repeat center center/cover;
+    
+    @include xs{
+      .home-sec-inner-top{
+        margin-top: 95px;
+      }
+      .slider-image{
+        transform: scale(0.52);
+        -webkit-transform: scale(0.52);
+        -moz-transform: scale(0.52);
+        -ms-transform: scale(0.52);
+        -o-transform: scale(0.52);
+        transform-origin: 60px 0;
+    }
+    }
+    
+  @include xs{
+    margin-bottom: 80px;
+    .rating{
+      width: 40%;
+      margin-bottom: 30px;
+    }
+  }
+  }
+  
+ .home-sec3 {
+     .home-sec3-inner{
+        text-align: left;
+     }
+      .home-sec-inner-left{
+        h3{
+            color: #311A75;
+            font-size: 44px;
+            margin-bottom: 10px;
+            line-height: 50px;
+
+            @include surface{
+              font-size:30px;
+              line-height: 35px;
+            }
+        }
+      }
+      .home-sec-inner-right{
+            position: relative;
+            .testimoni-detail-outer-wrap{
+                background-color: #fff;
+                border-radius:10px;
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+                padding:50px 0px;
+                @include xs{
+                  padding: 30px 0px 20px;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    background-color: #FF668E;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border-radius: 12px 12px 0px 0px;
+                }
+            }
+            .testimoni-detail-outer-wrap{
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+               .inner-content-wrap{
+                 width: 50%;
+                 margin-bottom:70px;
+                 padding-left: 50px;
+                 p{
+                   font-size: 24px;
+                   color: #7352D1;
+                   font-weight: 700;
+                   span{
+                    font-size: 18px;
+                    color: #898989;
+                    font-weight:400;
+                    display: block;
+                   }
+                 }
+                 &.mb0{
+                  margin-bottom: 0px;
+                }
+                @include xs{
+                  margin-bottom:20px;
+                  p{
+                    font-size: 18px;
+                  }
+                 }
+               }
+
+            }
+            .image1{
+              position: absolute;
+              top: -40px;
+              left: -40px;
+              z-index: -1;
+            }
+            .image2{
+              position: absolute;
+              bottom: -153px;
+              right: -40px;
+              z-index: -1;
+              width: 223px;
+            }
+            .image3{
+              position: absolute;
+              top: -75px;
+              right: -75px;
+              z-index: -1;
+              width: 158px;
+              @include xs{
+                display: none;
+              }
+            }
+            .image4{
+              position: absolute;
+              bottom: -153px;
+              left: -40px;
+              z-index: -1;
+              width: 100px;
+            }
+
+            @include xs{
+              margin-top:20px;
+             }
+        }
+        @include xs{
+         height: auto;
+         margin-bottom: 50px;
+         padding-top: 20px;
+         .quote{
+           width:50px;
+           margin-bottom: 10px;
+         }
+        }
+       
+
+ } 
+
+ .home-sec5{
+  @include xs{
+    padding-top:50px;
+    .path-row {
+      min-height: inherit;
+      margin-bottom: 59px;
+  }
+  .common-home-sec-head{
+    h2{
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+    .home-sec-left{
+      margin-top:0px;
+    }
+    
+   }
+   .home-sec-right{
+     .before{
+       left:-40px;
+       @include xs{
+        left:-100px;
+       }
+       @include xxs{
+        left:-96px;
+       }
+     }
+     .before1{
+      right:-100px;
+      left: auto;
+    top:0px;
+    z-index: 0;
+    @include xxs{
+      right:-200px;
+     }
+
+     }
+
+     .before2{
+      left: 0px;
+    bottom: 227px;
+    top: auto;
+    z-index: 0;
+     }
+     @include xs{
+      &.home-sec-right5{
+        margin-top: 0px;
+      }
+     }
+   }
+
+   .after1{
+    left:-200px !important;
+  }
+  .after2{
+   left:-104px !important;
+   @include surface{
+    left:0px !important;
+   }
+   @include xxs{
+    left:-40px !important;
+   }
+ }
+ .after3{
+  bottom: 0px !important;
+  left: auto !important;
+  right: 0;
+  top: auto !important;
+  z-index: -1 !important;
+}
+
+
+@include surface{
+  .transform-scale-img {
+    transform: scale(0.52);
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.52);
+    -ms-transform: scale(0.52);
+    -o-transform: scale(0.52);
+    transform-origin: 60px 0;
+  }
+ }
+
+ }
+ .testimonial-line{
+  position: absolute;
+  bottom: 100px;
+  left:-350px;
+  z-index: 1;
+ }
+
+ .just-change-outer-wrap{
+   background: url(../images/change-balance-bg.jpg) no-repeat;
+  //  padding: 200px 0px;
+  min-height: 876px;
+  display: grid;
+  align-items: center;
+   text-align: center;
+   @include md{
+    margin-bottom:50px !important;
+   }
+   @include tabMobile{
+    min-height: auto;
+    margin-bottom:50px !important;
+   }
+ }
+ .home-sec6 {
+  .container{
+    .home-sec-inner{
+      margin-bottom: 50px;
+      .h1{
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      p{
+        color: #fff;
+      }
+    } 
+  } 
+ }
