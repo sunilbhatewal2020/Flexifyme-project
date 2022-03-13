@@ -1,0 +1,316 @@
+// responsive view variable
+@mixin xs {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin xxs{
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  
+  @mixin tabMobile {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  @mixin tabdesktop {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @mixin desktopXl {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  @mixin md {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+
+ .payment-details-card{
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    padding:0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    border: 0;
+    @include xxs{
+      border: 0px;
+      padding: 0px;
+    }
+}
+  .dasboard-col-right-container{
+    margin-left: 0;
+    .dashboard-row-body{
+      justify-content: flex-start !important;
+    }
+  }
+
+  
+
+  .rescheduled-session-cols {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 90px;
+    margin-top: 100px;
+    @include xs{
+      margin-top:0px;
+    }
+  }
+
+  
+
+  .overflow-y{
+    overflow-y: scroll;
+    height: 200px;
+    padding-right: 22px;
+  
+  
+  /* width */
+  &::-webkit-scrollbar {
+  width: 7px;
+  
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+  background:transparent; 
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+  background:#C4C4C4; 
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  position: absolute;
+  right: -10px;
+  
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+  background:#C4C4C4; 
+  }
+  }
+  .btn-refer-friend{
+    border: 0px;
+    background-color: transparent;
+  }
+
+  .payment-details-left{
+      padding:40px 60px 70px;
+      @include xxs{
+        padding:20px;
+      }
+        h4{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size:28px;
+            color: #242833;
+            margin-bottom: 0;
+            @include xxs{
+                font-size:20px;
+              }
+        }
+        .card-type-wrap{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @include xxs{
+               flex-flow: row wrap;
+               margin-top:10px;
+               margin-bottom:10px;
+            }
+        }
+  }
+  .payment-details-right{
+    background-color: rgba(242, 242, 242, 1);
+    padding:30px 40px;
+    border-radius:0px 10px 10px 0px;
+    height: 100%;
+    @include xxs{
+        padding:20px;
+        border-radius:0px 0px 10px 10px;
+    }
+    .p-18{
+        font-size: 18px;
+        color: #242833;
+        font-weight: 600 !important;
+        margin-bottom: 0px !important;
+    }
+    .top-title-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:10px;
+
+        .change-plan{
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+    .one-on-one{
+        .p-16{
+            color: #FF668E;
+            font-weight: 600 !important;
+            margin-bottom:10px;
+        }
+        .inner-wrap{
+            display: flex;
+            justify-content: space-between;
+            @include tabMobile{
+             flex-flow: row wrap;
+            }
+            .inner-wrap-content{
+                p{
+                    margin-bottom: 0px;
+                    font-size: 14px;
+                    color: #242833;
+                    font-weight: 600 !important;
+                    line-height: normal;
+                    @include tabMobile{
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        color: #898989;
+                        display: block;
+                        @include tabMobile{
+                            flex-flow: row wrap;
+                            display: inline-block;
+                            width: 60px;
+                           }
+                    }
+                }
+            }
+        }
+    }
+.price-wrap{
+    background-color: rgba(137, 137, 137, 0.1);
+    padding: 5px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @include tabMobile{
+        margin-top: 5px;
+    }
+    p{
+        margin-bottom: 0px;
+        line-height: normal;
+        color: #898989;
+    }
+    .price{
+        color: #242833;
+        font-size: 16px;
+        font-weight: 600 !important;
+        span{
+            font-size: 14px;
+            color: #898989;
+            
+        }
+    }
+  
+}
+    .plan-wrap{
+        margin:30px -40px 0px;
+        padding-top: 30px;
+        border-top: 1px solid  rgba(0, 0, 0, 0.1);
+        @include tabMobile{
+            margin:10px -40px 0px;
+            padding-top: 10px;
+        }
+        @include xxs{
+            margin:10px 0px 0px;
+        }
+        .overflow-y{
+            height: 430px;
+            @include tabMobile{
+               padding-right: 0px;
+              }
+              @include xs{
+                height: 330px;
+                overflow-x: hidden;
+            }
+           
+        }
+        .pricing-plan-card-head{
+            padding: 20px 29px 0px !important;
+            h3{
+              font-size: 16px !important;  
+            }
+            h4{
+                font-size:32px !important; 
+                margin: 0px 0px 0px 0px !important; 
+              }
+        }
+        .pricing-plan-card-body{
+            ul{
+                li{
+                    font-size: 14px !important;
+                    padding:10px 30px 10px 50px !important;
+                    &::before {
+                        width: 18px!important;
+                        height: 18px!important;
+                        top: 11px!important;
+                        left: 20px!important;
+                        background-size: 100%!important;
+                    }
+                }
+            } 
+        }
+        .btn-buy-now{
+            margin-bottom: 15px !important;
+        }
+        .total-price{
+            font-size: 16px !important;
+            margin-top: 0px !important;
+        }
+        .offer-label{
+            margin: 10px auto 10px !important;
+        }
+    }
+    
+  }
+
+  .mr30{
+      margin-right: 30px;
+  }
+  .btn-apply-promocode{
+        margin-left: 12px !important;
+        margin-bottom: 30px !important;
+        text-align: left;
+        padding: 0;
+        text-decoration: underline !important;
+        @include xxs{
+            margin-bottom:10px !important;
+        }
+      &:hover{
+          color: #7352D1 !important;
+            
+      }
+  }
