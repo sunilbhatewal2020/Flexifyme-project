@@ -15,7 +15,11 @@
       @content;
     }
   }
-  
+  @mixin surface{
+    @media screen and (max-width: 540px) {
+      @content;
+    }
+  }
   @mixin tabMobile {
     @media screen and (max-width: 991px) {
       @content;
@@ -143,7 +147,7 @@
             align-items: center;
             margin-top: 30px;
             margin-bottom: 30px;
-            @include xxs{
+            @include surface{
                flex-flow: row wrap;
                margin-top:10px;
                margin-bottom:10px;
