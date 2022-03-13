@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexifyMe | Daily Self Practice Session</title>
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="widgets/intl-tel-input-master/css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="widgets/bootstrap-datepicker/css/datepicker.css" type="text/css"/> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/frame.css" />
+    <link rel="stylesheet" href="css/payment-details.css" />
+</head>
+<body class="dashboard-page">
+    <div class="dashboard-body">
+        <section class="common-section dasboard-section" style="background-image: url('images/dashboard-bg.jpg');">
+            <div class="dasboard-row-wrap">
+                   
+
+                <div class="dasboard-col-left st">
+                    <div class="common-dashboard-header-wrap"></div>
+                    <div class="common-dashboard-sidebar-wrap"></div>
+                </div>
+                <div class="icon-gift-wrap-outer">
+                    <button type="button" class="btn-refer-friend" data-bs-backdrop="false" data-bs-toggle="modal" data-bs-target="#refer-friend-modal">
+                    <div class="icon-gift-bg">
+                        <span> <img src="images/icon-gift.svg" alt="Refer Friends" class="icon-gift"/></span>
+                      </div>
+                    </button>
+                </div> 
+                
+                <div class="dasboard-col-right">
+                  
+                    <div class="dasboard-col-right-inner st">
+                        <div class="container">
+                            <div class="row dashboard-row-body justify-content-center">
+                                <div class="col-md-12 rescheduled-session-cols">
+                  
+                                    <div class="common-card payment-details-card">
+                                            <div class="row">
+                                                    <div class="col-md-7">
+                                                        <div class="payment-details-left">
+                                                            <h4>Payment details</h4>
+                                                            <form action="">
+
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="card-type-wrap">
+                                                                            <div class="form-check form-check-inline mr30">
+                                                                                <input class="form-check-input" type="radio" name="gateway"
+                                                                                    id="Yes" value="Yes">
+                                                                                <label class="form-check-label" for="Yes"><img src="images/gateway1.jpg" alt=""/></label>
+                                                                            </div>
+                                                                            <div class="form-check form-check-inline">
+                                                                                <input class="form-check-input" type="radio" name="gateway"
+                                                                                    id="No" value="No">
+                                                                                <label class="form-check-label" for="No"><img src="images/gateway2.jpg" alt=""/></label>
+                                                                            </div>
+                                                                        </div>
+        
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <div class="fm-mb">
+                                                                            <input type="text" class="form-control" placeholder="Name on card">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-7 col-md-9">
+                                                                        <div class="fm-mb">
+                                                                            <input type="text" class="form-control" placeholder="Credit card number">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-5 col-md-3">
+                                                                        <div class="fm-mb">
+                                                                            <input type="text" class="form-control" placeholder="CVV">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6 col-md-6">
+                                                                        <div class="fm-mb">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">MM</option>
+                                                                                <option value="1">01</option>
+                                                                                <option value="2">02</option>
+                                                                                <option value="3">03</option>
+                                                                                <option value="4">04</option>
+                                                                                <option value="5">05</option>
+                                                                                <option value="6">06</option>
+                                                                                <option value="7">07</option>
+                                                                                <option value="8">08</option>
+                                                                                <option value="9">09</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6 col-md-6">
+                                                                        <div class="fm-mb">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">YY</option>
+                                                                                <option value="1">2019</option>
+                                                                                <option value="2">2020</option>
+                                                                                <option value="3">2021</option>
+                                                                                <option value="4">2022</option>
+                                                                                <option value="4">2023</option>
+                                                                                <option value="4">2024</option>
+                                                                                <option value="4">2025</option>
+                                                                                <option value="4">2026</option>
+                                                                                <option value="4">2027</option>
+                                                                                <option value="4">2028</option>
+                                                                                <option value="4">2029</option>
+                                                                                <option value="4">2030</option>
+                                                                                <option value="4">2031</option>
+                                                                                <option value="4">2032</option>
+                                                                                <option value="4">2033</option>
+                                                                                <option value="4">2034</option>
+                                                                                <option value="4">2035</option>
+                                                                                <option value="4">2036</option>
+                                                                                <option value="4">2037</option>
+                                                                                <option value="4">2038</option>
+                                                                                <option value="4">2039</option>
+                                                                                <option value="4">2040</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <div class="fm-mb">
+                                                                            <input type="text" class="form-control" placeholder="Address">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <div class="fm-mb">
+                                                                            <select class="form-select form-control">
+                                                                                <option selected="">Country</option>
+                                                                              
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-link bttn-link btn-apply-promocode">Apply promocode</button>
+                                                                    <button type="button" class="btn bttn-primary">Pay now</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>  
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                           <div class="payment-details-right">
+                                                                 <div class="top-title-wrap">
+                                                                   <p class="p-18">Your Plan</p>
+                                                                   <button type="button" class="btn btn-link bttn-link btn-apply-promocode change-plan">Change Plan</button>
+                                                                 </div>   
+
+                                                                 <div class="one-on-one">
+                                                                     <p class="p-16">One-on- one</p>       
+                                                                     <div class="inner-wrap">
+                                                                         <div class="inner-wrap-content">
+                                                                            <p>
+                                                                            <span>For</span>
+                                                                            Priyanka Kulkarni</p>
+                                                                         </div>
+                                                                         <div class="inner-wrap-content">
+                                                                            <p>
+                                                                            <span>Plan</span>
+                                                                            Unlimited quarterly </p>
+                                                                         </div>
+
+                                                                         <div class="inner-wrap-content">
+                                                                            <p>
+                                                                            <span>Billing </span>
+                                                                            Monthly</p>
+                                                                         </div>
+                                                                     </div>
+                                                                 </div>
+                                                                
+                                                                 <div class="price-wrap">
+                                                                  <p class="p-16">Price</p>
+                                                                  <p class="price">₹150 <span>monthly</span></p>
+
+                                                                 </div>
+                                                                  <div class="plan-wrap">
+                                                                      <div class="overflow-y">
+                                                                      <div class="row align-items-center justify-content-center">
+                                                                          <div class="col-10 col-md-11 col-lg-8">
+                                                                            <div class="pricing-plan-row-home">
+                                                                                <div class="pricing-plan-col-home">
+                                                                                <div class="pricing-plan-card">
+        
+                                                                                <div class="pricing-plan-card-head">
+                                                                                <h3>Unlimited quarterly </h3>
+                                                                                <h4 class="purple2"><span>₹</span>150</h4>
+                                                                                <div class="total-price"><span>₹100</span></div> 
+                                                                                <div class="total-price"> Total Price Monthly</div> 
+                                                                                <span class="offer-label"> 20% OFF</span>
+        
+                                                                                <button class="btn btn-buy-now active center-btn-xs" onclick="location.href='contact.html'">
+                                                                                Buy Now
+                                                                                </button>
+        
+                                                                                <span class="valid">Vaild for 6 months</span> 
+                                                                                </div>
+        
+        
+                                                                                <div id="view-features3" onclick="javascript:toggle5('content-view-features3', 'view-features3');" class="view-features">
+                                                                                View Features <img src="images/down-arrow.svg" alt=""> </div>
+                                                                                <div class="pricing-plan-card-body" id="content-view-features3">
+                                                                                <ul>
+                                                                                <li>Unlimited live, customised Yoga and Meditation Sessions</li>
+                                                                                <li class="even">Train anywhere</li>
+                                                                                <li>Attend anytime, any class as per your convenience</li>
+                                                                                <li class="even">Library of Meditational Audios</li>
+                                                                                <li>2 Nutrition Sessions</li>
+                                                                                </ul>
+                                                                                </div>
+                                                                                <span class="bg-strip" style="background: #47347C;"></span>
+                                                                                </div>
+        
+                                                                                </div>
+                                                                                </div>
+                                                                          </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>  
+                                                           </div> 
+                                                    </div>
+                                            </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+ 
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="widgets/aos/aos.js"></script>
+    <script src="widgets/lazy/jquery.lazy.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="widgets/intl-tel-input-master/js/intlTelInput.min.js"></script>
+    <script src="widgets/ScrollMagic/ScrollMagic.min.js"></script>
+    <script src="widgets/ScrollMagic/plugins/debug.addIndicators.min.js"></script>
+    <script src="widgets/audio-player/dist/audio.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/moment.min.js"></script>
+    <script src="widgets/bootstrap-datepicker/js/picker-init.js"></script>
+    
+    <script>
+        function toggle5(showHideDiv, switchImgTag) {
+                var ele = document.getElementById(showHideDiv);
+                var imageEle = document.getElementById(switchImgTag);
+                if(ele.style.display == "block") {
+                        ele.style.display = "none";
+                imageEle.innerHTML = 'View Features <img src="images/down-arrow.svg">';
+                }
+                else {
+                        ele.style.display = "block";
+                        imageEle.innerHTML = 'Hide Features <img src="images/down-arrow.svg" class="arrow-up">';
+                }
+        }
+
+        $(document).ready(function () {
+            $(".common-dashboard-header-wrap").load("include-dashboard/header.html");
+            $(".common-dashboard-sidebar-wrap").load("include-dashboard/sidebar.html");
+            // for play music
+            $('audio').initAudioPlayer();
+            $(".song-img").removeClass("rotating");
+                setTimeout(function(){
+                    $('.play-music-audio .ppq-audio-player .audio-hidden').on('pause play', function(e) {
+                        if (e.currentTarget.paused) {
+                            $(".song-img").removeClass("rotating");
+                            $(".dashboard-body").removeClass("hide-card-overlay-active")
+                        } else {
+                            $(".song-img").addClass("rotating");
+                        }
+                    });
+            }, 600);
+
+            // for .hide-card-overlay
+            $(".hide-card-overlay").click(function(){
+                $(".dashboard-body").toggleClass("hide-card-overlay-active")
+            })
+
+            $(".play-pause-btn").click(function(){
+                $(".music-strip-bottom-wrap-outer").toggleClass("music-strip-active")
+            })
+            // for like button            
+            $(".btn-like").click(function(){
+                $(this).toggleClass("active")
+            })
+        });
+    </script>
+
+
+
+<script>
+    setTimeout(function () {
+// Configure/customize these variables.
+var showChartesti = 145;  // How many characters are shown by default
+var ellipsestext = "...";
+var moretext = " Read more >";
+var lesstext = " Read less";
+
+
+$('.more1').each(function() {
+var content = $(this).html();
+
+if(content.length > showChartesti) {
+
+    var c = content.substr(0, showChartesti);
+    var h = content.substr(showChartesti, content.length - showChartesti);
+
+    var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="#" class="morelink1 morelink2">' + moretext + '</a></span>';
+
+    $(this).html(html);
+}
+
+});
+
+$(".morelink1").click(function(){
+if($(this).hasClass("less")) {
+    $(this).removeClass("less");
+    $(this).html(moretext);
+} else {
+    $(this).addClass("less");
+    $(this).html(lesstext);
+}
+$(this).parent().prev().toggle();
+$(this).prev().toggle();
+return false;
+});
+
+
+
+}, 1000);
+</script>
+</body>
+
+</html>
